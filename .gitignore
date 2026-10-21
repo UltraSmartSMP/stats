@@ -1,0 +1,14 @@
+﻿build/
+.vs/
+out/
+__pycache__/
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.log
+*.tmp
+.rcon

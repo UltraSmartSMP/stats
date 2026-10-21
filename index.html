@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ultra Smart SMP · Lignes de code</title>
+<meta name="description" content="Lignes de code des dépôts de l'organisation Ultra Smart SMP, par langage et par type de fichier, mises à jour à chaque commit.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=3">
+<link rel="stylesheet" href="assets/style.css?v=3">
+<script src="assets/app.js?v=3"></script>
+</head>
+<body>
+<header class="bandeau">
+  <div class="enveloppe bandeau-int">
+    <a class="marque" href="https://github.com/UltraSmartSMP" rel="noopener">
+      <img src="assets/favicon.svg?v=3" alt="" width="40" height="40">
+      <span class="marque-texte">
+        <span class="marque-nom" id="nom-affiche">Ultra Smart SMP</span>
+        <span class="marque-sous">Lignes de code de l'organisation</span>
+      </span>
+    </a>
+    <div class="bandeau-meta">
+      <p class="maj" id="maj" aria-live="polite">Chargement des statistiques…</p>
+      <div class="bandeau-actions">
+        <a class="lien-org" href="https://github.com/UltraSmartSMP" rel="noopener">Organisation GitHub <span aria-hidden="true">↗</span></a>
+        <button type="button" class="bouton-theme" id="bouton-theme">Thème : auto</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="exemple" id="bandeau-exemple" hidden>
+  <div class="enveloppe">Données d'exemple : tous les chiffres de cette page sont fictifs. Retirez <code>?donnees=exemple</code> de l'adresse pour voir les vrais chiffres.</div>
+</div>
+
+<nav class="filtre" aria-label="Filtrer par dépôt">
+  <div class="enveloppe filtre-int">
+    <span class="filtre-titre" id="filtre-titre">Dépôt</span>
+    <div class="puces" id="puces" role="group" aria-labelledby="filtre-titre"></div>
+  </div>
+</nav>
+
+<main class="enveloppe" id="contenu">
+  <div class="erreur" id="erreur" role="alert" hidden></div>
+
+  <p class="chargement" id="chargement">Chargement des statistiques…</p>
+
+  <section class="chiffres" id="chiffres" aria-label="Chiffres clés" hidden></section>
+
+  <section class="bloc" aria-labelledby="t-langages" hidden>
+    <div class="bloc-tete">
+      <h2 id="t-langages">Langages</h2>
+      <p class="bloc-note" id="note-langages">Lignes de code par langage, hors commentaires et lignes vides.</p>
+    </div>
+    <div id="empile-langages"></div>
+    <div class="defile"><table class="barres" id="table-langages"></table></div>
+  </section>
+
+  <div class="duo" hidden>
+    <section class="bloc" aria-labelledby="t-types">
+      <div class="bloc-tete">
+        <h2 id="t-types">Types de fichiers</h2>
+        <p class="bloc-note">Rôle du fichier, déduit de son dossier, de son nom ou de son extension.</p>
+      </div>
+      <div class="defile"><table class="barres" id="table-types"></table></div>
+    </section>
+    <section class="bloc" aria-labelledby="t-anneau">
+      <div class="bloc-tete">
+        <h2 id="t-anneau">Part de chaque dépôt</h2>
+        <p class="bloc-note">Lignes de code de chaque dépôt sur le total de l'organisation.</p>
+      </div>
+      <div class="anneau-zone" id="anneau"></div>
+    </section>
+  </div>
+
+  <section class="bloc" aria-labelledby="t-croise" hidden>
+    <div class="bloc-tete">
+      <h2 id="t-croise">Langage × type</h2>
+      <p class="bloc-note">Lignes de code. Plus la case est colorée, plus le langage pèse dans ce type.</p>
+    </div>
+    <div class="defile"><table class="croise" id="table-croise"></table></div>
+  </section>
+
+  <section class="bloc" aria-labelledby="t-depots" hidden>
+    <div class="bloc-tete">
+      <h2 id="t-depots">Dépôts</h2>
+      <p class="bloc-note">Dernier commit compté et répartition par langage de chaque dépôt.</p>
+    </div>
+    <div class="cartes" id="cartes"></div>
+  </section>
+
+  <section class="bloc" aria-labelledby="t-historique" id="bloc-historique" hidden>
+    <div class="bloc-tete">
+      <h2 id="t-historique">Historique</h2>
+      <p class="bloc-note" id="note-historique">Lignes de code à chaque changement d'un dépôt.</p>
+      <div class="bascule" id="bascule-historique" role="group" aria-label="Courbes affichées">
+        <button type="button" data-mode="total" aria-pressed="true">Total</button>
+        <button type="button" data-mode="depots" aria-pressed="false">Par dépôt</button>
+      </div>
+    </div>
+    <div class="courbe" id="courbe"></div>
+    <div class="legende" id="legende-historique"></div>
+    <details class="donnees-brutes">
+      <summary>Voir les valeurs de l'historique</summary>
+      <div class="defile"><table class="detail" id="table-historique"></table></div>
+    </details>
+  </section>
+
+  <section class="bloc" aria-labelledby="t-detail" hidden>
+    <div class="bloc-tete">
+      <h2 id="t-detail">Détail par dépôt et par langage</h2>
+      <p class="bloc-note">Cliquez sur un en-tête de colonne pour trier.</p>
+    </div>
+    <div class="defile"><table class="detail" id="table-detail"></table></div>
+    <div class="detail-suite" id="detail-suite"></div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied-int">
+    <div>
+      <h2>Méthode</h2>
+      <p>Comptage par <a href="https://github.com/AlDanial/cloc" rel="noopener">cloc 2.06</a>, complété par des définitions pour les langages maison :</p>
+      <ul class="liste-maison" id="liste-maison"></ul>
+      <p>Seuls les fichiers suivis par git sont comptés, tels qu'ils sont publiés sur la branche de chaque dépôt.</p>
+    </div>
+    <div>
+      <h2>Exclus</h2>
+      <p>Les fichiers binaires (<code>.smpb</code>, <code>.smpo</code>, <code>.bin</code>, images, archives, tout fichier non UTF-8 qui contient un octet nul), le code tiers embarqué (dossiers <code>third_party</code>, <code>vendor</code>), les dossiers <code>.git</code>, les liens symboliques et les sous-modules. Un fichier texte que cloc ne reconnaît pas est compté sous « Texte ».</p>
+      <p>Le type « Données » regroupe les attendus de tests, les corpus générés, les preuves et les dumps du compilateur : le chiffre « hors données » les retire.</p>
+      <p>Une ligne qui ne contient qu'un commentaire compte dans « commentaires » ; une ligne qui mêle code et commentaire compte comme code.</p>
+    </div>
+    <div>
+      <h2>Mise à jour</h2>
+      <p>Le générateur recompte après chaque synchronisation des dépôts, puis pousse ce site, que Vercel redéploie. La date affichée est celle du commit le plus récent compté.</p>
+      <p class="empreinte" id="empreinte"></p>
+    </div>
+  </div>
+</footer>
+
+<div class="infobulle" id="infobulle" role="tooltip" hidden></div>
+</body>
+</html>
