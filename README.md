@@ -2,6 +2,10 @@
 
 # Statistiques du code
 
+<p align="center">
+  <a href="http://stats.smp.ecartdescartes.org"><img src="https://img.shields.io/badge/Voir%20les%20statistiques-stats.smp.ecartdescartes.org-22D3EE?style=for-the-badge&labelColor=0B1220" alt="Voir les statistiques : stats.smp.ecartdescartes.org"></a>
+</p>
+
 Site statique qui affiche le nombre de lignes de code des dépôts de l'organisation **UltraSmartSMP** : par dépôt et au global, par langage (langages maison compris) et par type de fichier. Hébergé par Vercel, redéployé à chaque push sur ce dépôt.
 
 ## Ce que montre la page
