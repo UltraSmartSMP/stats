@@ -677,5 +677,48 @@
    "DOS Batch": 11,
    "Bourne Shell": 9
   }
+ },
+ {
+  "maj": "2026-10-21T23:01:38Z",
+  "empreinte": "cbdab0f887127a39",
+  "code": 4268499,
+  "commits": 532,
+  "par_depot": {
+   "moteur": 692787,
+   "langage": 214115,
+   "bibliotheques": 1512333,
+   "symbiose": 5882,
+   "serveur": 230,
+   "docs": 1843152
+  },
+  "par_langage": {
+   "JSON": 1500167,
+   "RSMP": 1373771,
+   "C++": 387694,
+   "Texte": 310910,
+   "Markdown": 305244,
+   "SWIG": 230020,
+   "SMPA": 40868,
+   "CSV": 26266,
+   "C/C++ Header": 25107,
+   "PowerShell": 20590,
+   "YAML": 11286,
+   "Python": 8333,
+   "RSMP IR": 7991,
+   "CMake": 7139,
+   "Rust": 3658,
+   "CUDA": 2312,
+   "C": 1993,
+   "TOML": 1737,
+   "JavaScript": 1678,
+   "SMPI": 905,
+   "Tables .def": 290,
+   "SMPA ISA": 236,
+   "diff": 119,
+   "INI": 83,
+   "Assembly": 82,
+   "DOS Batch": 11,
+   "Bourne Shell": 9
+  }
  }
 ]
