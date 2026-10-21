@@ -9,8 +9,8 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0B1220">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=3">
-<link rel="stylesheet" href="assets/style.css?v=3">
-<script src="assets/app.js?v=3"></script>
+<link rel="stylesheet" href="assets/style.css?v=5">
+<script src="assets/app.js?v=5"></script>
 </head>
 <body>
 <header class="bandeau">
@@ -136,10 +136,22 @@
     <div>
       <h2>Mise à jour</h2>
       <p>Le générateur recompte après chaque synchronisation des dépôts, puis pousse ce site, que Vercel redéploie. La date affichée est celle du commit le plus récent compté.</p>
+      <p>La page relit les chiffres toutes les minutes tant qu'elle est visible : un nouveau commit sur un dépôt s'annonce en bas de l'écran, avec un petit son que l'interrupteur du compteur de commits coupe.</p>
       <p class="empreinte" id="empreinte"></p>
     </div>
   </div>
 </footer>
+
+<div class="coin" id="coin">
+  <div class="toasts" id="toasts" aria-live="polite" aria-relevant="additions"></div>
+  <aside class="flottant" id="flottant" aria-label="Commits des dépôts" hidden>
+    <div class="flottant-detail" id="flottant-detail"></div>
+    <div class="flottant-barre">
+      <button type="button" class="flottant-total" id="flottant-total" aria-expanded="false" aria-controls="flottant-detail"><span class="flottant-point" aria-hidden="true"></span><span id="flottant-val">–</span></button>
+      <button type="button" class="flottant-son" id="flottant-son" aria-pressed="true" aria-label="Son des notifications"></button>
+    </div>
+  </aside>
+</div>
 
 <div class="infobulle" id="infobulle" role="tooltip" hidden></div>
 </body>

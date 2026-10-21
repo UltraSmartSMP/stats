@@ -377,7 +377,8 @@
           el('div', { class: 'commit-ligne' },
             cm.sha && d.url ? el('a', { class: 'commit-sha', href: d.url + '/commit/' + cm.sha, rel: 'noopener', title: 'Dernier commit compté' }, cm.court || String(cm.sha).slice(0, 7))
               : el('span', { class: 'commit-sha', text: cm.court || '–' }),
-            el('span', { text: cm.date ? dateCourte(cm.date) : 'date inconnue' })),
+            el('span', { text: cm.date ? dateCourte(cm.date) : 'date inconnue' }),
+            typeof d.commits === 'number' ? el('span', { class: 'commit-nb', text: libCommits(d.commits) }) : null),
           el('span', { class: 'commit-msg', title: cm.message || '', text: cm.message || '' })),
         el('div', { class: 'carte-pied' },
           d.url ? el('a', { class: 'lien-mini', href: d.url, rel: 'noopener' }, 'Voir sur GitHub ', el('span', { 'aria-hidden': 'true', text: '↗' })) : el('span'),
@@ -551,6 +552,340 @@
     rendreChiffres(); rendreLangages(); rendreTypes(); rendreAnneau(); rendreCroise(); rendreCartes(); rendreHistorique(); rendreDetail();
   }
 
+  /* ---------- commits : flottant, sondage, notifications ---------- */
+  /* Le flottant affiche global.commits (contrat v2). Toutes les 60 s (paramètre de test ?sondage=<s>),
+     data/stats.json est relu ; si son empreinte change, les vues sont redessinées sur place et chaque
+     dépôt dont le nombre de commits ou le sha a changé reçoit une notification, avec un « plop »
+     synthétisé par Web Audio (aucun fichier audio). ?demo-commit=1 montre une notification de
+     démonstration 3 s après le chargement, sur le dernier vrai commit du dépôt le plus récent. */
+  var CLE_SON = 'stats-son';
+  var DUREE_TOAST = 8000, DELAI_REQUETE = 20000, SHA_GARDES = 64;
+  /* vus : shas déjà affichés par dépôt ; un sha déjà vu n'est jamais réannoncé (réponse périmée d'un nœud
+     de cache, retour arrière d'un déploiement, puis retour au fichier neuf) */
+  var C = { intervalle: 60000, minuterie: 0, enCours: false, dernier: 0, uStats: '', uHist: '', anim: 0, audio: null, son: true, fermeSurvol: 0, pouls: 0, vus: {}, sig: '' };
+  /* téléphone ou écran bas : deux notifications au plus, pour ne pas couvrir la page */
+  function maxToasts() { return window.innerHeight <= 480 ? 1 : window.innerWidth <= 680 || window.innerHeight <= 640 ? 2 : 4; }
+  function signature(st) {
+    var g = st.global || {}, L = g.lignes || {};
+    return [st.empreinte, st.version, num(g.commits), num(L.code), num(L.total), num(g.fichiers)].join('|');
+  }
+  function memoriserVus(st) {
+    (st.depots || []).forEach(function (d) {
+      var sha = (d.commit || {}).sha;
+      if (!sha) return;
+      var l = C.vus[d.nom] || (C.vus[d.nom] = []);
+      if (l.indexOf(sha) < 0) { l.push(sha); if (l.length > SHA_GARDES) l.shift(); }
+    });
+    C.sig = signature(st);
+  }
+  function dejaVu(d) { var sha = (d.commit || {}).sha; return !!sha && (C.vus[d.nom] || []).indexOf(sha) >= 0; }
+  var mouvementReduit = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  var rtf = window.Intl && Intl.RelativeTimeFormat ? new Intl.RelativeTimeFormat('fr', { numeric: 'auto' }) : null;
+
+  function lireSon() { try { return localStorage.getItem(CLE_SON) !== '0'; } catch (e) { return true; } }
+  function ecrireSon(v) { try { if (v) localStorage.removeItem(CLE_SON); else localStorage.setItem(CLE_SON, '0'); } catch (e) { /* stockage indisponible */ } }
+  function aCommits(st) { return !!(st && st.global && typeof st.global.commits === 'number' && isFinite(st.global.commits)); }
+  function libCommits(n) { return nf.format(n) + (n > 1 ? ' commits' : ' commit'); }
+  function tronquer(t, n) { var c = Array.from(String(t || '')); return c.length > n ? c.slice(0, n - 1).join('').replace(/\s+$/, '') + '…' : c.join(''); }
+  function anciennete(iso) {
+    var t = Date.parse(iso);
+    if (isNaN(t)) return '';
+    var s = (Date.now() - t) / 1000;
+    if (s < 45) return 'à l’instant';
+    if (!rtf) return dateCourte(iso);
+    var u = s < 3600 ? ['minute', 60] : s < 86400 ? ['hour', 3600] : s < 2592000 ? ['day', 86400] : s < 31536000 ? ['month', 2592000] : ['year', 31536000];
+    return rtf.format(-Math.max(1, Math.round(s / u[1])), u[0]);
+  }
+
+  /* son : l'AudioContext ne naît que dans un geste de l'utilisateur (règle d'autoplay des navigateurs) */
+  function deverrouillerSon() {
+    if (!C.audio) {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return Promise.resolve();
+      try { C.audio = new AC(); } catch (e) { C.audio = null; return Promise.resolve(); }
+    }
+    if (C.audio.state === 'suspended' && C.audio.resume) return C.audio.resume().catch(function () { /* refusé */ });
+    return Promise.resolve();
+  }
+  var GESTES = ['pointerdown', 'pointerup', 'keydown', 'touchend', 'click'];
+  /* un événement synthétique (element.click() d'un script) n'est pas un geste : pas d'AudioContext, pas d'avertissement */
+  function gesteActif() { return !navigator.userActivation || navigator.userActivation.isActive; }
+  function surGeste(e) {
+    /* son coupé : aucun contexte audio ; l'interrupteur le créera lui-même s'il est rallumé */
+    if (!C.son || !e.isTrusted || !gesteActif()) return;
+    deverrouillerSon().then(function () {
+      if (C.audio && C.audio.state === 'running') GESTES.forEach(function (g) { document.removeEventListener(g, surGeste, true); });
+    });
+  }
+  function plop() {
+    var c = C.audio;
+    if (!C.son || !c || c.state !== 'running') return;
+    try {
+      var t = c.currentTime + 0.01, o = c.createOscillator(), g = c.createGain();
+      o.type = 'sine';
+      o.frequency.setValueAtTime(880, t);
+      o.frequency.exponentialRampToValueAtTime(240, t + 0.11);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.16, t + 0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.12);
+      o.connect(g); g.connect(c.destination);
+      o.onended = function () { o.disconnect(); g.disconnect(); };
+      o.start(t); o.stop(t + 0.13);
+    } catch (e) { /* son indisponible */ }
+  }
+  function iconeSon(actif) {
+    var s = sv('svg', { viewBox: '0 0 24 24', width: 18, height: 18, 'aria-hidden': 'true', focusable: 'false' });
+    s.appendChild(sv('path', { d: 'M4 9.5v5h3.5l4.5 4v-13l-4.5 4z', fill: 'currentColor' }));
+    s.appendChild(sv('path', { d: actif ? 'M15.5 9a4.2 4.2 0 0 1 0 6M18.2 6.4a7.8 7.8 0 0 1 0 11.2' : 'M15.5 9.5l5 5M20.5 9.5l-5 5',
+      fill: 'none', stroke: 'currentColor', 'stroke-width': 1.8, 'stroke-linecap': 'round' }));
+    return s;
+  }
+  function rendreSon() {
+    var b = $('flottant-son');
+    vider(b).appendChild(iconeSon(C.son));
+    b.setAttribute('aria-pressed', String(C.son));
+    b.title = C.son ? 'Son des notifications : activé' : 'Son des notifications : coupé';
+  }
+
+  /* flottant */
+  function compteur(de, a) {
+    var v = $('flottant-val');
+    cancelAnimationFrame(C.anim);
+    $('flottant-total').setAttribute('aria-label', libCommits(a) + ' au total, détail par dépôt');
+    if (typeof de !== 'number' || de === a || mouvementReduit.matches) { v.textContent = libCommits(a); return; }
+    var t0 = 0, duree = 900;
+    function pas(t) {
+      if (!t0) t0 = t;
+      var k = Math.min(1, (t - t0) / duree), e = 1 - Math.pow(1 - k, 3);
+      v.textContent = libCommits(Math.round(de + (a - de) * e));
+      if (k < 1) C.anim = requestAnimationFrame(pas);
+    }
+    C.anim = requestAnimationFrame(pas);
+  }
+  function rendreFlottant(de) {
+    var st = S.stats, f = $('flottant'), bt = $('flottant-total');
+    f.hidden = false;
+    document.body.classList.add('avec-flottant');
+    /* données v1 : pas de total, mais l'interrupteur du son reste, car les notifications (sur le sha) sonnent aussi */
+    if (!aCommits(st)) {
+      bt.hidden = true;
+      f.classList.remove('ouvert', 'survol');
+      bt.setAttribute('aria-expanded', 'false');
+      vider($('flottant-detail'));
+      return;
+    }
+    bt.hidden = false;
+    var deps = st.depots.filter(function (d) { return typeof d.commits === 'number'; })
+      .sort(function (a, b) { return b.commits - a.commits || a.nom.localeCompare(b.nom, 'fr'); });
+    var max = deps.reduce(function (m, d) { return Math.max(m, d.commits); }, 0);
+    var z = vider($('flottant-detail'));
+    z.appendChild(el('p', { class: 'fd-titre', text: 'Commits par dépôt' }));
+    z.appendChild(el('ul', { class: 'fd-liste' }, deps.map(function (d) {
+      return el('li', null, el('i', { class: 'pastille', css: { background: couleurDepot(d.nom) } }), el('span', { class: 'fd-nom', text: d.nom }),
+        el('span', { class: 'fd-barre', 'aria-hidden': 'true' }, el('span', { css: { width: (max > 0 ? 100 * d.commits / max : 0).toFixed(1) + '%', background: couleurDepot(d.nom) } })),
+        el('span', { class: 'num', text: nf.format(d.commits) }));
+    })));
+    z.appendChild(el('p', { class: 'fd-total' }, el('span', { text: 'Total' }), el('span', { class: 'num', text: nf.format(st.global.commits) })));
+    z.appendChild(el('p', { class: 'fd-note', text: 'Branche publiée de chaque dépôt, relevé du ' + dateCourte(st.maj) + '.' }));
+    compteur(de, st.global.commits);
+  }
+  function poulser() {
+    var f = $('flottant');
+    clearTimeout(C.pouls);
+    f.classList.remove('neuf');
+    void f.offsetWidth; // relance l'animation
+    f.classList.add('neuf');
+    C.pouls = setTimeout(function () { f.classList.remove('neuf'); }, 2600);
+  }
+  function installerFlottant() {
+    var f = $('flottant'), bt = $('flottant-total');
+    C.son = lireSon();
+    rendreSon();
+    function ouvrir(v) { f.classList.toggle('ouvert', v); bt.setAttribute('aria-expanded', String(v)); if (!v) f.classList.remove('survol'); }
+    bt.addEventListener('click', function () { ouvrir(!f.classList.contains('ouvert')); });
+    bt.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { clearTimeout(C.fermeSurvol); f.classList.add('survol'); } });
+    f.addEventListener('pointerenter', function () { clearTimeout(C.fermeSurvol); });
+    f.addEventListener('pointerleave', function (e) {
+      if (e.pointerType === 'mouse') C.fermeSurvol = setTimeout(function () { f.classList.remove('survol'); }, 220);
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && f.classList.contains('ouvert')) { ouvrir(false); bt.focus(); } });
+    document.addEventListener('pointerdown', function (e) { if (f.classList.contains('ouvert') && !f.contains(e.target)) ouvrir(false); });
+    $('flottant-son').addEventListener('click', function () {
+      C.son = !C.son;
+      ecrireSon(C.son);
+      rendreSon();
+      if (C.son && gesteActif()) deverrouillerSon().then(plop);
+    });
+    GESTES.forEach(function (g) { document.addEventListener(g, surGeste, { capture: true, passive: true }); });
+  }
+
+  /* notifications */
+  function boutonFermer() {
+    return el('button', { type: 'button', class: 'toast-fermer', 'aria-label': 'Fermer la notification', title: 'Fermer' }, el('span', { 'aria-hidden': 'true', text: '×' }));
+  }
+  function lienSha(d) {
+    var cm = d.commit || {};
+    return cm.sha && d.url ? el('a', { class: 'commit-sha', href: d.url + '/commit/' + cm.sha, rel: 'noopener', title: 'Voir le commit sur GitHub' }, cm.court || String(cm.sha).slice(0, 7))
+      : el('span', { class: 'commit-sha', text: cm.court || '–' });
+  }
+  function ecartCommits(d, avant) {
+    return avant && typeof avant.commits === 'number' && typeof d.commits === 'number' ? d.commits - avant.commits : null;
+  }
+  /* plus de dépôts changés que de places : une seule notification les regroupe, aucun n'est perdu */
+  function notifierGroupe(liste, avant) {
+    var fermer = boutonFermer();
+    var t = el('div', { class: 'toast', css: { '--toast-c': 'var(--accent)' } },
+      el('img', { class: 'toast-logo', src: 'assets/favicon.svg?v=3', alt: '', width: '28', height: '28' }),
+      el('div', { class: 'toast-corps' },
+        el('p', { class: 'toast-titre', text: 'Nouveaux commits sur ' + liste.length + ' dépôts' }),
+        el('ul', { class: 'toast-liste' }, liste.map(function (d) {
+          var e = ecartCommits(d, avant[d.nom]);
+          return el('li', null, el('i', { class: 'pastille', css: { background: couleurDepot(d.nom) } }), el('span', { class: 'toast-depot', text: d.nom }),
+            lienSha(d), e > 0 ? el('span', { class: 'toast-quand', text: '+' + nf.format(e) }) : null);
+        }))),
+      fermer);
+    afficherToast(t, fermer);
+  }
+  function notifier(d, avant, demo) {
+    var cm = d.commit || {};
+    var delta = ecartCommits(d, avant);
+    var titre = demo ? 'Démonstration : nouveau commit sur ' + d.nom
+      : !avant ? 'Nouveau dépôt compté : ' + d.nom
+      : delta > 1 ? nf.format(delta) + ' nouveaux commits sur ' + d.nom
+      : delta !== null && delta <= 0 ? 'Dernier commit changé sur ' + d.nom
+      : 'Nouveau commit sur ' + d.nom;
+    var fermer = boutonFermer();
+    var quand = [anciennete(cm.date), typeof d.commits === 'number' ? libCommits(d.commits) + ' au total' : ''].filter(Boolean).join(' · ');
+    var t = el('div', { class: 'toast', css: { '--toast-c': couleurDepot(d.nom) } },
+      el('img', { class: 'toast-logo', src: logoDepot(d.nom), alt: '', width: '28', height: '28' }),
+      el('div', { class: 'toast-corps' },
+        el('p', { class: 'toast-titre', text: titre }),
+        el('p', { class: 'toast-commit' }, lienSha(d),
+          el('span', { class: 'toast-msg', title: cm.message || '', text: tronquer(cm.message, 90) || 'Sans message' })),
+        quand ? el('p', { class: 'toast-quand', text: quand }) : null),
+      fermer);
+    afficherToast(t, fermer);
+  }
+  function afficherToast(t, fermer) {
+    var zone = $('toasts'), minut = 0, reste = DUREE_TOAST, debut = 0;
+    function lancer() { if (minut || !t.parentNode) return; debut = Date.now(); minut = setTimeout(retirer, reste); }
+    function pause() { if (!minut) return; clearTimeout(minut); minut = 0; reste = Math.max(1500, reste - (Date.now() - debut)); }
+    function retirer() {
+      clearTimeout(minut); minut = 0;
+      if (!t.parentNode || t.classList.contains('sortie')) return;
+      if (t.contains(document.activeElement)) {
+        /* le focus passe à la notification voisine, sinon au compteur, sinon à l'interrupteur du son */
+        var voisins = Array.prototype.filter.call(zone.querySelectorAll('.toast:not(.sortie) .toast-fermer'), function (b) { return !t.contains(b); });
+        var cible = voisins[voisins.length - 1] || (!$('flottant-total').hidden ? $('flottant-total') : $('flottant-son'));
+        if (cible) cible.focus();
+      }
+      if (mouvementReduit.matches) { t.remove(); return; }
+      t.classList.add('sortie');
+      setTimeout(function () { t.remove(); }, 220);
+    }
+    fermer.addEventListener('click', retirer);
+    t.addEventListener('keydown', function (e) { if (e.key === 'Escape') { e.stopPropagation(); retirer(); } });
+    t.addEventListener('pointerenter', pause);
+    t.addEventListener('pointerleave', lancer);
+    t.addEventListener('focusin', pause);
+    t.addEventListener('focusout', function (e) { if (!t.contains(e.relatedTarget)) lancer(); });
+    var max = maxToasts();
+    while (zone.children.length >= max) {
+      /* la plus ancienne part, sauf celle qui a le focus clavier */
+      var vieux = Array.prototype.filter.call(zone.children, function (x) { return !x.contains(document.activeElement); })[0];
+      if (!vieux) break;
+      zone.removeChild(vieux);
+    }
+    zone.appendChild(t);
+    lancer();
+  }
+  function signaler() { plop(); if (!$('flottant').hidden) poulser(); }
+
+  /* sondage de data/stats.json */
+  function planifier(delai) {
+    clearTimeout(C.minuterie); C.minuterie = 0;
+    if (document.hidden) return;
+    C.minuterie = setTimeout(sonder, delai == null ? C.intervalle : delai);
+  }
+  /* délai borné : une requête pendue ne doit pas laisser enCours à vrai et arrêter le sondage pour de bon */
+  function lireFrais(url) {
+    var ctl = window.AbortController ? new AbortController() : null;
+    var garde = ctl ? setTimeout(function () { ctl.abort(); }, DELAI_REQUETE) : 0;
+    return fetch(url, { cache: 'no-store', credentials: 'same-origin', signal: ctl ? ctl.signal : undefined }).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (j) { clearTimeout(garde); return j; }, function (e) { clearTimeout(garde); throw e; });
+  }
+  function sonder() {
+    C.minuterie = 0;
+    if (C.enCours || document.hidden) return;
+    C.enCours = true;
+    C.dernier = Date.now();
+    lireFrais(C.uStats).then(function (st) {
+      /* signature : empreinte, version et totaux ; un recomptage à HEAD égaux (règles changées) redessine aussi, sans notifier */
+      if (!valide(st) || (st.exemple && !S.exemple) || signature(st) === C.sig) return null;
+      return lireFrais(C.uHist).catch(function () { return null; }).then(function (h) { appliquerNouvelles(st, h); });
+    }).catch(function () { /* réseau ou fichier en cours de déploiement : nouvel essai au prochain tour */ })
+      .then(function () { C.enCours = false; planifier(); });
+  }
+  function appliquerNouvelles(st, h) {
+    var ancien = S.stats, avant = {};
+    ancien.depots.forEach(function (d) { avant[d.nom] = d; });
+    /* un dépôt n'est annoncé que pour un sha jamais affiché par cette page : pas de double annonce
+       si un nœud de cache rend un instant l'ancien fichier, pas d'annonce d'un simple recomptage */
+    var changes = st.depots.filter(function (d) {
+      var a = avant[d.nom];
+      if (!a) return !dejaVu(d);
+      /* moins de commits qu'avant : réponse périmée (ou historique réécrit) ; vues redessinées, pas d'annonce */
+      if (typeof d.commits === 'number' && typeof a.commits === 'number' && d.commits < a.commits) return false;
+      return (d.commit || {}).sha !== (a.commit || {}).sha && !dejaVu(d);
+    });
+    var de = aCommits(ancien) ? ancien.global.commits : null;
+    var focus = memoFocus();
+    installerDonnees(st, h);
+    memoriserVus(st);
+    if (S.depot && !st.depots.some(function (d) { return d.nom === S.depot; })) {
+      S.depot = '';
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* adresse inchangée */ }
+    }
+    rendreEntete(); rendreFiltre(); rendreVues(); rendreFlottant(de);
+    rendreFocus(focus);
+    if (changes.length > maxToasts()) notifierGroupe(changes, avant);
+    else changes.forEach(function (d) { notifier(d, avant[d.nom] || null, false); });
+    if (changes.length) signaler();
+  }
+  /* le redessin remplace les boutons (puces, tri, cartes) : le focus clavier revient au même rang du même conteneur */
+  var FOCUSABLES = 'a[href], button, summary, [tabindex]:not([tabindex="-1"])';
+  function memoFocus() {
+    var a = document.activeElement;
+    if (!a || a === document.body || !a.closest) return null;
+    var hote = a.parentElement && a.parentElement.closest('[id]');
+    if (!hote) return null;
+    return { el: a, hote: hote.id, rang: Array.prototype.indexOf.call(hote.querySelectorAll(FOCUSABLES), a) };
+  }
+  function rendreFocus(m) {
+    if (!m || m.el.isConnected || m.rang < 0) return;
+    var hote = $(m.hote), liste = hote ? hote.querySelectorAll(FOCUSABLES) : [];
+    var cible = liste[Math.min(m.rang, liste.length - 1)];
+    if (cible) cible.focus({ preventScroll: true });
+  }
+  function demarrerSondage(params) {
+    var s = parseFloat(params.get('sondage'));
+    if (isFinite(s) && s > 0) C.intervalle = Math.round(Math.min(3600, Math.max(2, s)) * 1000);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { clearTimeout(C.minuterie); C.minuterie = 0; return; }
+      if (C.enCours) return;
+      if (Date.now() - C.dernier > 5000) sonder(); else planifier();
+    });
+    planifier();
+    if (params.get('demo-commit') === '1') {
+      setTimeout(function () {
+        var d = S.stats.depots.slice().sort(function (a, b) { return (Date.parse((b.commit || {}).date) || 0) - (Date.parse((a.commit || {}).date) || 0); })[0];
+        if (d) { notifier(d, null, true); signaler(); }
+      }, 3000);
+    }
+  }
+
   /* ---------- erreurs ---------- */
   function erreur(titre, detail) {
     var z = $('erreur');
@@ -573,6 +908,18 @@
   function valide(st) {
     return st && typeof st === 'object' && st.global && Array.isArray(st.depots) && st.global.lignes;
   }
+  /* contrat v1 ou v2 : la v2 ajoute global.commits et depots[].commits, lus seulement s'ils sont là */
+  function installerDonnees(st, hist) {
+    S.stats = st;
+    S.typesLib = {};
+    (st.types || []).forEach(function (t) { S.typesLib[t.id] = t; });
+    if (Array.isArray(hist) || !S.hist.length) {
+      S.hist = (Array.isArray(hist) ? hist : []).filter(function (e) { return e && !isNaN(Date.parse(e.maj)); })
+        .sort(function (a, b) { return Date.parse(a.maj) - Date.parse(b.maj); });
+    }
+    S.couleurs = {};
+    attribuerCouleurs();
+  }
   function demarrer() {
     bulle = $('infobulle');
     var bt = $('bouton-theme');
@@ -586,6 +933,7 @@
       b.addEventListener('click', function () { S.modeHist = b.getAttribute('data-mode'); rendreHistorique(); });
     });
     window.addEventListener('scroll', cacherBulle, { passive: true });
+    installerFlottant();
 
     var params = new URLSearchParams(location.search);
     S.exemple = params.get('donnees') === 'exemple';
@@ -595,22 +943,19 @@
 
     Promise.all([charger(uStats, true), charger(uHist, false)]).then(function (res) {
       var st = res[0];
-      if (!valide(st)) { erreur('Statistiques illisibles', 'Le fichier ' + uStats + ' ne suit pas le format attendu (version 1). Relancez le générateur puis poussez ce dépôt.'); return; }
+      if (!valide(st)) { erreur('Statistiques illisibles', 'Le fichier ' + uStats + ' ne suit pas le format attendu (version 1 ou 2). Relancez le générateur puis poussez ce dépôt.'); return; }
       if (st.exemple && !S.exemple) { erreur('Données d’exemple refusées', 'Le fichier ' + uStats + ' contient des chiffres d’exemple. Relancez le générateur pour produire les vrais chiffres.'); return; }
-      S.stats = st;
-      (st.types || []).forEach(function (t) { S.typesLib[t.id] = t; });
-      S.hist = (Array.isArray(res[1]) ? res[1] : []).filter(function (e) { return e && !isNaN(Date.parse(e.maj)); })
-        .sort(function (a, b) { return Date.parse(a.maj) - Date.parse(b.maj); });
-      attribuerCouleurs();
+      installerDonnees(st, res[1]);
+      memoriserVus(st);
       var ancre = decodeURIComponent(location.hash.slice(1));
       if (st.depots.some(function (d) { return d.nom === ancre; })) S.depot = ancre;
       Array.prototype.forEach.call($('contenu').children, function (n) {
         if (n.id !== 'erreur' && n.id !== 'bloc-historique') n.hidden = n.id === 'chargement';
       });
-      rendreEntete(); rendreFiltre(); rendreVues();
+      rendreEntete(); rendreFiltre(); rendreVues(); rendreFlottant(null);
       window.addEventListener('hashchange', function () {
         var h = decodeURIComponent(location.hash.slice(1));
-        var nom = st.depots.some(function (d) { return d.nom === h; }) ? h : '';
+        var nom = S.stats.depots.some(function (d) { return d.nom === h; }) ? h : '';
         if (nom !== S.depot) choisirDepot(nom);
       });
       if (window.ResizeObserver) {
@@ -621,6 +966,8 @@
           largeur = w; cancelAnimationFrame(attente); attente = requestAnimationFrame(dessinerCourbe);
         }).observe($('courbe'));
       }
+      C.uStats = uStats; C.uHist = uHist;
+      demarrerSondage(params);
     }).catch(function (e) {
       if (e && e.statut === 404) erreur('Statistiques pas encore générées', 'Le fichier ' + uStats + ' est introuvable. Lancez le générateur décrit dans le README, puis poussez ce dépôt : Vercel publiera la page à jour.');
       else erreur('Chargement impossible', 'Les statistiques n’ont pas pu être lues (' + (e && e.message ? e.message : 'erreur inconnue') + '). Rechargez la page dans un instant.');
