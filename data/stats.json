@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T13:21:48Z",
- "empreinte": "997894db981b9727",
+ "maj": "2026-10-22T13:33:27Z",
+ "empreinte": "a71e379de68b6cad",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15020,
   "lignes": {
-   "code": 4230767,
-   "commentaires": 65247,
-   "vides": 118088,
-   "total": 4414102
+   "code": 4230791,
+   "commentaires": 65249,
+   "vides": 118089,
+   "total": 4414129
   },
   "langages": [
    {
@@ -77,9 +77,9 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1123,
-    "code": 452904,
-    "commentaires": 34989,
-    "vides": 37175
+    "code": 452929,
+    "commentaires": 34991,
+    "vides": 37176
    },
    {
     "nom": "Texte",
@@ -157,7 +157,7 @@
     "nom": "CMake",
     "maison": false,
     "fichiers": 163,
-    "code": 7677,
+    "code": 7676,
     "commentaires": 1800,
     "vides": 827
    },
@@ -271,15 +271,15 @@
     "id": "source",
     "fichiers": 1167,
     "code": 223771,
-    "commentaires": 28994,
-    "vides": 25545
+    "commentaires": 28992,
+    "vides": 25544
    },
    {
     "id": "tests",
     "fichiers": 3104,
-    "code": 306125,
-    "commentaires": 23496,
-    "vides": 21341
+    "code": 306150,
+    "commentaires": 23500,
+    "vides": 21343
    },
    {
     "id": "bancs",
@@ -298,7 +298,7 @@
    {
     "id": "build",
     "fichiers": 229,
-    "code": 8899,
+    "code": 8898,
     "commentaires": 1789,
     "vides": 902
    },
@@ -341,7 +341,7 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 225225
+    "code": 225250
    },
    {
     "langage": "C++",
@@ -406,7 +406,7 @@
    {
     "langage": "CMake",
     "type": "build",
-    "code": 7568
+    "code": 7567
    },
    {
     "langage": "C++",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 694
+  "commits": 695
  },
  "depots": [
   {
@@ -1133,28 +1133,28 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 78,
+   "commits": 79,
    "commit": {
-    "sha": "5c4444f8bfe0422791ba9d1c21f731074d11d577",
-    "court": "5c4444f",
-    "date": "2026-10-22T13:21:48Z",
-    "message": "sync 2026-10-22 15:21"
+    "sha": "3ce0cb2c365165e33eb64b2c74814c8fb3e972a7",
+    "court": "3ce0cb2",
+    "date": "2026-10-22T13:33:27Z",
+    "message": "sync 2026-10-22 15:33"
    },
    "fichiers": 2640,
    "lignes": {
-    "code": 226610,
-    "commentaires": 21512,
-    "vides": 19653,
-    "total": 267775
+    "code": 226634,
+    "commentaires": 21514,
+    "vides": 19654,
+    "total": 267802
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 504,
-     "code": 172183,
-     "commentaires": 11617,
-     "vides": 14487
+     "code": 172208,
+     "commentaires": 11619,
+     "vides": 14488
     },
     {
      "nom": "RSMP",
@@ -1200,7 +1200,7 @@
      "nom": "CMake",
      "maison": false,
      "fichiers": 42,
-     "code": 2182,
+     "code": 2181,
      "commentaires": 425,
      "vides": 197
     },
@@ -1290,15 +1290,15 @@
      "id": "source",
      "fichiers": 493,
      "code": 83391,
-     "commentaires": 9634,
-     "vides": 9345
+     "commentaires": 9632,
+     "vides": 9344
     },
     {
      "id": "tests",
      "fichiers": 1520,
-     "code": 124113,
-     "commentaires": 10271,
-     "vides": 9510
+     "code": 124138,
+     "commentaires": 10275,
+     "vides": 9512
     },
     {
      "id": "bancs",
@@ -1317,7 +1317,7 @@
     {
      "id": "build",
      "fichiers": 52,
-     "code": 2315,
+     "code": 2314,
      "commentaires": 425,
      "vides": 206
     },
@@ -1340,7 +1340,7 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 95279
+     "code": 95304
     },
     {
      "langage": "C++",
@@ -1380,7 +1380,7 @@
     {
      "langage": "CMake",
      "type": "build",
-     "code": 2182
+     "code": 2181
     },
     {
      "langage": "Texte",
