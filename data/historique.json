@@ -28728,5 +28728,125 @@
     }
    }
   }
+ },
+ {
+  "maj": "2026-10-22T06:48:36Z",
+  "empreinte": "070d5fbb917619a5",
+  "code": 4193178,
+  "commits": 638,
+  "par_depot": {
+   "moteur": 529611,
+   "langage": 224377,
+   "bibliotheques": 1568989,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 1864075
+  },
+  "par_langage": {
+   "JSON": 1504176,
+   "RSMP": 1404374,
+   "C++": 449999,
+   "Texte": 343991,
+   "Markdown": 316332,
+   "SMPA": 43029,
+   "C/C++ Header": 32162,
+   "CSV": 26682,
+   "PowerShell": 21569,
+   "YAML": 11286,
+   "Python": 10121,
+   "RSMP IR": 7991,
+   "CMake": 7638,
+   "Rust": 3658,
+   "CUDA": 2312,
+   "C": 2209,
+   "JavaScript": 1877,
+   "TOML": 1814,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Assembly": 82,
+   "DOS Batch": 11,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": 4590,
+   "langage": {
+    "C": 12,
+    "C++": 2213,
+    "C/C++ Header": 5,
+    "CMake": 9,
+    "CSV": 416,
+    "Markdown": 78,
+    "PowerShell": 173,
+    "RSMP": 1404,
+    "Texte": 280
+   },
+   "type": {
+    "bancs": 1450,
+    "build": 9,
+    "docs": 78,
+    "donnees": 1397,
+    "source": 45,
+    "tests": 1611
+   },
+   "depots": {
+    "bibliotheques": {
+     "code": 888,
+     "court": "4abe86a",
+     "commits": 1,
+     "langage": {
+      "RSMP": 888
+     },
+     "type": {
+      "source": 45,
+      "tests": 843
+     }
+    },
+    "docs": {
+     "code": 1475,
+     "court": "90ff989",
+     "commits": 1,
+     "langage": {
+      "C": 12,
+      "CSV": 416,
+      "Markdown": 78,
+      "PowerShell": 173,
+      "RSMP": 516,
+      "Texte": 280
+     },
+     "type": {
+      "docs": 78,
+      "donnees": 1397
+     }
+    },
+    "langage": {
+     "code": 2222,
+     "court": "9777ec5",
+     "commits": 1,
+     "langage": {
+      "C++": 2213,
+      "CMake": 9
+     },
+     "type": {
+      "bancs": 1450,
+      "build": 9,
+      "tests": 763
+     }
+    },
+    "moteur": {
+     "code": 5,
+     "court": "f1c7204",
+     "commits": 1,
+     "langage": {
+      "C/C++ Header": 5
+     },
+     "type": {
+      "tests": 5
+     }
+    }
+   }
+  }
  }
 ]
