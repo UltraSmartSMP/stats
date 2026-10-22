@@ -30463,5 +30463,116 @@
     }
    }
   }
+ },
+ {
+  "maj": "2026-10-22T11:16:33Z",
+  "empreinte": "9369b71ed105ac92",
+  "code": 4216049,
+  "commits": 673,
+  "par_depot": {
+   "moteur": 530235,
+   "langage": 225739,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 1879448
+  },
+  "par_langage": {
+   "JSON": 1516652,
+   "RSMP": 1409274,
+   "C++": 451368,
+   "Texte": 345325,
+   "Markdown": 318498,
+   "SMPA": 43029,
+   "C/C++ Header": 32249,
+   "CSV": 26701,
+   "PowerShell": 22001,
+   "YAML": 11286,
+   "Python": 10121,
+   "RSMP IR": 7991,
+   "CMake": 7659,
+   "Rust": 3658,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 1930,
+   "TOML": 1827,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Assembly": 82,
+   "DOS Batch": 11,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": 910,
+   "langage": {
+    "C": 1,
+    "C++": 401,
+    "C/C++ Header": 92,
+    "CMake": 21,
+    "JSON": 1,
+    "JavaScript": 53,
+    "Markdown": 2,
+    "PowerShell": 57,
+    "Texte": 282
+   },
+   "type": {
+    "build": 21,
+    "docs": 2,
+    "donnees": 283,
+    "scripts": 110,
+    "source": 214,
+    "tests": 280
+   },
+   "depots": {
+    "docs": {
+     "code": 284,
+     "court": "b8174c3",
+     "commits": 1,
+     "langage": {
+      "Markdown": 2,
+      "Texte": 282
+     },
+     "type": {
+      "docs": 2,
+      "donnees": 282
+     }
+    },
+    "langage": {
+     "code": -3,
+     "court": "a26a984",
+     "commits": 1,
+     "langage": {
+      "C++": -3
+     },
+     "type": {
+      "tests": -3
+     }
+    },
+    "moteur": {
+     "code": 629,
+     "court": "60093b6",
+     "commits": 1,
+     "langage": {
+      "C": 1,
+      "C++": 404,
+      "C/C++ Header": 92,
+      "CMake": 21,
+      "JSON": 1,
+      "JavaScript": 53,
+      "PowerShell": 57
+     },
+     "type": {
+      "build": 21,
+      "donnees": 1,
+      "scripts": 110,
+      "source": 214,
+      "tests": 283
+     }
+    }
+   }
+  }
  }
 ]
