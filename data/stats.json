@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T18:25:28Z",
- "empreinte": "ad482eb5d684da22",
+ "maj": "2026-10-22T18:36:14Z",
+ "empreinte": "16d96acb04defc99",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15117,
   "lignes": {
-   "code": 4263332,
-   "commentaires": 65932,
-   "vides": 118627,
-   "total": 4447891
+   "code": 4263381,
+   "commentaires": 65937,
+   "vides": 118628,
+   "total": 4447946
   },
   "langages": [
    {
@@ -77,9 +77,9 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1136,
-    "code": 457349,
-    "commentaires": 35484,
-    "vides": 37547
+    "code": 457398,
+    "commentaires": 35489,
+    "vides": 37548
    },
    {
     "nom": "Texte",
@@ -270,14 +270,14 @@
    {
     "id": "source",
     "fichiers": 1171,
-    "code": 225659,
-    "commentaires": 29369,
-    "vides": 25709
+    "code": 225705,
+    "commentaires": 29374,
+    "vides": 25710
    },
    {
     "id": "tests",
     "fichiers": 3114,
-    "code": 308876,
+    "code": 308879,
     "commentaires": 23760,
     "vides": 21587
    },
@@ -341,12 +341,12 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 227976
+    "code": 227979
    },
    {
     "langage": "C++",
     "type": "source",
-    "code": 179834
+    "code": 179880
    },
    {
     "langage": "RSMP",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 739
+  "commits": 740
  },
  "depots": [
   {
@@ -1133,28 +1133,28 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 98,
+   "commits": 99,
    "commit": {
-    "sha": "77ce33c33e3c45f49ff9f58e471b876e6a840482",
-    "court": "77ce33c",
-    "date": "2026-10-22T18:25:28Z",
-    "message": "sync 2026-10-22 20:25"
+    "sha": "7037f96636f1cff42a9a2618db52af807a33ff2f",
+    "court": "7037f96",
+    "date": "2026-10-22T18:36:14Z",
+    "message": "sync 2026-10-22 20:36"
    },
    "fichiers": 2651,
    "lignes": {
-    "code": 229306,
-    "commentaires": 21863,
-    "vides": 19916,
-    "total": 271085
+    "code": 229355,
+    "commentaires": 21868,
+    "vides": 19917,
+    "total": 271140
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 514,
-     "code": 174792,
-     "commentaires": 11931,
-     "vides": 14735
+     "code": 174841,
+     "commentaires": 11936,
+     "vides": 14736
     },
     {
      "nom": "RSMP",
@@ -1289,14 +1289,14 @@
     {
      "id": "source",
      "fichiers": 497,
-     "code": 84721,
-     "commentaires": 9842,
-     "vides": 9450
+     "code": 84767,
+     "commentaires": 9847,
+     "vides": 9451
     },
     {
      "id": "tests",
      "fichiers": 1527,
-     "code": 125462,
+     "code": 125465,
      "commentaires": 10405,
      "vides": 9666
     },
@@ -1340,12 +1340,12 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 96628
+     "code": 96631
     },
     {
      "langage": "C++",
      "type": "source",
-     "code": 74071
+     "code": 74117
     },
     {
      "langage": "RSMP",
