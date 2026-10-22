@@ -176,22 +176,30 @@
     var donnees = (b.types || []).filter(function (t) { return t.id === 'donnees'; })[0];
     var horsDonnees = code - num(donnees && donnees.code);
     var zone = vider($('chiffres'));
-    function tuile(lib, val, sous, cls) {
+    function tuile(lib, val, sous, cls, badge) {
       return el('div', { class: 'chiffre' + (cls ? ' ' + cls : '') },
-        el('span', { class: 'chiffre-lib', text: lib }), el('span', { class: 'chiffre-val', text: val }), sous);
+        el('span', { class: 'chiffre-lib', text: lib }),
+        el('span', { class: 'chiffre-ligne' }, el('span', { class: 'chiffre-val', text: val }), badge), sous);
     }
+    var gCode = dernierEcart('code', null, S.depot), gDonnees = dernierEcart('type', 'donnees', S.depot);
     zone.appendChild(tuile('Lignes de code', nf.format(code), [
       el('span', { class: 'chiffre-sous', text: nf.format(num(L.total)) + ' lignes au total, commentaires et vides compris' }),
-      donnees && num(donnees.code) > 0 ? el('span', { class: 'chiffre-sous', text: 'dont ' + nf.format(horsDonnees) + ' hors données (' + pct(horsDonnees, code) + ')' }) : null]));
+      donnees && num(donnees.code) > 0 ? el('span', { class: 'chiffre-sous' },
+        'dont ' + nf.format(horsDonnees) + ' hors données (' + pct(horsDonnees, code) + ')',
+        gCode == null ? null : badgeGain(gCode - num(gDonnees))) : null], null, badgeGain(gCode)));
     zone.appendChild(tuile('Fichiers', nf.format(num(b.fichiers)),
       el('span', { class: 'chiffre-sous', text: nf.format(num(L.commentaires)) + ' lignes de commentaires' })));
     zone.appendChild(tuile('Langages', nf.format(langs.length),
       el('span', { class: 'chiffre-sous', text: maison.length ? 'dont ' + maison.length + ' maison' : 'aucun langage maison' })));
     var noms = maison.map(function (l) { return l.nom; }).join(', ');
+    var nomsMaison = S.stats.langages_maison || maison.map(function (l) { return l.nom; });
+    var rm = decouper(codeMaison, serieDeltas('langage', nomsMaison));
     zone.appendChild(tuile('Langages maison', code > 0 ? pct(codeMaison, code) : '–', [
-      el('span', { class: 'chiffre-sous', text: codeMaison ? nf.format(codeMaison) + ' lignes en ' + noms : 'Pas de code maison dans cette vue' }),
+      el('span', { class: 'chiffre-sous' },
+        codeMaison ? nf.format(codeMaison) + ' lignes en ' + noms : 'Pas de code maison dans cette vue',
+        codeMaison ? badgeGain(dernierEcart('langage', nomsMaison, S.depot)) : null),
       el('div', { class: 'jauge', role: 'img', 'aria-label': 'Part des langages maison : ' + pct(codeMaison, code) },
-        el('span', { css: { width: (code > 0 ? (100 * codeMaison / code) : 0).toFixed(2) + '%' } }))
+        barreSegmentee(rm, 'var(--accent)', code > 0 ? 100 * codeMaison / code : 0))
     ], 'maison'));
   }
 
@@ -215,33 +223,184 @@
     return bar;
   }
 
+  /* ---------- découpage des barres par commit ---------- */
+  /* Une barre de lignes de code se découpe en une base (« avant le suivi par commit ») puis un segment par
+     relevé (un relevé = un passage de synchronisation, au plus un commit par dépôt). Les valeurs passées sont
+     reconstruites depuis la valeur courante avec les « delta » de historique.json : v(k−1) = v(k) − delta(k). */
+  var SEG_MAX = 40, SEG_MIN_PART = 0.0025;
+
+  /* DEBUT decouper (fonction pure, extraite telle quelle par les tests sous node) */
+  function fusionnerSeg(a, b) {
+    a.taille += b.taille; a.ecart += b.ecart; a.n += b.n; a.items = a.items.concat(b.items); a.fusion = true;
+    a.recent = !!(a.recent || b.recent);
+  }
+  /* courant : valeur actuelle de la série ; deltas : du relevé le plus récent au plus ancien, chacun { ecart, n?, ... }.
+     Un élément absent ou sans « ecart » numérique (relevé sans delta) arrête la remontée.
+     Rend { base, segments: [{ taille, ecart, n, items, fusion, recent }], dernier, connus, total }.
+     Bornes b_k = min(v_k … v_n) : croissantes, base + somme des segments = courant. */
+  function decouper(courant, deltas) {
+    var vn = typeof courant === 'number' && isFinite(courant) && courant > 0 ? courant : 0;
+    var lst = [], i, j;
+    for (i = 0; i < deltas.length; i++) {
+      var d = deltas[i];
+      if (!d || typeof d.ecart !== 'number' || !isFinite(d.ecart)) break;
+      lst.push(d);
+    }
+    var m = lst.length;
+    var res = { base: vn, segments: [], dernier: m ? lst[0].ecart : null, connus: m, total: vn };
+    if (!m || vn <= 0) return res;
+    var v = new Array(m + 1), b = new Array(m + 1);
+    v[m] = vn;
+    for (j = m; j >= 1; j--) v[j - 1] = v[j] - lst[m - j].ecart;
+    b[m] = vn;
+    for (j = m - 1; j >= 0; j--) b[j] = Math.max(0, Math.min(v[j], b[j + 1]));
+    res.base = b[0];
+    var segs = [];
+    for (j = 1; j <= m; j++) {
+      var t = b[j] - b[j - 1], it = lst[m - j];
+      if (t > 0) segs.push({ taille: t, ecart: it.ecart, n: typeof it.n === 'number' && it.n > 0 ? it.n : 1, items: [it], fusion: false, recent: j === m });
+    }
+    var seuil = vn * SEG_MIN_PART, out = [];
+    segs.forEach(function (s) {
+      var dernier = out[out.length - 1];
+      if (s.taille < seuil && dernier) fusionnerSeg(dernier, s); else out.push(s);
+    });
+    while (out.length > 1 && out[0].taille < seuil) { fusionnerSeg(out[0], out[1]); out.splice(1, 1); }
+    if (out.length > SEG_MAX) {
+      var k = out.length - SEG_MAX, groupe = out[0];
+      for (i = 1; i < k; i++) fusionnerSeg(groupe, out[i]);
+      out = [groupe].concat(out.slice(k));
+    }
+    res.segments = out;
+    return res;
+  }
+  /* FIN decouper */
+
+  function propre(o, k) { return o && typeof o === 'object' && Object.prototype.hasOwnProperty.call(o, k) ? o[k] : undefined; }
+  /* écart d'une série dans le delta d'un relevé ; depot '' = global ; cle : nom, id, ou liste de noms (somme) */
+  function ecartDe(d, depot, sorte, cle) {
+    var b = depot ? propre(d.depots, depot) : d;
+    if (!b || typeof b !== 'object') return 0;
+    if (sorte === 'code') return num(b.code);
+    var t = b[sorte];
+    if (Array.isArray(cle)) return cle.reduce(function (s, c) { return s + num(propre(t, c)); }, 0);
+    return num(propre(t, cle));
+  }
+  /* les delta ne valent que si le dernier relevé est celui des statistiques affichées */
+  function deltasUtilisables() {
+    var h = S.hist, e = h.length ? h[h.length - 1] : null;
+    if (!e || !e.delta || typeof e.delta !== 'object') return false;
+    return !(S.stats.empreinte && e.empreinte && e.empreinte !== S.stats.empreinte);
+  }
+  function itemReleve(e, depot, sorte, cle) {
+    var d = e.delta, dd = d.depots && typeof d.depots === 'object' ? d.depots : {}, concernes = [], tous = [];
+    Object.keys(dd).sort().forEach(function (nom) {
+      if (depot && nom !== depot) return;
+      var x = { nom: nom, court: dd[nom] && dd[nom].court, commits: dd[nom] && dd[nom].commits };
+      tous.push(x);
+      if (ecartDe(d, nom, sorte, cle) !== 0) concernes.push(x);
+    });
+    var liste = concernes.length ? concernes : tous, n = 0;
+    liste.forEach(function (x) { n += typeof x.commits === 'number' && x.commits > 0 ? x.commits : 1; });
+    return { ecart: ecartDe(d, depot, sorte, cle), date: e.maj, depots: liste, n: Math.max(1, n) };
+  }
+  /* relevés du plus récent au plus ancien, arrêt au premier sans delta */
+  function serieDeltas(sorte, cle) {
+    var out = [];
+    if (!deltasUtilisables()) return out;
+    for (var i = S.hist.length - 1; i >= 0; i--) {
+      var e = S.hist[i];
+      if (!e.delta || typeof e.delta !== 'object') break;
+      out.push(itemReleve(e, S.depot, sorte, cle));
+    }
+    return out;
+  }
+  /* écart de la série au dernier relevé ; null si le dernier relevé n'a pas de delta (rien d'inventé) */
+  function dernierEcart(sorte, cle, depot) {
+    if (!deltasUtilisables()) return null;
+    return ecartDe(S.hist[S.hist.length - 1].delta, depot || '', sorte, cle);
+  }
+
+  function libLignes(e) {
+    var a = Math.abs(e);
+    return (e < 0 ? '−' : e > 0 ? '+' : '') + nf.format(a) + (a > 1 ? ' lignes' : ' ligne');
+  }
+  /* badge « +1 234 » / « −56 » / « +0 » ; portee : 'dernier' (défaut) ou 'releve' (tableau de l'historique) */
+  function badgeGain(ecart, portee) {
+    if (typeof ecart !== 'number' || !isFinite(ecart)) return null;
+    var quand = portee === 'releve' ? ' à ce relevé' : ' au dernier commit', a = Math.abs(ecart), cls, txt, lab;
+    if (ecart > 0) { cls = 'gain'; txt = '+' + nf.format(a); lab = nf.format(a) + (a > 1 ? ' lignes ajoutées' : ' ligne ajoutée') + quand; }
+    else if (ecart < 0) { cls = 'perte'; txt = '−' + nf.format(a); lab = nf.format(a) + (a > 1 ? ' lignes retirées' : ' ligne retirée') + quand; }
+    else { cls = 'nul'; txt = '+0'; lab = 'Aucune ligne modifiée' + quand; }
+    return el('span', { class: 'delta ' + cls, role: 'img', 'aria-label': lab, title: lab, text: txt });
+  }
+
+  function bulleSegment(s) {
+    var lignes;
+    if (s.fusion) {
+      lignes = [{ lib: 'Période', val: dateCourte(s.items[0].date) + ' → ' + dateCourte(s.items[s.items.length - 1].date) },
+        { lib: 'Lignes', val: libLignes(s.ecart) }];
+      var rc = s.items[s.items.length - 1];
+      if (s.recent && rc && rc.ecart > 0) lignes.push({ lib: 'Dont au dernier commit', val: libLignes(rc.ecart) });
+      if (s.taille < s.ecart) lignes.push({ lib: 'Restant dans la barre', val: nf.format(s.taille) });
+      return lignesBulle(libCommits(s.n), lignes);
+    }
+    var it = s.items[0];
+    lignes = it.depots.map(function (d) { return { lib: d.nom, val: d.court || '–' }; });
+    lignes.push({ lib: 'Lignes', val: libLignes(it.ecart) });
+    if (s.taille < it.ecart) lignes.push({ lib: 'Restant dans la barre', val: nf.format(s.taille) });
+    return lignesBulle(dateLongue(it.date), lignes);
+  }
+  /* barre segmentée réutilisable : r = decouper(...), couleur = fond de la base, largeurPct = largeur de la barre (%) */
+  function barreSegmentee(r, couleur, largeurPct) {
+    var cont = el('div', { class: 'segmentee', 'aria-hidden': 'true', css: { width: largeurPct.toFixed(2) + '%', '--seg-c': couleur } });
+    if (!(r.total > 0)) return cont;
+    function seg(taille, cls, fabrique) {
+      var s = el('span', { class: cls, css: { flex: taille + ' 1 0px' } });
+      cont.appendChild(fabrique ? avecBulle(s, fabrique) : s);
+    }
+    if (r.base > 0) {
+      seg(r.base, 'seg-base', r.connus > 0 ? function () {
+        return lignesBulle('Avant le suivi par commit', [{ lib: 'Lignes', val: nf.format(r.base) }]);
+      } : null);
+    }
+    r.segments.forEach(function (s, i) {
+      seg(s.taille, 'seg ' + (i % 2 ? 'seg-a' : 'seg-b') + (s.recent && !s.fusion && r.dernier > 0 ? ' seg-dernier' : ''), function () { return bulleSegment(s); });
+    });
+    return cont;
+  }
+  var NOTE_SEG = ' Chaque barre se découpe par commit (survol d’un segment) ; la partie hachurée est le dernier commit.';
+
   /* ---------- langages ---------- */
   function rendreLangages() {
     var b = bloc(), langs = (b.langages || []).slice().sort(function (x, y) { return num(y.code) - num(x.code); });
     var total = num((b.lignes || {}).code);
     vider($('empile-langages')).appendChild(barreEmpilee(langs, total, 'Répartition des lignes de code par langage ; valeurs dans le tableau ci-dessous'));
     var max = langs.reduce(function (m, l) { return Math.max(m, num(l.code)); }, 0);
+    var seg = false;
     var t = vider($('table-langages'));
     t.appendChild(el('caption', { class: 'vh' }, 'Lignes de code par langage'));
     t.appendChild(el('thead', null, el('tr', null,
       el('th', { scope: 'col', text: 'Langage' }), el('th', { scope: 'col' }, el('span', { class: 'vh' }, 'Barre')),
-      el('th', { scope: 'col', class: 'num', text: 'Code' }), el('th', { scope: 'col', class: 'num', text: 'Part' }),
+      el('th', { scope: 'col', class: 'num', text: 'Code' }), el('th', { scope: 'col', class: 'num col-part', text: 'Part' }),
       el('th', { scope: 'col', class: 'num col-fichiers', text: 'Fichiers' }))));
     var corps = el('tbody');
     langs.forEach(function (l) {
+      var r = decouper(num(l.code), serieDeltas('langage', l.nom));
+      if (r.segments.length) seg = true;
       corps.appendChild(el('tr', null,
         el('th', { scope: 'row' }, el('span', { class: 'nom-l' },
           el('i', { class: 'carre', css: { background: couleurLangage(l.nom) } }), l.nom,
           l.maison ? el('span', { class: 'badge', text: 'maison' }) : null)),
         el('td', { class: 'piste', 'aria-hidden': 'true' }, el('div', { class: 'piste-fond' },
-          el('span', { css: { width: (max > 0 ? 100 * num(l.code) / max : 0) + '%', background: couleurLangage(l.nom) } }))),
-        el('td', { class: 'num', text: nf.format(num(l.code)) }),
-        el('td', { class: 'num part', text: pct(num(l.code), total) }),
+          barreSegmentee(r, couleurLangage(l.nom), max > 0 ? 100 * num(l.code) / max : 0))),
+        el('td', { class: 'num' }, nf.format(num(l.code)), badgeGain(dernierEcart('langage', l.nom, S.depot))),
+        el('td', { class: 'num part col-part', text: pct(num(l.code), total) }),
         el('td', { class: 'num col-fichiers', text: nf.format(num(l.fichiers)) })));
     });
     if (!langs.length) corps.appendChild(el('tr', null, el('td', { colspan: '5', class: 'vide-note', text: 'Aucun fichier compté dans cette vue.' })));
     t.appendChild(corps);
-    $('note-langages').textContent = (S.depot ? 'Dépôt ' + S.depot + ' : l' : 'L') + 'ignes de code par langage, hors commentaires et lignes vides.';
+    $('note-langages').textContent = (S.depot ? 'Dépôt ' + S.depot + ' : l' : 'L') + 'ignes de code par langage, hors commentaires et lignes vides.' + (seg ? NOTE_SEG : '');
   }
 
   /* ---------- types ---------- */
@@ -250,25 +409,29 @@
     var ordre = (S.stats.types || []).map(function (t) { return t.id; });
     var types = (b.types || []).slice().sort(function (x, y) { return num(y.code) - num(x.code) || ordre.indexOf(x.id) - ordre.indexOf(y.id); });
     var max = types.reduce(function (m, t) { return Math.max(m, num(t.code)); }, 0);
+    var seg = false;
     var t = vider($('table-types'));
     t.appendChild(el('caption', { class: 'vh' }, 'Lignes de code par type de fichier'));
     t.appendChild(el('thead', null, el('tr', null,
       el('th', { scope: 'col', text: 'Type' }), el('th', { scope: 'col' }, el('span', { class: 'vh' }, 'Barre')),
-      el('th', { scope: 'col', class: 'num', text: 'Code' }), el('th', { scope: 'col', class: 'num', text: 'Part' }),
+      el('th', { scope: 'col', class: 'num', text: 'Code' }), el('th', { scope: 'col', class: 'num col-part', text: 'Part' }),
       el('th', { scope: 'col', class: 'num col-fichiers', text: 'Fichiers' }))));
     var corps = el('tbody');
     types.forEach(function (ty) {
       var info = S.typesLib[ty.id] || { libelle: ty.id, description: '' };
+      var r = decouper(num(ty.code), serieDeltas('type', ty.id));
+      if (r.segments.length) seg = true;
       corps.appendChild(el('tr', null,
         el('th', { scope: 'row' }, info.libelle, info.description ? el('span', { class: 'sous-type', text: info.description }) : null),
         el('td', { class: 'piste', 'aria-hidden': 'true' }, el('div', { class: 'piste-fond' },
-          el('span', { css: { width: (max > 0 ? 100 * num(ty.code) / max : 0) + '%', background: 'var(--chaleur)' } }))),
-        el('td', { class: 'num', text: nf.format(num(ty.code)) }),
-        el('td', { class: 'num part', text: pct(num(ty.code), total) }),
+          barreSegmentee(r, 'var(--chaleur)', max > 0 ? 100 * num(ty.code) / max : 0))),
+        el('td', { class: 'num' }, nf.format(num(ty.code)), badgeGain(dernierEcart('type', ty.id, S.depot))),
+        el('td', { class: 'num part col-part', text: pct(num(ty.code), total) }),
         el('td', { class: 'num col-fichiers', text: nf.format(num(ty.fichiers)) })));
     });
     if (!types.length) corps.appendChild(el('tr', null, el('td', { colspan: '5', class: 'vide-note', text: 'Aucun fichier compté dans cette vue.' })));
     t.appendChild(corps);
+    $('note-types').textContent = 'Rôle du fichier, déduit de son dossier, de son nom ou de son extension.' + (seg ? NOTE_SEG : '');
   }
 
   /* ---------- anneau des dépôts ---------- */
@@ -306,13 +469,20 @@
     var cVal = choisi ? pct(num((choisi.lignes || {}).code), total) : nf.format(total);
     svg.appendChild(sv('text', { x: 90, y: 92, 'text-anchor': 'middle', class: 'anneau-centre-val' })).textContent = cVal;
     svg.appendChild(sv('text', { x: 90, y: 111, 'text-anchor': 'middle', class: 'anneau-centre-lib' })).textContent = choisi ? 'du total' : 'lignes de code';
+    var gTotal = choisi ? null : dernierEcart('code', null, '');
+    if (gTotal != null) {
+      var gt = svg.appendChild(sv('text', { x: 90, y: 129, 'text-anchor': 'middle', class: 'anneau-centre-gain ' + (gTotal > 0 ? 'gain' : gTotal < 0 ? 'perte' : 'nul') }));
+      gt.textContent = (gTotal > 0 ? '+' : gTotal < 0 ? '−' : '+') + nf.format(Math.abs(gTotal));
+      gt.appendChild(sv('title')).textContent = (badgeGain(gTotal).getAttribute('aria-label'));
+    }
     zone.appendChild(svg);
-    var liste = el('ul', { class: 'liste-anneau' });
+    var liste = el('ul', { class: 'liste-anneau' + (deltasUtilisables() ? ' avec-gain' : '') });
     deps.forEach(function (d) {
       var c = num((d.lignes || {}).code);
       liste.appendChild(el('li', { class: choisi && choisi.nom !== d.nom ? 'eteint' : null },
         el('i', { class: 'pastille', css: { background: couleurDepot(d.nom) } }),
-        el('span', { text: d.nom }), el('span', { class: 'num', text: nf.format(c) }), el('span', { class: 'num part', text: pct(c, total) })));
+        el('span', { class: 'nom-depot', text: d.nom }), el('span', { class: 'num', text: nf.format(c) }),
+        badgeGain(dernierEcart('code', null, d.nom)), el('span', { class: 'num part', text: pct(c, total) })));
     });
     zone.appendChild(liste);
   }
@@ -366,7 +536,7 @@
         el('div', { class: 'carte-tete' }, el('img', { src: logoDepot(d.nom), alt: '', width: '36', height: '36' }), el('h3', { text: d.nom })),
         el('p', { class: 'carte-desc', text: d.description || 'Sans description.' }),
         el('dl', { class: 'carte-nums' },
-          el('div', null, el('dt', { text: 'Code' }), el('dd', { text: nf.format(code) })),
+          el('div', null, el('dt', { text: 'Code' }), el('dd', null, nf.format(code), badgeGain(dernierEcart('code', null, d.nom)))),
           el('div', null, el('dt', { text: 'Fichiers' }), el('dd', { text: nf.format(num(d.fichiers)) })),
           el('div', null, el('dt', { text: 'Langages' }), el('dd', { text: nf.format(langs.length) }))),
         code > 0 ? barreEmpilee(langs, code, 'Répartition par langage du dépôt ' + d.nom) : el('p', { class: 'vide-note', text: 'Aucune ligne de code comptée.' }),
@@ -425,8 +595,10 @@
       noms.map(function (n) { return el('th', { scope: 'col', class: 'num', text: n }); }))));
     var corps = el('tbody');
     S.hist.slice().reverse().forEach(function (e) {
-      corps.appendChild(el('tr', null, el('td', { text: dateCourte(e.maj) }), el('td', { class: 'num', text: nf.format(num(e.code)) }),
-        noms.map(function (n) { return el('td', { class: 'num', text: nf.format(num((e.par_depot || {})[n])) }); })));
+      var dl = e.delta && typeof e.delta === 'object' ? e.delta : null;
+      corps.appendChild(el('tr', null, el('td', { text: dateCourte(e.maj) }),
+        el('td', { class: 'num' }, nf.format(num(e.code)), dl ? badgeGain(num(dl.code), 'releve') : null),
+        noms.map(function (n) { return el('td', { class: 'num' }, nf.format(num((e.par_depot || {})[n])), dl ? badgeGain(ecartDe(dl, n, 'code'), 'releve') : null); })));
     });
     t.appendChild(corps);
   }
@@ -501,7 +673,8 @@
       if (S.depot && d.nom !== S.depot) return;
       (d.langages || []).forEach(function (l) {
         var c = num(l.code), cm = num(l.commentaires), vi = num(l.vides);
-        lignes.push({ depot: d.nom, langage: l.nom, maison: !!l.maison, fichiers: num(l.fichiers), code: c, commentaires: cm, vides: vi, total: c + cm + vi });
+        lignes.push({ depot: d.nom, langage: l.nom, maison: !!l.maison, fichiers: num(l.fichiers), code: c, commentaires: cm, vides: vi, total: c + cm + vi,
+          gain: dernierEcart('langage', l.nom, d.nom) });
       });
     });
     var tri = S.tri, col = COLS.filter(function (c) { return c.cle === tri.cle; })[0] || COLS[3];
@@ -524,20 +697,26 @@
     }))));
     var corps = el('tbody');
     var tot = { fichiers: 0, code: 0, commentaires: 0, vides: 0, total: 0 };
+    var gainTot = 0, gainConnu = lignes.length > 0;
     var LIMITE = 25;
     lignes.forEach(function (l, i) {
       for (var k in tot) tot[k] += l[k];
+      if (l.gain == null) gainConnu = false; else gainTot += l.gain;
       if (!S.toutDetail && i >= LIMITE) return;
       corps.appendChild(el('tr', null,
         el('td', null, el('span', { class: 'depot-cell' }, el('i', { class: 'pastille', css: { background: couleurDepot(l.depot) } }), l.depot)),
         el('td', null, el('span', { class: 'nom-l' }, el('i', { class: 'carre', css: { background: couleurLangage(l.langage) } }), l.langage,
           l.maison ? el('span', { class: 'badge', text: 'maison' }) : null)),
-        ['fichiers', 'code', 'commentaires', 'vides', 'total'].map(function (k) { return el('td', { class: 'num col-' + k, text: nf.format(l[k]) }); })));
+        ['fichiers', 'code', 'commentaires', 'vides', 'total'].map(function (k) {
+          return el('td', { class: 'num col-' + k }, nf.format(l[k]), k === 'code' ? badgeGain(l.gain) : null);
+        })));
     });
     if (!lignes.length) corps.appendChild(el('tr', null, el('td', { colspan: '7', class: 'vide-note', text: 'Aucun fichier compté dans cette vue.' })));
     t.appendChild(corps);
     t.appendChild(el('tfoot', null, el('tr', null, el('th', { scope: 'row', colspan: '2', text: 'Total (' + lignes.length + ' couples dépôt × langage)' }),
-      ['fichiers', 'code', 'commentaires', 'vides', 'total'].map(function (k) { return el('td', { class: 'num col-' + k, text: nf.format(tot[k]) }); }))));
+      ['fichiers', 'code', 'commentaires', 'vides', 'total'].map(function (k) {
+        return el('td', { class: 'num col-' + k }, nf.format(tot[k]), k === 'code' && gainConnu ? badgeGain(gainTot) : null);
+      }))));
     var suite = vider($('detail-suite'));
     if (lignes.length > LIMITE) {
       var b = el('button', { type: 'button', class: 'bouton-mini', 'aria-controls': 'table-detail',

@@ -52,6 +52,8 @@
   --l-9: #6E8A00;
   --l-10: #B0369E;
   --l-autres: #A3ADBE;
+  --gain: #0F7B3F;
+  --perte: #B42318;
 
   --police: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Roboto, Arial, sans-serif;
   --police-titre: "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Roboto, Arial, sans-serif;
@@ -103,6 +105,8 @@
     --l-9: #9DBA1F;
     --l-10: #DA6CCB;
     --l-autres: #56627A;
+    --gain: #4ADE80;
+    --perte: #F87171;
     color-scheme: dark;
   }
 }
@@ -141,6 +145,8 @@
   --l-9: #9DBA1F;
   --l-10: #DA6CCB;
   --l-autres: #56627A;
+  --gain: #4ADE80;
+  --perte: #F87171;
   color-scheme: dark;
 }
 
@@ -239,11 +245,14 @@ main { display: flex; flex-direction: column; gap: 20px; padding-block: 24px 40p
 .chiffre { background: var(--surface); border: 1px solid var(--ligne); border-radius: var(--rayon); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .chiffre-lib { font-size: var(--t-xs); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--texte-3); }
 .chiffre-val { font-family: var(--police-titre); font-size: var(--t-xxl); font-weight: 650; letter-spacing: -.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.chiffre-ligne { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; min-width: 0; }
 .chiffre-sous { font-size: var(--t-s); color: var(--texte-2); }
+.chiffre-sous .delta { margin-left: 8px; }
 .chiffre.maison { background: var(--accent-fond); border-color: color-mix(in srgb, var(--accent) 35%, var(--ligne)); }
 .chiffre.maison .chiffre-val { color: var(--accent); }
 .jauge { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--accent) 18%, transparent); overflow: hidden; margin-top: 6px; }
 .jauge > span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.jauge > .segmentee { --seg-trait: var(--accent-fond); border-radius: 3px; }
 
 .bloc { background: var(--surface); border: 1px solid var(--ligne); border-radius: var(--rayon); padding: 20px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .bloc-tete { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; }
@@ -269,6 +278,30 @@ table { border-collapse: collapse; width: 100%; }
 .badge { font-size: 10.5px; font-weight: 650; letter-spacing: .05em; text-transform: uppercase; color: var(--accent); background: var(--accent-fond); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); border-radius: 999px; padding: 2px 7px; line-height: 1.2; }
 .piste-fond { height: 10px; background: var(--surface-2); border-radius: 0 4px 4px 0; }
 .piste-fond > span { display: block; height: 100%; border-radius: 0 4px 4px 0; }
+.piste-fond > .segmentee { --seg-trait: var(--surface-2); border-radius: 0 4px 4px 0; }
+
+/* barres découpées par commit : base puis un segment par relevé, deux intensités en alternance, trait de 1 px */
+.segmentee { display: flex; height: 100%; overflow: hidden; --seg-trait: var(--surface); }
+.segmentee > span { display: block; height: 100%; min-width: 0; background-color: var(--seg-c); }
+.segmentee > span + span { box-shadow: inset 1px 0 0 var(--seg-trait); }
+.segmentee > .seg { min-width: 2px; }
+.segmentee > .seg-b { background-color: color-mix(in srgb, var(--seg-c) 62%, var(--texte)); }
+.segmentee > .seg-a { background-color: color-mix(in srgb, var(--seg-c) 92%, var(--fond, #fff)); }
+.segmentee > .seg-dernier { background-image: repeating-linear-gradient(135deg, color-mix(in srgb, var(--texte) 45%, transparent) 0 2px, transparent 2px 5px); }
+
+/* badge « +XXX » : lignes ajoutées (ou retirées) au dernier commit */
+.delta { display: inline-block; margin-left: 8px; padding: 1px 6px; border-radius: 999px; font-size: 11px; font-weight: 650; line-height: 1.35; letter-spacing: 0; white-space: nowrap; font-variant-numeric: tabular-nums; text-align: left; vertical-align: baseline; }
+.delta.gain { color: var(--gain); background: color-mix(in srgb, var(--gain) 13%, transparent); }
+.delta.perte { color: var(--perte); background: color-mix(in srgb, var(--perte) 13%, transparent); }
+.delta.nul { color: var(--texte-3); font-weight: 500; }
+.chiffre-ligne .delta { margin-left: 0; font-size: 12.5px; }
+.barres td.num .delta { min-width: 7ch; }
+.carte-nums dd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 0; }
+.carte-nums dd .delta { font-size: 10.5px; }
+.anneau-centre-gain { font-size: 12px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.anneau-centre-gain.gain { fill: var(--gain); }
+.anneau-centre-gain.perte { fill: var(--perte); }
+.anneau-centre-gain.nul { fill: var(--texte-3); }
 .part { color: var(--texte-3); }
 .sous-type { display: block; font-size: var(--t-xs); color: var(--texte-3); font-weight: 400; white-space: normal; max-width: 34ch; }
 
@@ -281,6 +314,10 @@ table { border-collapse: collapse; width: 100%; }
 .liste-anneau li { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 8px; font-size: var(--t-s); }
 .liste-anneau li.eteint { opacity: .45; }
 .liste-anneau .part { min-width: 4.5ch; text-align: right; }
+.liste-anneau.avec-gain { flex-basis: 260px; }
+.liste-anneau.avec-gain li { grid-template-columns: auto minmax(0, 1fr) auto auto auto; }
+.liste-anneau .nom-depot { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.liste-anneau .delta { margin-left: 0; }
 
 /* tableau croisé */
 .croise th, .croise td { padding: 6px 10px; font-size: var(--t-s); border-bottom: 1px solid var(--ligne); }
@@ -475,8 +512,14 @@ body.avec-flottant .pied { padding-bottom: calc(72px + env(safe-area-inset-botto
   .toast { width: 360px; }
   .flottant { align-items: center; }
 }
+@media (max-width: 480px) {
+  .barres td.piste { width: auto; min-width: 90px; }
+  .barres .col-part { display: none; }
+  .barres td.num { white-space: normal; }
+  .barres td.num .delta { display: block; width: fit-content; margin: 2px 0 0 auto; min-width: 0; }
+}
 @media (prefers-reduced-motion: no-preference) {
-  .piste-fond > span, .jauge > span { transition: width .35s ease; }
+  .piste-fond > span, .jauge > span, .segmentee { transition: width .35s ease; }
   .carte, .liste-anneau li { transition: opacity .2s ease; }
   .toast { animation: toast-entree .24s cubic-bezier(.2, .8, .2, 1); }
   .toast.sortie { opacity: 0; transform: translateY(6px); transition: opacity .2s ease, transform .2s ease; }
@@ -490,5 +533,5 @@ body.avec-flottant .pied { padding-bottom: calc(72px + env(safe-area-inset-botto
 }
 @keyframes point-pouls { 50% { transform: scale(1.6); } }
 @media (forced-colors: active) {
-  .piste-fond > span, .empile > span, .jauge > span, .fd-barre > span { forced-color-adjust: none; }
+  .piste-fond > span, .empile > span, .jauge > span, .fd-barre > span, .segmentee > span { forced-color-adjust: none; }
 }
