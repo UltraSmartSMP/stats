@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T16:55:49Z",
- "empreinte": "77a312c42bcaf4b9",
+ "maj": "2026-10-22T17:06:37Z",
+ "empreinte": "95106798bc2a275b",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,19 +49,19 @@
   }
  ],
  "global": {
-  "fichiers": 15084,
+  "fichiers": 15091,
   "lignes": {
-   "code": 4247705,
-   "commentaires": 65780,
-   "vides": 118447,
-   "total": 4431932
+   "code": 4249629,
+   "commentaires": 65785,
+   "vides": 118465,
+   "total": 4433879
   },
   "langages": [
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 283,
-    "code": 1536603,
+    "fichiers": 286,
+    "code": 1538358,
     "commentaires": 0,
     "vides": 2
    },
@@ -92,10 +92,10 @@
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5171,
-    "code": 318865,
+    "fichiers": 5173,
+    "code": 318907,
     "commentaires": 133,
-    "vides": 61949
+    "vides": 61961
    },
    {
     "nom": "SMPA",
@@ -188,10 +188,10 @@
    {
     "nom": "JavaScript",
     "maison": false,
-    "fichiers": 38,
-    "code": 1930,
-    "commentaires": 58,
-    "vides": 43
+    "fichiers": 40,
+    "code": 2057,
+    "commentaires": 63,
+    "vides": 49
    },
    {
     "nom": "TOML",
@@ -290,10 +290,10 @@
    },
    {
     "id": "scripts",
-    "fichiers": 94,
-    "code": 14456,
-    "commentaires": 1476,
-    "vides": 983
+    "fichiers": 96,
+    "code": 14583,
+    "commentaires": 1481,
+    "vides": 989
    },
    {
     "id": "build",
@@ -304,15 +304,15 @@
    },
    {
     "id": "docs",
-    "fichiers": 5178,
-    "code": 318939,
+    "fichiers": 5180,
+    "code": 318981,
     "commentaires": 133,
-    "vides": 61979
+    "vides": 61991
    },
    {
     "id": "donnees",
-    "fichiers": 4722,
-    "code": 3304133,
+    "fichiers": 4725,
+    "code": 3305888,
     "commentaires": 2991,
     "vides": 2347
    }
@@ -321,7 +321,7 @@
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1535214
+    "code": 1536969
    },
    {
     "langage": "RSMP",
@@ -336,7 +336,7 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 318865
+    "code": 318907
    },
    {
     "langage": "C++",
@@ -451,7 +451,7 @@
    {
     "langage": "JavaScript",
     "type": "scripts",
-    "code": 1930
+    "code": 2057
    },
    {
     "langage": "Python",
@@ -659,26 +659,26 @@
     "code": 3
    }
   ],
-  "commits": 726
+  "commits": 728
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 246,
+   "commits": 247,
    "commit": {
-    "sha": "aa8787c20efb478737b0ce415d4d7bf3e7bf8451",
-    "court": "aa8787c",
-    "date": "2026-10-22T16:44:45Z",
-    "message": "sync 2026-10-22 18:44"
+    "sha": "7b57566b222c4d3c4cc513ef9afeff2cfa37393f",
+    "court": "7b57566",
+    "date": "2026-10-22T17:06:26Z",
+    "message": "sync 2026-10-22 19:06"
    },
-   "fichiers": 2889,
+   "fichiers": 2894,
    "lignes": {
-    "code": 533031,
-    "commentaires": 34982,
-    "vides": 26765,
-    "total": 594778
+    "code": 534913,
+    "commentaires": 34987,
+    "vides": 26771,
+    "total": 596671
    },
    "langages": [
     {
@@ -700,8 +700,8 @@
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 113,
-     "code": 45718,
+     "fichiers": 116,
+     "code": 47473,
      "commentaires": 0,
      "vides": 0
     },
@@ -756,10 +756,10 @@
     {
      "nom": "JavaScript",
      "maison": false,
-     "fichiers": 38,
-     "code": 1930,
-     "commentaires": 58,
-     "vides": 43
+     "fichiers": 40,
+     "code": 2057,
+     "commentaires": 63,
+     "vides": 49
     },
     {
      "nom": "C",
@@ -874,10 +874,10 @@
     },
     {
      "id": "scripts",
-     "fichiers": 67,
-     "code": 8683,
-     "commentaires": 821,
-     "vides": 515
+     "fichiers": 69,
+     "code": 8810,
+     "commentaires": 826,
+     "vides": 521
     },
     {
      "id": "build",
@@ -895,8 +895,8 @@
     },
     {
      "id": "donnees",
-     "fichiers": 688,
-     "code": 237476,
+     "fichiers": 691,
+     "code": 239231,
      "commentaires": 411,
      "vides": 655
     }
@@ -920,7 +920,7 @@
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 44513
+     "code": 46268
     },
     {
      "langage": "C++",
@@ -980,7 +980,7 @@
     {
      "langage": "JavaScript",
      "type": "scripts",
-     "code": 1930
+     "code": 2057
     },
     {
      "langage": "Python",
@@ -2180,19 +2180,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 302,
+   "commits": 303,
    "commit": {
-    "sha": "2ccbf814cadfef0a277de3ef06af64858c5ec0ff",
-    "court": "2ccbf81",
-    "date": "2026-10-22T16:55:49Z",
-    "message": "sync 2026-10-22 18:55"
+    "sha": "5d0c9c4d9b105c023aca5879c4ae59671aa2532c",
+    "court": "5d0c9c4",
+    "date": "2026-10-22T17:06:37Z",
+    "message": "sync 2026-10-22 19:06"
    },
-   "fichiers": 6082,
+   "fichiers": 6084,
    "lignes": {
-    "code": 1905788,
+    "code": 1905830,
     "commentaires": 1216,
-    "vides": 63033,
-    "total": 1970037
+    "vides": 63045,
+    "total": 1970091
    },
    "langages": [
     {
@@ -2206,10 +2206,10 @@
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5151,
-     "code": 318155,
+     "fichiers": 5153,
+     "code": 318197,
      "commentaires": 121,
-     "vides": 61626
+     "vides": 61638
     },
     {
      "nom": "Texte",
@@ -2378,10 +2378,10 @@
     },
     {
      "id": "docs",
-     "fichiers": 5152,
-     "code": 318164,
+     "fichiers": 5154,
+     "code": 318206,
      "commentaires": 121,
-     "vides": 61630
+     "vides": 61642
     },
     {
      "id": "donnees",
@@ -2400,7 +2400,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 318155
+     "code": 318197
     },
     {
      "langage": "Texte",
