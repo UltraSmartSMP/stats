@@ -24,6 +24,8 @@
   var dfLong = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeStyle: 'short', timeZone: 'Europe/Paris' });
   var dfCourt = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' });
   var dfAxe = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', timeZone: 'Europe/Paris' });
+  /* étendue courte (moins de 7 jours) : l'heure s'ajoute, sinon plusieurs repères donneraient le même jour */
+  var dfAxeHeure = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' });
   var DEPOTS_CONNUS = ['moteur', 'langage', 'bibliotheques', 'symbiose', 'serveur', 'docs'];
 
   function $(id) { return document.getElementById(id); }
@@ -267,7 +269,7 @@
     });
     while (out.length > 1 && out[0].taille < seuil) { fusionnerSeg(out[0], out[1]); out.splice(1, 1); }
     if (out.length > SEG_MAX) {
-      var k = out.length - SEG_MAX, groupe = out[0];
+      var k = out.length - SEG_MAX + 1, groupe = out[0]; /* le groupe compte pour 1 : SEG_MAX segments au total */
       for (i = 1; i < k; i++) fusionnerSeg(groupe, out[i]);
       out = [groupe].concat(out.slice(k));
     }
@@ -625,7 +627,7 @@
     for (var i = 0; i < nTicks; i++) {
       var tt = t0 + (t1 - t0) * i / (nTicks - 1);
       var anc = i === 0 ? 'start' : i === nTicks - 1 ? 'end' : 'middle';
-      svg.appendChild(sv('text', { x: X(tt), y: H - 8, 'text-anchor': anc, class: 'axe' })).textContent = dfAxe.format(new Date(tt));
+      svg.appendChild(sv('text', { x: X(tt), y: H - 8, 'text-anchor': anc, class: 'axe' })).textContent = (t1 - t0 < 7 * 864e5 ? dfAxeHeure : dfAxe).format(new Date(tt));
     }
     var xs = h.map(function (e) { return X(Date.parse(e.maj)); });
     series.forEach(function (s) {
