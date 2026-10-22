@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T18:57:54Z",
- "empreinte": "dbadaa4653f4982c",
+ "maj": "2026-10-22T19:18:52Z",
+ "empreinte": "e193dbe372348d32",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15117,
   "lignes": {
-   "code": 4263364,
-   "commentaires": 65937,
+   "code": 4263365,
+   "commentaires": 65939,
    "vides": 118628,
-   "total": 4447929
+   "total": 4447932
   },
   "langages": [
    {
@@ -157,8 +157,8 @@
     "nom": "CMake",
     "maison": false,
     "fichiers": 166,
-    "code": 7772,
-    "commentaires": 1832,
+    "code": 7773,
+    "commentaires": 1834,
     "vides": 832
    },
    {
@@ -298,8 +298,8 @@
    {
     "id": "build",
     "fichiers": 232,
-    "code": 8994,
-    "commentaires": 1821,
+    "code": 8995,
+    "commentaires": 1823,
     "vides": 907
    },
    {
@@ -406,7 +406,7 @@
    {
     "langage": "CMake",
     "type": "build",
-    "code": 7663
+    "code": 7664
    },
    {
     "langage": "C++",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 742
+  "commits": 743
  },
  "depots": [
   {
@@ -1133,19 +1133,19 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 101,
+   "commits": 102,
    "commit": {
-    "sha": "9e11d4196de9626a53b460435ead89e91c196d2c",
-    "court": "9e11d41",
-    "date": "2026-10-22T18:57:54Z",
-    "message": "sync 2026-10-22 20:57"
+    "sha": "faa11376b8acd3a9d6772d73dd0eade44ab3fb1a",
+    "court": "faa1137",
+    "date": "2026-10-22T19:18:52Z",
+    "message": "sync 2026-10-22 21:18"
    },
    "fichiers": 2651,
    "lignes": {
-    "code": 229338,
-    "commentaires": 21868,
+    "code": 229339,
+    "commentaires": 21870,
     "vides": 19917,
-    "total": 271123
+    "total": 271126
    },
    "langages": [
     {
@@ -1200,8 +1200,8 @@
      "nom": "CMake",
      "maison": false,
      "fichiers": 42,
-     "code": 2199,
-     "commentaires": 434,
+     "code": 2200,
+     "commentaires": 436,
      "vides": 199
     },
     {
@@ -1317,8 +1317,8 @@
     {
      "id": "build",
      "fichiers": 52,
-     "code": 2332,
-     "commentaires": 434,
+     "code": 2333,
+     "commentaires": 436,
      "vides": 208
     },
     {
@@ -1380,7 +1380,7 @@
     {
      "langage": "CMake",
      "type": "build",
-     "code": 2199
+     "code": 2200
     },
     {
      "langage": "Texte",
