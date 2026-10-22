@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T04:40:55Z",
- "empreinte": "f525c52ec78eef3b",
+ "maj": "2026-10-22T04:53:30Z",
+ "empreinte": "f208a613a9bea6f3",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 14834,
+  "fichiers": 14836,
   "lignes": {
-   "code": 4182645,
-   "commentaires": 63728,
-   "vides": 116395,
-   "total": 4362768
+   "code": 4183821,
+   "commentaires": 63820,
+   "vides": 116474,
+   "total": 4364115
   },
   "langages": [
    {
@@ -69,17 +69,17 @@
     "nom": "RSMP",
     "maison": true,
     "fichiers": 2250,
-    "code": 1402906,
-    "commentaires": 6107,
+    "code": 1402907,
+    "commentaires": 6106,
     "vides": 5160
    },
    {
     "nom": "C++",
     "maison": false,
-    "fichiers": 1110,
-    "code": 446264,
-    "commentaires": 34343,
-    "vides": 36699
+    "fichiers": 1112,
+    "code": 447430,
+    "commentaires": 34424,
+    "vides": 36776
    },
    {
     "nom": "Texte",
@@ -109,9 +109,9 @@
     "nom": "C/C++ Header",
     "maison": false,
     "fichiers": 495,
-    "code": 32148,
-    "commentaires": 13749,
-    "vides": 6921
+    "code": 32156,
+    "commentaires": 13759,
+    "vides": 6923
    },
    {
     "nom": "CSV",
@@ -157,8 +157,8 @@
     "nom": "CMake",
     "maison": false,
     "fichiers": 163,
-    "code": 7627,
-    "commentaires": 1771,
+    "code": 7628,
+    "commentaires": 1773,
     "vides": 823
    },
    {
@@ -269,17 +269,17 @@
   "types": [
    {
     "id": "source",
-    "fichiers": 1158,
-    "code": 220682,
-    "commentaires": 28251,
-    "vides": 25250
+    "fichiers": 1159,
+    "code": 221349,
+    "commentaires": 28324,
+    "vides": 25297
    },
    {
     "id": "tests",
-    "fichiers": 3081,
-    "code": 297819,
-    "commentaires": 22891,
-    "vides": 20620
+    "fichiers": 3082,
+    "code": 298327,
+    "commentaires": 22908,
+    "vides": 20652
    },
    {
     "id": "bancs",
@@ -298,8 +298,8 @@
    {
     "id": "build",
     "fichiers": 229,
-    "code": 8849,
-    "commentaires": 1760,
+    "code": 8850,
+    "commentaires": 1762,
     "vides": 898
    },
    {
@@ -341,17 +341,17 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 222009
+    "code": 222516
    },
    {
     "langage": "C++",
     "type": "source",
-    "code": 176170
+    "code": 176829
    },
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 50851
+    "code": 50852
    },
    {
     "langage": "C++",
@@ -361,7 +361,7 @@
    {
     "langage": "C/C++ Header",
     "type": "source",
-    "code": 29383
+    "code": 29391
    },
    {
     "langage": "CSV",
@@ -406,7 +406,7 @@
    {
     "langage": "CMake",
     "type": "build",
-    "code": 7518
+    "code": 7519
    },
    {
     "langage": "C++",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 612
+  "commits": 613
  },
  "depots": [
   {
@@ -1133,44 +1133,44 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 51,
+   "commits": 52,
    "commit": {
-    "sha": "735a2ee6e0f6174d8ebe8f12f52bfc68380bc001",
-    "court": "735a2ee",
-    "date": "2026-10-22T04:40:55Z",
-    "message": "sync 2026-10-22 06:40"
+    "sha": "c54ea1ae665628991a1c990d4efe3ffed8ceed82",
+    "court": "c54ea1a",
+    "date": "2026-10-22T04:53:30Z",
+    "message": "sync 2026-10-22 06:53"
    },
-   "fichiers": 2625,
+   "fichiers": 2627,
    "lignes": {
-    "code": 220615,
-    "commentaires": 20921,
-    "vides": 19218,
-    "total": 260754
+    "code": 221791,
+    "commentaires": 21013,
+    "vides": 19297,
+    "total": 262101
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
-     "fichiers": 493,
-     "code": 166653,
-     "commentaires": 11108,
-     "vides": 14091
+     "fichiers": 495,
+     "code": 167819,
+     "commentaires": 11189,
+     "vides": 14168
     },
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 1191,
-     "code": 21120,
-     "commentaires": 3413,
+     "code": 21121,
+     "commentaires": 3412,
      "vides": 2279
     },
     {
      "nom": "C/C++ Header",
      "maison": false,
      "fichiers": 195,
-     "code": 10016,
-     "commentaires": 4420,
-     "vides": 2197
+     "code": 10024,
+     "commentaires": 4430,
+     "vides": 2199
     },
     {
      "nom": "RSMP IR",
@@ -1200,8 +1200,8 @@
      "nom": "CMake",
      "maison": false,
      "fichiers": 42,
-     "code": 2153,
-     "commentaires": 409,
+     "code": 2154,
+     "commentaires": 411,
      "vides": 195
     },
     {
@@ -1288,17 +1288,17 @@
    "types": [
     {
      "id": "source",
-     "fichiers": 492,
-     "code": 81618,
-     "commentaires": 9376,
-     "vides": 9228
+     "fichiers": 493,
+     "code": 82285,
+     "commentaires": 9449,
+     "vides": 9275
     },
     {
      "id": "tests",
-     "fichiers": 1507,
-     "code": 121374,
-     "commentaires": 10034,
-     "vides": 9282
+     "fichiers": 1508,
+     "code": 121882,
+     "commentaires": 10051,
+     "vides": 9314
     },
     {
      "id": "bancs",
@@ -1317,8 +1317,8 @@
     {
      "id": "build",
      "fichiers": 52,
-     "code": 2286,
-     "commentaires": 409,
+     "code": 2287,
+     "commentaires": 411,
      "vides": 204
     },
     {
@@ -1340,22 +1340,22 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 92957
+     "code": 93464
     },
     {
      "langage": "C++",
      "type": "source",
-     "code": 71057
+     "code": 71716
     },
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 20429
+     "code": 20430
     },
     {
      "langage": "C/C++ Header",
      "type": "source",
-     "code": 9666
+     "code": 9674
     },
     {
      "langage": "RSMP IR",
@@ -1380,7 +1380,7 @@
     {
      "langage": "CMake",
      "type": "build",
-     "code": 2153
+     "code": 2154
     },
     {
      "langage": "Texte",
