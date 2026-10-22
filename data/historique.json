@@ -27357,5 +27357,117 @@
     }
    }
   }
+ },
+ {
+  "maj": "2026-10-22T03:09:15Z",
+  "empreinte": "47378da479785608",
+  "code": 4173798,
+  "commits": 597,
+  "par_depot": {
+   "moteur": 526249,
+   "langage": 218038,
+   "bibliotheques": 1568047,
+   "symbiose": 5881,
+   "serveur": 230,
+   "docs": 1855353
+  },
+  "par_langage": {
+   "JSON": 1502506,
+   "RSMP": 1403203,
+   "C++": 440887,
+   "Texte": 338792,
+   "Markdown": 315255,
+   "SMPA": 43029,
+   "C/C++ Header": 31882,
+   "CSV": 26266,
+   "PowerShell": 21384,
+   "YAML": 11286,
+   "Python": 10075,
+   "RSMP IR": 7991,
+   "CMake": 7514,
+   "Rust": 3658,
+   "CUDA": 2312,
+   "C": 2196,
+   "TOML": 1814,
+   "JavaScript": 1790,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Assembly": 82,
+   "DOS Batch": 11,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": -228301,
+   "langage": {
+    "C++": 1067,
+    "C/C++ Header": 29,
+    "CMake": 10,
+    "JSON": 234,
+    "JavaScript": 57,
+    "Markdown": 53,
+    "PowerShell": 40,
+    "Python": 1,
+    "SMPA ISA": 223,
+    "SWIG": -230020,
+    "Texte": 5
+   },
+   "type": {
+    "build": 10,
+    "docs": 53,
+    "donnees": 239,
+    "scripts": 98,
+    "source": -229728,
+    "tests": 1027
+   },
+   "depots": {
+    "docs": {
+     "code": 56,
+     "court": "b225154",
+     "commits": 1,
+     "langage": {
+      "Markdown": 53,
+      "Texte": 3
+     },
+     "type": {
+      "docs": 53,
+      "donnees": 3
+     }
+    },
+    "langage": {
+     "code": 0,
+     "court": "4acc48d",
+     "commits": 1,
+     "langage": {},
+     "type": {}
+    },
+    "moteur": {
+     "code": -228357,
+     "court": "ac34651",
+     "commits": 1,
+     "langage": {
+      "C++": 1067,
+      "C/C++ Header": 29,
+      "CMake": 10,
+      "JSON": 234,
+      "JavaScript": 57,
+      "PowerShell": 40,
+      "Python": 1,
+      "SMPA ISA": 223,
+      "SWIG": -230020,
+      "Texte": 2
+     },
+     "type": {
+      "build": 10,
+      "donnees": 236,
+      "scripts": 98,
+      "source": -229728,
+      "tests": 1027
+     }
+    }
+   }
+  }
  }
 ]
