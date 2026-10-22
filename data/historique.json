@@ -28848,5 +28848,118 @@
     }
    }
   }
+ },
+ {
+  "maj": "2026-10-22T06:59:27Z",
+  "empreinte": "1928c5dca678a5d7",
+  "code": 4195787,
+  "commits": 642,
+  "par_depot": {
+   "moteur": 529606,
+   "langage": 224906,
+   "bibliotheques": 1570775,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 1864374
+  },
+  "par_langage": {
+   "JSON": 1504176,
+   "RSMP": 1406160,
+   "C++": 450153,
+   "Texte": 344035,
+   "Markdown": 316568,
+   "SMPA": 43029,
+   "C/C++ Header": 32157,
+   "CSV": 26701,
+   "PowerShell": 21944,
+   "YAML": 11286,
+   "Python": 10121,
+   "RSMP IR": 7991,
+   "CMake": 7638,
+   "Rust": 3658,
+   "CUDA": 2312,
+   "C": 2209,
+   "JavaScript": 1877,
+   "TOML": 1814,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Assembly": 82,
+   "DOS Batch": 11,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": 2609,
+   "langage": {
+    "C++": 154,
+    "C/C++ Header": -5,
+    "CSV": 19,
+    "Markdown": 236,
+    "PowerShell": 375,
+    "RSMP": 1786,
+    "Texte": 44
+   },
+   "type": {
+    "bancs": 4,
+    "docs": 236,
+    "donnees": 63,
+    "source": 868,
+    "tests": 1438
+   },
+   "depots": {
+    "bibliotheques": {
+     "code": 1786,
+     "court": "2a8014e",
+     "commits": 1,
+     "langage": {
+      "RSMP": 1786
+     },
+     "type": {
+      "source": 868,
+      "tests": 918
+     }
+    },
+    "docs": {
+     "code": 299,
+     "court": "a83194c",
+     "commits": 1,
+     "langage": {
+      "CSV": 19,
+      "Markdown": 236,
+      "Texte": 44
+     },
+     "type": {
+      "docs": 236,
+      "donnees": 63
+     }
+    },
+    "langage": {
+     "code": 529,
+     "court": "9c8d63b",
+     "commits": 1,
+     "langage": {
+      "C++": 154,
+      "PowerShell": 375
+     },
+     "type": {
+      "bancs": 4,
+      "tests": 525
+     }
+    },
+    "moteur": {
+     "code": -5,
+     "court": "b1c45b3",
+     "commits": 1,
+     "langage": {
+      "C/C++ Header": -5
+     },
+     "type": {
+      "tests": -5
+     }
+    }
+   }
+  }
  }
 ]
