@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T05:46:44Z",
- "empreinte": "c42b95b12927b6fc",
+ "maj": "2026-10-22T05:57:26Z",
+ "empreinte": "463f9aeec67f4eb2",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 14849,
+  "fichiers": 14859,
   "lignes": {
-   "code": 4187187,
-   "commentaires": 63857,
-   "vides": 116582,
-   "total": 4367626
+   "code": 4187432,
+   "commentaires": 63862,
+   "vides": 116583,
+   "total": 4367877
   },
   "langages": [
    {
@@ -77,15 +77,15 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1112,
-    "code": 447681,
-    "commentaires": 34455,
-    "vides": 36787
+    "code": 447694,
+    "commentaires": 34457,
+    "vides": 36788
    },
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 3260,
-    "code": 343211,
+    "fichiers": 3269,
+    "code": 343397,
     "commentaires": 0,
     "vides": 459
    },
@@ -140,9 +140,9 @@
    {
     "nom": "Python",
     "maison": false,
-    "fichiers": 86,
-    "code": 10075,
-    "commentaires": 849,
+    "fichiers": 87,
+    "code": 10121,
+    "commentaires": 852,
     "vides": 916
    },
    {
@@ -270,14 +270,14 @@
    {
     "id": "source",
     "fichiers": 1159,
-    "code": 221538,
-    "commentaires": 28356,
-    "vides": 25305
+    "code": 221549,
+    "commentaires": 28358,
+    "vides": 25306
    },
    {
     "id": "tests",
     "fichiers": 3082,
-    "code": 298390,
+    "code": 298392,
     "commentaires": 22912,
     "vides": 20655
    },
@@ -311,9 +311,9 @@
    },
    {
     "id": "donnees",
-    "fichiers": 4542,
-    "code": 3262219,
-    "commentaires": 2951,
+    "fichiers": 4552,
+    "code": 3262451,
+    "commentaires": 2954,
     "vides": 2236
    }
   ],
@@ -331,7 +331,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 337223
+    "code": 337409
    },
    {
     "langage": "Markdown",
@@ -341,12 +341,12 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 222579
+    "code": 222581
    },
    {
     "langage": "C++",
     "type": "source",
-    "code": 177017
+    "code": 177028
    },
    {
     "langage": "RSMP",
@@ -426,7 +426,7 @@
    {
     "langage": "Python",
     "type": "donnees",
-    "code": 4584
+    "code": 4630
    },
    {
     "langage": "Rust",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 621
+  "commits": 623
  },
  "depots": [
   {
@@ -1133,28 +1133,28 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 56,
+   "commits": 57,
    "commit": {
-    "sha": "427560bb049ecce8f691a0da16390f9eba690ad4",
-    "court": "427560b",
-    "date": "2026-10-22T05:46:36Z",
-    "message": "sync 2026-10-22 07:46"
+    "sha": "0bed79915de8f43a4f1b8a8e807aa16ddd03c0fc",
+    "court": "0bed799",
+    "date": "2026-10-22T05:57:18Z",
+    "message": "sync 2026-10-22 07:57"
    },
    "fichiers": 2627,
    "lignes": {
-    "code": 222044,
-    "commentaires": 21050,
-    "vides": 19308,
-    "total": 262402
+    "code": 222057,
+    "commentaires": 21052,
+    "vides": 19309,
+    "total": 262418
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 495,
-     "code": 168070,
-     "commentaires": 11220,
-     "vides": 14179
+     "code": 168083,
+     "commentaires": 11222,
+     "vides": 14180
     },
     {
      "nom": "RSMP",
@@ -1289,14 +1289,14 @@
     {
      "id": "source",
      "fichiers": 493,
-     "code": 82474,
-     "commentaires": 9481,
-     "vides": 9283
+     "code": 82485,
+     "commentaires": 9483,
+     "vides": 9284
     },
     {
      "id": "tests",
      "fichiers": 1508,
-     "code": 121945,
+     "code": 121947,
      "commentaires": 10055,
      "vides": 9317
     },
@@ -1340,12 +1340,12 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 93527
+     "code": 93529
     },
     {
      "langage": "C++",
      "type": "source",
-     "code": 71904
+     "code": 71915
     },
     {
      "langage": "RSMP",
@@ -2180,19 +2180,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 260,
+   "commits": 261,
    "commit": {
-    "sha": "a7f5ac1518795b8479ae6e572611f649de3516c6",
-    "court": "a7f5ac1",
-    "date": "2026-10-22T05:46:44Z",
-    "message": "sync 2026-10-22 07:46"
+    "sha": "1ef430680495cb93006f0fc1f7378cf33f1b06cd",
+    "court": "1ef4306",
+    "date": "2026-10-22T05:57:26Z",
+    "message": "sync 2026-10-22 07:57"
    },
-   "fichiers": 5900,
+   "fichiers": 5910,
    "lignes": {
-    "code": 1861379,
-    "commentaires": 1197,
+    "code": 1861611,
+    "commentaires": 1200,
     "vides": 62519,
-    "total": 1925095
+    "total": 1925330
    },
    "langages": [
     {
@@ -2214,8 +2214,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 442,
-     "code": 36399,
+     "fichiers": 451,
+     "code": 36585,
      "commentaires": 0,
      "vides": 314
     },
@@ -2246,9 +2246,9 @@
     {
      "nom": "Python",
      "maison": false,
-     "fichiers": 54,
-     "code": 4584,
-     "commentaires": 308,
+     "fichiers": 55,
+     "code": 4630,
+     "commentaires": 311,
      "vides": 193
     },
     {
@@ -2385,9 +2385,9 @@
     },
     {
      "id": "donnees",
-     "fichiers": 740,
-     "code": 1545075,
-     "commentaires": 845,
+     "fichiers": 750,
+     "code": 1545307,
+     "commentaires": 848,
      "vides": 1131
     }
    ],
@@ -2405,7 +2405,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 36363
+     "code": 36549
     },
     {
      "langage": "CSV",
@@ -2425,7 +2425,7 @@
     {
      "langage": "Python",
      "type": "donnees",
-     "code": 4584
+     "code": 4630
     },
     {
      "langage": "CUDA",
