@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T23:04:38Z",
- "empreinte": "1e9ead3a69b2fbf4",
+ "maj": "2026-10-23T23:15:14Z",
+ "empreinte": "8b73f93e5c6812c6",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15876,
   "lignes": {
-   "code": 4458996,
-   "commentaires": 67182,
-   "vides": 120346,
-   "total": 4646524
+   "code": 4459048,
+   "commentaires": 67188,
+   "vides": 120347,
+   "total": 4646583
   },
   "langages": [
    {
@@ -77,9 +77,9 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1154,
-    "code": 462902,
-    "commentaires": 36075,
-    "vides": 37912
+    "code": 462954,
+    "commentaires": 36081,
+    "vides": 37913
    },
    {
     "nom": "Texte",
@@ -277,9 +277,9 @@
    {
     "id": "tests",
     "fichiers": 3126,
-    "code": 312203,
-    "commentaires": 24023,
-    "vides": 21870
+    "code": 312255,
+    "commentaires": 24029,
+    "vides": 21871
    },
    {
     "id": "bancs",
@@ -341,7 +341,7 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 231120
+    "code": 231172
    },
    {
     "langage": "C++",
@@ -659,35 +659,35 @@
     "code": 3
    }
   ],
-  "commits": 852
+  "commits": 853
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 268,
+   "commits": 269,
    "commit": {
-    "sha": "04262541a2e374eff12e523de86c253c3ba01b8e",
-    "court": "0426254",
-    "date": "2026-10-23T21:30:40Z",
-    "message": "sync 2026-10-23 23:30"
+    "sha": "a3f9c453d68f253ab79ca4552f14f8a74c339d01",
+    "court": "a3f9c45",
+    "date": "2026-10-23T23:15:14Z",
+    "message": "sync 2026-10-24 01:15"
    },
    "fichiers": 3175,
    "lignes": {
-    "code": 544653,
-    "commentaires": 35715,
-    "vides": 27038,
-    "total": 607406
+    "code": 544705,
+    "commentaires": 35721,
+    "vides": 27039,
+    "total": 607465
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 506,
-     "code": 228948,
-     "commentaires": 19980,
-     "vides": 18489
+     "code": 229000,
+     "commentaires": 19986,
+     "vides": 18490
     },
     {
      "nom": "Texte",
@@ -861,9 +861,9 @@
     {
      "id": "tests",
      "fichiers": 938,
-     "code": 120211,
-     "commentaires": 10582,
-     "vides": 8522
+     "code": 120263,
+     "commentaires": 10588,
+     "vides": 8523
     },
     {
      "id": "bancs",
@@ -910,7 +910,7 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 107313
+     "code": 107365
     },
     {
      "langage": "C++",

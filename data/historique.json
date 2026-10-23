@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-18T22:40:25Z",
-  "empreinte": "64fe198549111d58",
-  "code": 203787,
-  "commits": 19,
-  "par_depot": {
-   "moteur": 152685,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 51057
-  },
-  "par_langage": {
-   "C++": 120060,
-   "Markdown": 48178,
-   "JSON": 9661,
-   "C/C++ Header": 7553,
-   "PowerShell": 6014,
-   "SMPA": 4581,
-   "Texte": 3013,
-   "CMake": 2607,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 350,
-   "SMPA ISA": 236,
-   "JavaScript": 125,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 15,
-   "CSV": 3
-  },
-  "delta": {
-   "code": 69,
-   "langage": {
-    "Markdown": 69
-   },
-   "type": {
-    "docs": 69
-   },
-   "depots": {
-    "docs": {
-     "code": 69,
-     "court": "eab7bb9",
-     "commits": 1,
-     "langage": {
-      "Markdown": 69
-     },
-     "type": {
-      "docs": 69
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-18T22:40:44Z",
   "empreinte": "b1d421c66b077837",
   "code": 203800,
@@ -37880,6 +37826,70 @@
      },
      "type": {
       "docs": 32
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-23T23:15:14Z",
+  "empreinte": "8b73f93e5c6812c6",
+  "code": 4459048,
+  "commits": 853,
+  "par_depot": {
+   "moteur": 544705,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2101454
+  },
+  "par_langage": {
+   "JSON": 1630300,
+   "RSMP": 1411160,
+   "C++": 462954,
+   "Texte": 447438,
+   "Markdown": 320906,
+   "SMPA": 43079,
+   "C/C++ Header": 33092,
+   "CSV": 27273,
+   "PowerShell": 23777,
+   "YAML": 11286,
+   "Python": 11010,
+   "RSMP IR": 8129,
+   "CMake": 7968,
+   "Rust": 5564,
+   "Assembly": 4730,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "DOS Batch": 14,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": 52,
+   "langage": {
+    "C++": 52
+   },
+   "type": {
+    "tests": 52
+   },
+   "depots": {
+    "moteur": {
+     "code": 52,
+     "court": "a3f9c45",
+     "commits": 1,
+     "langage": {
+      "C++": 52
+     },
+     "type": {
+      "tests": 52
      }
     }
    }
