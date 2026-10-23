@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T15:50:54Z",
- "empreinte": "051119ef051a4e3c",
+ "maj": "2026-10-23T16:22:03Z",
+ "empreinte": "560877fb6e33ce21",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,19 +49,19 @@
   }
  ],
  "global": {
-  "fichiers": 15312,
+  "fichiers": 15332,
   "lignes": {
-   "code": 4419742,
+   "code": 4420078,
    "commentaires": 66504,
    "vides": 119583,
-   "total": 4605829
+   "total": 4606165
   },
   "langages": [
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 298,
-    "code": 1629709,
+    "fichiers": 300,
+    "code": 1629730,
     "commentaires": 0,
     "vides": 2
    },
@@ -84,8 +84,8 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 3577,
-    "code": 423232,
+    "fichiers": 3593,
+    "code": 423431,
     "commentaires": 0,
     "vides": 861
    },
@@ -93,7 +93,7 @@
     "nom": "Markdown",
     "maison": false,
     "fichiers": 5182,
-    "code": 319977,
+    "code": 319979,
     "commentaires": 133,
     "vides": 62263
    },
@@ -116,8 +116,8 @@
    {
     "nom": "CSV",
     "maison": false,
-    "fichiers": 50,
-    "code": 26701,
+    "fichiers": 52,
+    "code": 26815,
     "commentaires": 0,
     "vides": 0
    },
@@ -305,14 +305,14 @@
    {
     "id": "docs",
     "fichiers": 5189,
-    "code": 320051,
+    "code": 320053,
     "commentaires": 133,
     "vides": 62293
    },
    {
     "id": "donnees",
-    "fichiers": 4918,
-    "code": 3469872,
+    "fichiers": 4938,
+    "code": 3470206,
     "commentaires": 3052,
     "vides": 2692
    }
@@ -321,7 +321,7 @@
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1628320
+    "code": 1628341
    },
    {
     "langage": "RSMP",
@@ -331,12 +331,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 417244
+    "code": 417443
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 319977
+    "code": 319979
    },
    {
     "langage": "C++",
@@ -366,7 +366,7 @@
    {
     "langage": "CSV",
     "type": "donnees",
-    "code": 26701
+    "code": 26815
    },
    {
     "langage": "SMPA",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 815
+  "commits": 816
  },
  "depots": [
   {
@@ -2180,26 +2180,26 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 345,
+   "commits": 346,
    "commit": {
-    "sha": "ba58db9e9b838c265d08ba96260655bf9d135fc2",
-    "court": "ba58db9",
-    "date": "2026-10-23T15:50:54Z",
-    "message": "sync 2026-10-23 17:50"
+    "sha": "ad1bdb92cdbab970ba74ccf440a35162c9da387f",
+    "court": "ad1bdb9",
+    "date": "2026-10-23T16:22:03Z",
+    "message": "sync 2026-10-23 18:22"
    },
-   "fichiers": 6283,
+   "fichiers": 6303,
    "lignes": {
-    "code": 2070722,
+    "code": 2071058,
     "commentaires": 1277,
     "vides": 63692,
-    "total": 2135691
+    "total": 2136027
    },
    "langages": [
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 174,
-     "code": 1582106,
+     "fichiers": 176,
+     "code": 1582127,
      "commentaires": 0,
      "vides": 2
     },
@@ -2207,23 +2207,23 @@
      "nom": "Markdown",
      "maison": false,
      "fichiers": 5162,
-     "code": 319267,
+     "code": 319269,
      "commentaires": 121,
      "vides": 61940
     },
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 755,
-     "code": 115799,
+     "fichiers": 771,
+     "code": 115998,
      "commentaires": 0,
      "vides": 716
     },
     {
      "nom": "CSV",
      "maison": false,
-     "fichiers": 43,
-     "code": 26597,
+     "fichiers": 45,
+     "code": 26711,
      "commentaires": 0,
      "vides": 0
     },
@@ -2379,14 +2379,14 @@
     {
      "id": "docs",
      "fichiers": 5163,
-     "code": 319276,
+     "code": 319278,
      "commentaires": 121,
      "vides": 61944
     },
     {
      "id": "donnees",
-     "fichiers": 1100,
-     "code": 1750020,
+     "fichiers": 1120,
+     "code": 1750354,
      "commentaires": 925,
      "vides": 1567
     }
@@ -2395,22 +2395,22 @@
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 1582028
+     "code": 1582049
     },
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 319267
+     "code": 319269
     },
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 115763
+     "code": 115962
     },
     {
      "langage": "CSV",
      "type": "donnees",
-     "code": 26597
+     "code": 26711
     },
     {
      "langage": "YAML",
