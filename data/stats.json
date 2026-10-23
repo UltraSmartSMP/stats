@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T17:56:29Z",
- "empreinte": "4496a4ace18c76ae",
+ "maj": "2026-10-23T18:07:10Z",
+ "empreinte": "a9e7e50f946572a3",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 15356,
+  "fichiers": 15357,
   "lignes": {
-   "code": 4430550,
-   "commentaires": 66552,
-   "vides": 119757,
-   "total": 4616859
+   "code": 4430619,
+   "commentaires": 66563,
+   "vides": 119762,
+   "total": 4616944
   },
   "langages": [
    {
@@ -93,7 +93,7 @@
     "nom": "Markdown",
     "maison": false,
     "fichiers": 5187,
-    "code": 320193,
+    "code": 320195,
     "commentaires": 133,
     "vides": 62307
    },
@@ -124,10 +124,10 @@
    {
     "nom": "PowerShell",
     "maison": false,
-    "fichiers": 117,
-    "code": 22206,
-    "commentaires": 2471,
-    "vides": 1377
+    "fichiers": 118,
+    "code": 22273,
+    "commentaires": 2482,
+    "vides": 1382
    },
    {
     "nom": "YAML",
@@ -305,16 +305,16 @@
    {
     "id": "docs",
     "fichiers": 5194,
-    "code": 320267,
+    "code": 320269,
     "commentaires": 133,
     "vides": 62337
    },
    {
     "id": "donnees",
-    "fichiers": 4956,
-    "code": 3480035,
-    "commentaires": 3059,
-    "vides": 2803
+    "fichiers": 4957,
+    "code": 3480102,
+    "commentaires": 3070,
+    "vides": 2808
    }
   ],
   "croise": [
@@ -336,7 +336,7 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 320193
+    "code": 320195
    },
    {
     "langage": "C++",
@@ -499,14 +499,14 @@
     "code": 980
    },
    {
+    "langage": "PowerShell",
+    "type": "donnees",
+    "code": 918
+   },
+   {
     "langage": "SMPI",
     "type": "tests",
     "code": 877
-   },
-   {
-    "langage": "PowerShell",
-    "type": "donnees",
-    "code": 851
    },
    {
     "langage": "C",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 822
+  "commits": 823
  },
  "depots": [
   {
@@ -2180,19 +2180,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 350,
+   "commits": 351,
    "commit": {
-    "sha": "7a9d4de792fe49b62b1dffbba4954ba7bc6b10c0",
-    "court": "7a9d4de",
-    "date": "2026-10-23T17:56:29Z",
-    "message": "sync 2026-10-23 19:56"
+    "sha": "d27a914d56a8f802026138da72439ebd6f64ffe8",
+    "court": "d27a914",
+    "date": "2026-10-23T18:07:10Z",
+    "message": "sync 2026-10-23 20:07"
    },
-   "fichiers": 6326,
+   "fichiers": 6327,
    "lignes": {
-    "code": 2081101,
-    "commentaires": 1284,
-    "vides": 63847,
-    "total": 2146232
+    "code": 2081170,
+    "commentaires": 1295,
+    "vides": 63852,
+    "total": 2146317
    },
    "langages": [
     {
@@ -2207,7 +2207,7 @@
      "nom": "Markdown",
      "maison": false,
      "fichiers": 5167,
-     "code": 319483,
+     "code": 319485,
      "commentaires": 121,
      "vides": 61984
     },
@@ -2254,10 +2254,10 @@
     {
      "nom": "PowerShell",
      "maison": false,
-     "fichiers": 26,
-     "code": 2045,
-     "commentaires": 287,
-     "vides": 190
+     "fichiers": 27,
+     "code": 2112,
+     "commentaires": 298,
+     "vides": 195
     },
     {
      "nom": "CUDA",
@@ -2379,16 +2379,16 @@
     {
      "id": "docs",
      "fichiers": 5168,
-     "code": 319492,
+     "code": 319494,
      "commentaires": 121,
      "vides": 61988
     },
     {
      "id": "donnees",
-     "fichiers": 1138,
-     "code": 1760183,
-     "commentaires": 932,
-     "vides": 1678
+     "fichiers": 1139,
+     "code": 1760250,
+     "commentaires": 943,
+     "vides": 1683
     }
    ],
    "croise": [
@@ -2400,7 +2400,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 319483
+     "code": 319485
     },
     {
      "langage": "Texte",
@@ -2440,7 +2440,7 @@
     {
      "langage": "PowerShell",
      "type": "donnees",
-     "code": 851
+     "code": 918
     },
     {
      "langage": "RSMP",
