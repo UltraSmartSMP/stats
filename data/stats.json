@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T23:15:14Z",
- "empreinte": "8b73f93e5c6812c6",
+ "maj": "2026-10-23T23:26:11Z",
+ "empreinte": "9f41170b69f8989b",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -659,19 +659,19 @@
     "code": 3
    }
   ],
-  "commits": 853
+  "commits": 855
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 269,
+   "commits": 270,
    "commit": {
-    "sha": "a3f9c453d68f253ab79ca4552f14f8a74c339d01",
-    "court": "a3f9c45",
-    "date": "2026-10-23T23:15:14Z",
-    "message": "sync 2026-10-24 01:15"
+    "sha": "b2caa4e6c295c31cb49cc563883401eb3b243b62",
+    "court": "b2caa4e",
+    "date": "2026-10-23T23:25:59Z",
+    "message": "sync 2026-10-24 01:25"
    },
    "fichiers": 3175,
    "lignes": {
@@ -2180,12 +2180,12 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 369,
+   "commits": 370,
    "commit": {
-    "sha": "dc042c48d1d3936cd2091f32594dfb7e2c2a915b",
-    "court": "dc042c4",
-    "date": "2026-10-23T23:04:38Z",
-    "message": "sync 2026-10-24 01:04"
+    "sha": "a59422615bd37076056efd1315210d5e849a88cb",
+    "court": "a594226",
+    "date": "2026-10-23T23:26:11Z",
+    "message": "sync 2026-10-24 01:26"
    },
    "fichiers": 6572,
    "lignes": {
