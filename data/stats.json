@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T16:43:29Z",
- "empreinte": "62a6011abdfba505",
+ "maj": "2026-10-23T16:54:05Z",
+ "empreinte": "01987d5c03d9d2d3",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15353,
   "lignes": {
-   "code": 4430385,
+   "code": 4430393,
    "commentaires": 66552,
    "vides": 119735,
-   "total": 4616672
+   "total": 4616680
   },
   "langages": [
    {
@@ -77,7 +77,7 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1149,
-    "code": 461084,
+    "code": 461092,
     "commentaires": 35931,
     "vides": 37821
    },
@@ -277,7 +277,7 @@
    {
     "id": "tests",
     "fichiers": 3124,
-    "code": 311306,
+    "code": 311314,
     "commentaires": 23964,
     "vides": 21828
    },
@@ -341,7 +341,7 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 230223
+    "code": 230231
    },
    {
     "langage": "C++",
@@ -659,33 +659,33 @@
     "code": 3
    }
   ],
-  "commits": 819
+  "commits": 820
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 256,
+   "commits": 257,
    "commit": {
-    "sha": "ccdf5a12e1df60042f0393372fa88ef327cc7c21",
-    "court": "ccdf5a1",
-    "date": "2026-10-23T16:43:18Z",
-    "message": "sync 2026-10-23 18:43"
+    "sha": "7f7eef59c5f015e5434d660c84475b8e0525afe7",
+    "court": "7f7eef5",
+    "date": "2026-10-23T16:54:05Z",
+    "message": "sync 2026-10-23 18:54"
    },
    "fichiers": 2901,
    "lignes": {
-    "code": 536552,
+    "code": 536560,
     "commentaires": 35180,
     "vides": 26875,
-    "total": 598607
+    "total": 598615
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 503,
-     "code": 227845,
+     "code": 227853,
      "commentaires": 19873,
      "vides": 18433
     },
@@ -861,7 +861,7 @@
     {
      "id": "tests",
      "fichiers": 936,
-     "code": 119314,
+     "code": 119322,
      "commentaires": 10523,
      "vides": 8480
     },
@@ -910,7 +910,7 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 106416
+     "code": 106424
     },
     {
      "langage": "C++",
