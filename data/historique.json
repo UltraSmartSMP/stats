@@ -1,63 +1,5 @@
 [
  {
-  "maj": "2026-10-18T22:40:17Z",
-  "empreinte": "feeba7272f2eeda9",
-  "code": 203718,
-  "commits": 18,
-  "par_depot": {
-   "moteur": 152685,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 50988
-  },
-  "par_langage": {
-   "C++": 120060,
-   "Markdown": 48109,
-   "JSON": 9661,
-   "C/C++ Header": 7553,
-   "PowerShell": 6014,
-   "SMPA": 4581,
-   "Texte": 3013,
-   "CMake": 2607,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 350,
-   "SMPA ISA": 236,
-   "JavaScript": 125,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 15,
-   "CSV": 3
-  },
-  "delta": {
-   "code": -1609,
-   "langage": {
-    "Markdown": -1610,
-    "PowerShell": 1
-   },
-   "type": {
-    "docs": -1610,
-    "scripts": 1
-   },
-   "depots": {
-    "moteur": {
-     "code": -1609,
-     "court": "1f3120c",
-     "commits": 1,
-     "langage": {
-      "Markdown": -1610,
-      "PowerShell": 1
-     },
-     "type": {
-      "docs": -1610,
-      "scripts": 1
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-18T22:40:25Z",
   "empreinte": "64fe198549111d58",
   "code": 203787,
@@ -37874,6 +37816,70 @@
      "type": {
       "docs": 27,
       "donnees": 3730
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-23T23:04:38Z",
+  "empreinte": "1e9ead3a69b2fbf4",
+  "code": 4458996,
+  "commits": 852,
+  "par_depot": {
+   "moteur": 544653,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2101454
+  },
+  "par_langage": {
+   "JSON": 1630300,
+   "RSMP": 1411160,
+   "C++": 462902,
+   "Texte": 447438,
+   "Markdown": 320906,
+   "SMPA": 43079,
+   "C/C++ Header": 33092,
+   "CSV": 27273,
+   "PowerShell": 23777,
+   "YAML": 11286,
+   "Python": 11010,
+   "RSMP IR": 8129,
+   "CMake": 7968,
+   "Rust": 5564,
+   "Assembly": 4730,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "DOS Batch": 14,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": 32,
+   "langage": {
+    "Markdown": 32
+   },
+   "type": {
+    "docs": 32
+   },
+   "depots": {
+    "docs": {
+     "code": 32,
+     "court": "dc042c4",
+     "commits": 1,
+     "langage": {
+      "Markdown": 32
+     },
+     "type": {
+      "docs": 32
      }
     }
    }
