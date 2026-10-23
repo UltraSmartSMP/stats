@@ -1,58 +1,5 @@
 [
  {
-  "maj": "2026-10-18T22:36:45Z",
-  "empreinte": "171414148bd52fab",
-  "code": 209851,
-  "commits": 11,
-  "par_depot": {
-   "moteur": 202517,
-   "langage": 2541,
-   "bibliotheques": 2586,
-   "symbiose": 2207
-  },
-  "par_langage": {
-   "C++": 120060,
-   "Markdown": 50262,
-   "JSON": 9895,
-   "PowerShell": 9576,
-   "C/C++ Header": 7553,
-   "SMPA": 4581,
-   "Texte": 3029,
-   "CMake": 2607,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 350,
-   "SMPA ISA": 236,
-   "YAML": 224,
-   "JavaScript": 125,
-   "Assembly": 44,
-   "INI": 15,
-   "CSV": 3
-  },
-  "delta": {
-   "code": 379,
-   "langage": {
-    "Markdown": 379
-   },
-   "type": {
-    "docs": 379
-   },
-   "depots": {
-    "bibliotheques": {
-     "code": 379,
-     "court": "6a43174",
-     "commits": 1,
-     "langage": {
-      "Markdown": 379
-     },
-     "type": {
-      "docs": 379
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-18T22:36:48Z",
   "empreinte": "d372c9af42a9b03c",
   "code": 210190,
@@ -37777,6 +37724,70 @@
      "type": {
       "docs": 30,
       "donnees": 3227
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-23T20:47:34Z",
+  "empreinte": "e254f95165f9e706",
+  "code": 4451972,
+  "commits": 841,
+  "par_depot": {
+   "moteur": 543897,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2095186
+  },
+  "par_langage": {
+   "JSON": 1630130,
+   "RSMP": 1411160,
+   "C++": 462227,
+   "Texte": 443123,
+   "Markdown": 320829,
+   "SMPA": 43079,
+   "C/C++ Header": 33040,
+   "CSV": 27273,
+   "PowerShell": 23679,
+   "YAML": 11286,
+   "Python": 10877,
+   "RSMP IR": 8129,
+   "CMake": 7939,
+   "Rust": 5564,
+   "Assembly": 3255,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "DOS Batch": 14,
+   "Bourne Shell": 9
+  },
+  "delta": {
+   "code": 22,
+   "langage": {
+    "Markdown": 22
+   },
+   "type": {
+    "docs": 22
+   },
+   "depots": {
+    "docs": {
+     "code": 22,
+     "court": "b518ac7",
+     "commits": 1,
+     "langage": {
+      "Markdown": 22
+     },
+     "type": {
+      "docs": 22
      }
     }
    }
