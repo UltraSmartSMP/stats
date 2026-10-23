@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T00:05:13Z",
- "empreinte": "10f98077362927cb",
+ "maj": "2026-10-23T00:16:06Z",
+ "empreinte": "7ed84a4c01b7b77f",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,19 +49,19 @@
   }
  ],
  "global": {
-  "fichiers": 15233,
+  "fichiers": 15246,
   "lignes": {
-   "code": 4346307,
+   "code": 4358345,
    "commentaires": 66197,
-   "vides": 118954,
-   "total": 4531458
+   "vides": 118966,
+   "total": 4543508
   },
   "langages": [
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 292,
-    "code": 1584347,
+    "fichiers": 293,
+    "code": 1595713,
     "commentaires": 0,
     "vides": 2
    },
@@ -84,10 +84,10 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 3523,
-    "code": 398447,
+    "fichiers": 3535,
+    "code": 399119,
     "commentaires": 0,
-    "vides": 679
+    "vides": 691
    },
    {
     "nom": "Markdown",
@@ -311,17 +311,17 @@
    },
    {
     "id": "donnees",
-    "fichiers": 4851,
-    "code": 3399224,
+    "fichiers": 4864,
+    "code": 3411262,
     "commentaires": 2994,
-    "vides": 2485
+    "vides": 2497
    }
   ],
   "croise": [
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1582958
+    "code": 1594324
    },
    {
     "langage": "RSMP",
@@ -331,7 +331,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 392459
+    "code": 393131
    },
    {
     "langage": "Markdown",
@@ -659,7 +659,7 @@
     "code": 3
    }
   ],
-  "commits": 783
+  "commits": 785
  },
  "depots": [
   {
@@ -1133,12 +1133,12 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 116,
+   "commits": 117,
    "commit": {
-    "sha": "b095de8718cd671f42108672833bc8927062585a",
-    "court": "b095de8",
-    "date": "2026-10-22T23:23:22Z",
-    "message": "sync 2026-10-23 01:23"
+    "sha": "0df2a373b612356825a8a829d1461707538bfe75",
+    "court": "0df2a37",
+    "date": "2026-10-23T00:15:58Z",
+    "message": "sync 2026-10-23 02:15"
    },
    "fichiers": 2657,
    "lignes": {
@@ -2180,26 +2180,26 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 331,
+   "commits": 332,
    "commit": {
-    "sha": "28dce8d1370cd1f93b89c8bab11d8822ce560c4e",
-    "court": "28dce8d",
-    "date": "2026-10-22T23:34:15Z",
-    "message": "sync 2026-10-23 01:34"
+    "sha": "2a505ff5345e20dc09d4bcf30f699b4d38134f9f",
+    "court": "2a505ff",
+    "date": "2026-10-23T00:16:06Z",
+    "message": "sync 2026-10-23 02:16"
    },
-   "fichiers": 6211,
+   "fichiers": 6224,
    "lignes": {
-    "code": 1999097,
+    "code": 2011135,
     "commentaires": 1219,
-    "vides": 63198,
-    "total": 2063514
+    "vides": 63210,
+    "total": 2075564
    },
    "langages": [
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 170,
-     "code": 1536756,
+     "fichiers": 171,
+     "code": 1548122,
      "commentaires": 0,
      "vides": 2
     },
@@ -2214,10 +2214,10 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 701,
-     "code": 91014,
+     "fichiers": 713,
+     "code": 91686,
      "commentaires": 0,
-     "vides": 534
+     "vides": 546
     },
     {
      "nom": "CSV",
@@ -2385,17 +2385,17 @@
     },
     {
      "id": "donnees",
-     "fichiers": 1035,
-     "code": 1679384,
+     "fichiers": 1048,
+     "code": 1691422,
      "commentaires": 867,
-     "vides": 1360
+     "vides": 1372
     }
    ],
    "croise": [
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 1536678
+     "code": 1548044
     },
     {
      "langage": "Markdown",
@@ -2405,7 +2405,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 90978
+     "code": 91650
     },
     {
      "langage": "CSV",
