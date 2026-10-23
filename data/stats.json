@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-22T23:34:15Z",
- "empreinte": "036ba11269d7a0a5",
+ "maj": "2026-10-23T00:05:13Z",
+ "empreinte": "10f98077362927cb",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15233,
   "lignes": {
-   "code": 4346274,
-   "commentaires": 66192,
-   "vides": 118948,
-   "total": 4531414
+   "code": 4346307,
+   "commentaires": 66197,
+   "vides": 118954,
+   "total": 4531458
   },
   "langages": [
    {
@@ -141,9 +141,9 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 89,
-    "code": 10378,
-    "commentaires": 860,
-    "vides": 947
+    "code": 10411,
+    "commentaires": 865,
+    "vides": 953
    },
    {
     "nom": "RSMP IR",
@@ -291,9 +291,9 @@
    {
     "id": "scripts",
     "fichiers": 98,
-    "code": 14885,
-    "commentaires": 1490,
-    "vides": 1021
+    "code": 14918,
+    "commentaires": 1495,
+    "vides": 1027
    },
    {
     "id": "build",
@@ -446,7 +446,7 @@
    {
     "langage": "Python",
     "type": "scripts",
-    "code": 2327
+    "code": 2360
    },
    {
     "langage": "JavaScript",
@@ -659,26 +659,26 @@
     "code": 3
    }
   ],
-  "commits": 782
+  "commits": 783
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 250,
+   "commits": 251,
    "commit": {
-    "sha": "c0b6d1582f0b89f2b762f2ef255cecdbbc0ed52a",
-    "court": "c0b6d15",
-    "date": "2026-10-22T21:49:25Z",
-    "message": "sync 2026-10-22 23:49"
+    "sha": "e43d82c557c48c6a2f0dff057985f821822f7be3",
+    "court": "e43d82c",
+    "date": "2026-10-23T00:05:13Z",
+    "message": "sync 2026-10-23 02:05"
    },
    "fichiers": 2897,
    "lignes": {
-    "code": 535364,
-    "commentaires": 35034,
-    "vides": 26806,
-    "total": 597204
+    "code": 535397,
+    "commentaires": 35039,
+    "vides": 26812,
+    "total": 597248
    },
    "langages": [
     {
@@ -733,9 +733,9 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 30,
-     "code": 5350,
-     "commentaires": 485,
-     "vides": 687
+     "code": 5383,
+     "commentaires": 490,
+     "vides": 693
     },
     {
      "nom": "CMake",
@@ -875,9 +875,9 @@
     {
      "id": "scripts",
      "fichiers": 71,
-     "code": 9112,
-     "commentaires": 835,
-     "vides": 553
+     "code": 9145,
+     "commentaires": 840,
+     "vides": 559
     },
     {
      "id": "build",
@@ -975,7 +975,7 @@
     {
      "langage": "Python",
      "type": "scripts",
-     "code": 2327
+     "code": 2360
     },
     {
      "langage": "JavaScript",
