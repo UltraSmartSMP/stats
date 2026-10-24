@@ -1,65 +1,5 @@
 [
  {
-  "maj": "2026-10-19T09:25:00Z",
-  "empreinte": "39bd4eb228b8674b",
-  "code": 224980,
-  "commits": 45,
-  "par_depot": {
-   "moteur": 154353,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 70582
-  },
-  "par_langage": {
-   "C++": 121337,
-   "Markdown": 67538,
-   "JSON": 9816,
-   "C/C++ Header": 7648,
-   "PowerShell": 6078,
-   "SMPA": 4620,
-   "Texte": 3034,
-   "CMake": 2664,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 398,
-   "SMPA ISA": 236,
-   "JavaScript": 200,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 3
-  },
-  "delta": {
-   "code": 9890,
-   "langage": {
-    "JSON": 119,
-    "Markdown": 9761,
-    "Texte": 10
-   },
-   "type": {
-    "docs": 9761,
-    "donnees": 129
-   },
-   "depots": {
-    "docs": {
-     "code": 9890,
-     "court": "a37af3a",
-     "commits": 1,
-     "langage": {
-      "JSON": 119,
-      "Markdown": 9761,
-      "Texte": 10
-     },
-     "type": {
-      "docs": 9761,
-      "donnees": 129
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T09:35:16Z",
   "empreinte": "72beee296b35a7e1",
   "code": 236369,
@@ -37947,6 +37887,70 @@
      },
      "type": {
       "build": 2
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-24T06:24:05Z",
+  "empreinte": "dd0381c06c211da4",
+  "code": 4464704,
+  "commits": 874,
+  "par_depot": {
+   "moteur": 545050,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2106765
+  },
+  "par_langage": {
+   "JSON": 1630300,
+   "RSMP": 1411571,
+   "C++": 463210,
+   "Texte": 451720,
+   "Markdown": 321118,
+   "SMPA": 43215,
+   "C/C++ Header": 33113,
+   "CSV": 27273,
+   "PowerShell": 23860,
+   "YAML": 11286,
+   "Python": 11092,
+   "RSMP IR": 8129,
+   "CMake": 8033,
+   "Rust": 5654,
+   "Assembly": 4730,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Bourne Shell": 22,
+   "DOS Batch": 19
+  },
+  "delta": {
+   "code": 17,
+   "langage": {
+    "Markdown": 17
+   },
+   "type": {
+    "docs": 17
+   },
+   "depots": {
+    "docs": {
+     "code": 17,
+     "court": "35c9df1",
+     "commits": 1,
+     "langage": {
+      "Markdown": 17
+     },
+     "type": {
+      "docs": 17
      }
     }
    }

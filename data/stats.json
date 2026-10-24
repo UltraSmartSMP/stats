@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-24T06:13:23Z",
- "empreinte": "e6a658d4b63a9583",
+ "maj": "2026-10-24T06:24:05Z",
+ "empreinte": "dd0381c06c211da4",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 16008,
   "lignes": {
-   "code": 4464687,
+   "code": 4464704,
    "commentaires": 67249,
-   "vides": 120439,
-   "total": 4652375
+   "vides": 120445,
+   "total": 4652398
   },
   "langages": [
    {
@@ -93,9 +93,9 @@
     "nom": "Markdown",
     "maison": false,
     "fichiers": 5214,
-    "code": 321101,
+    "code": 321118,
     "commentaires": 136,
-    "vides": 62559
+    "vides": 62565
    },
    {
     "nom": "SMPA",
@@ -305,9 +305,9 @@
    {
     "id": "docs",
     "fichiers": 5221,
-    "code": 321175,
+    "code": 321192,
     "commentaires": 136,
-    "vides": 62589
+    "vides": 62595
    },
    {
     "id": "donnees",
@@ -336,7 +336,7 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 321101
+    "code": 321118
    },
    {
     "langage": "C++",
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 873
+  "commits": 874
  },
  "depots": [
   {
@@ -2185,19 +2185,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 384,
+   "commits": 385,
    "commit": {
-    "sha": "d43c34efcba49b79987c5731f8b2eac27acdf593",
-    "court": "d43c34e",
-    "date": "2026-10-24T06:13:23Z",
-    "message": "sync 2026-10-24 08:13"
+    "sha": "35c9df1ac037729870cc9c826f90c809306edac8",
+    "court": "35c9df1",
+    "date": "2026-10-24T06:24:05Z",
+    "message": "sync 2026-10-24 08:24"
    },
    "fichiers": 6703,
    "lignes": {
-    "code": 2106748,
+    "code": 2106765,
     "commentaires": 1385,
-    "vides": 64346,
-    "total": 2172479
+    "vides": 64352,
+    "total": 2172502
    },
    "langages": [
     {
@@ -2212,9 +2212,9 @@
      "nom": "Markdown",
      "maison": false,
      "fichiers": 5194,
-     "code": 320391,
+     "code": 320408,
      "commentaires": 124,
-     "vides": 62236
+     "vides": 62242
     },
     {
      "nom": "Texte",
@@ -2392,9 +2392,9 @@
     {
      "id": "docs",
      "fichiers": 5195,
-     "code": 320400,
+     "code": 320417,
      "commentaires": 124,
-     "vides": 62240
+     "vides": 62246
     },
     {
      "id": "donnees",
@@ -2413,7 +2413,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 320391
+     "code": 320408
     },
     {
      "langage": "Texte",
