@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T00:22:07Z",
-  "empreinte": "01184afb061f1ede",
-  "code": 214004,
-  "commits": 34,
-  "par_depot": {
-   "moteur": 153689,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 60270
-  },
-  "par_langage": {
-   "C++": 120864,
-   "Markdown": 57355,
-   "JSON": 9693,
-   "C/C++ Header": 7641,
-   "PowerShell": 6070,
-   "SMPA": 4581,
-   "Texte": 3024,
-   "CMake": 2637,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 367,
-   "SMPA ISA": 236,
-   "JavaScript": 125,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 3
-  },
-  "delta": {
-   "code": -1,
-   "langage": {
-    "C++": -1
-   },
-   "type": {
-    "source": -1
-   },
-   "depots": {
-    "moteur": {
-     "code": -1,
-     "court": "48e0122",
-     "commits": 1,
-     "langage": {
-      "C++": -1
-     },
-     "type": {
-      "source": -1
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T00:42:23Z",
   "empreinte": "f051d62d66869152",
   "code": 214068,
@@ -37917,6 +37863,70 @@
     "docs": {
      "code": 2,
      "court": "6241d65",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 2
+     },
+     "type": {
+      "donnees": 2
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-24T03:37:17Z",
+  "empreinte": "9302f69b3359a821",
+  "code": 4460337,
+  "commits": 865,
+  "par_depot": {
+   "moteur": 545011,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2102437
+  },
+  "par_langage": {
+   "JSON": 1630300,
+   "RSMP": 1411571,
+   "C++": 463210,
+   "Texte": 447593,
+   "Markdown": 321000,
+   "SMPA": 43215,
+   "C/C++ Header": 33113,
+   "CSV": 27273,
+   "PowerShell": 23822,
+   "YAML": 11286,
+   "Python": 11052,
+   "RSMP IR": 8129,
+   "CMake": 7994,
+   "Rust": 5654,
+   "Assembly": 4730,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Bourne Shell": 22,
+   "DOS Batch": 14
+  },
+  "delta": {
+   "code": 2,
+   "langage": {
+    "PowerShell": 2
+   },
+   "type": {
+    "donnees": 2
+   },
+   "depots": {
+    "docs": {
+     "code": 2,
+     "court": "cf2b675",
      "commits": 1,
      "langage": {
       "PowerShell": 2
