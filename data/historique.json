@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-18T23:21:27Z",
-  "empreinte": "6706285a4278f61d",
-  "code": 213908,
-  "commits": 27,
-  "par_depot": {
-   "moteur": 153672,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 60191
-  },
-  "par_langage": {
-   "C++": 120865,
-   "Markdown": 57276,
-   "JSON": 9692,
-   "C/C++ Header": 7641,
-   "PowerShell": 6070,
-   "SMPA": 4581,
-   "Texte": 3024,
-   "CMake": 2637,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 350,
-   "SMPA ISA": 236,
-   "JavaScript": 125,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 3
-  },
-  "delta": {
-   "code": 1439,
-   "langage": {
-    "Markdown": 1439
-   },
-   "type": {
-    "docs": 1439
-   },
-   "depots": {
-    "docs": {
-     "code": 1439,
-     "court": "5e92b7c",
-     "commits": 1,
-     "langage": {
-      "Markdown": 1439
-     },
-     "type": {
-      "docs": 1439
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-18T23:31:36Z",
   "empreinte": "2c220cf9d7a8c1bb",
   "code": 213977,
@@ -37903,6 +37849,70 @@
       "build": 26,
       "source": 46,
       "tests": 231
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-24T00:29:52Z",
+  "empreinte": "4cecbc852a63400c",
+  "code": 4460274,
+  "commits": 860,
+  "par_depot": {
+   "moteur": 545011,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2102374
+  },
+  "par_langage": {
+   "JSON": 1630300,
+   "RSMP": 1411571,
+   "C++": 463210,
+   "Texte": 447593,
+   "Markdown": 320962,
+   "SMPA": 43215,
+   "C/C++ Header": 33113,
+   "CSV": 27273,
+   "PowerShell": 23797,
+   "YAML": 11286,
+   "Python": 11052,
+   "RSMP IR": 8129,
+   "CMake": 7994,
+   "Rust": 5654,
+   "Assembly": 4730,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Bourne Shell": 22,
+   "DOS Batch": 14
+  },
+  "delta": {
+   "code": 6,
+   "langage": {
+    "Texte": 6
+   },
+   "type": {
+    "donnees": 6
+   },
+   "depots": {
+    "docs": {
+     "code": 6,
+     "court": "7067170",
+     "commits": 1,
+     "langage": {
+      "Texte": 6
+     },
+     "type": {
+      "donnees": 6
      }
     }
    }
