@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-24T02:44:20Z",
- "empreinte": "9563d6094a94c8fa",
+ "maj": "2026-10-24T03:16:16Z",
+ "empreinte": "8605bbb1bca5de52",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 15972,
+  "fichiers": 15973,
   "lignes": {
-   "code": 4460333,
-   "commentaires": 67235,
+   "code": 4460335,
+   "commentaires": 67236,
    "vides": 120388,
-   "total": 4647956
+   "total": 4647959
   },
   "langages": [
    {
@@ -124,9 +124,9 @@
    {
     "nom": "PowerShell",
     "maison": false,
-    "fichiers": 145,
-    "code": 23818,
-    "commentaires": 2615,
+    "fichiers": 146,
+    "code": 23820,
+    "commentaires": 2616,
     "vides": 1423
    },
    {
@@ -311,9 +311,9 @@
    },
    {
     "id": "donnees",
-    "fichiers": 5276,
-    "code": 3500860,
-    "commentaires": 3155,
+    "fichiers": 5277,
+    "code": 3500862,
+    "commentaires": 3156,
     "vides": 3026
    }
   ],
@@ -496,7 +496,7 @@
    {
     "langage": "PowerShell",
     "type": "donnees",
-    "code": 1262
+    "code": 1264
    },
    {
     "langage": "JSON",
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 863
+  "commits": 864
  },
  "depots": [
   {
@@ -2185,19 +2185,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 376,
+   "commits": 377,
    "commit": {
-    "sha": "07550b304059750f1691d51b291abd099f78c850",
-    "court": "07550b3",
-    "date": "2026-10-24T02:44:20Z",
-    "message": "sync 2026-10-24 04:44"
+    "sha": "6241d6590ea542b2661736ba4704ebecc8c10f7f",
+    "court": "6241d65",
+    "date": "2026-10-24T03:16:16Z",
+    "message": "sync 2026-10-24 05:16"
    },
-   "fichiers": 6667,
+   "fichiers": 6668,
    "lignes": {
-    "code": 2102433,
-    "commentaires": 1383,
+    "code": 2102435,
+    "commentaires": 1384,
     "vides": 64296,
-    "total": 2168112
+    "total": 2168115
    },
    "langages": [
     {
@@ -2267,9 +2267,9 @@
     {
      "nom": "PowerShell",
      "maison": false,
-     "fichiers": 46,
-     "code": 2456,
-     "commentaires": 321,
+     "fichiers": 47,
+     "code": 2458,
+     "commentaires": 322,
      "vides": 195
     },
     {
@@ -2398,9 +2398,9 @@
     },
     {
      "id": "donnees",
-     "fichiers": 1455,
-     "code": 1780708,
-     "commentaires": 1028,
+     "fichiers": 1456,
+     "code": 1780710,
+     "commentaires": 1029,
      "vides": 1901
     }
    ],
@@ -2453,7 +2453,7 @@
     {
      "langage": "PowerShell",
      "type": "donnees",
-     "code": 1262
+     "code": 1264
     },
     {
      "langage": "PowerShell",
