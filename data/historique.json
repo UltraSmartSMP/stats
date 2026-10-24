@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-18T23:51:47Z",
-  "empreinte": "06cb9e45e14f2cc9",
-  "code": 214005,
-  "commits": 32,
-  "par_depot": {
-   "moteur": 153690,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 60270
-  },
-  "par_langage": {
-   "C++": 120865,
-   "Markdown": 57355,
-   "JSON": 9693,
-   "C/C++ Header": 7641,
-   "PowerShell": 6070,
-   "SMPA": 4581,
-   "Texte": 3024,
-   "CMake": 2637,
-   "C": 883,
-   "CUDA": 408,
-   "Python": 367,
-   "SMPA ISA": 236,
-   "JavaScript": 125,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 3
-  },
-  "delta": {
-   "code": 2,
-   "langage": {
-    "C++": 2
-   },
-   "type": {
-    "source": 2
-   },
-   "depots": {
-    "moteur": {
-     "code": 2,
-     "court": "b1dfb9d",
-     "commits": 1,
-     "langage": {
-      "C++": 2
-     },
-     "type": {
-      "source": 2
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T00:01:54Z",
   "empreinte": "6e23d408aeec0fcf",
   "code": 214005,
@@ -37895,6 +37841,70 @@
      },
      "type": {
       "docs": 38
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-24T02:44:20Z",
+  "empreinte": "9563d6094a94c8fa",
+  "code": 4460333,
+  "commits": 863,
+  "par_depot": {
+   "moteur": 545011,
+   "langage": 232262,
+   "bibliotheques": 1574501,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2102433
+  },
+  "par_langage": {
+   "JSON": 1630300,
+   "RSMP": 1411571,
+   "C++": 463210,
+   "Texte": 447593,
+   "Markdown": 321000,
+   "SMPA": 43215,
+   "C/C++ Header": 33113,
+   "CSV": 27273,
+   "PowerShell": 23818,
+   "YAML": 11286,
+   "Python": 11052,
+   "RSMP IR": 8129,
+   "CMake": 7994,
+   "Rust": 5654,
+   "Assembly": 4730,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1848,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 290,
+   "diff": 119,
+   "INI": 83,
+   "Bourne Shell": 22,
+   "DOS Batch": 14
+  },
+  "delta": {
+   "code": 21,
+   "langage": {
+    "PowerShell": 21
+   },
+   "type": {
+    "donnees": 21
+   },
+   "depots": {
+    "docs": {
+     "code": 21,
+     "court": "07550b3",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 21
+     },
+     "type": {
+      "donnees": 21
      }
     }
    }
