@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-23T23:47:14Z",
- "empreinte": "e9832e964df416e1",
+ "maj": "2026-10-24T00:08:04Z",
+ "empreinte": "0feb9b06c32cc5dd",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 15876,
   "lignes": {
-   "code": 4459062,
-   "commentaires": 67188,
+   "code": 4459065,
+   "commentaires": 67189,
    "vides": 120348,
-   "total": 4646598
+   "total": 4646602
   },
   "langages": [
    {
@@ -141,8 +141,8 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 96,
-    "code": 11010,
-    "commentaires": 945,
+    "code": 11013,
+    "commentaires": 946,
     "vides": 1009
    },
    {
@@ -291,8 +291,8 @@
    {
     "id": "scripts",
     "fichiers": 99,
-    "code": 15079,
-    "commentaires": 1507,
+    "code": 15082,
+    "commentaires": 1508,
     "vides": 1038
    },
    {
@@ -456,7 +456,7 @@
    {
     "langage": "Python",
     "type": "scripts",
-    "code": 2520
+    "code": 2523
    },
    {
     "langage": "JavaScript",
@@ -659,26 +659,26 @@
     "code": 3
    }
   ],
-  "commits": 856
+  "commits": 857
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 270,
+   "commits": 271,
    "commit": {
-    "sha": "b2caa4e6c295c31cb49cc563883401eb3b243b62",
-    "court": "b2caa4e",
-    "date": "2026-10-23T23:25:59Z",
-    "message": "sync 2026-10-24 01:25"
+    "sha": "eda2981f936e9991c7ba7c3ec3ad9448396fa6c4",
+    "court": "eda2981",
+    "date": "2026-10-24T00:08:04Z",
+    "message": "sync 2026-10-24 02:08"
    },
    "fichiers": 3175,
    "lignes": {
-    "code": 544705,
-    "commentaires": 35721,
+    "code": 544708,
+    "commentaires": 35722,
     "vides": 27039,
-    "total": 607465
+    "total": 607469
    },
    "langages": [
     {
@@ -733,8 +733,8 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 33,
-     "code": 5648,
-     "commentaires": 507,
+     "code": 5651,
+     "commentaires": 508,
      "vides": 704
     },
     {
@@ -875,8 +875,8 @@
     {
      "id": "scripts",
      "fichiers": 72,
-     "code": 9306,
-     "commentaires": 852,
+     "code": 9309,
+     "commentaires": 853,
      "vides": 570
     },
     {
@@ -980,7 +980,7 @@
     {
      "langage": "Python",
      "type": "scripts",
-     "code": 2520
+     "code": 2523
     },
     {
      "langage": "JavaScript",
