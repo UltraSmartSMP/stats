@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T11:10:58Z",
- "empreinte": "946c7f62f9fd2fcd",
+ "maj": "2026-10-25T11:21:44Z",
+ "empreinte": "c6c22c86c3ab47c6",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 17166,
+  "fichiers": 17170,
   "lignes": {
-   "code": 4723198,
-   "commentaires": 70670,
-   "vides": 125566,
-   "total": 4919434
+   "code": 4723246,
+   "commentaires": 70682,
+   "vides": 125570,
+   "total": 4919498
   },
   "langages": [
    {
@@ -68,10 +68,10 @@
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 2682,
-    "code": 1422198,
-    "commentaires": 8143,
-    "vides": 6751
+    "fichiers": 2686,
+    "code": 1422251,
+    "commentaires": 8154,
+    "vides": 6755
    },
    {
     "nom": "Texte",
@@ -85,8 +85,8 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1193,
-    "code": 477759,
-    "commentaires": 37297,
+    "code": 477754,
+    "commentaires": 37298,
     "vides": 38985
    },
    {
@@ -270,16 +270,16 @@
    {
     "id": "source",
     "fichiers": 1232,
-    "code": 237258,
-    "commentaires": 31152,
+    "code": 237253,
+    "commentaires": 31153,
     "vides": 26696
    },
    {
     "id": "tests",
-    "fichiers": 3406,
-    "code": 328358,
-    "commentaires": 25462,
-    "vides": 23055
+    "fichiers": 3410,
+    "code": 328411,
+    "commentaires": 25473,
+    "vides": 23059
    },
    {
     "id": "bancs",
@@ -346,12 +346,12 @@
    {
     "langage": "C++",
     "type": "source",
-    "code": 186703
+    "code": 186698
    },
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 62742
+    "code": 62795
    },
    {
     "langage": "C++",
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 996
+  "commits": 997
  },
  "depots": [
   {
@@ -1153,36 +1153,36 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 170,
+   "commits": 171,
    "commit": {
-    "sha": "abc89c32bd5806e142019afcc9d21badfbe3b614",
-    "court": "abc89c3",
-    "date": "2026-10-25T11:10:49Z",
-    "message": "sync 2026-10-25 12:10"
+    "sha": "1a32cb03fb519e593ba95312c97f0f9ff4d351e2",
+    "court": "1a32cb0",
+    "date": "2026-10-25T11:21:44Z",
+    "message": "sync 2026-10-25 12:21"
    },
-   "fichiers": 2873,
+   "fichiers": 2877,
    "lignes": {
-    "code": 238300,
-    "commentaires": 23124,
-    "vides": 20625,
-    "total": 282049
+    "code": 238348,
+    "commentaires": 23136,
+    "vides": 20629,
+    "total": 282113
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 528,
-     "code": 180363,
-     "commentaires": 12574,
+     "code": 180358,
+     "commentaires": 12575,
      "vides": 15116
     },
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 1377,
-     "code": 23866,
-     "commentaires": 3883,
-     "vides": 2576
+     "fichiers": 1381,
+     "code": 23919,
+     "commentaires": 3894,
+     "vides": 2580
     },
     {
      "nom": "C/C++ Header",
@@ -1309,16 +1309,16 @@
     {
      "id": "source",
      "fichiers": 504,
-     "code": 88479,
-     "commentaires": 10454,
+     "code": 88474,
+     "commentaires": 10455,
      "vides": 9674
     },
     {
      "id": "tests",
-     "fichiers": 1742,
-     "code": 130535,
-     "commentaires": 11043,
-     "vides": 10147
+     "fichiers": 1746,
+     "code": 130588,
+     "commentaires": 11054,
+     "vides": 10151
     },
     {
      "id": "bancs",
@@ -1365,12 +1365,12 @@
     {
      "langage": "C++",
      "type": "source",
-     "code": 77595
+     "code": 77590
     },
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 23127
+     "code": 23180
     },
     {
      "langage": "C/C++ Header",
