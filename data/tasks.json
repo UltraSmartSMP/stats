@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-25T01:42:08Z",
- "sha": "c424771",
- "empreinte": "53db099fbf1366e5",
+ "maj": "2026-10-25T01:54:00Z",
+ "sha": "7593264",
+ "empreinte": "89905e2d4e8b3a4c",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -35,8 +35,12 @@
   "010-etat-reifie": {
    "faites": 157,
    "total": 478
+  },
+  "011-auto-hebergement": {
+   "faites": 0,
+   "total": 209
   }
  },
  "faites": 1340,
- "total": 2564
+ "total": 2773
 }
