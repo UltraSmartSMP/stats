@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T15:11:11Z",
- "empreinte": "05ae133c088f8d7b",
+ "maj": "2026-10-25T15:32:10Z",
+ "empreinte": "cbef91b1572524dc",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 1038
+  "commits": 1039
  },
  "depots": [
   {
@@ -1153,12 +1153,12 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 190,
+   "commits": 191,
    "commit": {
-    "sha": "1c581294e2efc081163f3d6e1684c607671b5e71",
-    "court": "1c58129",
-    "date": "2026-10-25T15:11:11Z",
-    "message": "sync 2026-10-25 16:11"
+    "sha": "07b530f3a8991cc5c42895e53210aca4e2375b5f",
+    "court": "07b530f",
+    "date": "2026-10-25T15:32:10Z",
+    "message": "sync 2026-10-25 16:32"
    },
    "fichiers": 2920,
    "lignes": {
