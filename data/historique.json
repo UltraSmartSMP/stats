@@ -1,61 +1,5 @@
 [
  {
-  "maj": "2026-10-19T16:11:08Z",
-  "empreinte": "05d4d07d4b670ac0",
-  "code": 347866,
-  "commits": 106,
-  "par_depot": {
-   "moteur": 159693,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 188128
-  },
-  "par_langage": {
-   "Markdown": 179958,
-   "C++": 125524,
-   "JSON": 13304,
-   "C/C++ Header": 7663,
-   "PowerShell": 6496,
-   "Texte": 5122,
-   "SMPA": 4694,
-   "CMake": 2828,
-   "C": 883,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 11,
-   "langage": {
-    "C++": 9,
-    "C/C++ Header": 2
-   },
-   "type": {
-    "source": 11
-   },
-   "depots": {
-    "moteur": {
-     "code": 11,
-     "court": "dd5b804",
-     "commits": 1,
-     "langage": {
-      "C++": 9,
-      "C/C++ Header": 2
-     },
-     "type": {
-      "source": 11
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T16:21:22Z",
   "empreinte": "017f50138fdfd756",
   "code": 348602,
@@ -38981,6 +38925,87 @@
      },
      "type": {
       "tests": 23
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T09:46:20Z",
+  "empreinte": "7c3a8b3863c3a325",
+  "code": 4706900,
+  "commits": 982,
+  "par_depot": {
+   "moteur": 561401,
+   "langage": 237563,
+   "bibliotheques": 1582441,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2319369
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1421906,
+   "Texte": 620779,
+   "C++": 477233,
+   "Markdown": 331119,
+   "SMPA": 43572,
+   "CSV": 34245,
+   "C/C++ Header": 33909,
+   "PowerShell": 26550,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8461,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 12211,
+   "langage": {
+    "C++": 12,
+    "RSMP": 43,
+    "Texte": 12156
+   },
+   "type": {
+    "donnees": 12156,
+    "source": 12,
+    "tests": 43
+   },
+   "depots": {
+    "docs": {
+     "code": 12156,
+     "court": "7a4ee59",
+     "commits": 1,
+     "langage": {
+      "Texte": 12156
+     },
+     "type": {
+      "donnees": 12156
+     }
+    },
+    "langage": {
+     "code": 55,
+     "court": "728b5e8",
+     "commits": 1,
+     "langage": {
+      "C++": 12,
+      "RSMP": 43
+     },
+     "type": {
+      "source": 12,
+      "tests": 43
      }
     }
    }
