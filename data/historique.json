@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T14:39:36Z",
-  "empreinte": "c12fe8b1aa5b2aa8",
-  "code": 343929,
-  "commits": 89,
-  "par_depot": {
-   "moteur": 157866,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 186018
-  },
-  "par_langage": {
-   "Markdown": 177896,
-   "C++": 123845,
-   "JSON": 13300,
-   "C/C++ Header": 7648,
-   "PowerShell": 6496,
-   "Texte": 5103,
-   "SMPA": 4620,
-   "CMake": 2745,
-   "C": 882,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 310,
-   "langage": {
-    "Markdown": 310
-   },
-   "type": {
-    "docs": 310
-   },
-   "depots": {
-    "docs": {
-     "code": 310,
-     "court": "64933f3",
-     "commits": 1,
-     "langage": {
-      "Markdown": 310
-     },
-     "type": {
-      "docs": 310
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T14:49:47Z",
   "empreinte": "02b7878f3698c1a6",
   "code": 344046,
@@ -38853,6 +38799,85 @@
      },
      "type": {
       "source": -3
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T07:23:51Z",
+  "empreinte": "e0d90e77267c5f58",
+  "code": 4671430,
+  "commits": 961,
+  "par_depot": {
+   "moteur": 561386,
+   "langage": 236074,
+   "bibliotheques": 1583368,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2284476
+  },
+  "par_langage": {
+   "JSON": 1655019,
+   "RSMP": 1422149,
+   "Texte": 587057,
+   "C++": 476491,
+   "Markdown": 330798,
+   "SMPA": 43572,
+   "CSV": 34245,
+   "C/C++ Header": 33831,
+   "PowerShell": 26421,
+   "Python": 11864,
+   "YAML": 11286,
+   "CMake": 8461,
+   "RSMP IR": 8129,
+   "Rust": 5863,
+   "Assembly": 5644,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 1085,
+   "langage": {
+    "C++": 1037,
+    "C/C++ Header": 3,
+    "CMake": 45
+   },
+   "type": {
+    "build": 45,
+    "source": 137,
+    "tests": 903
+   },
+   "depots": {
+    "langage": {
+     "code": 0,
+     "court": "4f02cf6",
+     "commits": 1,
+     "langage": {},
+     "type": {}
+    },
+    "moteur": {
+     "code": 1085,
+     "court": "227cc07",
+     "commits": 1,
+     "langage": {
+      "C++": 1037,
+      "C/C++ Header": 3,
+      "CMake": 45
+     },
+     "type": {
+      "build": 45,
+      "source": 137,
+      "tests": 903
      }
     }
    }

@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T07:13:07Z",
- "empreinte": "215413c59a9141ca",
+ "maj": "2026-10-25T07:23:51Z",
+ "empreinte": "e0d90e77267c5f58",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 17044,
+  "fichiers": 17046,
   "lignes": {
-   "code": 4670345,
-   "commentaires": 70198,
-   "vides": 125250,
-   "total": 4865793
+   "code": 4671430,
+   "commentaires": 70299,
+   "vides": 125296,
+   "total": 4867025
   },
   "langages": [
    {
@@ -70,7 +70,7 @@
     "maison": true,
     "fichiers": 2660,
     "code": 1422149,
-    "commentaires": 7963,
+    "commentaires": 7962,
     "vides": 6606
    },
    {
@@ -84,10 +84,10 @@
    {
     "nom": "C++",
     "maison": false,
-    "fichiers": 1190,
-    "code": 475454,
-    "commentaires": 37082,
-    "vides": 38902
+    "fichiers": 1192,
+    "code": 476491,
+    "commentaires": 37162,
+    "vides": 38947
    },
    {
     "nom": "Markdown",
@@ -117,8 +117,8 @@
     "nom": "C/C++ Header",
     "maison": false,
     "fichiers": 517,
-    "code": 33828,
-    "commentaires": 14489,
+    "code": 33831,
+    "commentaires": 14500,
     "vides": 7165
    },
    {
@@ -149,9 +149,9 @@
     "nom": "CMake",
     "maison": false,
     "fichiers": 176,
-    "code": 8416,
-    "commentaires": 1972,
-    "vides": 878
+    "code": 8461,
+    "commentaires": 1983,
+    "vides": 879
    },
    {
     "nom": "RSMP IR",
@@ -270,16 +270,16 @@
    {
     "id": "source",
     "fichiers": 1277,
-    "code": 237055,
-    "commentaires": 30979,
-    "vides": 26593
+    "code": 237192,
+    "commentaires": 30998,
+    "vides": 26596
    },
    {
     "id": "tests",
-    "fichiers": 3334,
-    "code": 326204,
-    "commentaires": 25202,
-    "vides": 22927
+    "fichiers": 3336,
+    "code": 327107,
+    "commentaires": 25273,
+    "vides": 22969
    },
    {
     "id": "bancs",
@@ -298,9 +298,9 @@
    {
     "id": "build",
     "fichiers": 248,
-    "code": 9721,
-    "commentaires": 1964,
-    "vides": 972
+    "code": 9766,
+    "commentaires": 1975,
+    "vides": 973
    },
    {
     "id": "docs",
@@ -341,12 +341,12 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 237886
+    "code": 238789
    },
    {
     "langage": "C++",
     "type": "source",
-    "code": 185664
+    "code": 185798
    },
    {
     "langage": "RSMP",
@@ -366,7 +366,7 @@
    {
     "langage": "C/C++ Header",
     "type": "source",
-    "code": 30924
+    "code": 30927
    },
    {
     "langage": "SMPA",
@@ -396,7 +396,7 @@
    {
     "langage": "CMake",
     "type": "build",
-    "code": 8277
+    "code": 8322
    },
    {
     "langage": "SMPA",
@@ -664,35 +664,35 @@
     "code": 3
    }
   ],
-  "commits": 959
+  "commits": 961
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 297,
+   "commits": 298,
    "commit": {
-    "sha": "192f78e6368937f049264080fbf9c974196a4612",
-    "court": "192f78e",
-    "date": "2026-10-25T07:02:02Z",
-    "message": "sync 2026-10-25 08:02"
+    "sha": "227cc07917e9c1f1ca2c1b5843b2277be73fdef8",
+    "court": "227cc07",
+    "date": "2026-10-25T07:23:48Z",
+    "message": "sync 2026-10-25 08:23"
    },
-   "fichiers": 3285,
+   "fichiers": 3287,
    "lignes": {
-    "code": 560301,
-    "commentaires": 37305,
-    "vides": 28339,
-    "total": 625945
+    "code": 561386,
+    "commentaires": 37407,
+    "vides": 28385,
+    "total": 627178
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
-     "fichiers": 537,
-     "code": 239477,
-     "commentaires": 20794,
-     "vides": 19352
+     "fichiers": 539,
+     "code": 240514,
+     "commentaires": 20874,
+     "vides": 19397
     },
     {
      "nom": "Texte",
@@ -722,8 +722,8 @@
      "nom": "C/C++ Header",
      "maison": false,
      "fichiers": 281,
-     "code": 21225,
-     "commentaires": 9238,
+     "code": 21228,
+     "commentaires": 9249,
      "vides": 4388
     },
     {
@@ -746,9 +746,9 @@
      "nom": "CMake",
      "maison": false,
      "fichiers": 124,
-     "code": 5902,
-     "commentaires": 1493,
-     "vides": 640
+     "code": 5947,
+     "commentaires": 1504,
+     "vides": 641
     },
     {
      "nom": "Rust",
@@ -859,16 +859,16 @@
     {
      "id": "source",
      "fichiers": 544,
-     "code": 110187,
-     "commentaires": 17140,
-     "vides": 12871
+     "code": 110324,
+     "commentaires": 17159,
+     "vides": 12874
     },
     {
      "id": "tests",
-     "fichiers": 970,
-     "code": 127700,
-     "commentaires": 11169,
-     "vides": 9050
+     "fichiers": 972,
+     "code": 128603,
+     "commentaires": 11241,
+     "vides": 9092
     },
     {
      "id": "bancs",
@@ -887,9 +887,9 @@
     {
      "id": "build",
      "fichiers": 147,
-     "code": 6393,
-     "commentaires": 1483,
-     "vides": 692
+     "code": 6438,
+     "commentaires": 1494,
+     "vides": 693
     },
     {
      "id": "docs",
@@ -915,12 +915,12 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 113837
+     "code": 114740
     },
     {
      "langage": "C++",
      "type": "source",
-     "code": 89747
+     "code": 89881
     },
     {
      "langage": "JSON",
@@ -940,7 +940,7 @@
     {
      "langage": "C/C++ Header",
      "type": "source",
-     "code": 19233
+     "code": 19236
     },
     {
      "langage": "SMPA",
@@ -955,7 +955,7 @@
     {
      "langage": "CMake",
      "type": "build",
-     "code": 5825
+     "code": 5870
     },
     {
      "langage": "Rust",
@@ -1153,19 +1153,19 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 153,
+   "commits": 154,
    "commit": {
-    "sha": "3199b0e5db7edfc85eff58a31b4e9f24cabc4db0",
-    "court": "3199b0e",
-    "date": "2026-10-25T07:12:58Z",
-    "message": "sync 2026-10-25 08:12"
+    "sha": "4f02cf65731783e7391087e16dadb349c7c9cb26",
+    "court": "4f02cf6",
+    "date": "2026-10-25T07:23:51Z",
+    "message": "sync 2026-10-25 08:23"
    },
    "fichiers": 2802,
    "lignes": {
     "code": 236074,
-    "commentaires": 22789,
+    "commentaires": 22788,
     "vides": 20501,
-    "total": 279364
+    "total": 279363
    },
    "langages": [
     {
@@ -1181,7 +1181,7 @@
      "maison": true,
      "fichiers": 1309,
      "code": 22890,
-     "commentaires": 3701,
+     "commentaires": 3700,
      "vides": 2492
     },
     {
@@ -1317,7 +1317,7 @@
      "id": "tests",
      "fichiers": 1672,
      "code": 129298,
-     "commentaires": 10858,
+     "commentaires": 10857,
      "vides": 10062
     },
     {
