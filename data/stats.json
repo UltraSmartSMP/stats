@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T01:29:47Z",
- "empreinte": "d7f072f2b5d6feb5",
+ "maj": "2026-10-25T01:42:08Z",
+ "empreinte": "f9ce76c873f9b3f0",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,37 +49,37 @@
   }
  ],
  "global": {
-  "fichiers": 16270,
+  "fichiers": 16302,
   "lignes": {
-   "code": 4562400,
-   "commentaires": 67674,
-   "vides": 121048,
-   "total": 4751122
+   "code": 4564907,
+   "commentaires": 67688,
+   "vides": 121099,
+   "total": 4753694
   },
   "langages": [
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 330,
-    "code": 1653743,
+    "fichiers": 334,
+    "code": 1653845,
     "commentaires": 0,
     "vides": 10
    },
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 2449,
-    "code": 1411832,
-    "commentaires": 6892,
-    "vides": 5829
+    "fichiers": 2452,
+    "code": 1412084,
+    "commentaires": 6915,
+    "vides": 5845
    },
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 4020,
-    "code": 519190,
+    "fichiers": 4031,
+    "code": 520462,
     "commentaires": 0,
-    "vides": 1172
+    "vides": 1188
    },
    {
     "nom": "C++",
@@ -92,10 +92,10 @@
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5235,
-    "code": 322023,
-    "commentaires": 147,
-    "vides": 62908
+    "fichiers": 5236,
+    "code": 322220,
+    "commentaires": 136,
+    "vides": 62927
    },
    {
     "nom": "SMPA",
@@ -116,17 +116,17 @@
    {
     "nom": "CSV",
     "maison": false,
-    "fichiers": 65,
-    "code": 29466,
+    "fichiers": 73,
+    "code": 29555,
     "commentaires": 0,
     "vides": 0
    },
    {
     "nom": "PowerShell",
     "maison": false,
-    "fichiers": 165,
-    "code": 24182,
-    "commentaires": 2633,
+    "fichiers": 166,
+    "code": 24205,
+    "commentaires": 2635,
     "vides": 1423
    },
    {
@@ -172,8 +172,8 @@
    {
     "nom": "Assembly",
     "maison": false,
-    "fichiers": 36,
-    "code": 5072,
+    "fichiers": 40,
+    "code": 5644,
     "commentaires": 33,
     "vides": 10
    },
@@ -269,17 +269,17 @@
   "types": [
    {
     "id": "source",
-    "fichiers": 1181,
-    "code": 228958,
-    "commentaires": 29979,
-    "vides": 25923
+    "fichiers": 1183,
+    "code": 229193,
+    "commentaires": 30001,
+    "vides": 25936
    },
    {
     "id": "tests",
-    "fichiers": 3156,
-    "code": 313488,
-    "commentaires": 24161,
-    "vides": 21919
+    "fichiers": 3158,
+    "code": 313528,
+    "commentaires": 24164,
+    "vides": 21922
    },
    {
     "id": "bancs",
@@ -304,24 +304,24 @@
    },
    {
     "id": "docs",
-    "fichiers": 5242,
-    "code": 322097,
-    "commentaires": 147,
-    "vides": 62938
+    "fichiers": 5243,
+    "code": 322294,
+    "commentaires": 136,
+    "vides": 62957
    },
    {
     "id": "donnees",
-    "fichiers": 5514,
-    "code": 3598935,
+    "fichiers": 5541,
+    "code": 3600970,
     "commentaires": 3179,
-    "vides": 3107
+    "vides": 3123
    }
   ],
   "croise": [
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1652354
+    "code": 1652456
    },
    {
     "langage": "RSMP",
@@ -331,12 +331,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 511825
+    "code": 513097
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 322023
+    "code": 322220
    },
    {
     "langage": "C++",
@@ -351,7 +351,7 @@
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 55923
+    "code": 55940
    },
    {
     "langage": "C++",
@@ -366,7 +366,7 @@
    {
     "langage": "CSV",
     "type": "donnees",
-    "code": 29466
+    "code": 29555
    },
    {
     "langage": "SMPA",
@@ -376,7 +376,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 14669
+    "code": 14904
    },
    {
     "langage": "YAML",
@@ -419,6 +419,11 @@
     "code": 6639
    },
    {
+    "langage": "Assembly",
+    "type": "donnees",
+    "code": 5600
+   },
+   {
     "langage": "Rust",
     "type": "bancs",
     "code": 5564
@@ -426,17 +431,12 @@
    {
     "langage": "PowerShell",
     "type": "tests",
-    "code": 5527
+    "code": 5550
    },
    {
     "langage": "Python",
     "type": "donnees",
     "code": 5169
-   },
-   {
-    "langage": "Assembly",
-    "type": "donnees",
-    "code": 5028
    },
    {
     "langage": "Texte",
@@ -664,19 +664,19 @@
     "code": 3
    }
   ],
-  "commits": 886
+  "commits": 889
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 277,
+   "commits": 278,
    "commit": {
-    "sha": "fed6a84b57845e9edaf6aedb2c630909b78160d5",
-    "court": "fed6a84",
-    "date": "2026-10-25T01:29:23Z",
-    "message": "sync 2026-10-25 02:29"
+    "sha": "0d17a9d3bc9f1e2c9b8673a4a1812a7e5a97b887",
+    "court": "0d17a9d",
+    "date": "2026-10-25T01:41:52Z",
+    "message": "sync 2026-10-25 02:41"
    },
    "fichiers": 3182,
    "lignes": {
@@ -1518,28 +1518,28 @@
    "nom": "bibliotheques",
    "description": "Bibliothèques de base du moteur SMPA écrites en RSMP et compilées en bundles .smpb : core, alloc, collections, enveloppes de natives, sync/task, outil de paquets rsmpkg (rsmp.toml, bundles.lock). En développement, pas utilisable en production. Licence propriétaire.",
    "url": "https://github.com/UltraSmartSMP/bibliotheques",
-   "commits": 56,
+   "commits": 57,
    "commit": {
-    "sha": "d6165ffe7ce6c02bfb16c7ce28459baf4bc45d38",
-    "court": "d6165ff",
-    "date": "2026-10-22T07:20:52Z",
-    "message": "sync 2026-10-22 09:20"
+    "sha": "0f12a706e99cbeaba5082725f98d7ed6b095faec",
+    "court": "0f12a70",
+    "date": "2026-10-25T01:41:59Z",
+    "message": "sync 2026-10-25 02:41"
    },
-   "fichiers": 3343,
+   "fichiers": 3347,
    "lignes": {
-    "code": 1574501,
-    "commentaires": 7310,
-    "vides": 8295,
-    "total": 1590106
+    "code": 1574776,
+    "commentaires": 7335,
+    "vides": 8311,
+    "total": 1590422
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 1029,
-     "code": 1385463,
-     "commentaires": 3086,
-     "vides": 3277
+     "fichiers": 1032,
+     "code": 1385715,
+     "commentaires": 3109,
+     "vides": 3293
     },
     {
      "nom": "Texte",
@@ -1576,9 +1576,9 @@
     {
      "nom": "PowerShell",
      "maison": false,
-     "fichiers": 5,
-     "code": 981,
-     "commentaires": 89,
+     "fichiers": 6,
+     "code": 1004,
+     "commentaires": 91,
      "vides": 98
     },
     {
@@ -1633,17 +1633,17 @@
    "types": [
     {
      "id": "source",
-     "fichiers": 157,
-     "code": 34376,
-     "commentaires": 2976,
-     "vides": 3784
+     "fichiers": 159,
+     "code": 34611,
+     "commentaires": 2998,
+     "vides": 3797
     },
     {
      "id": "tests",
-     "fichiers": 601,
-     "code": 62945,
-     "commentaires": 2679,
-     "vides": 3332
+     "fichiers": 603,
+     "code": 62985,
+     "commentaires": 2682,
+     "vides": 3335
     },
     {
      "id": "bancs",
@@ -1695,7 +1695,7 @@
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 34832
+     "code": 34849
     },
     {
      "langage": "C++",
@@ -1710,7 +1710,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 13994
+     "code": 14229
     },
     {
      "langage": "C++",
@@ -1791,6 +1791,11 @@
      "langage": "SMPA",
      "type": "donnees",
      "code": 41
+    },
+    {
+     "langage": "PowerShell",
+     "type": "tests",
+     "code": 23
     },
     {
      "langage": "Texte",
@@ -2185,50 +2190,50 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 391,
+   "commits": 392,
    "commit": {
-    "sha": "57c768ebcb2b06b0d0eccdadb95f111fc7362ce6",
-    "court": "57c768e",
-    "date": "2026-10-25T01:29:47Z",
-    "message": "sync 2026-10-25 02:29"
+    "sha": "c424771443196d29291415e1a7b485d8a82b557f",
+    "court": "c424771",
+    "date": "2026-10-25T01:42:08Z",
+    "message": "sync 2026-10-25 02:42"
    },
-   "fichiers": 6929,
+   "fichiers": 6957,
    "lignes": {
-    "code": 2201531,
-    "commentaires": 1418,
-    "vides": 64752,
-    "total": 2267701
+    "code": 2203763,
+    "commentaires": 1407,
+    "vides": 64787,
+    "total": 2269957
    },
    "langages": [
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 206,
-     "code": 1606140,
+     "fichiers": 210,
+     "code": 1606242,
      "commentaires": 0,
      "vides": 10
     },
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5215,
-     "code": 321313,
-     "commentaires": 135,
-     "vides": 62585
+     "fichiers": 5216,
+     "code": 321510,
+     "commentaires": 124,
+     "vides": 62604
     },
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 1133,
-     "code": 210080,
+     "fichiers": 1144,
+     "code": 211352,
      "commentaires": 0,
-     "vides": 1024
+     "vides": 1040
     },
     {
      "nom": "CSV",
      "maison": false,
-     "fichiers": 58,
-     "code": 29362,
+     "fichiers": 66,
+     "code": 29451,
      "commentaires": 0,
      "vides": 0
     },
@@ -2249,20 +2254,20 @@
      "vides": 434
     },
     {
+     "nom": "Assembly",
+     "maison": false,
+     "fichiers": 39,
+     "code": 5600,
+     "commentaires": 0,
+     "vides": 0
+    },
+    {
      "nom": "Python",
      "maison": false,
      "fichiers": 64,
      "code": 5169,
      "commentaires": 385,
      "vides": 251
-    },
-    {
-     "nom": "Assembly",
-     "maison": false,
-     "fichiers": 35,
-     "code": 5028,
-     "commentaires": 0,
-     "vides": 0
     },
     {
      "nom": "PowerShell",
@@ -2391,39 +2396,39 @@
     },
     {
      "id": "docs",
-     "fichiers": 5216,
-     "code": 321322,
-     "commentaires": 135,
-     "vides": 62589
+     "fichiers": 5217,
+     "code": 321519,
+     "commentaires": 124,
+     "vides": 62608
     },
     {
      "id": "donnees",
-     "fichiers": 1693,
-     "code": 1878783,
+     "fichiers": 1720,
+     "code": 1880818,
      "commentaires": 1052,
-     "vides": 1982
+     "vides": 1998
     }
    ],
    "croise": [
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 1606062
+     "code": 1606164
     },
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 321313
+     "code": 321510
     },
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 210044
+     "code": 211316
     },
     {
      "langage": "CSV",
      "type": "donnees",
-     "code": 29362
+     "code": 29451
     },
     {
      "langage": "YAML",
@@ -2436,14 +2441,14 @@
      "code": 6966
     },
     {
+     "langage": "Assembly",
+     "type": "donnees",
+     "code": 5600
+    },
+    {
      "langage": "Python",
      "type": "donnees",
      "code": 5169
-    },
-    {
-     "langage": "Assembly",
-     "type": "donnees",
-     "code": 5028
     },
     {
      "langage": "PowerShell",
