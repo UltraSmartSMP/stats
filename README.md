@@ -15,6 +15,8 @@ Site statique qui affiche le nombre de lignes de code des dépôts de l'organisa
 - part de chaque dépôt (anneau) et tableau croisé langage × type ;
 - une carte par dépôt : dernier commit compté, totaux, répartition par langage, lien GitHub ;
 - historique du total et de chaque dépôt (affiché dès qu'il y a au moins deux relevés) ;
+- avancement des tasks spec-kit (cases cochées sur total, par spec et au total) avec la courbe de son évolution commit par commit, générés par `moteur-orchestration/stats_tasks.py` (`data/tasks.json`, `data/tasks-historique.json`) ;
+- une barre fixe en haut à gauche : tokens utilisés pour le projet depuis le début (somme entrée, sortie, écriture et lecture de cache), relevée tous les 50 commits par `stats_tokens.py` (`data/tokens.json`, aucun contenu de transcription) ;
 - tableau détaillé triable par dépôt et par langage ;
 - un filtre par dépôt qui met à jour toutes les vues (adresse `…/#moteur` pour y revenir) ;
 - un compteur flottant en bas de l'écran : le nombre total de commits des dépôts comptés, et au survol ou au clic le détail par dépôt ;

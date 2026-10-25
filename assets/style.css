@@ -535,3 +535,35 @@ body.avec-flottant .pied { padding-bottom: calc(72px + env(safe-area-inset-botto
 @media (forced-colors: active) {
   .piste-fond > span, .empile > span, .jauge > span, .fd-barre > span, .segmentee > span { forced-color-adjust: none; }
 }
+
+/* tokens du projet : barre fixe en haut à gauche, visible en permanence ; la page descend d'autant (body.avec-jetons) */
+.jetons { position: fixed; top: 0; left: 0; right: 0; z-index: 8; padding-top: env(safe-area-inset-top, 0px); background: color-mix(in srgb, var(--fond) 94%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-bottom: 1px solid var(--ligne); }
+.jetons-int { display: flex; align-items: center; gap: 0 12px; height: 32px; padding-inline: max(12px, env(safe-area-inset-left, 0px)) max(12px, env(safe-area-inset-right, 0px)); overflow: hidden; }
+.jetons-bouton { font: inherit; font-size: var(--t-s); color: var(--texte); background: none; border: 0; padding: 2px 4px; margin-left: -4px; border-radius: 6px; cursor: pointer; white-space: nowrap; display: inline-flex; align-items: baseline; gap: 6px; flex: none; }
+.jetons-bouton:hover { background: var(--surface-2); }
+.jetons-lib { color: var(--texte-2); }
+.jetons-val { font-family: var(--police-titre); font-weight: 650; color: var(--accent); font-variant-numeric: tabular-nums; }
+.jetons-sous { font-size: var(--t-xs); color: var(--texte-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.jetons-detail { position: absolute; top: 100%; left: max(12px, env(safe-area-inset-left, 0px)); width: min(340px, calc(100vw - 24px)); margin-top: 4px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--ligne); border-radius: var(--rayon); box-shadow: var(--ombre-haute); }
+.jetons-ligne { display: flex; justify-content: space-between; gap: 16px; font-size: var(--t-s); padding: 3px 0; font-variant-numeric: tabular-nums; }
+.jetons-ligne-total { font-weight: 650; border-bottom: 1px solid var(--ligne); margin-bottom: 4px; padding-bottom: 6px; }
+.jetons-note { margin: 8px 0 0; font-size: var(--t-xs); color: var(--texte-3); }
+body.avec-jetons { padding-top: calc(33px + env(safe-area-inset-top, 0px)); }
+body.avec-jetons .filtre { top: calc(33px + env(safe-area-inset-top, 0px)); }
+@media (max-width: 560px) { .jetons-sous { display: none; } }
+
+/* avancement des tasks */
+.tasks-total { display: flex; flex-direction: column; gap: 8px; }
+.tasks-total .chiffre-ligne { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 8px; }
+.avance { height: 10px; background: var(--surface-2); border-radius: 5px; overflow: hidden; }
+.avance.grande { height: 14px; border-radius: 7px; }
+.avance > span { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+.avance > span.fini { background: var(--gain); }
+.barres tbody th.tasks-spec { white-space: normal; }
+.spec-choix { font: inherit; color: inherit; background: none; border: 0; padding: 2px 6px; margin-left: -6px; border-radius: 6px; cursor: pointer; text-align: left; overflow-wrap: anywhere; }
+.spec-choix:hover { background: var(--surface-2); }
+.spec-choix[aria-pressed="true"] { background: var(--texte); color: var(--fond); }
+.tasks-courbe-tete { margin-top: 4px; }
+.tasks-courbe-tete h3 { font-size: var(--t-m); font-weight: 650; }
+.legende i.tirets { height: 0; background: none; border-top: 3px dashed var(--texte-2); border-radius: 0; }
+@media (forced-colors: active) { .avance > span { forced-color-adjust: none; } }

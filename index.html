@@ -9,10 +9,20 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0B1220">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=3">
-<link rel="stylesheet" href="assets/style.css?v=6">
-<script src="assets/app.js?v=6"></script>
+<link rel="stylesheet" href="assets/style.css?v=7">
+<script src="assets/app.js?v=7"></script>
 </head>
 <body>
+<aside class="jetons" id="jetons" aria-label="Tokens utilisés pour le projet" hidden>
+  <div class="jetons-int">
+    <button type="button" class="jetons-bouton" id="jetons-bouton" aria-expanded="false" aria-controls="jetons-detail">
+      <span class="jetons-lib">Tokens utilisés :</span> <b class="jetons-val" id="jetons-val">–</b>
+    </button>
+    <span class="jetons-sous" id="jetons-sous"></span>
+  </div>
+  <div class="jetons-detail" id="jetons-detail" hidden></div>
+</aside>
+
 <header class="bandeau">
   <div class="enveloppe bandeau-int">
     <a class="marque" href="https://github.com/UltraSmartSMP" rel="noopener">
@@ -109,6 +119,25 @@
     </details>
   </section>
 
+  <section class="bloc" aria-labelledby="t-tasks" id="bloc-tasks" hidden>
+    <div class="bloc-tete">
+      <h2 id="t-tasks">Avancement des tasks</h2>
+      <p class="bloc-note" id="note-tasks">Tasks spec-kit cochées sur le total, par spec.</p>
+    </div>
+    <div class="tasks-total" id="tasks-total"></div>
+    <div class="defile"><table class="barres" id="table-tasks"></table></div>
+    <div class="bloc-tete tasks-courbe-tete">
+      <h3 id="t-tasks-courbe">Évolution commit par commit</h3>
+      <p class="bloc-note" id="note-tasks-courbe"></p>
+    </div>
+    <div class="courbe" id="courbe-tasks"></div>
+    <div class="legende" id="legende-tasks"></div>
+    <details class="donnees-brutes">
+      <summary>Voir les valeurs de l'évolution</summary>
+      <div class="defile"><table class="detail" id="table-tasks-hist"></table></div>
+    </details>
+  </section>
+
   <section class="bloc" aria-labelledby="t-detail" hidden>
     <div class="bloc-tete">
       <h2 id="t-detail">Détail par dépôt et par langage</h2>
@@ -125,6 +154,8 @@
       <h2>Méthode</h2>
       <p>Comptage par <a href="https://github.com/AlDanial/cloc" rel="noopener">cloc 2.06</a>, complété par des définitions pour les langages maison :</p>
       <ul class="liste-maison" id="liste-maison"></ul>
+      <p>Avancement des tasks : lignes <code>- [x]</code> sur lignes <code>- [ ]</code> ou <code>- [x]</code> de <code>specs/NNN-*/tasks.md</code> (à défaut, de <code>specs/NNN-*/tasks/*.md</code>) dans le contenu commité de la branche <code>docs</code>, un relevé par commit qui change un fichier de tasks.</p>
+      <p>Tokens : somme des compteurs <code>usage</code> (entrée, sortie, écriture et lecture de cache) des réponses des sessions et agents du projet, dédoublonnées par réponse, relevée tous les 50 commits ; aucun contenu n'est publié.</p>
       <p>Seuls les fichiers suivis par git sont comptés, tels qu'ils sont publiés sur la branche de chaque dépôt.</p>
     </div>
     <div>

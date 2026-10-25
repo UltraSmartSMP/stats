@@ -1,0 +1,42 @@
+{
+ "version": 1,
+ "maj": "2026-10-25T01:29:47Z",
+ "sha": "57c768e",
+ "empreinte": "6fbcf83ebcbf7191",
+ "specs": {
+  "002-interpreteur-smpa": {
+   "faites": 242,
+   "total": 369
+  },
+  "003-langage-rsmp": {
+   "faites": 468,
+   "total": 525
+  },
+  "004-bibliotheques-rsmp": {
+   "faites": 178,
+   "total": 419
+  },
+  "005-symbiose-modules-rsmp": {
+   "faites": 84,
+   "total": 271
+  },
+  "006-stockage-chunks-tiers": {
+   "faites": 0,
+   "total": 152
+  },
+  "007-serveur-rsmp": {
+   "faites": 0,
+   "total": 219
+  },
+  "008-rsmp-contre-rust": {
+   "faites": 45,
+   "total": 115
+  },
+  "010-etat-reifie": {
+   "faites": 157,
+   "total": 478
+  }
+ },
+ "faites": 1174,
+ "total": 2548
+}
