@@ -1,121 +1,5 @@
 [
  {
-  "maj": "2026-10-20T00:37:22Z",
-  "empreinte": "a98b3a6c9b95e92e",
-  "code": 2068843,
-  "commits": 173,
-  "par_depot": {
-   "moteur": 248093,
-   "langage": 15,
-   "bibliotheques": 1488975,
-   "symbiose": 801,
-   "docs": 330959
-  },
-  "par_langage": {
-   "RSMP": 1355924,
-   "C++": 220406,
-   "Markdown": 187686,
-   "Texte": 128923,
-   "JSON": 126983,
-   "C/C++ Header": 15641,
-   "PowerShell": 8555,
-   "SMPA": 4767,
-   "CMake": 4340,
-   "CSV": 4155,
-   "RSMP IR": 3439,
-   "Python": 3153,
-   "TOML": 1239,
-   "C": 893,
-   "SMPI": 877,
-   "CUDA": 780,
-   "JavaScript": 456,
-   "Tables .def": 259,
-   "SMPA ISA": 236,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "Bourne Shell": 9,
-   "DOS Batch": 5
-  },
-  "delta": {
-   "code": 16369,
-   "langage": {
-    "C++": 10501,
-    "C/C++ Header": 430,
-    "CMake": 51,
-    "JSON": 3,
-    "JavaScript": 66,
-    "Markdown": 203,
-    "PowerShell": 31,
-    "RSMP": 3953,
-    "RSMP IR": 792,
-    "TOML": 233,
-    "Texte": 106
-   },
-   "type": {
-    "bancs": 933,
-    "build": 51,
-    "docs": 203,
-    "donnees": 901,
-    "scripts": 66,
-    "source": 3245,
-    "tests": 10970
-   },
-   "depots": {
-    "bibliotheques": {
-     "code": 6624,
-     "court": "4cd23b0",
-     "commits": 1,
-     "langage": {
-      "C++": 5435,
-      "C/C++ Header": 204,
-      "RSMP": 752,
-      "TOML": 233
-     },
-     "type": {
-      "bancs": 933,
-      "source": 1837,
-      "tests": 3854
-     }
-    },
-    "docs": {
-     "code": 203,
-     "court": "4e1b2b9",
-     "commits": 1,
-     "langage": {
-      "Markdown": 203
-     },
-     "type": {
-      "docs": 203
-     }
-    },
-    "moteur": {
-     "code": 9542,
-     "court": "934ceef",
-     "commits": 1,
-     "langage": {
-      "C++": 5066,
-      "C/C++ Header": 226,
-      "CMake": 51,
-      "JSON": 3,
-      "JavaScript": 66,
-      "PowerShell": 31,
-      "RSMP": 3201,
-      "RSMP IR": 792,
-      "Texte": 106
-     },
-     "type": {
-      "build": 51,
-      "donnees": 901,
-      "scripts": 66,
-      "source": 1408,
-      "tests": 7116
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-20T01:51:12Z",
   "empreinte": "2f23aa8f7b9c7187",
   "code": 2068877,
@@ -39466,6 +39350,104 @@
       "scripts": -12,
       "source": 56,
       "tests": 17
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T19:08:58Z",
+  "empreinte": "5337f02b38847e0d",
+  "code": 4788278,
+  "commits": 1075,
+  "par_depot": {
+   "moteur": 598288,
+   "langage": 240531,
+   "bibliotheques": 1582542,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2360791
+  },
+  "par_langage": {
+   "JSON": 1655161,
+   "RSMP": 1423346,
+   "Texte": 645495,
+   "C++": 495233,
+   "Markdown": 342971,
+   "SMPA": 43787,
+   "C/C++ Header": 35883,
+   "CSV": 34245,
+   "PowerShell": 28338,
+   "CUDA": 17739,
+   "Python": 13332,
+   "YAML": 11286,
+   "Assembly": 10327,
+   "CMake": 8875,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 123,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 18081,
+   "langage": {
+    "Assembly": 4097,
+    "C++": 2888,
+    "C/C++ Header": 86,
+    "CUDA": 1771,
+    "Markdown": 185,
+    "PowerShell": 740,
+    "Texte": 8310,
+    "diff": 4
+   },
+   "type": {
+    "bancs": 3241,
+    "docs": 185,
+    "donnees": 12766,
+    "source": 1368,
+    "tests": 521
+   },
+   "depots": {
+    "docs": {
+     "code": 12951,
+     "court": "7321afe",
+     "commits": 1,
+     "langage": {
+      "Assembly": 4097,
+      "C++": 311,
+      "Markdown": 185,
+      "PowerShell": 155,
+      "Texte": 8199,
+      "diff": 4
+     },
+     "type": {
+      "docs": 185,
+      "donnees": 12766
+     }
+    },
+    "moteur": {
+     "code": 5130,
+     "court": "0f7e9ce",
+     "commits": 1,
+     "langage": {
+      "C++": 2577,
+      "C/C++ Header": 86,
+      "CUDA": 1771,
+      "PowerShell": 585,
+      "Texte": 111
+     },
+     "type": {
+      "bancs": 3241,
+      "source": 1368,
+      "tests": 521
      }
     }
    }
