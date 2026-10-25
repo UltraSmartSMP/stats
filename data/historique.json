@@ -1,63 +1,5 @@
 [
  {
-  "maj": "2026-10-19T22:36:22Z",
-  "empreinte": "5aed43cfa0bf9208",
-  "code": 375034,
-  "commits": 144,
-  "par_depot": {
-   "moteur": 162077,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 212912
-  },
-  "par_langage": {
-   "Markdown": 182435,
-   "C++": 126616,
-   "JSON": 23713,
-   "Texte": 17767,
-   "C/C++ Header": 7730,
-   "PowerShell": 6620,
-   "SMPA": 4694,
-   "CMake": 2912,
-   "C": 893,
-   "Python": 553,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "CSV": 128,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17
-  },
-  "delta": {
-   "code": 1568,
-   "langage": {
-    "JSON": 1151,
-    "Markdown": 417
-   },
-   "type": {
-    "docs": 417,
-    "donnees": 1151
-   },
-   "depots": {
-    "docs": {
-     "code": 1568,
-     "court": "9cd02b2",
-     "commits": 1,
-     "langage": {
-      "JSON": 1151,
-      "Markdown": 417
-     },
-     "type": {
-      "docs": 417,
-      "donnees": 1151
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T22:46:40Z",
   "empreinte": "6b2a3de28d35a0b2",
   "code": 390794,
@@ -39494,6 +39436,70 @@
      },
      "type": {
       "source": 5
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T15:11:11Z",
+  "empreinte": "05ae133c088f8d7b",
+  "code": 4725652,
+  "commits": 1038,
+  "par_depot": {
+   "moteur": 562166,
+   "langage": 239690,
+   "bibliotheques": 1582444,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2335226
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422836,
+   "Texte": 636029,
+   "C++": 479255,
+   "Markdown": 331422,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33957,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8468,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5837,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 9,
+   "langage": {
+    "RSMP": 9
+   },
+   "type": {
+    "tests": 9
+   },
+   "depots": {
+    "langage": {
+     "code": 9,
+     "court": "1c58129",
+     "commits": 1,
+     "langage": {
+      "RSMP": 9
+     },
+     "type": {
+      "tests": 9
      }
     }
    }
