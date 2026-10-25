@@ -1,67 +1,5 @@
 [
  {
-  "maj": "2026-10-19T16:00:57Z",
-  "empreinte": "a79347449299581b",
-  "code": 347477,
-  "commits": 104,
-  "par_depot": {
-   "moteur": 159682,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 187750
-  },
-  "par_langage": {
-   "Markdown": 179580,
-   "C++": 125515,
-   "JSON": 13304,
-   "C/C++ Header": 7661,
-   "PowerShell": 6496,
-   "Texte": 5122,
-   "SMPA": 4694,
-   "CMake": 2828,
-   "C": 883,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 546,
-   "langage": {
-    "C": 1,
-    "C++": 541,
-    "CMake": 4
-   },
-   "type": {
-    "build": 4,
-    "source": 109,
-    "tests": 433
-   },
-   "depots": {
-    "moteur": {
-     "code": 546,
-     "court": "6c14e3a",
-     "commits": 1,
-     "langage": {
-      "C": 1,
-      "C++": 541,
-      "CMake": 4
-     },
-     "type": {
-      "build": 4,
-      "source": 109,
-      "tests": 433
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T16:01:04Z",
   "empreinte": "b3df54a223951e63",
   "code": 347855,
@@ -38954,6 +38892,72 @@
      "type": {
       "source": 13,
       "tests": 34
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T09:21:27Z",
+  "empreinte": "e0d38a50b63ef5c5",
+  "code": 4691627,
+  "commits": 978,
+  "par_depot": {
+   "moteur": 561401,
+   "langage": 237485,
+   "bibliotheques": 1582441,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2304174
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1421840,
+   "Texte": 605584,
+   "C++": 477221,
+   "Markdown": 331119,
+   "SMPA": 43572,
+   "CSV": 34245,
+   "C/C++ Header": 33909,
+   "PowerShell": 26550,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8461,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 2,
+   "langage": {
+    "C++": 4,
+    "C/C++ Header": -2
+   },
+   "type": {
+    "source": 2
+   },
+   "depots": {
+    "langage": {
+     "code": 2,
+     "court": "056d7da",
+     "commits": 1,
+     "langage": {
+      "C++": 4,
+      "C/C++ Header": -2
+     },
+     "type": {
+      "source": 2
      }
     }
    }
