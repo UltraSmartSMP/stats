@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T14:29:26Z",
-  "empreinte": "38694461e584ea1b",
-  "code": 343619,
-  "commits": 88,
-  "par_depot": {
-   "moteur": 157866,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 185708
-  },
-  "par_langage": {
-   "Markdown": 177586,
-   "C++": 123845,
-   "JSON": 13300,
-   "C/C++ Header": 7648,
-   "PowerShell": 6496,
-   "Texte": 5103,
-   "SMPA": 4620,
-   "CMake": 2745,
-   "C": 882,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 19,
-   "langage": {
-    "Markdown": 19
-   },
-   "type": {
-    "docs": 19
-   },
-   "depots": {
-    "docs": {
-     "code": 19,
-     "court": "1ca6ad5",
-     "commits": 1,
-     "langage": {
-      "Markdown": 19
-     },
-     "type": {
-      "docs": 19
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T14:39:36Z",
   "empreinte": "c12fe8b1aa5b2aa8",
   "code": 343929,
@@ -38826,6 +38772,87 @@
      "type": {
       "build": 26,
       "scripts": 88
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T07:13:07Z",
+  "empreinte": "215413c59a9141ca",
+  "code": 4670345,
+  "commits": 959,
+  "par_depot": {
+   "moteur": 560301,
+   "langage": 236074,
+   "bibliotheques": 1583368,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2284476
+  },
+  "par_langage": {
+   "JSON": 1655019,
+   "RSMP": 1422149,
+   "Texte": 587057,
+   "C++": 475454,
+   "Markdown": 330798,
+   "SMPA": 43572,
+   "CSV": 34245,
+   "C/C++ Header": 33828,
+   "PowerShell": 26421,
+   "Python": 11864,
+   "YAML": 11286,
+   "CMake": 8416,
+   "RSMP IR": 8129,
+   "Rust": 5863,
+   "Assembly": 5644,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 9138,
+   "langage": {
+    "C++": -3,
+    "Markdown": 24,
+    "Texte": 9117
+   },
+   "type": {
+    "docs": 24,
+    "donnees": 9117,
+    "source": -3
+   },
+   "depots": {
+    "docs": {
+     "code": 9141,
+     "court": "309157f",
+     "commits": 1,
+     "langage": {
+      "Markdown": 24,
+      "Texte": 9117
+     },
+     "type": {
+      "docs": 24,
+      "donnees": 9117
+     }
+    },
+    "langage": {
+     "code": -3,
+     "court": "3199b0e",
+     "commits": 1,
+     "langage": {
+      "C++": -3
+     },
+     "type": {
+      "source": -3
      }
     }
    }
