@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T08:53:25Z",
- "empreinte": "76f5c4cff24f2301",
+ "maj": "2026-10-25T09:08:02Z",
+ "empreinte": "fb01f0c32ca1ee9c",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 17101,
+  "fichiers": 17118,
   "lignes": {
-   "code": 4676083,
-   "commentaires": 70536,
-   "vides": 125484,
-   "total": 4872103
+   "code": 4691625,
+   "commentaires": 70540,
+   "vides": 125519,
+   "total": 4887684
   },
   "langages": [
    {
@@ -68,16 +68,16 @@
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 2657,
-    "code": 1421806,
-    "commentaires": 8069,
+    "fichiers": 2658,
+    "code": 1421840,
+    "commentaires": 8071,
     "vides": 6725
    },
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 4268,
-    "code": 590389,
+    "fichiers": 4278,
+    "code": 605584,
     "commentaires": 0,
     "vides": 1209
    },
@@ -85,17 +85,17 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1192,
-    "code": 477204,
-    "commentaires": 37243,
+    "code": 477217,
+    "commentaires": 37245,
     "vides": 38969
    },
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5418,
-    "code": 330819,
+    "fichiers": 5424,
+    "code": 331119,
     "commentaires": 136,
-    "vides": 65096
+    "vides": 65131
    },
    {
     "nom": "SMPA",
@@ -270,15 +270,15 @@
    {
     "id": "source",
     "fichiers": 1232,
-    "code": 237044,
-    "commentaires": 31109,
+    "code": 237057,
+    "commentaires": 31111,
     "vides": 26689
    },
    {
     "id": "tests",
-    "fichiers": 3379,
-    "code": 327705,
-    "commentaires": 25385,
+    "fichiers": 3380,
+    "code": 327739,
+    "commentaires": 25387,
     "vides": 23028
    },
    {
@@ -304,15 +304,15 @@
    },
    {
     "id": "docs",
-    "fichiers": 5426,
-    "code": 331405,
+    "fichiers": 5432,
+    "code": 331705,
     "commentaires": 136,
-    "vides": 65126
+    "vides": 65161
    },
    {
     "id": "donnees",
-    "fichiers": 5859,
-    "code": 3677561,
+    "fichiers": 5869,
+    "code": 3692756,
     "commentaires": 3279,
     "vides": 3223
    }
@@ -331,12 +331,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 582388
+    "code": 597583
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 330819
+    "code": 331119
    },
    {
     "langage": "C++",
@@ -346,12 +346,12 @@
    {
     "langage": "C++",
     "type": "source",
-    "code": 186498
+    "code": 186511
    },
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 62350
+    "code": 62384
    },
    {
     "langage": "C++",
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 975
+  "commits": 977
  },
  "depots": [
   {
@@ -1153,35 +1153,35 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 159,
+   "commits": 160,
    "commit": {
-    "sha": "2fbf4bcafb70a967c05459c981a49eba2034cf81",
-    "court": "2fbf4bc",
-    "date": "2026-10-25T08:53:10Z",
-    "message": "sync 2026-10-25 09:53"
+    "sha": "e892ffcb725e15d1241dcf23b535d08d10a77f8a",
+    "court": "e892ffc",
+    "date": "2026-10-25T09:07:50Z",
+    "message": "sync 2026-10-25 10:07"
    },
-   "fichiers": 2846,
+   "fichiers": 2847,
    "lignes": {
-    "code": 237436,
-    "commentaires": 23007,
+    "code": 237483,
+    "commentaires": 23011,
     "vides": 20591,
-    "total": 281034
+    "total": 281085
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 528,
-     "code": 180115,
-     "commentaires": 12537,
+     "code": 180128,
+     "commentaires": 12539,
      "vides": 15109
     },
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 1352,
-     "code": 23474,
-     "commentaires": 3809,
+     "fichiers": 1353,
+     "code": 23508,
+     "commentaires": 3811,
      "vides": 2550
     },
     {
@@ -1309,15 +1309,15 @@
     {
      "id": "source",
      "fichiers": 504,
-     "code": 88268,
-     "commentaires": 10414,
+     "code": 88281,
+     "commentaires": 10416,
      "vides": 9667
     },
     {
      "id": "tests",
-     "fichiers": 1715,
-     "code": 129882,
-     "commentaires": 10966,
+     "fichiers": 1716,
+     "code": 129916,
+     "commentaires": 10968,
      "vides": 10120
     },
     {
@@ -1365,12 +1365,12 @@
     {
      "langage": "C++",
      "type": "source",
-     "code": 77393
+     "code": 77406
     },
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 22735
+     "code": 22769
     },
     {
      "langage": "C/C++ Header",
@@ -2205,19 +2205,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 417,
+   "commits": 418,
    "commit": {
-    "sha": "8b11dce38997bf04d8b9c37924d5b921f10b473b",
-    "court": "8b11dce",
-    "date": "2026-10-25T08:53:25Z",
-    "message": "sync 2026-10-25 09:53"
+    "sha": "70f4ec012a6ae59669b0bb23c5fa524a5c480472",
+    "court": "70f4ec0",
+    "date": "2026-10-25T09:08:02Z",
+    "message": "sync 2026-10-25 10:08"
    },
-   "fichiers": 7436,
+   "fichiers": 7452,
    "lignes": {
-    "code": 2288679,
+    "code": 2304174,
     "commentaires": 1466,
-    "vides": 67019,
-    "total": 2357164
+    "vides": 67054,
+    "total": 2372694
    },
    "langages": [
     {
@@ -2231,16 +2231,16 @@
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5398,
-     "code": 330109,
+     "fichiers": 5404,
+     "code": 330409,
      "commentaires": 124,
-     "vides": 64773
+     "vides": 64808
     },
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 1375,
-     "code": 280632,
+     "fichiers": 1385,
+     "code": 295827,
      "commentaires": 0,
      "vides": 1060
     },
@@ -2411,15 +2411,15 @@
     },
     {
      "id": "docs",
-     "fichiers": 5399,
-     "code": 330118,
+     "fichiers": 5405,
+     "code": 330418,
      "commentaires": 124,
-     "vides": 64777
+     "vides": 64812
     },
     {
      "id": "donnees",
-     "fichiers": 2016,
-     "code": 1956990,
+     "fichiers": 2026,
+     "code": 1972185,
      "commentaires": 1092,
      "vides": 2052
     }
@@ -2433,12 +2433,12 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 330109
+     "code": 330409
     },
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 280596
+     "code": 295791
     },
     {
      "langage": "CSV",
