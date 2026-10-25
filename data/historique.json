@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T16:41:38Z",
-  "empreinte": "d97d3644bb428200",
-  "code": 348653,
-  "commits": 109,
-  "par_depot": {
-   "moteur": 159693,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 188915
-  },
-  "par_langage": {
-   "Markdown": 180009,
-   "C++": 125524,
-   "JSON": 13304,
-   "C/C++ Header": 7663,
-   "PowerShell": 6496,
-   "Texte": 5858,
-   "SMPA": 4694,
-   "CMake": 2828,
-   "C": 883,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 5,
-   "langage": {
-    "Markdown": 5
-   },
-   "type": {
-    "docs": 5
-   },
-   "depots": {
-    "docs": {
-     "code": 5,
-     "court": "65f391d",
-     "commits": 1,
-     "langage": {
-      "Markdown": 5
-     },
-     "type": {
-      "docs": 5
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T16:51:46Z",
   "empreinte": "532aa8b9c828587c",
   "code": 348705,
@@ -39065,6 +39011,89 @@
      },
      "type": {
       "docs": 892
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T10:25:03Z",
+  "empreinte": "265faa3366541e50",
+  "code": 4707753,
+  "commits": 988,
+  "par_depot": {
+   "moteur": 561401,
+   "langage": 238111,
+   "bibliotheques": 1582441,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2319674
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422049,
+   "Texte": 620779,
+   "C++": 477716,
+   "Markdown": 331119,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33920,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8461,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": -758,
+   "langage": {
+    "C++": 11,
+    "C/C++ Header": 10,
+    "RSMP": 113,
+    "Texte": -892
+   },
+   "type": {
+    "docs": -892,
+    "source": 21,
+    "tests": 113
+   },
+   "depots": {
+    "langage": {
+     "code": 134,
+     "court": "ecf892a",
+     "commits": 1,
+     "langage": {
+      "C++": 11,
+      "C/C++ Header": 10,
+      "RSMP": 113
+     },
+     "type": {
+      "source": 21,
+      "tests": 113
+     }
+    },
+    "moteur": {
+     "code": -892,
+     "court": "495752c",
+     "commits": 1,
+     "langage": {
+      "Texte": -892
+     },
+     "type": {
+      "docs": -892
      }
     }
    }
