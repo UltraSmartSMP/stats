@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T16:51:46Z",
-  "empreinte": "532aa8b9c828587c",
-  "code": 348705,
-  "commits": 110,
-  "par_depot": {
-   "moteur": 159693,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 188967
-  },
-  "par_langage": {
-   "Markdown": 180061,
-   "C++": 125524,
-   "JSON": 13304,
-   "C/C++ Header": 7663,
-   "PowerShell": 6496,
-   "Texte": 5858,
-   "SMPA": 4694,
-   "CMake": 2828,
-   "C": 883,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 52,
-   "langage": {
-    "Markdown": 52
-   },
-   "type": {
-    "docs": 52
-   },
-   "depots": {
-    "docs": {
-     "code": 52,
-     "court": "898ef96",
-     "commits": 1,
-     "langage": {
-      "Markdown": 52
-     },
-     "type": {
-      "docs": 52
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T17:22:07Z",
   "empreinte": "8a874e16d8a89af5",
   "code": 348765,
@@ -39094,6 +39040,87 @@
      },
      "type": {
       "docs": -892
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T10:37:27Z",
+  "empreinte": "1fd55d632f30eae2",
+  "code": 4716944,
+  "commits": 990,
+  "par_depot": {
+   "moteur": 561401,
+   "langage": 238185,
+   "bibliotheques": 1582441,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2328791
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422082,
+   "Texte": 629896,
+   "C++": 477757,
+   "Markdown": 331119,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33920,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8461,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 9191,
+   "langage": {
+    "C++": 41,
+    "RSMP": 33,
+    "Texte": 9117
+   },
+   "type": {
+    "donnees": 9117,
+    "source": 40,
+    "tests": 34
+   },
+   "depots": {
+    "docs": {
+     "code": 9117,
+     "court": "665e03b",
+     "commits": 1,
+     "langage": {
+      "Texte": 9117
+     },
+     "type": {
+      "donnees": 9117
+     }
+    },
+    "langage": {
+     "code": 74,
+     "court": "39582b7",
+     "commits": 1,
+     "langage": {
+      "C++": 41,
+      "RSMP": 33
+     },
+     "type": {
+      "source": 40,
+      "tests": 34
      }
     }
    }
