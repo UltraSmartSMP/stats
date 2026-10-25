@@ -1,63 +1,5 @@
 [
  {
-  "maj": "2026-10-19T21:45:39Z",
-  "empreinte": "32e787059f176559",
-  "code": 373144,
-  "commits": 141,
-  "par_depot": {
-   "moteur": 162077,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 211022
-  },
-  "par_langage": {
-   "Markdown": 181935,
-   "C++": 126616,
-   "JSON": 22536,
-   "Texte": 17554,
-   "C/C++ Header": 7730,
-   "PowerShell": 6620,
-   "SMPA": 4694,
-   "CMake": 2912,
-   "C": 893,
-   "Python": 553,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "CSV": 128,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17
-  },
-  "delta": {
-   "code": 34,
-   "langage": {
-    "JSON": -69,
-    "Markdown": 103
-   },
-   "type": {
-    "docs": 103,
-    "donnees": -69
-   },
-   "depots": {
-    "docs": {
-     "code": 34,
-     "court": "cb866e2",
-     "commits": 1,
-     "langage": {
-      "JSON": -69,
-      "Markdown": 103
-     },
-     "type": {
-      "docs": 103,
-      "donnees": -69
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T22:05:54Z",
   "empreinte": "dba4dad7e5586476",
   "code": 373443,
@@ -39476,6 +39418,76 @@
      "type": {
       "source": 16,
       "tests": 5
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T14:38:53Z",
+  "empreinte": "72bde156fa093ecb",
+  "code": 4725638,
+  "commits": 1035,
+  "par_depot": {
+   "moteur": 562166,
+   "langage": 239676,
+   "bibliotheques": 1582444,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2335226
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422827,
+   "Texte": 636029,
+   "C++": 479250,
+   "Markdown": 331422,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33957,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8468,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5837,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 84,
+   "langage": {
+    "C++": 58,
+    "C/C++ Header": 1,
+    "RSMP": 25
+   },
+   "type": {
+    "source": 59,
+    "tests": 25
+   },
+   "depots": {
+    "langage": {
+     "code": 84,
+     "court": "c9b045e",
+     "commits": 1,
+     "langage": {
+      "C++": 58,
+      "C/C++ Header": 1,
+      "RSMP": 25
+     },
+     "type": {
+      "source": 59,
+      "tests": 25
      }
     }
    }
