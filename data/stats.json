@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T12:27:10Z",
- "empreinte": "4f04f3e52e6c4e21",
+ "maj": "2026-10-25T12:38:08Z",
+ "empreinte": "1475c9eae4be468a",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 17184,
   "lignes": {
-   "code": 4724232,
+   "code": 4724246,
    "commentaires": 70807,
-   "vides": 125652,
-   "total": 4920691
+   "vides": 125654,
+   "total": 4920707
   },
   "langages": [
    {
@@ -93,9 +93,9 @@
     "nom": "Markdown",
     "maison": false,
     "fichiers": 5425,
-    "code": 331176,
+    "code": 331190,
     "commentaires": 136,
-    "vides": 65141
+    "vides": 65143
    },
    {
     "nom": "SMPA",
@@ -305,9 +305,9 @@
    {
     "id": "docs",
     "fichiers": 5433,
-    "code": 331762,
+    "code": 331776,
     "commentaires": 136,
-    "vides": 65171
+    "vides": 65173
    },
    {
     "id": "donnees",
@@ -336,7 +336,7 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 331176
+    "code": 331190
    },
    {
     "langage": "C++",
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 1012
+  "commits": 1014
  },
  "depots": [
   {
@@ -1153,12 +1153,12 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 177,
+   "commits": 178,
    "commit": {
-    "sha": "3d985bb3011eff2a1ea5b583619266a4232966c4",
-    "court": "3d985bb",
-    "date": "2026-10-25T12:27:10Z",
-    "message": "sync 2026-10-25 13:27"
+    "sha": "55bae7d54f10a4d6d3d9d9f204de29178ef08bf3",
+    "court": "55bae7d",
+    "date": "2026-10-25T12:38:00Z",
+    "message": "sync 2026-10-25 13:38"
    },
    "fichiers": 2886,
    "lignes": {
@@ -2205,19 +2205,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 428,
+   "commits": 429,
    "commit": {
-    "sha": "7ab9a11d3a79ba20b3d645619c04887188bd1dcc",
-    "court": "7ab9a11",
-    "date": "2026-10-25T12:16:20Z",
-    "message": "sync 2026-10-25 13:16"
+    "sha": "34120016c79a7217e78b0addd868cf51842d928f",
+    "court": "3412001",
+    "date": "2026-10-25T12:38:08Z",
+    "message": "sync 2026-10-25 13:38"
    },
    "fichiers": 7475,
    "lignes": {
-    "code": 2334980,
+    "code": 2334994,
     "commentaires": 1480,
-    "vides": 67076,
-    "total": 2403536
+    "vides": 67078,
+    "total": 2403552
    },
    "langages": [
     {
@@ -2232,9 +2232,9 @@
      "nom": "Markdown",
      "maison": false,
      "fichiers": 5405,
-     "code": 330466,
+     "code": 330480,
      "commentaires": 124,
-     "vides": 64818
+     "vides": 64820
     },
     {
      "nom": "Texte",
@@ -2412,9 +2412,9 @@
     {
      "id": "docs",
      "fichiers": 5406,
-     "code": 330475,
+     "code": 330489,
      "commentaires": 124,
-     "vides": 64822
+     "vides": 64824
     },
     {
      "id": "donnees",
@@ -2433,7 +2433,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 330466
+     "code": 330480
     },
     {
      "langage": "Texte",
