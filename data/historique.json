@@ -1,63 +1,5 @@
 [
  {
-  "maj": "2026-10-19T20:24:29Z",
-  "empreinte": "74b944f2ed876f67",
-  "code": 354830,
-  "commits": 131,
-  "par_depot": {
-   "moteur": 161773,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 193012
-  },
-  "par_langage": {
-   "Markdown": 180797,
-   "C++": 126529,
-   "JSON": 14372,
-   "Texte": 8928,
-   "C/C++ Header": 7663,
-   "PowerShell": 6523,
-   "SMPA": 4694,
-   "CMake": 2873,
-   "C": 883,
-   "Python": 467,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "CSV": 128,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17
-  },
-  "delta": {
-   "code": 23,
-   "langage": {
-    "Markdown": 22,
-    "Texte": 1
-   },
-   "type": {
-    "docs": 22,
-    "donnees": 1
-   },
-   "depots": {
-    "docs": {
-     "code": 23,
-     "court": "40c6c63",
-     "commits": 1,
-     "langage": {
-      "Markdown": 22,
-      "Texte": 1
-     },
-     "type": {
-      "docs": 22,
-      "donnees": 1
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T20:34:32Z",
   "empreinte": "d79221c060629240",
   "code": 354830,
@@ -39303,6 +39245,111 @@
      },
      "type": {
       "tests": 76
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T12:59:49Z",
+  "empreinte": "82217c67d69cbcfc",
+  "code": 4724560,
+  "commits": 1020,
+  "par_depot": {
+   "moteur": 562215,
+   "langage": 238740,
+   "bibliotheques": 1582445,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2335034
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422477,
+   "Texte": 636028,
+   "C++": 478703,
+   "Markdown": 331230,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33947,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8466,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 207,
+   "langage": {
+    "C++": 158,
+    "C/C++ Header": 13,
+    "Markdown": 9,
+    "RSMP": 27
+   },
+   "type": {
+    "docs": 9,
+    "source": 100,
+    "tests": 98
+   },
+   "depots": {
+    "bibliotheques": {
+     "code": 4,
+     "court": "0ee9d8d",
+     "commits": 1,
+     "langage": {
+      "RSMP": 4
+     },
+     "type": {
+      "source": 4
+     }
+    },
+    "docs": {
+     "code": 9,
+     "court": "62d22c3",
+     "commits": 1,
+     "langage": {
+      "Markdown": 9
+     },
+     "type": {
+      "docs": 9
+     }
+    },
+    "langage": {
+     "code": 119,
+     "court": "eab3818",
+     "commits": 1,
+     "langage": {
+      "C++": 83,
+      "C/C++ Header": 13,
+      "RSMP": 23
+     },
+     "type": {
+      "source": 96,
+      "tests": 23
+     }
+    },
+    "moteur": {
+     "code": 75,
+     "court": "10157f5",
+     "commits": 1,
+     "langage": {
+      "C++": 75
+     },
+     "type": {
+      "tests": 75
      }
     }
    }
