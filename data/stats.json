@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T13:10:42Z",
- "empreinte": "4f3ee1a6515bc0d7",
+ "maj": "2026-10-25T13:21:25Z",
+ "empreinte": "a561d8cf21857585",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -52,9 +52,9 @@
   "fichiers": 17188,
   "lignes": {
    "code": 4724708,
-   "commentaires": 70830,
+   "commentaires": 70831,
    "vides": 125750,
-   "total": 4921288
+   "total": 4921289
   },
   "langages": [
    {
@@ -70,7 +70,7 @@
     "maison": true,
     "fichiers": 2697,
     "code": 1422475,
-    "commentaires": 8179,
+    "commentaires": 8180,
     "vides": 6762
    },
    {
@@ -278,7 +278,7 @@
     "id": "tests",
     "fichiers": 3423,
     "code": 329325,
-    "commentaires": 25551,
+    "commentaires": 25552,
     "vides": 23118
    },
    {
@@ -664,7 +664,7 @@
     "code": 3
    }
   ],
-  "commits": 1022
+  "commits": 1023
  },
  "depots": [
   {
@@ -1153,19 +1153,19 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 180,
+   "commits": 181,
    "commit": {
-    "sha": "a79e60a47c39575d2f62019e5cc00be1630c9f8f",
-    "court": "a79e60a",
-    "date": "2026-10-25T13:10:33Z",
-    "message": "sync 2026-10-25 14:10"
+    "sha": "037c7147a839173af989a400f2a74c03dce51744",
+    "court": "037c714",
+    "date": "2026-10-25T13:21:25Z",
+    "message": "sync 2026-10-25 14:21"
    },
    "fichiers": 2888,
    "lignes": {
     "code": 238696,
-    "commentaires": 23183,
+    "commentaires": 23184,
     "vides": 20637,
-    "total": 282516
+    "total": 282517
    },
    "langages": [
     {
@@ -1181,7 +1181,7 @@
      "maison": true,
      "fichiers": 1392,
      "code": 24139,
-     "commentaires": 3920,
+     "commentaires": 3921,
      "vides": 2586
     },
     {
@@ -1317,7 +1317,7 @@
      "id": "tests",
      "fichiers": 1757,
      "code": 130808,
-     "commentaires": 11080,
+     "commentaires": 11081,
      "vides": 10157
     },
     {

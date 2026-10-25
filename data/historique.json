@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T20:44:44Z",
-  "empreinte": "bbb42bbbe6c91972",
-  "code": 354869,
-  "commits": 133,
-  "par_depot": {
-   "moteur": 161773,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 193051
-  },
-  "par_langage": {
-   "Markdown": 180836,
-   "C++": 126529,
-   "JSON": 14372,
-   "Texte": 8928,
-   "C/C++ Header": 7663,
-   "PowerShell": 6523,
-   "SMPA": 4694,
-   "CMake": 2873,
-   "C": 883,
-   "Python": 467,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "CSV": 128,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17
-  },
-  "delta": {
-   "code": 39,
-   "langage": {
-    "Markdown": 39
-   },
-   "type": {
-    "docs": 39
-   },
-   "depots": {
-    "docs": {
-     "code": 39,
-     "court": "b7fb189",
-     "commits": 1,
-     "langage": {
-      "Markdown": 39
-     },
-     "type": {
-      "docs": 39
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T20:54:51Z",
   "empreinte": "982238422eff2306",
   "code": 354901,
@@ -39388,6 +39334,62 @@
       "source": -42,
       "tests": -2
      }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T13:21:25Z",
+  "empreinte": "a561d8cf21857585",
+  "code": 4724708,
+  "commits": 1023,
+  "par_depot": {
+   "moteur": 562215,
+   "langage": 238696,
+   "bibliotheques": 1582445,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2335226
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422475,
+   "Texte": 636028,
+   "C++": 478669,
+   "Markdown": 331422,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33939,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8466,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 0,
+   "langage": {},
+   "type": {},
+   "depots": {
+    "langage": {
+     "code": 0,
+     "court": "037c714",
+     "commits": 1,
+     "langage": {},
+     "type": {}
     }
    }
   }
