@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T16:21:22Z",
-  "empreinte": "017f50138fdfd756",
-  "code": 348602,
-  "commits": 107,
-  "par_depot": {
-   "moteur": 159693,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 188864
-  },
-  "par_langage": {
-   "Markdown": 179958,
-   "C++": 125524,
-   "JSON": 13304,
-   "C/C++ Header": 7663,
-   "PowerShell": 6496,
-   "Texte": 5858,
-   "SMPA": 4694,
-   "CMake": 2828,
-   "C": 883,
-   "Python": 415,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "CSV": 6
-  },
-  "delta": {
-   "code": 736,
-   "langage": {
-    "Texte": 736
-   },
-   "type": {
-    "donnees": 736
-   },
-   "depots": {
-    "docs": {
-     "code": 736,
-     "court": "8b1bf78",
-     "commits": 1,
-     "langage": {
-      "Texte": 736
-     },
-     "type": {
-      "donnees": 736
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T16:31:30Z",
   "empreinte": "85c7d26099c1a6a0",
   "code": 348648,
@@ -39006,6 +38952,78 @@
      "type": {
       "source": 12,
       "tests": 43
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T09:59:23Z",
+  "empreinte": "0e5710c3aa0dfa1f",
+  "code": 4707204,
+  "commits": 983,
+  "par_depot": {
+   "moteur": 561401,
+   "langage": 237867,
+   "bibliotheques": 1582441,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2319369
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1421922,
+   "Texte": 620779,
+   "C++": 477305,
+   "Markdown": 331119,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33910,
+   "PowerShell": 26550,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8461,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5863,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1989,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 304,
+   "langage": {
+    "C++": 72,
+    "C/C++ Header": 1,
+    "RSMP": 16,
+    "SMPA": 215
+   },
+   "type": {
+    "source": 73,
+    "tests": 231
+   },
+   "depots": {
+    "langage": {
+     "code": 304,
+     "court": "95bf0c7",
+     "commits": 1,
+     "langage": {
+      "C++": 72,
+      "C/C++ Header": 1,
+      "RSMP": 16,
+      "SMPA": 215
+     },
+     "type": {
+      "source": 73,
+      "tests": 231
      }
     }
    }
