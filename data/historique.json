@@ -1,59 +1,5 @@
 [
  {
-  "maj": "2026-10-19T22:16:01Z",
-  "empreinte": "759ca13104f609b3",
-  "code": 373466,
-  "commits": 143,
-  "par_depot": {
-   "moteur": 162077,
-   "langage": 15,
-   "bibliotheques": 15,
-   "symbiose": 15,
-   "docs": 211344
-  },
-  "par_langage": {
-   "Markdown": 182018,
-   "C++": 126616,
-   "JSON": 22562,
-   "Texte": 17767,
-   "C/C++ Header": 7730,
-   "PowerShell": 6620,
-   "SMPA": 4694,
-   "CMake": 2912,
-   "C": 893,
-   "Python": 553,
-   "CUDA": 408,
-   "SMPA ISA": 236,
-   "JavaScript": 212,
-   "CSV": 128,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17
-  },
-  "delta": {
-   "code": 23,
-   "langage": {
-    "Markdown": 23
-   },
-   "type": {
-    "docs": 23
-   },
-   "depots": {
-    "docs": {
-     "code": 23,
-     "court": "1eb01ef",
-     "commits": 1,
-     "langage": {
-      "Markdown": 23
-     },
-     "type": {
-      "docs": 23
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-19T22:36:22Z",
   "empreinte": "5aed43cfa0bf9208",
   "code": 375034,
@@ -39485,6 +39431,70 @@
      "commits": 1,
      "langage": {},
      "type": {}
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-25T15:00:26Z",
+  "empreinte": "e02472fa6dd3364e",
+  "code": 4725643,
+  "commits": 1037,
+  "par_depot": {
+   "moteur": 562166,
+   "langage": 239681,
+   "bibliotheques": 1582444,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2335226
+  },
+  "par_langage": {
+   "JSON": 1655057,
+   "RSMP": 1422827,
+   "Texte": 636029,
+   "C++": 479255,
+   "Markdown": 331422,
+   "SMPA": 43787,
+   "CSV": 34245,
+   "C/C++ Header": 33957,
+   "PowerShell": 26551,
+   "Python": 11961,
+   "YAML": 11286,
+   "CMake": 8468,
+   "RSMP IR": 8129,
+   "Assembly": 6230,
+   "Rust": 5837,
+   "CUDA": 2312,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Tables .def": 300,
+   "diff": 119,
+   "INI": 107,
+   "DOS Batch": 37,
+   "Bourne Shell": 29
+  },
+  "delta": {
+   "code": 5,
+   "langage": {
+    "C++": 5
+   },
+   "type": {
+    "source": 5
+   },
+   "depots": {
+    "langage": {
+     "code": 5,
+     "court": "b88544c",
+     "commits": 1,
+     "langage": {
+      "C++": 5
+     },
+     "type": {
+      "source": 5
+     }
     }
    }
   }
