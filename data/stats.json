@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T03:31:46Z",
- "empreinte": "f9d4f5891d02590a",
+ "maj": "2026-10-26T03:42:53Z",
+ "empreinte": "2d641060a75fed80",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18264,
+  "fichiers": 18263,
   "lignes": {
-   "code": 4887689,
-   "commentaires": 76852,
-   "vides": 132923,
-   "total": 5097464
+   "code": 4887666,
+   "commentaires": 76836,
+   "vides": 132916,
+   "total": 5097418
   },
   "langages": [
    {
@@ -68,10 +68,10 @@
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 2785,
-    "code": 1424156,
-    "commentaires": 8417,
-    "vides": 6847
+    "fichiers": 2784,
+    "code": 1424133,
+    "commentaires": 8401,
+    "vides": 6840
    },
    {
     "nom": "Texte",
@@ -276,10 +276,10 @@
    },
    {
     "id": "tests",
-    "fichiers": 3513,
-    "code": 332054,
-    "commentaires": 25968,
-    "vides": 23214
+    "fichiers": 3512,
+    "code": 332031,
+    "commentaires": 25952,
+    "vides": 23207
    },
    {
     "id": "bancs",
@@ -351,7 +351,7 @@
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 64380
+    "code": 64357
    },
    {
     "langage": "C++",
@@ -669,7 +669,7 @@
     "code": 3
    }
   ],
-  "commits": 1140
+  "commits": 1142
  },
  "depots": [
   {
@@ -1168,19 +1168,19 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 229,
+   "commits": 230,
    "commit": {
-    "sha": "841242f221f303e9386ba2a2b86f2f4dff251e8f",
-    "court": "841242f",
-    "date": "2026-10-26T03:31:42Z",
-    "message": "sync 2026-10-26 04:31"
+    "sha": "bd1fd5369de807d22dbfc475a2ad7493796190da",
+    "court": "bd1fd53",
+    "date": "2026-10-26T03:42:49Z",
+    "message": "sync 2026-10-26 04:42"
    },
    "fichiers": 2977,
    "lignes": {
     "code": 241547,
-    "commentaires": 23634,
+    "commentaires": 23637,
     "vides": 20732,
-    "total": 285913
+    "total": 285916
    },
    "langages": [
     {
@@ -1196,7 +1196,7 @@
      "maison": true,
      "fichiers": 1481,
      "code": 25592,
-     "commentaires": 4162,
+     "commentaires": 4165,
      "vides": 2647
     },
     {
@@ -1332,7 +1332,7 @@
      "id": "tests",
      "fichiers": 1846,
      "code": 132230,
-     "commentaires": 11319,
+     "commentaires": 11322,
      "vides": 10216
     },
     {
@@ -1548,28 +1548,28 @@
    "nom": "bibliotheques",
    "description": "Bibliothèques de base du moteur SMPA écrites en RSMP et compilées en bundles .smpb : core, alloc, collections, enveloppes de natives, sync/task, outil de paquets rsmpkg (rsmp.toml, bundles.lock). En développement, pas utilisable en production. Licence propriétaire.",
    "url": "https://github.com/UltraSmartSMP/bibliotheques",
-   "commits": 77,
+   "commits": 78,
    "commit": {
-    "sha": "869e8ff1caab5add6aaf6edb5410c7c1dbceb73f",
-    "court": "869e8ff",
-    "date": "2026-10-26T03:31:46Z",
-    "message": "sync 2026-10-26 04:31"
+    "sha": "1363e19304718a35a04c83b1c3c01dcaafa35441",
+    "court": "1363e19",
+    "date": "2026-10-26T03:42:53Z",
+    "message": "sync 2026-10-26 04:42"
    },
-   "fichiers": 3406,
+   "fichiers": 3405,
    "lignes": {
-    "code": 1582665,
-    "commentaires": 8092,
-    "vides": 8960,
-    "total": 1599717
+    "code": 1582642,
+    "commentaires": 8073,
+    "vides": 8953,
+    "total": 1599668
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 1089,
-     "code": 1393460,
-     "commentaires": 3846,
-     "vides": 3939
+     "fichiers": 1088,
+     "code": 1393437,
+     "commentaires": 3827,
+     "vides": 3932
     },
     {
      "nom": "Texte",
@@ -1670,10 +1670,10 @@
     },
     {
      "id": "tests",
-     "fichiers": 640,
-     "code": 67507,
-     "commentaires": 2958,
-     "vides": 3675
+     "fichiers": 639,
+     "code": 67484,
+     "commentaires": 2939,
+     "vides": 3668
     },
     {
      "id": "bancs",
@@ -1725,7 +1725,7 @@
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 39229
+     "code": 39206
     },
     {
      "langage": "C++",
