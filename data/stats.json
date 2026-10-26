@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T06:33:43Z",
- "empreinte": "f12a99518a7e8f31",
+ "maj": "2026-10-26T06:45:15Z",
+ "empreinte": "64d16a29ef9ad507",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18848,
+  "fichiers": 18852,
   "lignes": {
-   "code": 5024119,
-   "commentaires": 77947,
-   "vides": 134381,
-   "total": 5236447
+   "code": 5027246,
+   "commentaires": 77994,
+   "vides": 134385,
+   "total": 5239625
   },
   "langages": [
    {
@@ -76,8 +76,8 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 5198,
-    "code": 830041,
+    "fichiers": 5201,
+    "code": 833087,
     "commentaires": 0,
     "vides": 2550
    },
@@ -141,9 +141,9 @@
     "nom": "CUDA",
     "maison": false,
     "fichiers": 37,
-    "code": 18406,
-    "commentaires": 2267,
-    "vides": 1555
+    "code": 18472,
+    "commentaires": 2313,
+    "vides": 1559
    },
    {
     "nom": "Python",
@@ -228,9 +228,9 @@
    {
     "nom": "Bourne Shell",
     "maison": false,
-    "fichiers": 39,
-    "code": 432,
-    "commentaires": 41,
+    "fichiers": 40,
+    "code": 447,
+    "commentaires": 42,
     "vides": 0
    },
    {
@@ -292,9 +292,9 @@
    {
     "id": "bancs",
     "fichiers": 949,
-    "code": 120978,
-    "commentaires": 11528,
-    "vides": 8749
+    "code": 121044,
+    "commentaires": 11574,
+    "vides": 8753
    },
    {
     "id": "scripts",
@@ -319,9 +319,9 @@
    },
    {
     "id": "donnees",
-    "fichiers": 7061,
-    "code": 3950140,
-    "commentaires": 4318,
+    "fichiers": 7065,
+    "code": 3953201,
+    "commentaires": 4319,
     "vides": 4674
    }
   ],
@@ -339,7 +339,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 815468
+    "code": 818514
    },
    {
     "langage": "Markdown",
@@ -394,7 +394,7 @@
    {
     "langage": "CUDA",
     "type": "bancs",
-    "code": 16111
+    "code": 16177
    },
    {
     "langage": "PowerShell",
@@ -552,14 +552,14 @@
     "code": 586
    },
    {
+    "langage": "Bourne Shell",
+    "type": "donnees",
+    "code": 447
+   },
+   {
     "langage": "SMPA ISA",
     "type": "source",
     "code": 439
-   },
-   {
-    "langage": "Bourne Shell",
-    "type": "donnees",
-    "code": 432
    },
    {
     "langage": "diff",
@@ -682,26 +682,26 @@
     "code": 3
    }
   ],
-  "commits": 1176
+  "commits": 1178
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 351,
+   "commits": 352,
    "commit": {
-    "sha": "4ed5c0c075e7e329e864fae3c404675ab8c69edd",
-    "court": "4ed5c0c",
-    "date": "2026-10-26T06:21:08Z",
-    "message": "sync 2026-10-26 07:21"
+    "sha": "ab4e17a824cc0fe4e3955378b4c4979e0004ee42",
+    "court": "ab4e17a",
+    "date": "2026-10-26T06:45:04Z",
+    "message": "sync 2026-10-26 07:45"
    },
    "fichiers": 3412,
    "lignes": {
-    "code": 615265,
-    "commentaires": 43116,
-    "vides": 32409,
-    "total": 690790
+    "code": 615331,
+    "commentaires": 43162,
+    "vides": 32413,
+    "total": 690906
    },
    "langages": [
     {
@@ -748,9 +748,9 @@
      "nom": "CUDA",
      "maison": false,
      "fichiers": 33,
-     "code": 16846,
-     "commentaires": 2196,
-     "vides": 1507
+     "code": 16912,
+     "commentaires": 2242,
+     "vides": 1511
     },
     {
      "nom": "PowerShell",
@@ -891,9 +891,9 @@
     {
      "id": "bancs",
      "fichiers": 918,
-     "code": 109639,
-     "commentaires": 10591,
-     "vides": 7726
+     "code": 109705,
+     "commentaires": 10637,
+     "vides": 7730
     },
     {
      "id": "scripts",
@@ -963,7 +963,7 @@
     {
      "langage": "CUDA",
      "type": "bancs",
-     "code": 16111
+     "code": 16177
     },
     {
      "langage": "Texte",
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 481,
+   "commits": 482,
    "commit": {
-    "sha": "6341adeefa8d6c74578d70d93b5fc90967eda7f4",
-    "court": "6341ade",
-    "date": "2026-10-26T06:33:43Z",
-    "message": "sync 2026-10-26 07:33"
+    "sha": "0971fecff2d3d4b149229293c5e33d45cfa79181",
+    "court": "0971fec",
+    "date": "2026-10-26T06:45:15Z",
+    "message": "sync 2026-10-26 07:45"
    },
-   "fichiers": 8920,
+   "fichiers": 8924,
    "lignes": {
-    "code": 2578260,
-    "commentaires": 2521,
+    "code": 2581321,
+    "commentaires": 2522,
     "vides": 71737,
-    "total": 2652518
+    "total": 2655580
    },
    "langages": [
     {
@@ -2259,8 +2259,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 2301,
-     "code": 513712,
+     "fichiers": 2304,
+     "code": 516758,
      "commentaires": 0,
      "vides": 2339
     },
@@ -2347,9 +2347,9 @@
     {
      "nom": "Bourne Shell",
      "maison": false,
-     "fichiers": 39,
-     "code": 432,
-     "commentaires": 41,
+     "fichiers": 40,
+     "code": 447,
+     "commentaires": 42,
      "vides": 0
     },
     {
@@ -2454,9 +2454,9 @@
     },
     {
      "id": "donnees",
-     "fichiers": 3218,
-     "code": 2229569,
-     "commentaires": 2131,
+     "fichiers": 3222,
+     "code": 2232630,
+     "commentaires": 2132,
      "vides": 3503
     }
    ],
@@ -2469,7 +2469,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 513676
+     "code": 516722
     },
     {
      "langage": "Markdown",
@@ -2529,7 +2529,7 @@
     {
      "langage": "Bourne Shell",
      "type": "donnees",
-     "code": 432
+     "code": 447
     },
     {
      "langage": "diff",
