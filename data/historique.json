@@ -1,66 +1,5 @@
 [
  {
-  "maj": "2026-10-20T14:00:22Z",
-  "empreinte": "9bb2019af9545a6b",
-  "code": 2957882,
-  "commits": 252,
-  "par_depot": {
-   "moteur": 299179,
-   "langage": 15,
-   "bibliotheques": 1497457,
-   "symbiose": 801,
-   "docs": 1160430
-  },
-  "par_langage": {
-   "RSMP": 1358410,
-   "JSON": 928698,
-   "C++": 273573,
-   "Markdown": 190885,
-   "Texte": 130748,
-   "CSV": 22803,
-   "C/C++ Header": 17655,
-   "PowerShell": 9372,
-   "SMPA": 4983,
-   "CMake": 4846,
-   "Python": 4801,
-   "RSMP IR": 4604,
-   "CUDA": 1968,
-   "TOML": 1391,
-   "C": 907,
-   "SMPI": 877,
-   "JavaScript": 710,
-   "Tables .def": 278,
-   "SMPA ISA": 236,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 49,
-   "langage": {
-    "Markdown": 49
-   },
-   "type": {
-    "docs": 49
-   },
-   "depots": {
-    "docs": {
-     "code": 49,
-     "court": "aedce3d",
-     "commits": 1,
-     "langage": {
-      "Markdown": 49
-     },
-     "type": {
-      "docs": 49
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-20T14:10:40Z",
   "empreinte": "a034e75c000a0714",
   "code": 2962563,
@@ -40061,6 +40000,71 @@
      },
      "type": {
       "tests": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-26T08:05:11Z",
+  "empreinte": "61485b43b6da4b3b",
+  "code": 5071757,
+  "commits": 1190,
+  "par_depot": {
+   "moteur": 615339,
+   "langage": 241826,
+   "bibliotheques": 1582403,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2626063
+  },
+  "par_langage": {
+   "JSON": 1665561,
+   "RSMP": 1424095,
+   "Texte": 877042,
+   "C++": 505374,
+   "Markdown": 348052,
+   "SMPA": 43787,
+   "CSV": 43707,
+   "C/C++ Header": 36143,
+   "PowerShell": 30361,
+   "Assembly": 21674,
+   "CUDA": 18472,
+   "Python": 14145,
+   "YAML": 11286,
+   "CMake": 9187,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "Bourne Shell": 434,
+   "diff": 309,
+   "Tables .def": 300,
+   "INI": 107,
+   "DOS Batch": 42,
+   "Windows Resource File": 15
+  },
+  "delta": {
+   "code": 11168,
+   "langage": {
+    "Texte": 11168
+   },
+   "type": {
+    "donnees": 11168
+   },
+   "depots": {
+    "docs": {
+     "code": 11168,
+     "court": "ed02d55",
+     "commits": 1,
+     "langage": {
+      "Texte": 11168
+     },
+     "type": {
+      "donnees": 11168
      }
     }
    }
