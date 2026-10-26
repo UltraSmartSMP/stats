@@ -1,88 +1,5 @@
 [
  {
-  "maj": "2026-10-20T19:26:31Z",
-  "empreinte": "64bd857ffe27b617",
-  "code": 3570453,
-  "commits": 313,
-  "par_depot": {
-   "moteur": 346763,
-   "langage": 15,
-   "bibliotheques": 1497457,
-   "symbiose": 801,
-   "serveur": 15,
-   "docs": 1725402
-  },
-  "par_langage": {
-   "JSON": 1470111,
-   "RSMP": 1363756,
-   "C++": 300168,
-   "Markdown": 218241,
-   "Texte": 131528,
-   "CSV": 22803,
-   "C/C++ Header": 18459,
-   "PowerShell": 9875,
-   "SMPA": 9727,
-   "RSMP IR": 7455,
-   "Python": 5581,
-   "CMake": 5416,
-   "CUDA": 2312,
-   "TOML": 1391,
-   "JavaScript": 1195,
-   "C": 907,
-   "SMPI": 877,
-   "Tables .def": 278,
-   "SMPA ISA": 236,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 2155,
-   "langage": {
-    "C++": 145,
-    "C/C++ Header": 142,
-    "CMake": 262,
-    "CUDA": 344,
-    "Markdown": 1262
-   },
-   "type": {
-    "build": 262,
-    "docs": 1262,
-    "source": 631
-   },
-   "depots": {
-    "docs": {
-     "code": 1262,
-     "court": "d6a9c96",
-     "commits": 1,
-     "langage": {
-      "Markdown": 1262
-     },
-     "type": {
-      "docs": 1262
-     }
-    },
-    "moteur": {
-     "code": 893,
-     "court": "231b2f5",
-     "commits": 1,
-     "langage": {
-      "C++": 145,
-      "C/C++ Header": 142,
-      "CMake": 262,
-      "CUDA": 344
-     },
-     "type": {
-      "build": 262,
-      "source": 631
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-20T19:27:01Z",
   "empreinte": "2126dc06eabab353",
   "code": 3570513,
@@ -40831,6 +40748,134 @@
       "build": 120,
       "source": 160,
       "tests": 56
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-26T18:31:33Z",
+  "empreinte": "3a09fa4498ce6a9e",
+  "code": 5413243,
+  "commits": 1300,
+  "par_depot": {
+   "moteur": 633951,
+   "langage": 244806,
+   "bibliotheques": 1594592,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2933768
+  },
+  "par_langage": {
+   "JSON": 1695249,
+   "RSMP": 1442796,
+   "Texte": 1120917,
+   "C++": 512127,
+   "Markdown": 352325,
+   "CSV": 64571,
+   "SMPA": 45098,
+   "C/C++ Header": 36183,
+   "PowerShell": 33468,
+   "Assembly": 31427,
+   "CUDA": 18813,
+   "Python": 15836,
+   "YAML": 11286,
+   "CMake": 9536,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 2055,
+   "SMPI": 905,
+   "Bourne Shell": 704,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 330,
+   "INI": 107,
+   "Windows Resource File": 97,
+   "DOS Batch": 42
+  },
+  "delta": {
+   "code": 11982,
+   "langage": {
+    "C++": 2909,
+    "C/C++ Header": 4,
+    "CMake": 104,
+    "CSV": 821,
+    "JSON": 2138,
+    "Markdown": 187,
+    "PowerShell": 867,
+    "RSMP": 4099,
+    "TOML": 19,
+    "Texte": 834
+   },
+   "type": {
+    "bancs": 3748,
+    "build": 104,
+    "docs": 187,
+    "donnees": 4112,
+    "source": 2154,
+    "tests": 1677
+   },
+   "depots": {
+    "bibliotheques": {
+     "code": 7973,
+     "court": "3b89cfe",
+     "commits": 1,
+     "langage": {
+      "C++": 2904,
+      "C/C++ Header": 3,
+      "CMake": 102,
+      "PowerShell": 841,
+      "RSMP": 4099,
+      "TOML": 19,
+      "Texte": 5
+     },
+     "type": {
+      "bancs": 3748,
+      "build": 102,
+      "donnees": 298,
+      "source": 2148,
+      "tests": 1677
+     }
+    },
+    "docs": {
+     "code": 4001,
+     "court": "e9e15c5",
+     "commits": 1,
+     "langage": {
+      "CSV": 821,
+      "JSON": 2138,
+      "Markdown": 187,
+      "PowerShell": 26,
+      "Texte": 829
+     },
+     "type": {
+      "docs": 187,
+      "donnees": 3814
+     }
+    },
+    "langage": {
+     "code": 6,
+     "court": "3c32a51",
+     "commits": 1,
+     "langage": {
+      "C++": 5,
+      "C/C++ Header": 1
+     },
+     "type": {
+      "source": 6
+     }
+    },
+    "moteur": {
+     "code": 2,
+     "court": "7abdf26",
+     "commits": 1,
+     "langage": {
+      "CMake": 2
+     },
+     "type": {
+      "build": 2
      }
     }
    }
