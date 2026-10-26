@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T09:34:47Z",
- "empreinte": "cc3a9f7b0de150d3",
+ "maj": "2026-10-26T09:45:58Z",
+ "empreinte": "37aa260525a3bd78",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 19290,
+  "fichiers": 19289,
   "lignes": {
-   "code": 5100060,
-   "commentaires": 78076,
-   "vides": 134664,
-   "total": 5312800
+   "code": 5099988,
+   "commentaires": 78068,
+   "vides": 134657,
+   "total": 5312713
   },
   "langages": [
    {
@@ -68,10 +68,10 @@
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 2795,
-    "code": 1424220,
-    "commentaires": 8393,
-    "vides": 6822
+    "fichiers": 2794,
+    "code": 1424145,
+    "commentaires": 8385,
+    "vides": 6815
    },
    {
     "nom": "Texte",
@@ -269,7 +269,7 @@
     "nom": "Windows Resource File",
     "maison": false,
     "fichiers": 8,
-    "code": 32,
+    "code": 35,
     "commentaires": 0,
     "vides": 0
    }
@@ -284,10 +284,10 @@
    },
    {
     "id": "tests",
-    "fichiers": 3526,
-    "code": 333541,
-    "commentaires": 26077,
-    "vides": 23250
+    "fichiers": 3525,
+    "code": 333466,
+    "commentaires": 26069,
+    "vides": 23243
    },
    {
     "id": "bancs",
@@ -320,7 +320,7 @@
    {
     "id": "donnees",
     "fichiers": 7485,
-    "code": 4024760,
+    "code": 4024763,
     "commentaires": 4354,
     "vides": 4762
    }
@@ -359,7 +359,7 @@
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 64444
+    "code": 64369
    },
    {
     "langage": "C++",
@@ -639,7 +639,7 @@
    {
     "langage": "Windows Resource File",
     "type": "donnees",
-    "code": 32
+    "code": 35
    },
    {
     "langage": "SMPI",
@@ -682,7 +682,7 @@
     "code": 3
    }
   ],
-  "commits": 1204
+  "commits": 1206
  },
  "depots": [
   {
@@ -1561,28 +1561,28 @@
    "nom": "bibliotheques",
    "description": "Bibliothèques de base du moteur SMPA écrites en RSMP et compilées en bundles .smpb : core, alloc, collections, enveloppes de natives, sync/task, outil de paquets rsmpkg (rsmp.toml, bundles.lock). En développement, pas utilisable en production. Licence propriétaire.",
    "url": "https://github.com/UltraSmartSMP/bibliotheques",
-   "commits": 81,
+   "commits": 82,
    "commit": {
-    "sha": "3061accbc1dd92a4c3c3c46cfc79b22a30586de8",
-    "court": "3061acc",
-    "date": "2026-10-26T07:53:50Z",
-    "message": "sync 2026-10-26 08:53"
+    "sha": "1054208984784e27939861a05c0a664d60ddf376",
+    "court": "1054208",
+    "date": "2026-10-26T09:45:51Z",
+    "message": "sync 2026-10-26 10:45"
    },
-   "fichiers": 3404,
+   "fichiers": 3403,
    "lignes": {
-    "code": 1582403,
-    "commentaires": 8027,
-    "vides": 8927,
-    "total": 1599357
+    "code": 1582328,
+    "commentaires": 8019,
+    "vides": 8920,
+    "total": 1599267
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 1087,
-     "code": 1393198,
-     "commentaires": 3781,
-     "vides": 3906
+     "fichiers": 1086,
+     "code": 1393123,
+     "commentaires": 3773,
+     "vides": 3899
     },
     {
      "nom": "Texte",
@@ -1683,10 +1683,10 @@
     },
     {
      "id": "tests",
-     "fichiers": 638,
-     "code": 67245,
-     "commentaires": 2893,
-     "vides": 3642
+     "fichiers": 637,
+     "code": 67170,
+     "commentaires": 2885,
+     "vides": 3635
     },
     {
      "id": "bancs",
@@ -1738,7 +1738,7 @@
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 38967
+     "code": 38892
     },
     {
      "langage": "C++",
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 497,
+   "commits": 498,
    "commit": {
-    "sha": "837ee2130fbe78d64b6ff41c6a05924bea880917",
-    "court": "837ee21",
-    "date": "2026-10-26T09:34:47Z",
-    "message": "sync 2026-10-26 10:34"
+    "sha": "0db348a7ba3209d119a62072a7747d55f0e36fac",
+    "court": "0db348a",
+    "date": "2026-10-26T09:45:58Z",
+    "message": "sync 2026-10-26 10:45"
    },
    "fichiers": 9357,
    "lignes": {
-    "code": 2653687,
+    "code": 2653690,
     "commentaires": 2557,
     "vides": 72020,
-    "total": 2728264
+    "total": 2728267
    },
    "langages": [
     {
@@ -2396,7 +2396,7 @@
      "nom": "Windows Resource File",
      "maison": false,
      "fichiers": 8,
-     "code": 32,
+     "code": 35,
      "commentaires": 0,
      "vides": 0
     },
@@ -2455,7 +2455,7 @@
     {
      "id": "donnees",
      "fichiers": 3642,
-     "code": 2304189,
+     "code": 2304192,
      "commentaires": 2167,
      "vides": 3591
     }
@@ -2569,7 +2569,7 @@
     {
      "langage": "Windows Resource File",
      "type": "donnees",
-     "code": 32
+     "code": 35
     },
     {
      "langage": "Texte",
