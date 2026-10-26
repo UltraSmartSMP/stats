@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T08:27:34Z",
- "empreinte": "03d09704c1d02d37",
+ "maj": "2026-10-26T08:38:54Z",
+ "empreinte": "bdd7dfc927d5a49d",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,19 +49,19 @@
   }
  ],
  "global": {
-  "fichiers": 19183,
+  "fichiers": 19192,
   "lignes": {
-   "code": 5085319,
+   "code": 5088446,
    "commentaires": 77974,
-   "vides": 134557,
-   "total": 5297850
+   "vides": 134559,
+   "total": 5300979
   },
   "langages": [
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 453,
-    "code": 1665561,
+    "fichiers": 459,
+    "code": 1665631,
     "commentaires": 0,
     "vides": 49
    },
@@ -76,8 +76,8 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 5524,
-    "code": 890058,
+    "fichiers": 5526,
+    "code": 893097,
     "commentaires": 0,
     "vides": 2602
    },
@@ -93,9 +93,9 @@
     "nom": "Markdown",
     "maison": false,
     "fichiers": 5704,
-    "code": 348052,
+    "code": 348063,
     "commentaires": 136,
-    "vides": 68452
+    "vides": 68454
    },
    {
     "nom": "SMPA",
@@ -228,8 +228,8 @@
    {
     "nom": "Bourne Shell",
     "maison": false,
-    "fichiers": 38,
-    "code": 434,
+    "fichiers": 39,
+    "code": 441,
     "commentaires": 42,
     "vides": 0
    },
@@ -313,14 +313,14 @@
    {
     "id": "docs",
     "fichiers": 5712,
-    "code": 348638,
+    "code": 348649,
     "commentaires": 136,
-    "vides": 68482
+    "vides": 68484
    },
    {
     "id": "donnees",
-    "fichiers": 7392,
-    "code": 4010908,
+    "fichiers": 7401,
+    "code": 4014024,
     "commentaires": 4347,
     "vides": 4762
    }
@@ -329,7 +329,7 @@
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1664172
+    "code": 1664242
    },
    {
     "langage": "RSMP",
@@ -339,12 +339,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 875485
+    "code": 878524
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 348052
+    "code": 348063
    },
    {
     "langage": "C++",
@@ -552,14 +552,14 @@
     "code": 586
    },
    {
+    "langage": "Bourne Shell",
+    "type": "donnees",
+    "code": 441
+   },
+   {
     "langage": "SMPA ISA",
     "type": "source",
     "code": 439
-   },
-   {
-    "langage": "Bourne Shell",
-    "type": "donnees",
-    "code": 434
    },
    {
     "langage": "diff",
@@ -682,7 +682,7 @@
     "code": 3
    }
   ],
-  "commits": 1194
+  "commits": 1195
  },
  "depots": [
   {
@@ -2233,34 +2233,34 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 491,
+   "commits": 492,
    "commit": {
-    "sha": "45081c17490d51aa2d64fec55073621d4459bc84",
-    "court": "45081c1",
-    "date": "2026-10-26T08:27:34Z",
-    "message": "sync 2026-10-26 09:27"
+    "sha": "e5cbf0ad8f1a52d77d9b92944c62c496abb55b90",
+    "court": "e5cbf0a",
+    "date": "2026-10-26T08:38:54Z",
+    "message": "sync 2026-10-26 09:38"
    },
-   "fichiers": 9256,
+   "fichiers": 9265,
    "lignes": {
-    "code": 2639625,
+    "code": 2642752,
     "commentaires": 2550,
-    "vides": 71935,
-    "total": 2714110
+    "vides": 71937,
+    "total": 2717239
    },
    "langages": [
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 328,
-     "code": 1617948,
+     "fichiers": 334,
+     "code": 1618018,
      "commentaires": 0,
      "vides": 49
     },
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 2627,
-     "code": 573729,
+     "fichiers": 2629,
+     "code": 576768,
      "commentaires": 0,
      "vides": 2391
     },
@@ -2268,9 +2268,9 @@
      "nom": "Markdown",
      "maison": false,
      "fichiers": 5684,
-     "code": 347342,
+     "code": 347353,
      "commentaires": 124,
-     "vides": 68129
+     "vides": 68131
     },
     {
      "nom": "CSV",
@@ -2347,8 +2347,8 @@
     {
      "nom": "Bourne Shell",
      "maison": false,
-     "fichiers": 38,
-     "code": 434,
+     "fichiers": 39,
+     "code": 441,
      "commentaires": 42,
      "vides": 0
     },
@@ -2448,14 +2448,14 @@
     {
      "id": "docs",
      "fichiers": 5685,
-     "code": 347351,
+     "code": 347362,
      "commentaires": 124,
-     "vides": 68133
+     "vides": 68135
     },
     {
      "id": "donnees",
-     "fichiers": 3549,
-     "code": 2290337,
+     "fichiers": 3558,
+     "code": 2293453,
      "commentaires": 2160,
      "vides": 3591
     }
@@ -2464,17 +2464,17 @@
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 1617870
+     "code": 1617940
     },
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 573693
+     "code": 576732
     },
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 347342
+     "code": 347353
     },
     {
      "langage": "CSV",
@@ -2529,7 +2529,7 @@
     {
      "langage": "Bourne Shell",
      "type": "donnees",
-     "code": 434
+     "code": 441
     },
     {
      "langage": "diff",
