@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T03:53:54Z",
- "empreinte": "94ba3b58e7b9feac",
+ "maj": "2026-10-26T04:04:49Z",
+ "empreinte": "2b7a1a4683c0185c",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18263,
+  "fichiers": 18267,
   "lignes": {
-   "code": 4887667,
-   "commentaires": 76840,
-   "vides": 132917,
-   "total": 5097424
+   "code": 4887726,
+   "commentaires": 76843,
+   "vides": 132938,
+   "total": 5097507
   },
   "langages": [
    {
@@ -92,10 +92,10 @@
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5685,
-    "code": 346942,
+    "fichiers": 5689,
+    "code": 347002,
     "commentaires": 136,
-    "vides": 68221
+    "vides": 68242
    },
    {
     "nom": "SMPA",
@@ -133,8 +133,8 @@
     "nom": "CUDA",
     "maison": false,
     "fichiers": 37,
-    "code": 18407,
-    "commentaires": 2264,
+    "code": 18406,
+    "commentaires": 2267,
     "vides": 1555
    },
    {
@@ -284,8 +284,8 @@
    {
     "id": "bancs",
     "fichiers": 949,
-    "code": 120838,
-    "commentaires": 11506,
+    "code": 120837,
+    "commentaires": 11509,
     "vides": 8746
    },
    {
@@ -304,10 +304,10 @@
    },
    {
     "id": "docs",
-    "fichiers": 5693,
-    "code": 347528,
+    "fichiers": 5697,
+    "code": 347588,
     "commentaires": 136,
-    "vides": 68251
+    "vides": 68272
    },
    {
     "id": "donnees",
@@ -336,7 +336,7 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 346942
+    "code": 347002
    },
    {
     "langage": "C++",
@@ -381,7 +381,7 @@
    {
     "langage": "CUDA",
     "type": "bancs",
-    "code": 16112
+    "code": 16111
    },
    {
     "langage": "PowerShell",
@@ -669,26 +669,26 @@
     "code": 3
    }
   ],
-  "commits": 1144
+  "commits": 1146
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 339,
+   "commits": 340,
    "commit": {
-    "sha": "de3653759491dc815d8dc39a2c0f025747cb37de",
-    "court": "de36537",
-    "date": "2026-10-26T02:37:41Z",
-    "message": "sync 2026-10-26 03:37"
+    "sha": "edad0e24a2f635ef19d45b0a2f6b60dff85ab1d5",
+    "court": "edad0e2",
+    "date": "2026-10-26T04:04:36Z",
+    "message": "sync 2026-10-26 05:04"
    },
    "fichiers": 3401,
    "lignes": {
-    "code": 611684,
-    "commentaires": 42654,
+    "code": 611683,
+    "commentaires": 42657,
     "vides": 32254,
-    "total": 686592
+    "total": 686594
    },
    "langages": [
     {
@@ -735,8 +735,8 @@
      "nom": "CUDA",
      "maison": false,
      "fichiers": 33,
-     "code": 16847,
-     "commentaires": 2193,
+     "code": 16846,
+     "commentaires": 2196,
      "vides": 1507
     },
     {
@@ -878,8 +878,8 @@
     {
      "id": "bancs",
      "fichiers": 918,
-     "code": 109499,
-     "commentaires": 10569,
+     "code": 109498,
+     "commentaires": 10572,
      "vides": 7723
     },
     {
@@ -950,7 +950,7 @@
     {
      "langage": "CUDA",
      "type": "bancs",
-     "code": 16112
+     "code": 16111
     },
     {
      "langage": "Texte",
@@ -2220,19 +2220,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 467,
+   "commits": 468,
    "commit": {
-    "sha": "2935b6483adc53f2aa346a09c4f55514cd309ebd",
-    "court": "2935b64",
-    "date": "2026-10-26T03:53:54Z",
-    "message": "sync 2026-10-26 04:53"
+    "sha": "da22e7f011b1677e1e5d8482f34060ca893eb9aa",
+    "court": "da22e7f",
+    "date": "2026-10-26T04:04:49Z",
+    "message": "sync 2026-10-26 05:04"
    },
-   "fichiers": 8355,
+   "fichiers": 8359,
    "lignes": {
-    "code": 2445668,
+    "code": 2445728,
     "commentaires": 1924,
-    "vides": 70436,
-    "total": 2518028
+    "vides": 70457,
+    "total": 2518109
    },
    "langages": [
     {
@@ -2254,10 +2254,10 @@
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5665,
-     "code": 346232,
+     "fichiers": 5669,
+     "code": 346292,
      "commentaires": 124,
-     "vides": 67898
+     "vides": 67919
     },
     {
      "nom": "CSV",
@@ -2426,10 +2426,10 @@
     },
     {
      "id": "docs",
-     "fichiers": 5666,
-     "code": 346241,
+     "fichiers": 5670,
+     "code": 346301,
      "commentaires": 124,
-     "vides": 67902
+     "vides": 67923
     },
     {
      "id": "donnees",
@@ -2453,7 +2453,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 346232
+     "code": 346292
     },
     {
      "langage": "CSV",
