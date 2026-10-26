@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T09:23:34Z",
- "empreinte": "38b5ad2c579c3c5f",
+ "maj": "2026-10-26T09:34:47Z",
+ "empreinte": "cc3a9f7b0de150d3",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 19290,
   "lignes": {
-   "code": 5100058,
+   "code": 5100060,
    "commentaires": 78076,
    "vides": 134664,
-   "total": 5312798
+   "total": 5312800
   },
   "langages": [
    {
@@ -269,7 +269,7 @@
     "nom": "Windows Resource File",
     "maison": false,
     "fichiers": 8,
-    "code": 30,
+    "code": 32,
     "commentaires": 0,
     "vides": 0
    }
@@ -320,7 +320,7 @@
    {
     "id": "donnees",
     "fichiers": 7485,
-    "code": 4024758,
+    "code": 4024760,
     "commentaires": 4354,
     "vides": 4762
    }
@@ -639,7 +639,7 @@
    {
     "langage": "Windows Resource File",
     "type": "donnees",
-    "code": 30
+    "code": 32
    },
    {
     "langage": "SMPI",
@@ -682,7 +682,7 @@
     "code": 3
    }
   ],
-  "commits": 1203
+  "commits": 1204
  },
  "depots": [
   {
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 496,
+   "commits": 497,
    "commit": {
-    "sha": "0db9f9aa047869c6ff2d95cec628ccfff94d815a",
-    "court": "0db9f9a",
-    "date": "2026-10-26T09:23:34Z",
-    "message": "sync 2026-10-26 10:23"
+    "sha": "837ee2130fbe78d64b6ff41c6a05924bea880917",
+    "court": "837ee21",
+    "date": "2026-10-26T09:34:47Z",
+    "message": "sync 2026-10-26 10:34"
    },
    "fichiers": 9357,
    "lignes": {
-    "code": 2653685,
+    "code": 2653687,
     "commentaires": 2557,
     "vides": 72020,
-    "total": 2728262
+    "total": 2728264
    },
    "langages": [
     {
@@ -2396,7 +2396,7 @@
      "nom": "Windows Resource File",
      "maison": false,
      "fichiers": 8,
-     "code": 30,
+     "code": 32,
      "commentaires": 0,
      "vides": 0
     },
@@ -2455,7 +2455,7 @@
     {
      "id": "donnees",
      "fichiers": 3642,
-     "code": 2304187,
+     "code": 2304189,
      "commentaires": 2167,
      "vides": 3591
     }
@@ -2569,7 +2569,7 @@
     {
      "langage": "Windows Resource File",
      "type": "donnees",
-     "code": 30
+     "code": 32
     },
     {
      "langage": "Texte",
