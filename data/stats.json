@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T06:21:23Z",
- "empreinte": "f57a802378c50699",
+ "maj": "2026-10-26T06:33:43Z",
+ "empreinte": "f12a99518a7e8f31",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18845,
+  "fichiers": 18848,
   "lignes": {
-   "code": 5021059,
-   "commentaires": 77945,
+   "code": 5024119,
+   "commentaires": 77947,
    "vides": 134381,
-   "total": 5233385
+   "total": 5236447
   },
   "langages": [
    {
@@ -76,8 +76,8 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 5196,
-    "code": 827002,
+    "fichiers": 5198,
+    "code": 830041,
     "commentaires": 0,
     "vides": 2550
    },
@@ -228,9 +228,9 @@
    {
     "nom": "Bourne Shell",
     "maison": false,
-    "fichiers": 38,
-    "code": 411,
-    "commentaires": 39,
+    "fichiers": 39,
+    "code": 432,
+    "commentaires": 41,
     "vides": 0
    },
    {
@@ -319,9 +319,9 @@
    },
    {
     "id": "donnees",
-    "fichiers": 7058,
-    "code": 3947080,
-    "commentaires": 4316,
+    "fichiers": 7061,
+    "code": 3950140,
+    "commentaires": 4318,
     "vides": 4674
    }
   ],
@@ -339,7 +339,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 812429
+    "code": 815468
    },
    {
     "langage": "Markdown",
@@ -559,7 +559,7 @@
    {
     "langage": "Bourne Shell",
     "type": "donnees",
-    "code": 411
+    "code": 432
    },
    {
     "langage": "diff",
@@ -682,7 +682,7 @@
     "code": 3
    }
   ],
-  "commits": 1175
+  "commits": 1176
  },
  "depots": [
   {
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 480,
+   "commits": 481,
    "commit": {
-    "sha": "9300a8f3b1e8d596e607e18abf168113004a1c27",
-    "court": "9300a8f",
-    "date": "2026-10-26T06:21:23Z",
-    "message": "sync 2026-10-26 07:21"
+    "sha": "6341adeefa8d6c74578d70d93b5fc90967eda7f4",
+    "court": "6341ade",
+    "date": "2026-10-26T06:33:43Z",
+    "message": "sync 2026-10-26 07:33"
    },
-   "fichiers": 8917,
+   "fichiers": 8920,
    "lignes": {
-    "code": 2575200,
-    "commentaires": 2519,
+    "code": 2578260,
+    "commentaires": 2521,
     "vides": 71737,
-    "total": 2649456
+    "total": 2652518
    },
    "langages": [
     {
@@ -2259,8 +2259,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 2299,
-     "code": 510673,
+     "fichiers": 2301,
+     "code": 513712,
      "commentaires": 0,
      "vides": 2339
     },
@@ -2347,9 +2347,9 @@
     {
      "nom": "Bourne Shell",
      "maison": false,
-     "fichiers": 38,
-     "code": 411,
-     "commentaires": 39,
+     "fichiers": 39,
+     "code": 432,
+     "commentaires": 41,
      "vides": 0
     },
     {
@@ -2454,9 +2454,9 @@
     },
     {
      "id": "donnees",
-     "fichiers": 3215,
-     "code": 2226509,
-     "commentaires": 2129,
+     "fichiers": 3218,
+     "code": 2229569,
+     "commentaires": 2131,
      "vides": 3503
     }
    ],
@@ -2469,7 +2469,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 510637
+     "code": 513676
     },
     {
      "langage": "Markdown",
@@ -2529,7 +2529,7 @@
     {
      "langage": "Bourne Shell",
      "type": "donnees",
-     "code": 411
+     "code": 432
     },
     {
      "langage": "diff",
