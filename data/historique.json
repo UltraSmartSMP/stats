@@ -1,66 +1,5 @@
 [
  {
-  "maj": "2026-10-20T09:25:58Z",
-  "empreinte": "bec2720be83f9f31",
-  "code": 2953199,
-  "commits": 242,
-  "par_depot": {
-   "moteur": 295529,
-   "langage": 15,
-   "bibliotheques": 1497457,
-   "symbiose": 801,
-   "docs": 1159397
-  },
-  "par_langage": {
-   "RSMP": 1358410,
-   "JSON": 928697,
-   "C++": 270786,
-   "Markdown": 189852,
-   "Texte": 130748,
-   "CSV": 22803,
-   "C/C++ Header": 17274,
-   "PowerShell": 9372,
-   "SMPA": 4921,
-   "Python": 4801,
-   "CMake": 4632,
-   "RSMP IR": 4604,
-   "CUDA": 1968,
-   "TOML": 1391,
-   "C": 907,
-   "SMPI": 877,
-   "JavaScript": 511,
-   "Tables .def": 272,
-   "SMPA ISA": 236,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 42,
-   "langage": {
-    "Markdown": 42
-   },
-   "type": {
-    "docs": 42
-   },
-   "depots": {
-    "docs": {
-     "code": 42,
-     "court": "acf6d2e",
-     "commits": 1,
-     "langage": {
-      "Markdown": 42
-     },
-     "type": {
-      "docs": 42
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-20T13:17:17Z",
   "empreinte": "e941b70d7888cb41",
   "code": 2953454,
@@ -40054,6 +39993,79 @@
      },
      "type": {
       "bancs": 66
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-26T06:56:28Z",
+  "empreinte": "d15a6d814d530b22",
+  "code": 5042477,
+  "commits": 1179,
+  "par_depot": {
+   "moteur": 615331,
+   "langage": 241826,
+   "bibliotheques": 1582642,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2596552
+  },
+  "par_langage": {
+   "JSON": 1665561,
+   "RSMP": 1424334,
+   "Texte": 848222,
+   "C++": 505366,
+   "Markdown": 347532,
+   "SMPA": 43787,
+   "CSV": 43707,
+   "C/C++ Header": 36143,
+   "PowerShell": 30361,
+   "Assembly": 21476,
+   "CUDA": 18472,
+   "Python": 14145,
+   "YAML": 11286,
+   "CMake": 9187,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "Bourne Shell": 461,
+   "SMPA ISA": 459,
+   "diff": 309,
+   "Tables .def": 300,
+   "INI": 107,
+   "DOS Batch": 42,
+   "Windows Resource File": 15
+  },
+  "delta": {
+   "code": 15231,
+   "langage": {
+    "Bourne Shell": 14,
+    "Markdown": 77,
+    "PowerShell": 5,
+    "Texte": 15135
+   },
+   "type": {
+    "docs": 77,
+    "donnees": 15154
+   },
+   "depots": {
+    "docs": {
+     "code": 15231,
+     "court": "46bdc9a",
+     "commits": 1,
+     "langage": {
+      "Bourne Shell": 14,
+      "Markdown": 77,
+      "PowerShell": 5,
+      "Texte": 15135
+     },
+     "type": {
+      "docs": 77,
+      "donnees": 15154
      }
     }
    }
