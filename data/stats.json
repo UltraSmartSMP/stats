@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T05:23:47Z",
- "empreinte": "400ab11599fbecdf",
+ "maj": "2026-10-26T05:35:17Z",
+ "empreinte": "f6176e2b0792d99a",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18581,
+  "fichiers": 18599,
   "lignes": {
-   "code": 4920719,
-   "commentaires": 77908,
+   "code": 4933063,
+   "commentaires": 77909,
    "vides": 133780,
-   "total": 5132407
+   "total": 5144752
   },
   "langages": [
    {
@@ -76,8 +76,8 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 4972,
-    "code": 735467,
+    "fichiers": 4988,
+    "code": 747797,
     "commentaires": 0,
     "vides": 1970
    },
@@ -228,9 +228,9 @@
    {
     "nom": "Bourne Shell",
     "maison": false,
-    "fichiers": 32,
-    "code": 357,
-    "commentaires": 35,
+    "fichiers": 34,
+    "code": 368,
+    "commentaires": 36,
     "vides": 0
    },
    {
@@ -269,7 +269,7 @@
     "nom": "Windows Resource File",
     "maison": false,
     "fichiers": 3,
-    "code": 5,
+    "code": 8,
     "commentaires": 0,
     "vides": 0
    }
@@ -291,8 +291,8 @@
    },
    {
     "id": "bancs",
-    "fichiers": 950,
-    "code": 120979,
+    "fichiers": 949,
+    "code": 120978,
     "commentaires": 11528,
     "vides": 8749
    },
@@ -319,9 +319,9 @@
    },
    {
     "id": "donnees",
-    "fichiers": 6794,
-    "code": 3846861,
-    "commentaires": 4305,
+    "fichiers": 6813,
+    "code": 3859206,
+    "commentaires": 4306,
     "vides": 4085
    }
   ],
@@ -339,7 +339,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 720893
+    "code": 733224
    },
    {
     "langage": "Markdown",
@@ -414,7 +414,7 @@
    {
     "langage": "Texte",
     "type": "bancs",
-    "code": 9731
+    "code": 9730
    },
    {
     "langage": "C++",
@@ -559,7 +559,7 @@
    {
     "langage": "Bourne Shell",
     "type": "donnees",
-    "code": 357
+    "code": 368
    },
    {
     "langage": "diff",
@@ -667,13 +667,13 @@
     "code": 11
    },
    {
-    "langage": "TOML",
-    "type": "bancs",
-    "code": 5
-   },
-   {
     "langage": "Windows Resource File",
     "type": "donnees",
+    "code": 8
+   },
+   {
+    "langage": "TOML",
+    "type": "bancs",
     "code": 5
    },
    {
@@ -682,26 +682,26 @@
     "code": 3
    }
   ],
-  "commits": 1163
+  "commits": 1165
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 346,
+   "commits": 347,
    "commit": {
-    "sha": "d8176b993d2ba2bf638226f9a8b1994e781ccecf",
-    "court": "d8176b9",
-    "date": "2026-10-26T05:23:31Z",
-    "message": "sync 2026-10-26 06:23"
+    "sha": "2c1af2d8bd106e6090f6443dd5193f1756d6def3",
+    "court": "2c1af2d",
+    "date": "2026-10-26T05:35:02Z",
+    "message": "sync 2026-10-26 06:35"
    },
-   "fichiers": 3413,
+   "fichiers": 3412,
    "lignes": {
-    "code": 615221,
+    "code": 615220,
     "commentaires": 43095,
     "vides": 32408,
-    "total": 690724
+    "total": 690723
    },
    "langages": [
     {
@@ -715,8 +715,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 749,
-     "code": 179573,
+     "fichiers": 748,
+     "code": 179572,
      "commentaires": 0,
      "vides": 149
     },
@@ -890,8 +890,8 @@
     },
     {
      "id": "bancs",
-     "fichiers": 919,
-     "code": 109640,
+     "fichiers": 918,
+     "code": 109639,
      "commentaires": 10591,
      "vides": 7726
     },
@@ -968,7 +968,7 @@
     {
      "langage": "Texte",
      "type": "bancs",
-     "code": 9714
+     "code": 9713
     },
     {
      "langage": "SMPA",
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 475,
+   "commits": 476,
    "commit": {
-    "sha": "53bfbf8b89e560629c623b6b20b2bdee47744874",
-    "court": "53bfbf8",
-    "date": "2026-10-26T05:23:47Z",
-    "message": "sync 2026-10-26 06:23"
+    "sha": "d9b9c785c2701cab4265a87bd2891124d49e6c6a",
+    "court": "d9b9c78",
+    "date": "2026-10-26T05:35:17Z",
+    "message": "sync 2026-10-26 06:35"
    },
-   "fichiers": 8653,
+   "fichiers": 8672,
    "lignes": {
-    "code": 2474943,
-    "commentaires": 2508,
+    "code": 2487288,
+    "commentaires": 2509,
     "vides": 71137,
-    "total": 2548588
+    "total": 2560934
    },
    "langages": [
     {
@@ -2259,8 +2259,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 2074,
-     "code": 419137,
+     "fichiers": 2091,
+     "code": 431468,
      "commentaires": 0,
      "vides": 1759
     },
@@ -2347,9 +2347,9 @@
     {
      "nom": "Bourne Shell",
      "maison": false,
-     "fichiers": 32,
-     "code": 357,
-     "commentaires": 35,
+     "fichiers": 34,
+     "code": 368,
+     "commentaires": 36,
      "vides": 0
     },
     {
@@ -2396,7 +2396,7 @@
      "nom": "Windows Resource File",
      "maison": false,
      "fichiers": 3,
-     "code": 5,
+     "code": 8,
      "commentaires": 0,
      "vides": 0
     },
@@ -2454,9 +2454,9 @@
     },
     {
      "id": "donnees",
-     "fichiers": 2951,
-     "code": 2126290,
-     "commentaires": 2118,
+     "fichiers": 2970,
+     "code": 2138635,
+     "commentaires": 2119,
      "vides": 2914
     }
    ],
@@ -2469,7 +2469,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 419101
+     "code": 431432
     },
     {
      "langage": "Markdown",
@@ -2529,7 +2529,7 @@
     {
      "langage": "Bourne Shell",
      "type": "donnees",
-     "code": 357
+     "code": 368
     },
     {
      "langage": "diff",
@@ -2579,7 +2579,7 @@
     {
      "langage": "Windows Resource File",
      "type": "donnees",
-     "code": 5
+     "code": 8
     },
     {
      "langage": "C/C++ Header",
