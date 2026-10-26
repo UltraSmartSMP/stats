@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T19:04:50Z",
- "empreinte": "b5c4d0d0642a908b",
+ "maj": "2026-10-26T19:15:52Z",
+ "empreinte": "b6223a7a9e00f2f8",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 20528,
+  "fichiers": 20530,
   "lignes": {
-   "code": 5439556,
+   "code": 5439770,
    "commentaires": 83258,
-   "vides": 139742,
-   "total": 5662556
+   "vides": 139773,
+   "total": 5662801
   },
   "langages": [
    {
@@ -92,10 +92,10 @@
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5851,
-    "code": 353285,
+    "fichiers": 5853,
+    "code": 353499,
     "commentaires": 136,
-    "vides": 69800
+    "vides": 69831
    },
    {
     "nom": "CSV",
@@ -312,10 +312,10 @@
    },
    {
     "id": "docs",
-    "fichiers": 5859,
-    "code": 353871,
+    "fichiers": 5861,
+    "code": 354085,
     "commentaires": 136,
-    "vides": 69830
+    "vides": 69861
    },
    {
     "id": "donnees",
@@ -344,7 +344,7 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 353285
+    "code": 353499
    },
    {
     "langage": "C++",
@@ -692,7 +692,7 @@
     "code": 3
    }
   ],
-  "commits": 1309
+  "commits": 1311
  },
  "depots": [
   {
@@ -1607,12 +1607,12 @@
    "nom": "bibliotheques",
    "description": "Bibliothèques de base du moteur SMPA écrites en RSMP et compilées en bundles .smpb : core, alloc, collections, enveloppes de natives, sync/task, outil de paquets rsmpkg (rsmp.toml, bundles.lock). En développement, pas utilisable en production. Licence propriétaire.",
    "url": "https://github.com/UltraSmartSMP/bibliotheques",
-   "commits": 93,
+   "commits": 94,
    "commit": {
-    "sha": "7c76f6a46a09c23af984b520ac555a425a01a9d4",
-    "court": "7c76f6a",
-    "date": "2026-10-26T19:04:42Z",
-    "message": "sync 2026-10-26 20:04"
+    "sha": "cc2604c1c64d4b7c26f14538d803f47566cb024d",
+    "court": "cc2604c",
+    "date": "2026-10-26T19:15:44Z",
+    "message": "sync 2026-10-26 20:15"
    },
    "fichiers": 3540,
    "lignes": {
@@ -2284,19 +2284,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 540,
+   "commits": 541,
    "commit": {
-    "sha": "61b6df49f03ffea5da96e91a852bb69c17bb2fe9",
-    "court": "61b6df4",
-    "date": "2026-10-26T19:04:50Z",
-    "message": "sync 2026-10-26 20:04"
+    "sha": "348dffdc489a3284dccdc17fd595a1d034f4143b",
+    "court": "348dffd",
+    "date": "2026-10-26T19:15:52Z",
+    "message": "sync 2026-10-26 20:15"
    },
-   "fichiers": 10308,
+   "fichiers": 10310,
    "lignes": {
-    "code": 2944047,
+    "code": 2944261,
     "commentaires": 3232,
-    "vides": 74011,
-    "total": 3021290
+    "vides": 74042,
+    "total": 3021535
    },
    "langages": [
     {
@@ -2318,10 +2318,10 @@
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5831,
-     "code": 352575,
+     "fichiers": 5833,
+     "code": 352789,
      "commentaires": 124,
-     "vides": 69477
+     "vides": 69508
     },
     {
      "nom": "CSV",
@@ -2498,10 +2498,10 @@
     },
     {
      "id": "docs",
-     "fichiers": 5832,
-     "code": 352584,
+     "fichiers": 5834,
+     "code": 352798,
      "commentaires": 124,
-     "vides": 69481
+     "vides": 69512
     },
     {
      "id": "donnees",
@@ -2525,7 +2525,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 352575
+     "code": 352789
     },
     {
      "langage": "CSV",
