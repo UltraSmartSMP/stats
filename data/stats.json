@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T10:39:47Z",
- "empreinte": "6f06e4c345ecc2bd",
+ "maj": "2026-10-26T10:50:47Z",
+ "empreinte": "3da51099a7ef1e96",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 19325,
+  "fichiers": 19331,
   "lignes": {
-   "code": 5103451,
-   "commentaires": 78068,
-   "vides": 134689,
-   "total": 5316208
+   "code": 5103828,
+   "commentaires": 78099,
+   "vides": 134734,
+   "total": 5316661
   },
   "langages": [
    {
@@ -76,10 +76,10 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 5605,
-    "code": 906763,
+    "fichiers": 5609,
+    "code": 906871,
     "commentaires": 0,
-    "vides": 2602
+    "vides": 2610
    },
    {
     "nom": "C++",
@@ -93,9 +93,9 @@
     "nom": "Markdown",
     "maison": false,
     "fichiers": 5723,
-    "code": 348386,
+    "code": 348453,
     "commentaires": 136,
-    "vides": 68569
+    "vides": 68599
    },
    {
     "nom": "SMPA",
@@ -124,10 +124,10 @@
    {
     "nom": "PowerShell",
     "maison": false,
-    "fichiers": 244,
-    "code": 30449,
-    "commentaires": 3390,
-    "vides": 1688
+    "fichiers": 246,
+    "code": 30648,
+    "commentaires": 3421,
+    "vides": 1695
    },
    {
     "nom": "Assembly",
@@ -258,20 +258,20 @@
     "vides": 13
    },
    {
+    "nom": "Windows Resource File",
+    "maison": false,
+    "fichiers": 10,
+    "code": 43,
+    "commentaires": 0,
+    "vides": 0
+   },
+   {
     "nom": "DOS Batch",
     "maison": false,
     "fichiers": 7,
     "code": 42,
     "commentaires": 0,
     "vides": 2
-   },
-   {
-    "nom": "Windows Resource File",
-    "maison": false,
-    "fichiers": 10,
-    "code": 40,
-    "commentaires": 0,
-    "vides": 0
    }
   ],
   "types": [
@@ -313,16 +313,16 @@
    {
     "id": "docs",
     "fichiers": 5731,
-    "code": 348972,
+    "code": 349039,
     "commentaires": 136,
-    "vides": 68599
+    "vides": 68629
    },
    {
     "id": "donnees",
-    "fichiers": 7510,
-    "code": 4028102,
-    "commentaires": 4354,
-    "vides": 4762
+    "fichiers": 7516,
+    "code": 4028412,
+    "commentaires": 4385,
+    "vides": 4777
    }
   ],
   "croise": [
@@ -339,12 +339,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 892190
+    "code": 892298
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 348386
+    "code": 348453
    },
    {
     "langage": "C++",
@@ -464,7 +464,7 @@
    {
     "langage": "PowerShell",
     "type": "donnees",
-    "code": 3388
+    "code": 3587
    },
    {
     "langage": "RSMP",
@@ -627,14 +627,14 @@
     "code": 44
    },
    {
+    "langage": "Windows Resource File",
+    "type": "donnees",
+    "code": 43
+   },
+   {
     "langage": "DOS Batch",
     "type": "donnees",
     "code": 42
-   },
-   {
-    "langage": "Windows Resource File",
-    "type": "donnees",
-    "code": 40
    },
    {
     "langage": "C/C++ Header",
@@ -682,7 +682,7 @@
     "code": 3
    }
   ],
-  "commits": 1209
+  "commits": 1210
  },
  "depots": [
   {
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 501,
+   "commits": 502,
    "commit": {
-    "sha": "3c9ac0c1adee385e722ef9eb10e9c8ae58d6636a",
-    "court": "3c9ac0c",
-    "date": "2026-10-26T10:39:47Z",
-    "message": "sync 2026-10-26 11:39"
+    "sha": "52df3d92e2618f46358680af7bc3064baf303f37",
+    "court": "52df3d9",
+    "date": "2026-10-26T10:50:47Z",
+    "message": "sync 2026-10-26 11:50"
    },
-   "fichiers": 9393,
+   "fichiers": 9399,
    "lignes": {
-    "code": 2657153,
-    "commentaires": 2557,
-    "vides": 72052,
-    "total": 2731762
+    "code": 2657530,
+    "commentaires": 2588,
+    "vides": 72097,
+    "total": 2732215
    },
    "langages": [
     {
@@ -2259,18 +2259,18 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 2708,
-     "code": 590434,
+     "fichiers": 2712,
+     "code": 590542,
      "commentaires": 0,
-     "vides": 2391
+     "vides": 2399
     },
     {
      "nom": "Markdown",
      "maison": false,
      "fichiers": 5703,
-     "code": 347676,
+     "code": 347743,
      "commentaires": 124,
-     "vides": 68246
+     "vides": 68276
     },
     {
      "nom": "CSV",
@@ -2315,10 +2315,10 @@
     {
      "nom": "PowerShell",
      "maison": false,
-     "fichiers": 123,
-     "code": 5093,
-     "commentaires": 506,
-     "vides": 246
+     "fichiers": 125,
+     "code": 5292,
+     "commentaires": 537,
+     "vides": 253
     },
     {
      "nom": "CUDA",
@@ -2385,20 +2385,20 @@
      "vides": 5
     },
     {
+     "nom": "Windows Resource File",
+     "maison": false,
+     "fichiers": 10,
+     "code": 43,
+     "commentaires": 0,
+     "vides": 0
+    },
+    {
      "nom": "DOS Batch",
      "maison": false,
      "fichiers": 7,
      "code": 42,
      "commentaires": 0,
      "vides": 2
-    },
-    {
-     "nom": "Windows Resource File",
-     "maison": false,
-     "fichiers": 10,
-     "code": 40,
-     "commentaires": 0,
-     "vides": 0
     },
     {
      "nom": "C/C++ Header",
@@ -2448,16 +2448,16 @@
     {
      "id": "docs",
      "fichiers": 5704,
-     "code": 347685,
+     "code": 347752,
      "commentaires": 124,
-     "vides": 68250
+     "vides": 68280
     },
     {
      "id": "donnees",
-     "fichiers": 3667,
-     "code": 2307531,
-     "commentaires": 2167,
-     "vides": 3591
+     "fichiers": 3673,
+     "code": 2307841,
+     "commentaires": 2198,
+     "vides": 3606
     }
    ],
    "croise": [
@@ -2469,12 +2469,12 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 590398
+     "code": 590506
     },
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 347676
+     "code": 347743
     },
     {
      "langage": "CSV",
@@ -2504,7 +2504,7 @@
     {
      "langage": "PowerShell",
      "type": "donnees",
-     "code": 3388
+     "code": 3587
     },
     {
      "langage": "PowerShell",
@@ -2562,14 +2562,14 @@
      "code": 78
     },
     {
+     "langage": "Windows Resource File",
+     "type": "donnees",
+     "code": 43
+    },
+    {
      "langage": "DOS Batch",
      "type": "donnees",
      "code": 42
-    },
-    {
-     "langage": "Windows Resource File",
-     "type": "donnees",
-     "code": 40
     },
     {
      "langage": "Texte",
