@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T10:08:09Z",
- "empreinte": "aac54f4751f62973",
+ "maj": "2026-10-26T10:39:47Z",
+ "empreinte": "6f06e4c345ecc2bd",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 19323,
+  "fichiers": 19325,
   "lignes": {
-   "code": 5103449,
+   "code": 5103451,
    "commentaires": 78068,
    "vides": 134689,
-   "total": 5316206
+   "total": 5316208
   },
   "langages": [
    {
@@ -76,8 +76,8 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 5604,
-    "code": 906762,
+    "fichiers": 5605,
+    "code": 906763,
     "commentaires": 0,
     "vides": 2602
    },
@@ -268,8 +268,8 @@
    {
     "nom": "Windows Resource File",
     "maison": false,
-    "fichiers": 9,
-    "code": 39,
+    "fichiers": 10,
+    "code": 40,
     "commentaires": 0,
     "vides": 0
    }
@@ -319,8 +319,8 @@
    },
    {
     "id": "donnees",
-    "fichiers": 7508,
-    "code": 4028100,
+    "fichiers": 7510,
+    "code": 4028102,
     "commentaires": 4354,
     "vides": 4762
    }
@@ -339,7 +339,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 892189
+    "code": 892190
    },
    {
     "langage": "Markdown",
@@ -634,7 +634,7 @@
    {
     "langage": "Windows Resource File",
     "type": "donnees",
-    "code": 39
+    "code": 40
    },
    {
     "langage": "C/C++ Header",
@@ -682,7 +682,7 @@
     "code": 3
    }
   ],
-  "commits": 1208
+  "commits": 1209
  },
  "depots": [
   {
@@ -2233,19 +2233,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 500,
+   "commits": 501,
    "commit": {
-    "sha": "68d91b854a21f17806b64a76f47ff623afa3f9d0",
-    "court": "68d91b8",
-    "date": "2026-10-26T10:08:09Z",
-    "message": "sync 2026-10-26 11:08"
+    "sha": "3c9ac0c1adee385e722ef9eb10e9c8ae58d6636a",
+    "court": "3c9ac0c",
+    "date": "2026-10-26T10:39:47Z",
+    "message": "sync 2026-10-26 11:39"
    },
-   "fichiers": 9391,
+   "fichiers": 9393,
    "lignes": {
-    "code": 2657151,
+    "code": 2657153,
     "commentaires": 2557,
     "vides": 72052,
-    "total": 2731760
+    "total": 2731762
    },
    "langages": [
     {
@@ -2259,8 +2259,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 2707,
-     "code": 590433,
+     "fichiers": 2708,
+     "code": 590434,
      "commentaires": 0,
      "vides": 2391
     },
@@ -2395,8 +2395,8 @@
     {
      "nom": "Windows Resource File",
      "maison": false,
-     "fichiers": 9,
-     "code": 39,
+     "fichiers": 10,
+     "code": 40,
      "commentaires": 0,
      "vides": 0
     },
@@ -2454,8 +2454,8 @@
     },
     {
      "id": "donnees",
-     "fichiers": 3665,
-     "code": 2307529,
+     "fichiers": 3667,
+     "code": 2307531,
      "commentaires": 2167,
      "vides": 3591
     }
@@ -2469,7 +2469,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 590397
+     "code": 590398
     },
     {
      "langage": "Markdown",
@@ -2569,7 +2569,7 @@
     {
      "langage": "Windows Resource File",
      "type": "donnees",
-     "code": 39
+     "code": 40
     },
     {
      "langage": "Texte",
