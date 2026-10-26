@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-26T13:04:10Z",
- "sha": "1fd1bb9",
- "empreinte": "b6ebc997ebd632db",
+ "maj": "2026-10-26T13:15:17Z",
+ "sha": "fb9eae2",
+ "empreinte": "e3a7bc539162c097",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -41,10 +41,10 @@
    "total": 209
   },
   "012-rsmp-gpu": {
-   "faites": 79,
+   "faites": 80,
    "total": 233
   }
  },
- "faites": 1468,
+ "faites": 1469,
  "total": 3006
 }
