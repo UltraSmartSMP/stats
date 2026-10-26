@@ -1,66 +1,5 @@
 [
  {
-  "maj": "2026-10-20T02:47:19Z",
-  "empreinte": "50454d5a2505356a",
-  "code": 2907837,
-  "commits": 186,
-  "par_depot": {
-   "moteur": 256499,
-   "langage": 15,
-   "bibliotheques": 1493285,
-   "symbiose": 801,
-   "docs": 1157237
-  },
-  "par_langage": {
-   "RSMP": 1356338,
-   "JSON": 928453,
-   "C++": 233143,
-   "Markdown": 188328,
-   "Texte": 130084,
-   "CSV": 22803,
-   "C/C++ Header": 16222,
-   "PowerShell": 8745,
-   "Python": 4801,
-   "SMPA": 4795,
-   "CMake": 4548,
-   "RSMP IR": 3439,
-   "CUDA": 1968,
-   "TOML": 1239,
-   "C": 898,
-   "SMPI": 877,
-   "JavaScript": 511,
-   "Tables .def": 272,
-   "SMPA ISA": 236,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 140,
-   "langage": {
-    "Markdown": 140
-   },
-   "type": {
-    "docs": 140
-   },
-   "depots": {
-    "docs": {
-     "code": 140,
-     "court": "7dfebe0",
-     "commits": 1,
-     "langage": {
-      "Markdown": 140
-     },
-     "type": {
-      "docs": 140
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-20T02:57:55Z",
   "empreinte": "2edc1cb45c313157",
   "code": 2914171,
@@ -39663,6 +39602,89 @@
      "type": {
       "source": 21,
       "tests": 9
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-26T00:04:06Z",
+  "empreinte": "8a2a3962f9b01dea",
+  "code": 4878466,
+  "commits": 1103,
+  "par_depot": {
+   "moteur": 610193,
+   "langage": 241056,
+   "bibliotheques": 1582542,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2438549
+  },
+  "par_langage": {
+   "JSON": 1660483,
+   "RSMP": 1423653,
+   "Texte": 710364,
+   "C++": 500323,
+   "Markdown": 345462,
+   "SMPA": 43787,
+   "CSV": 43588,
+   "C/C++ Header": 36000,
+   "PowerShell": 29382,
+   "CUDA": 18407,
+   "Python": 13780,
+   "YAML": 11286,
+   "Assembly": 10483,
+   "CMake": 8943,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "C": 2210,
+   "JavaScript": 2133,
+   "TOML": 1991,
+   "SMPI": 905,
+   "SMPA ISA": 459,
+   "diff": 309,
+   "Tables .def": 300,
+   "INI": 107,
+   "Bourne Shell": 103,
+   "DOS Batch": 42
+  },
+  "delta": {
+   "code": 303,
+   "langage": {
+    "C++": 21,
+    "Markdown": 44,
+    "Texte": 121,
+    "diff": 117
+   },
+   "type": {
+    "docs": 44,
+    "donnees": 238,
+    "source": 21
+   },
+   "depots": {
+    "docs": {
+     "code": 282,
+     "court": "53b00b9",
+     "commits": 1,
+     "langage": {
+      "Markdown": 44,
+      "Texte": 121,
+      "diff": 117
+     },
+     "type": {
+      "docs": 44,
+      "donnees": 238
+     }
+    },
+    "langage": {
+     "code": 21,
+     "court": "3b3e58c",
+     "commits": 1,
+     "langage": {
+      "C++": 21
+     },
+     "type": {
+      "source": 21
      }
     }
    }

@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-25T23:53:05Z",
- "empreinte": "a3e8e0cfc990ceba",
+ "maj": "2026-10-26T00:04:06Z",
+ "empreinte": "8a2a3962f9b01dea",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18103,
+  "fichiers": 18117,
   "lignes": {
-   "code": 4878163,
-   "commentaires": 76506,
-   "vides": 132438,
-   "total": 5087107
+   "code": 4878466,
+   "commentaires": 76596,
+   "vides": 132453,
+   "total": 5087515
   },
   "langages": [
    {
@@ -76,26 +76,26 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 4680,
-    "code": 710243,
+    "fichiers": 4691,
+    "code": 710364,
     "commentaires": 0,
-    "vides": 1407
+    "vides": 1410
    },
    {
     "nom": "C++",
     "maison": false,
     "fichiers": 1236,
-    "code": 500302,
+    "code": 500323,
     "commentaires": 39167,
     "vides": 40456
    },
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5661,
-    "code": 345418,
+    "fichiers": 5662,
+    "code": 345462,
     "commentaires": 136,
-    "vides": 67986
+    "vides": 67995
    },
    {
     "nom": "SMPA",
@@ -118,7 +118,7 @@
     "maison": false,
     "fichiers": 536,
     "code": 36000,
-    "commentaires": 15404,
+    "commentaires": 15405,
     "vides": 7513
    },
    {
@@ -226,20 +226,20 @@
     "vides": 27
    },
    {
+    "nom": "diff",
+    "maison": false,
+    "fichiers": 8,
+    "code": 309,
+    "commentaires": 172,
+    "vides": 7
+   },
+   {
     "nom": "Tables .def",
     "maison": false,
     "fichiers": 20,
     "code": 300,
     "commentaires": 123,
     "vides": 0
-   },
-   {
-    "nom": "diff",
-    "maison": false,
-    "fichiers": 6,
-    "code": 192,
-    "commentaires": 83,
-    "vides": 4
    },
    {
     "nom": "INI",
@@ -270,8 +270,8 @@
    {
     "id": "source",
     "fichiers": 1240,
-    "code": 241398,
-    "commentaires": 31686,
+    "code": 241419,
+    "commentaires": 31687,
     "vides": 26916
    },
    {
@@ -304,17 +304,17 @@
    },
    {
     "id": "docs",
-    "fichiers": 5669,
-    "code": 346004,
+    "fichiers": 5670,
+    "code": 346048,
     "commentaires": 136,
-    "vides": 68016
+    "vides": 68025
    },
    {
     "id": "donnees",
-    "fichiers": 6401,
-    "code": 3812184,
-    "commentaires": 3626,
-    "vides": 3452
+    "fichiers": 6414,
+    "code": 3812422,
+    "commentaires": 3715,
+    "vides": 3458
    }
   ],
   "croise": [
@@ -331,12 +331,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 695757
+    "code": 695878
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 345418
+    "code": 345462
    },
    {
     "langage": "C++",
@@ -346,7 +346,7 @@
    {
     "langage": "C++",
     "type": "source",
-    "code": 189514
+    "code": 189535
    },
    {
     "langage": "RSMP",
@@ -549,6 +549,11 @@
     "code": 439
    },
    {
+    "langage": "diff",
+    "type": "donnees",
+    "code": 309
+   },
+   {
     "langage": "Texte",
     "type": "build",
     "code": 308
@@ -577,11 +582,6 @@
     "langage": "JSON",
     "type": "build",
     "code": 218
-   },
-   {
-    "langage": "diff",
-    "type": "donnees",
-    "code": 192
    },
    {
     "langage": "Bourne Shell",
@@ -669,7 +669,7 @@
     "code": 3
    }
   ],
-  "commits": 1101
+  "commits": 1103
  },
  "depots": [
   {
@@ -1168,26 +1168,26 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 211,
+   "commits": 212,
    "commit": {
-    "sha": "ac1271b69113c270658b3feb0c899442e8141664",
-    "court": "ac1271b",
-    "date": "2026-10-25T23:52:55Z",
-    "message": "sync 2026-10-26 00:52"
+    "sha": "3b3e58cbca501fc4a920acae6fadc0ba019d67ab",
+    "court": "3b3e58c",
+    "date": "2026-10-26T00:03:56Z",
+    "message": "sync 2026-10-26 01:03"
    },
    "fichiers": 2959,
    "lignes": {
-    "code": 241035,
-    "commentaires": 23547,
+    "code": 241056,
+    "commentaires": 23548,
     "vides": 20705,
-    "total": 285287
+    "total": 285309
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 528,
-     "code": 181703,
+     "code": 181724,
      "commentaires": 12724,
      "vides": 15150
     },
@@ -1204,7 +1204,7 @@
      "maison": false,
      "fichiers": 199,
      "code": 10330,
-     "commentaires": 4624,
+     "commentaires": 4625,
      "vides": 2240
     },
     {
@@ -1324,8 +1324,8 @@
     {
      "id": "source",
      "fichiers": 504,
-     "code": 89899,
-     "commentaires": 10642,
+     "code": 89920,
+     "commentaires": 10643,
      "vides": 9712
     },
     {
@@ -1380,7 +1380,7 @@
     {
      "langage": "C++",
      "type": "source",
-     "code": 78934
+     "code": 78955
     },
     {
      "langage": "RSMP",
@@ -2220,19 +2220,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 454,
+   "commits": 455,
    "commit": {
-    "sha": "47c1487754a869e83dd6a490c8c8118bb0d7bfc6",
-    "court": "47c1487",
-    "date": "2026-10-25T23:53:05Z",
-    "message": "sync 2026-10-26 00:53"
+    "sha": "53b00b9576328efa259a39fa2efbf0a63011cc96",
+    "court": "53b00b9",
+    "date": "2026-10-26T00:04:06Z",
+    "message": "sync 2026-10-26 01:04"
    },
-   "fichiers": 8222,
+   "fichiers": 8236,
    "lignes": {
-    "code": 2438267,
-    "commentaires": 1829,
-    "vides": 70159,
-    "total": 2510255
+    "code": 2438549,
+    "commentaires": 1918,
+    "vides": 70174,
+    "total": 2510641
    },
    "langages": [
     {
@@ -2246,18 +2246,18 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 1784,
-     "code": 394001,
+     "fichiers": 1795,
+     "code": 394122,
      "commentaires": 0,
-     "vides": 1196
+     "vides": 1199
     },
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5641,
-     "code": 344708,
+     "fichiers": 5642,
+     "code": 344752,
      "commentaires": 124,
-     "vides": 67663
+     "vides": 67672
     },
     {
      "nom": "CSV",
@@ -2332,6 +2332,14 @@
      "vides": 161
     },
     {
+     "nom": "diff",
+     "maison": false,
+     "fichiers": 5,
+     "code": 208,
+     "commentaires": 131,
+     "vides": 5
+    },
+    {
      "nom": "SMPA",
      "maison": true,
      "fichiers": 3,
@@ -2346,14 +2354,6 @@
      "code": 103,
      "commentaires": 11,
      "vides": 0
-    },
-    {
-     "nom": "diff",
-     "maison": false,
-     "fichiers": 3,
-     "code": 91,
-     "commentaires": 42,
-     "vides": 2
     },
     {
      "nom": "Rust",
@@ -2426,17 +2426,17 @@
     },
     {
      "id": "docs",
-     "fichiers": 5642,
-     "code": 344717,
+     "fichiers": 5643,
+     "code": 344761,
      "commentaires": 124,
-     "vides": 67667
+     "vides": 67676
     },
     {
      "id": "donnees",
-     "fichiers": 2558,
-     "code": 2091613,
-     "commentaires": 1439,
-     "vides": 2281
+     "fichiers": 2571,
+     "code": 2091851,
+     "commentaires": 1528,
+     "vides": 2287
     }
    ],
    "croise": [
@@ -2448,12 +2448,12 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 393965
+     "code": 394086
     },
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 344708
+     "code": 344752
     },
     {
      "langage": "CSV",
@@ -2506,6 +2506,11 @@
      "code": 737
     },
     {
+     "langage": "diff",
+     "type": "donnees",
+     "code": 208
+    },
+    {
      "langage": "SMPA",
      "type": "donnees",
      "code": 167
@@ -2519,11 +2524,6 @@
      "langage": "Bourne Shell",
      "type": "donnees",
      "code": 103
-    },
-    {
-     "langage": "diff",
-     "type": "donnees",
-     "code": 91
     },
     {
      "langage": "Rust",
