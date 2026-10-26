@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-26T00:14:59Z",
- "empreinte": "b67f301bd4cfb262",
+ "maj": "2026-10-26T00:26:18Z",
+ "empreinte": "b0acdb4b22d7afd0",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 18117,
+  "fichiers": 18118,
   "lignes": {
-   "code": 4878465,
-   "commentaires": 76597,
-   "vides": 132453,
-   "total": 5087515
+   "code": 4878519,
+   "commentaires": 76601,
+   "vides": 132454,
+   "total": 5087574
   },
   "langages": [
    {
@@ -85,9 +85,9 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1236,
-    "code": 500323,
-    "commentaires": 39167,
-    "vides": 40456
+    "code": 500343,
+    "commentaires": 39169,
+    "vides": 40457
    },
    {
     "nom": "Markdown",
@@ -141,8 +141,8 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 117,
-    "code": 13780,
-    "commentaires": 1321,
+    "code": 13804,
+    "commentaires": 1322,
     "vides": 1423
    },
    {
@@ -242,20 +242,20 @@
     "vides": 0
    },
    {
+    "nom": "Bourne Shell",
+    "maison": false,
+    "fichiers": 12,
+    "code": 113,
+    "commentaires": 12,
+    "vides": 0
+   },
+   {
     "nom": "INI",
     "maison": false,
     "fichiers": 9,
     "code": 107,
     "commentaires": 0,
     "vides": 13
-   },
-   {
-    "nom": "Bourne Shell",
-    "maison": false,
-    "fichiers": 11,
-    "code": 103,
-    "commentaires": 11,
-    "vides": 0
    },
    {
     "nom": "DOS Batch",
@@ -270,8 +270,8 @@
    {
     "id": "source",
     "fichiers": 1240,
-    "code": 241419,
-    "commentaires": 31687,
+    "code": 241420,
+    "commentaires": 31689,
     "vides": 26916
    },
    {
@@ -311,10 +311,10 @@
    },
    {
     "id": "donnees",
-    "fichiers": 6414,
-    "code": 3812422,
-    "commentaires": 3715,
-    "vides": 3458
+    "fichiers": 6415,
+    "code": 3812475,
+    "commentaires": 3717,
+    "vides": 3459
    }
   ],
   "croise": [
@@ -346,7 +346,7 @@
    {
     "langage": "C++",
     "type": "source",
-    "code": 189535
+    "code": 189536
    },
    {
     "langage": "RSMP",
@@ -416,7 +416,7 @@
    {
     "langage": "C++",
     "type": "donnees",
-    "code": 9430
+    "code": 9449
    },
    {
     "langage": "CMake",
@@ -439,14 +439,14 @@
     "code": 6196
    },
    {
+    "langage": "Python",
+    "type": "donnees",
+    "code": 5539
+   },
+   {
     "langage": "Rust",
     "type": "bancs",
     "code": 5538
-   },
-   {
-    "langage": "Python",
-    "type": "donnees",
-    "code": 5515
    },
    {
     "langage": "Python",
@@ -586,7 +586,7 @@
    {
     "langage": "Bourne Shell",
     "type": "donnees",
-    "code": 103
+    "code": 113
    },
    {
     "langage": "INI",
@@ -669,7 +669,7 @@
     "code": 3
    }
   ],
-  "commits": 1104
+  "commits": 1106
  },
  "depots": [
   {
@@ -1168,27 +1168,27 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 213,
+   "commits": 214,
    "commit": {
-    "sha": "2c816f0ac80f56264e76a3936d44a8d1424dfca6",
-    "court": "2c816f0",
-    "date": "2026-10-26T00:14:59Z",
-    "message": "sync 2026-10-26 01:14"
+    "sha": "6519cd667da55cc215ca380f643ff352cf0092db",
+    "court": "6519cd6",
+    "date": "2026-10-26T00:26:08Z",
+    "message": "sync 2026-10-26 01:26"
    },
    "fichiers": 2959,
    "lignes": {
-    "code": 241055,
-    "commentaires": 23549,
+    "code": 241056,
+    "commentaires": 23551,
     "vides": 20705,
-    "total": 285309
+    "total": 285312
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 528,
-     "code": 181724,
-     "commentaires": 12724,
+     "code": 181725,
+     "commentaires": 12726,
      "vides": 15150
     },
     {
@@ -1324,8 +1324,8 @@
     {
      "id": "source",
      "fichiers": 504,
-     "code": 89920,
-     "commentaires": 10643,
+     "code": 89921,
+     "commentaires": 10645,
      "vides": 9712
     },
     {
@@ -1380,7 +1380,7 @@
     {
      "langage": "C++",
      "type": "source",
-     "code": 78955
+     "code": 78956
     },
     {
      "langage": "RSMP",
@@ -2220,19 +2220,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 455,
+   "commits": 456,
    "commit": {
-    "sha": "53b00b9576328efa259a39fa2efbf0a63011cc96",
-    "court": "53b00b9",
-    "date": "2026-10-26T00:04:06Z",
-    "message": "sync 2026-10-26 01:04"
+    "sha": "aa2235931e94a3c77f8dedbc2a8984b3f0d84caa",
+    "court": "aa22359",
+    "date": "2026-10-26T00:26:18Z",
+    "message": "sync 2026-10-26 01:26"
    },
-   "fichiers": 8236,
+   "fichiers": 8237,
    "lignes": {
-    "code": 2438549,
-    "commentaires": 1918,
-    "vides": 70174,
-    "total": 2510641
+    "code": 2438602,
+    "commentaires": 1920,
+    "vides": 70175,
+    "total": 2510697
    },
    "langages": [
     {
@@ -2287,16 +2287,16 @@
      "nom": "C++",
      "maison": false,
      "fichiers": 26,
-     "code": 8351,
+     "code": 8370,
      "commentaires": 566,
-     "vides": 470
+     "vides": 471
     },
     {
      "nom": "Python",
      "maison": false,
      "fichiers": 70,
-     "code": 5515,
-     "commentaires": 474,
+     "code": 5539,
+     "commentaires": 475,
      "vides": 294
     },
     {
@@ -2350,9 +2350,9 @@
     {
      "nom": "Bourne Shell",
      "maison": false,
-     "fichiers": 11,
-     "code": 103,
-     "commentaires": 11,
+     "fichiers": 12,
+     "code": 113,
+     "commentaires": 12,
      "vides": 0
     },
     {
@@ -2433,10 +2433,10 @@
     },
     {
      "id": "donnees",
-     "fichiers": 2571,
-     "code": 2091851,
-     "commentaires": 1528,
-     "vides": 2287
+     "fichiers": 2572,
+     "code": 2091904,
+     "commentaires": 1530,
+     "vides": 2288
     }
    ],
    "croise": [
@@ -2473,12 +2473,12 @@
     {
      "langage": "C++",
      "type": "donnees",
-     "code": 8351
+     "code": 8370
     },
     {
      "langage": "Python",
      "type": "donnees",
-     "code": 5515
+     "code": 5539
     },
     {
      "langage": "PowerShell",
@@ -2523,7 +2523,7 @@
     {
      "langage": "Bourne Shell",
      "type": "donnees",
-     "code": 103
+     "code": 113
     },
     {
      "langage": "Rust",
