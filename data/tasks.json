@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-27T23:43:48Z",
- "sha": "c6958a7",
- "empreinte": "cdb1b6e0b69918e2",
+ "maj": "2026-10-27T23:55:12Z",
+ "sha": "62c669c",
+ "empreinte": "51b04419b7cddff8",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -26,7 +26,7 @@
   },
   "007-serveur-rsmp": {
    "faites": 0,
-   "total": 266
+   "total": 316
   },
   "008-rsmp-contre-rust": {
    "faites": 55,
@@ -46,5 +46,5 @@
   }
  },
  "faites": 1489,
- "total": 3057
+ "total": 3107
 }
