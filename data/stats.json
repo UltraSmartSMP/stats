@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-28T01:02:23Z",
- "empreinte": "0ec49c75dcc3ae69",
+ "maj": "2026-10-28T01:13:27Z",
+ "empreinte": "858a82b362e37d5f",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 20840,
   "lignes": {
-   "code": 5495709,
-   "commentaires": 87715,
+   "code": 5495708,
+   "commentaires": 87717,
    "vides": 142958,
-   "total": 5726382
+   "total": 5726383
   },
   "langages": [
    {
@@ -165,8 +165,8 @@
     "nom": "CMake",
     "maison": false,
     "fichiers": 205,
-    "code": 9831,
-    "commentaires": 2265,
+    "code": 9830,
+    "commentaires": 2267,
     "vides": 964
    },
    {
@@ -306,8 +306,8 @@
    {
     "id": "build",
     "fichiers": 277,
-    "code": 11073,
-    "commentaires": 2260,
+    "code": 11072,
+    "commentaires": 2262,
     "vides": 1073
    },
    {
@@ -429,7 +429,7 @@
    {
     "langage": "CMake",
     "type": "build",
-    "code": 9568
+    "code": 9567
    },
    {
     "langage": "SMPA",
@@ -692,26 +692,26 @@
     "code": 3
    }
   ],
-  "commits": 1355
+  "commits": 1357
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 406,
+   "commits": 407,
    "commit": {
-    "sha": "a4da5d255e33e19316b044aa65124bcf6c45cab7",
-    "court": "a4da5d2",
-    "date": "2026-10-28T01:02:23Z",
-    "message": "sync 2026-10-28 02:02"
+    "sha": "b9a894cca8c96e5b94826df71e9594edf7c3819f",
+    "court": "b9a894c",
+    "date": "2026-10-28T01:13:24Z",
+    "message": "sync 2026-10-28 02:13"
    },
    "fichiers": 3668,
    "lignes": {
-    "code": 649070,
-    "commentaires": 48216,
+    "code": 649069,
+    "commentaires": 48218,
     "vides": 34663,
-    "total": 731949
+    "total": 731950
    },
    "langages": [
     {
@@ -790,8 +790,8 @@
      "nom": "CMake",
      "maison": false,
      "fichiers": 150,
-     "code": 7165,
-     "commentaires": 1753,
+     "code": 7164,
+     "commentaires": 1755,
      "vides": 712
     },
     {
@@ -931,8 +931,8 @@
     {
      "id": "build",
      "fichiers": 175,
-     "code": 7608,
-     "commentaires": 1746,
+     "code": 7607,
+     "commentaires": 1748,
      "vides": 778
     },
     {
@@ -1014,7 +1014,7 @@
     {
      "langage": "CMake",
      "type": "build",
-     "code": 6981
+     "code": 6980
     },
     {
      "langage": "Rust",
@@ -1227,12 +1227,12 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 260,
+   "commits": 261,
    "commit": {
-    "sha": "7799a83e3dc55c580ebdb165bb1e0eeb108a708c",
-    "court": "7799a83",
-    "date": "2026-10-28T00:40:19Z",
-    "message": "sync 2026-10-28 01:40"
+    "sha": "00243a6ec63a9017252527d5d1aae75a4faa87d9",
+    "court": "00243a6",
+    "date": "2026-10-28T01:13:27Z",
+    "message": "sync 2026-10-28 02:13"
    },
    "fichiers": 3019,
    "lignes": {
