@@ -1,122 +1,5 @@
 [
  {
-  "maj": "2026-10-21T14:32:48Z",
-  "empreinte": "f2725dcd6414ecb9",
-  "code": 3880953,
-  "commits": 392,
-  "par_depot": {
-   "moteur": 613662,
-   "langage": 15,
-   "bibliotheques": 1498583,
-   "symbiose": 2161,
-   "serveur": 15,
-   "docs": 1766517
-  },
-  "par_langage": {
-   "JSON": 1489224,
-   "RSMP": 1366790,
-   "C++": 336663,
-   "Texte": 303129,
-   "Markdown": 238258,
-   "SMPA": 40665,
-   "C/C++ Header": 23752,
-   "CSV": 23122,
-   "PowerShell": 13974,
-   "YAML": 10754,
-   "RSMP IR": 7991,
-   "Python": 7497,
-   "CMake": 6831,
-   "Rust": 3627,
-   "CUDA": 2312,
-   "C": 1668,
-   "JavaScript": 1623,
-   "TOML": 1574,
-   "SMPI": 877,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "Assembly": 44,
-   "INI": 32,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 13271,
-   "langage": {
-    "C++": 9511,
-    "C/C++ Header": 490,
-    "CMake": 32,
-    "INI": 15,
-    "JSON": 1244,
-    "RSMP": 1294,
-    "RSMP IR": 536,
-    "Rust": 98,
-    "TOML": 5,
-    "Texte": 46
-   },
-   "type": {
-    "bancs": 214,
-    "build": 37,
-    "donnees": 1910,
-    "source": 3868,
-    "tests": 7242
-   },
-   "depots": {
-    "bibliotheques": {
-     "code": 950,
-     "court": "9d7bdec",
-     "commits": 1,
-     "langage": {
-      "C++": 693,
-      "INI": 15,
-      "RSMP": 219,
-      "Texte": 23
-     },
-     "type": {
-      "bancs": 112,
-      "donnees": 47,
-      "source": 728,
-      "tests": 63
-     }
-    },
-    "moteur": {
-     "code": 12256,
-     "court": "d134b62",
-     "commits": 1,
-     "langage": {
-      "C++": 8818,
-      "C/C++ Header": 490,
-      "CMake": 32,
-      "JSON": 1244,
-      "RSMP": 1013,
-      "RSMP IR": 536,
-      "Rust": 98,
-      "TOML": 2,
-      "Texte": 23
-     },
-     "type": {
-      "bancs": 102,
-      "build": 37,
-      "donnees": 1798,
-      "source": 3140,
-      "tests": 7179
-     }
-    },
-    "symbiose": {
-     "code": 65,
-     "court": "c602012",
-     "commits": 1,
-     "langage": {
-      "RSMP": 62,
-      "TOML": 3
-     },
-     "type": {
-      "donnees": 65
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T14:34:46Z",
   "empreinte": "2bdfc0f9873f8c3a",
   "code": 3881941,
@@ -41522,6 +41405,109 @@
    "INI": 123,
    "Windows Resource File": 97,
    "DOS Batch": 42
+  }
+ },
+ {
+  "maj": "2026-10-28T17:33:32Z",
+  "empreinte": "3c5da0f9319aaf96",
+  "code": 5581244,
+  "commits": 1433,
+  "par_depot": {
+   "moteur": 661009,
+   "langage": 245391,
+   "bibliotheques": 1637481,
+   "symbiose": 5896,
+   "serveur": 230,
+   "kcauldron": 36582,
+   "docs": 2994655
+  },
+  "par_langage": {
+   "JSON": 1712008,
+   "RSMP": 1523586,
+   "Texte": 1145045,
+   "C++": 523482,
+   "Markdown": 365555,
+   "CSV": 71437,
+   "SMPA": 50111,
+   "C/C++ Header": 36836,
+   "PowerShell": 35795,
+   "Assembly": 31427,
+   "Python": 21831,
+   "CUDA": 18813,
+   "YAML": 11375,
+   "CMake": 9943,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2217,
+   "C": 2210,
+   "JavaScript": 2133,
+   "SMPI": 905,
+   "Bourne Shell": 896,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 349,
+   "INI": 123,
+   "Windows Resource File": 97,
+   "DOS Batch": 42
+  },
+  "delta": {
+   "code": 8288,
+   "langage": {
+    "JSON": 3132,
+    "Markdown": 22,
+    "PowerShell": 3,
+    "RSMP": 5037,
+    "Texte": 94
+   },
+   "type": {
+    "docs": 22,
+    "donnees": 3221,
+    "scripts": 3,
+    "source": 4209,
+    "tests": 833
+   },
+   "depots": {
+    "docs": {
+     "code": 3243,
+     "court": "26a02a6",
+     "commits": 1,
+     "langage": {
+      "JSON": 3132,
+      "Markdown": 22,
+      "Texte": 89
+     },
+     "type": {
+      "docs": 22,
+      "donnees": 3221
+     }
+    },
+    "kcauldron": {
+     "code": 2627,
+     "court": "ecb131f",
+     "commits": 1,
+     "langage": {
+      "RSMP": 2627
+     },
+     "type": {
+      "source": 1794,
+      "tests": 833
+     }
+    },
+    "moteur": {
+     "code": 2418,
+     "court": "544f577",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 3,
+      "RSMP": 2410,
+      "Texte": 5
+     },
+     "type": {
+      "scripts": 3,
+      "source": 2415
+     }
+    }
+   }
   }
  }
 ]

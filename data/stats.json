@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-28T17:29:08Z",
- "empreinte": "dd81a2c315288220",
+ "maj": "2026-10-28T17:33:32Z",
+ "empreinte": "3c5da0f9319aaf96",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,35 +49,35 @@
   }
  ],
  "global": {
-  "fichiers": 21166,
+  "fichiers": 21177,
   "lignes": {
-   "code": 5572956,
-   "commentaires": 93197,
-   "vides": 148264,
-   "total": 5814417
+   "code": 5581244,
+   "commentaires": 93676,
+   "vides": 148547,
+   "total": 5823467
   },
   "langages": [
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 732,
-    "code": 1708876,
+    "fichiers": 737,
+    "code": 1712008,
     "commentaires": 0,
-    "vides": 273
+    "vides": 281
    },
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 3174,
-    "code": 1518549,
-    "commentaires": 18689,
-    "vides": 13028
+    "fichiers": 3177,
+    "code": 1523586,
+    "commentaires": 19166,
+    "vides": 13294
    },
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 6195,
-    "code": 1144951,
+    "fichiers": 6197,
+    "code": 1145045,
     "commentaires": 0,
     "vides": 3039
    },
@@ -92,10 +92,10 @@
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 5973,
-    "code": 365533,
-    "commentaires": 139,
-    "vides": 72409
+    "fichiers": 5974,
+    "code": 365555,
+    "commentaires": 140,
+    "vides": 72418
    },
    {
     "nom": "CSV",
@@ -125,8 +125,8 @@
     "nom": "PowerShell",
     "maison": false,
     "fichiers": 302,
-    "code": 35792,
-    "commentaires": 4195,
+    "code": 35795,
+    "commentaires": 4196,
     "vides": 1929
    },
    {
@@ -277,17 +277,17 @@
   "types": [
    {
     "id": "source",
-    "fichiers": 1376,
-    "code": 283898,
-    "commentaires": 38922,
-    "vides": 30373
+    "fichiers": 1380,
+    "code": 288107,
+    "commentaires": 39325,
+    "vides": 30573
    },
    {
     "id": "tests",
     "fichiers": 3849,
-    "code": 404080,
-    "commentaires": 31010,
-    "vides": 27077
+    "code": 404913,
+    "commentaires": 31084,
+    "vides": 27143
    },
    {
     "id": "bancs",
@@ -299,8 +299,8 @@
    {
     "id": "scripts",
     "fichiers": 127,
-    "code": 19609,
-    "commentaires": 2142,
+    "code": 19612,
+    "commentaires": 2143,
     "vides": 1560
    },
    {
@@ -312,24 +312,24 @@
    },
    {
     "id": "docs",
-    "fichiers": 5983,
-    "code": 366147,
-    "commentaires": 139,
-    "vides": 72444
+    "fichiers": 5984,
+    "code": 366169,
+    "commentaires": 140,
+    "vides": 72453
    },
    {
     "id": "donnees",
-    "fichiers": 8546,
-    "code": 4356750,
+    "fichiers": 8552,
+    "code": 4359971,
     "commentaires": 5792,
-    "vides": 6185
+    "vides": 6193
    }
   ],
   "croise": [
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1707487
+    "code": 1710619
    },
    {
     "langage": "RSMP",
@@ -339,12 +339,12 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 1129215
+    "code": 1129304
    },
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 365533
+    "code": 365555
    },
    {
     "langage": "C++",
@@ -359,7 +359,7 @@
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 116829
+    "code": 117662
    },
    {
     "langage": "CSV",
@@ -374,7 +374,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 52259
+    "code": 56463
    },
    {
     "langage": "C/C++ Header",
@@ -404,7 +404,7 @@
    {
     "langage": "PowerShell",
     "type": "scripts",
-    "code": 11958
+    "code": 11961
    },
    {
     "langage": "PowerShell",
@@ -514,7 +514,7 @@
    {
     "langage": "Texte",
     "type": "source",
-    "code": 1398
+    "code": 1403
    },
    {
     "langage": "C",
@@ -697,26 +697,26 @@
     "code": 3
    }
   ],
-  "commits": 1430
+  "commits": 1433
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 431,
+   "commits": 432,
    "commit": {
-    "sha": "146855517c1624e576e7b04d1d5750a33b1f3c26",
-    "court": "1468555",
-    "date": "2026-10-28T17:28:53Z",
-    "message": "stats : dépôt kcauldron ajouté"
+    "sha": "544f577652e4370ca49be208b7cfe7fb1ae0905a",
+    "court": "544f577",
+    "date": "2026-10-28T17:33:17Z",
+    "message": "sync 2026-10-28 18:33"
    },
-   "fichiers": 3695,
+   "fichiers": 3699,
    "lignes": {
-    "code": 658591,
-    "commentaires": 49028,
-    "vides": 35244,
-    "total": 742863
+    "code": 661009,
+    "commentaires": 49272,
+    "vides": 35347,
+    "total": 745628
    },
    "langages": [
     {
@@ -730,8 +730,8 @@
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 789,
-     "code": 186814,
+     "fichiers": 790,
+     "code": 186819,
      "commentaires": 0,
      "vides": 215
     },
@@ -752,6 +752,14 @@
      "vides": 1544
     },
     {
+     "nom": "RSMP",
+     "maison": true,
+     "fichiers": 184,
+     "code": 25178,
+     "commentaires": 3952,
+     "vides": 1718
+    },
+    {
      "nom": "C/C++ Header",
      "maison": false,
      "fichiers": 308,
@@ -760,19 +768,11 @@
      "vides": 4826
     },
     {
-     "nom": "RSMP",
-     "maison": true,
-     "fichiers": 181,
-     "code": 22768,
-     "commentaires": 3709,
-     "vides": 1615
-    },
-    {
      "nom": "PowerShell",
      "maison": false,
      "fichiers": 91,
-     "code": 17850,
-     "commentaires": 2305,
+     "code": 17853,
+     "commentaires": 2306,
      "vides": 937
     },
     {
@@ -907,10 +907,10 @@
    "types": [
     {
      "id": "source",
-     "fichiers": 632,
-     "code": 134964,
-     "commentaires": 21388,
-     "vides": 14751
+     "fichiers": 636,
+     "code": 137379,
+     "commentaires": 21631,
+     "vides": 14854
     },
     {
      "id": "tests",
@@ -929,8 +929,8 @@
     {
      "id": "scripts",
      "fichiers": 85,
-     "code": 12127,
-     "commentaires": 1180,
+     "code": 12130,
+     "commentaires": 1181,
      "vides": 926
     },
     {
@@ -992,14 +992,14 @@
      "code": 19822
     },
     {
+     "langage": "RSMP",
+     "type": "source",
+     "code": 17021
+    },
+    {
      "langage": "CUDA",
      "type": "bancs",
      "code": 16518
-    },
-    {
-     "langage": "RSMP",
-     "type": "source",
-     "code": 14611
     },
     {
      "langage": "Texte",
@@ -1029,7 +1029,7 @@
     {
      "langage": "PowerShell",
      "type": "scripts",
-     "code": 5155
+     "code": 5158
     },
     {
      "langage": "RSMP",
@@ -1094,7 +1094,7 @@
     {
      "langage": "Texte",
      "type": "source",
-     "code": 1392
+     "code": 1397
     },
     {
      "langage": "JSON",
@@ -2289,28 +2289,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 2,
+   "commits": 3,
    "commit": {
-    "sha": "5f74565f2e6c9d64fc1bb1f67dcf8e29184dd645",
-    "court": "5f74565",
-    "date": "2026-10-28T17:29:03Z",
-    "message": "stats : dépôt kcauldron ajouté"
+    "sha": "ecb131f79ee39dcdf238c93a03f338c295299c6c",
+    "court": "ecb131f",
+    "date": "2026-10-28T17:33:27Z",
+    "message": "sync 2026-10-28 18:33"
    },
    "fichiers": 164,
    "lignes": {
-    "code": 33955,
-    "commentaires": 4312,
-    "vides": 3113,
-    "total": 41380
+    "code": 36582,
+    "commentaires": 4546,
+    "vides": 3276,
+    "total": 44404
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 89,
-     "code": 29327,
-     "commentaires": 3793,
-     "vides": 2375
+     "code": 31954,
+     "commentaires": 4027,
+     "vides": 2538
     },
     {
      "nom": "Python",
@@ -2373,16 +2373,16 @@
     {
      "id": "source",
      "fichiers": 49,
-     "code": 16056,
-     "commentaires": 2580,
-     "vides": 1367
+     "code": 17850,
+     "commentaires": 2740,
+     "vides": 1464
     },
     {
      "id": "tests",
      "fichiers": 67,
-     "code": 16334,
-     "commentaires": 1576,
-     "vides": 1515
+     "code": 17167,
+     "commentaires": 1650,
+     "vides": 1581
     },
     {
      "id": "bancs",
@@ -2424,12 +2424,12 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 16055
+     "code": 17849
     },
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 13257
+     "code": 14090
     },
     {
      "langage": "Python",
@@ -2517,44 +2517,44 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 584,
+   "commits": 585,
    "commit": {
-    "sha": "d58f6eed0d1f7886638d5679f0f0403424e5c85f",
-    "court": "d58f6ee",
-    "date": "2026-10-28T17:29:08Z",
-    "message": "stats : dépôt kcauldron ajouté"
+    "sha": "26a02a65423cdac515681fdfed626a457212ffd4",
+    "court": "26a02a6",
+    "date": "2026-10-28T17:33:32Z",
+    "message": "sync 2026-10-28 18:33"
    },
-   "fichiers": 10513,
+   "fichiers": 10520,
    "lignes": {
-    "code": 2991412,
-    "commentaires": 3377,
-    "vides": 76696,
-    "total": 3071485
+    "code": 2994655,
+    "commentaires": 3378,
+    "vides": 76713,
+    "total": 3074746
    },
    "langages": [
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 607,
-     "code": 1661263,
+     "fichiers": 612,
+     "code": 1664395,
      "commentaires": 0,
-     "vides": 273
+     "vides": 281
     },
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 3211,
-     "code": 820602,
+     "fichiers": 3212,
+     "code": 820691,
      "commentaires": 0,
      "vides": 2690
     },
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 5949,
-     "code": 364738,
-     "commentaires": 125,
-     "vides": 72044
+     "fichiers": 5950,
+     "code": 364760,
+     "commentaires": 126,
+     "vides": 72053
     },
     {
      "nom": "CSV",
@@ -2731,34 +2731,34 @@
     },
     {
      "id": "docs",
-     "fichiers": 5950,
-     "code": 364747,
-     "commentaires": 125,
-     "vides": 72048
+     "fichiers": 5951,
+     "code": 364769,
+     "commentaires": 126,
+     "vides": 72057
     },
     {
      "id": "donnees",
-     "fichiers": 4539,
-     "code": 2624303,
+     "fichiers": 4545,
+     "code": 2627524,
      "commentaires": 2842,
-     "vides": 4400
+     "vides": 4408
     }
    ],
    "croise": [
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 1661185
+     "code": 1664317
     },
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 820566
+     "code": 820655
     },
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 364738
+     "code": 364760
     },
     {
      "langage": "CSV",
