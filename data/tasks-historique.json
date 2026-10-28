@@ -179,7 +179,7 @@
   "maj": "2026-10-19T09:04:33Z",
   "sha": "4ef78f5",
   "faites": 1,
-  "total": 1538,
+  "total": 1954,
   "specs": {
    "002-interpreteur-smpa": [
     1,
@@ -191,7 +191,7 @@
    ],
    "004-bibliotheques-rsmp": [
     0,
-    416
+    832
    ],
    "005-symbiose-modules-rsmp": [
     0,
@@ -251,7 +251,7 @@
   "maj": "2026-10-19T12:16:10Z",
   "sha": "06ffd90",
   "faites": 1,
-  "total": 1558,
+  "total": 1565,
   "specs": {
    "002-interpreteur-smpa": [
     1,
@@ -259,7 +259,7 @@
    ],
    "003-langage-rsmp": [
     0,
-    504
+    511
    ],
    "004-bibliotheques-rsmp": [
     0,
@@ -419,7 +419,7 @@
   "maj": "2026-10-19T15:20:23Z",
   "sha": "6e94049",
   "faites": 1,
-  "total": 1575,
+  "total": 1579,
   "specs": {
    "002-interpreteur-smpa": [
     1,
@@ -427,7 +427,7 @@
    ],
    "003-langage-rsmp": [
     0,
-    521
+    525
    ],
    "004-bibliotheques-rsmp": [
     0,
@@ -1151,7 +1151,7 @@
   "maj": "2026-10-21T02:48:10Z",
   "sha": "27e5676",
   "faites": 600,
-  "total": 2059,
+  "total": 2058,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1179,7 +1179,7 @@
    ],
    "008-rsmp-contre-rust": [
     0,
-    104
+    103
    ]
   }
  },
@@ -1187,7 +1187,7 @@
   "maj": "2026-10-21T02:58:28Z",
   "sha": "5f40f4c",
   "faites": 600,
-  "total": 2059,
+  "total": 2058,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1215,7 +1215,7 @@
    ],
    "008-rsmp-contre-rust": [
     0,
-    104
+    103
    ]
   }
  },
@@ -1223,7 +1223,7 @@
   "maj": "2026-10-21T03:11:02Z",
   "sha": "0495489",
   "faites": 600,
-  "total": 2059,
+  "total": 2058,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1251,7 +1251,7 @@
    ],
    "008-rsmp-contre-rust": [
     0,
-    104
+    103
    ]
   }
  },
@@ -1259,7 +1259,7 @@
   "maj": "2026-10-21T05:11:40Z",
   "sha": "6a9d724",
   "faites": 600,
-  "total": 2059,
+  "total": 2058,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1287,15 +1287,51 @@
    ],
    "008-rsmp-contre-rust": [
     0,
-    104
+    103
    ]
   }
  },
  {
   "maj": "2026-10-21T14:34:46Z",
   "sha": "8fce049",
+  "faites": 641,
+  "total": 2058,
+  "specs": {
+   "002-interpreteur-smpa": [
+    242,
+    369
+   ],
+   "003-langage-rsmp": [
+    358,
+    525
+   ],
+   "004-bibliotheques-rsmp": [
+    0,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    0,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    0,
+    152
+   ],
+   "007-serveur-rsmp": [
+    0,
+    219
+   ],
+   "008-rsmp-contre-rust": [
+    41,
+    103
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-21T15:29:18Z",
+  "sha": "dc54ea6",
   "faites": 642,
-  "total": 2059,
+  "total": 2058,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1323,51 +1359,15 @@
    ],
    "008-rsmp-contre-rust": [
     42,
-    104
-   ]
-  }
- },
- {
-  "maj": "2026-10-21T15:29:18Z",
-  "sha": "dc54ea6",
-  "faites": 643,
-  "total": 2059,
-  "specs": {
-   "002-interpreteur-smpa": [
-    242,
-    369
-   ],
-   "003-langage-rsmp": [
-    358,
-    525
-   ],
-   "004-bibliotheques-rsmp": [
-    0,
-    419
-   ],
-   "005-symbiose-modules-rsmp": [
-    0,
-    271
-   ],
-   "006-stockage-chunks-tiers": [
-    0,
-    152
-   ],
-   "007-serveur-rsmp": [
-    0,
-    219
-   ],
-   "008-rsmp-contre-rust": [
-    43,
-    104
+    103
    ]
   }
  },
  {
   "maj": "2026-10-21T16:54:57Z",
   "sha": "4303483",
-  "faites": 645,
-  "total": 2059,
+  "faites": 644,
+  "total": 2058,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1394,16 +1394,16 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ]
   }
  },
  {
   "maj": "2026-10-21T18:54:39Z",
   "sha": "aba48a6",
-  "faites": 645,
-  "total": 2142,
+  "faites": 644,
+  "total": 2141,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1430,8 +1430,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
@@ -1442,8 +1442,8 @@
  {
   "maj": "2026-10-21T19:04:57Z",
   "sha": "0c0c6cc",
-  "faites": 645,
-  "total": 2535,
+  "faites": 644,
+  "total": 2534,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1470,8 +1470,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
@@ -1482,7 +1482,7 @@
  {
   "maj": "2026-10-21T19:15:13Z",
   "sha": "425fe3b",
-  "faites": 645,
+  "faites": 644,
   "total": 2535,
   "specs": {
    "002-interpreteur-smpa": [
@@ -1510,20 +1510,20 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
-    476
+    477
    ]
   }
  },
  {
   "maj": "2026-10-21T19:26:12Z",
   "sha": "6b205bd",
-  "faites": 645,
-  "total": 2537,
+  "faites": 644,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1550,8 +1550,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
@@ -1562,8 +1562,8 @@
  {
   "maj": "2026-10-21T19:37:02Z",
   "sha": "2c50439",
-  "faites": 1007,
-  "total": 2537,
+  "faites": 1006,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1590,8 +1590,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
@@ -1602,8 +1602,8 @@
  {
   "maj": "2026-10-21T19:55:52Z",
   "sha": "3e4fa47",
-  "faites": 1007,
-  "total": 2537,
+  "faites": 1006,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1630,8 +1630,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
@@ -1642,8 +1642,8 @@
  {
   "maj": "2026-10-21T20:08:55Z",
   "sha": "3e6a3e3",
-  "faites": 1007,
-  "total": 2537,
+  "faites": 1006,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1670,8 +1670,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     0,
@@ -1682,8 +1682,8 @@
  {
   "maj": "2026-10-22T00:06:25Z",
   "sha": "a4288ae",
-  "faites": 1036,
-  "total": 2537,
+  "faites": 1035,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1710,8 +1710,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     29,
@@ -1722,8 +1722,8 @@
  {
   "maj": "2026-10-22T00:34:25Z",
   "sha": "0b4d50d",
-  "faites": 1041,
-  "total": 2537,
+  "faites": 1040,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1750,8 +1750,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     34,
@@ -1762,8 +1762,8 @@
  {
   "maj": "2026-10-22T04:06:07Z",
   "sha": "88e05d3",
-  "faites": 1164,
-  "total": 2537,
+  "faites": 1163,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1790,8 +1790,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     157,
@@ -1802,8 +1802,8 @@
  {
   "maj": "2026-10-22T10:22:16Z",
   "sha": "92d3a35",
-  "faites": 1174,
-  "total": 2537,
+  "faites": 1173,
+  "total": 2536,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1830,8 +1830,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    104
+    44,
+    103
    ],
    "010-etat-reifie": [
     157,
@@ -1842,8 +1842,8 @@
  {
   "maj": "2026-10-23T01:01:25Z",
   "sha": "054d700",
-  "faites": 1174,
-  "total": 2544,
+  "faites": 1173,
+  "total": 2543,
   "specs": {
    "002-interpreteur-smpa": [
     242,
@@ -1870,8 +1870,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
-    111
+    44,
+    110
    ],
    "010-etat-reifie": [
     157,
@@ -1882,7 +1882,47 @@
  {
   "maj": "2026-10-23T14:37:23Z",
   "sha": "abda230",
-  "faites": 1174,
+  "faites": 1173,
+  "total": 2546,
+  "specs": {
+   "002-interpreteur-smpa": [
+    242,
+    369
+   ],
+   "003-langage-rsmp": [
+    468,
+    525
+   ],
+   "004-bibliotheques-rsmp": [
+    178,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    84,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    0,
+    152
+   ],
+   "007-serveur-rsmp": [
+    0,
+    219
+   ],
+   "008-rsmp-contre-rust": [
+    44,
+    113
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-23T14:48:05Z",
+  "sha": "e8fcea0",
+  "faites": 1173,
   "total": 2547,
   "specs": {
    "002-interpreteur-smpa": [
@@ -1910,48 +1950,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    45,
+    44,
     114
-   ],
-   "010-etat-reifie": [
-    157,
-    478
-   ]
-  }
- },
- {
-  "maj": "2026-10-23T14:48:05Z",
-  "sha": "e8fcea0",
-  "faites": 1174,
-  "total": 2548,
-  "specs": {
-   "002-interpreteur-smpa": [
-    242,
-    369
-   ],
-   "003-langage-rsmp": [
-    468,
-    525
-   ],
-   "004-bibliotheques-rsmp": [
-    178,
-    419
-   ],
-   "005-symbiose-modules-rsmp": [
-    84,
-    271
-   ],
-   "006-stockage-chunks-tiers": [
-    0,
-    152
-   ],
-   "007-serveur-rsmp": [
-    0,
-    219
-   ],
-   "008-rsmp-contre-rust": [
-    45,
-    115
    ],
    "010-etat-reifie": [
     157,
@@ -1962,8 +1962,8 @@
  {
   "maj": "2026-10-25T01:42:08Z",
   "sha": "c424771",
-  "faites": 1340,
-  "total": 2564,
+  "faites": 1339,
+  "total": 2563,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -1990,8 +1990,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2002,8 +2002,8 @@
  {
   "maj": "2026-10-25T01:54:00Z",
   "sha": "7593264",
-  "faites": 1340,
-  "total": 2773,
+  "faites": 1339,
+  "total": 2772,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2030,8 +2030,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2046,8 +2046,8 @@
  {
   "maj": "2026-10-25T04:30:16Z",
   "sha": "3600855",
-  "faites": 1340,
-  "total": 2773,
+  "faites": 1339,
+  "total": 2772,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2074,8 +2074,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2090,8 +2090,8 @@
  {
   "maj": "2026-10-25T05:39:55Z",
   "sha": "7ee78c2",
-  "faites": 1340,
-  "total": 2997,
+  "faites": 1339,
+  "total": 2995,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2118,8 +2118,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2131,15 +2131,15 @@
    ],
    "012-rsmp-gpu": [
     0,
-    224
+    223
    ]
   }
  },
  {
   "maj": "2026-10-25T16:57:11Z",
   "sha": "21390ea",
-  "faites": 1389,
-  "total": 2997,
+  "faites": 1388,
+  "total": 2994,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2166,8 +2166,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2179,15 +2179,15 @@
    ],
    "012-rsmp-gpu": [
     0,
-    224
+    222
    ]
   }
  },
  {
   "maj": "2026-10-25T17:48:04Z",
   "sha": "994b10d",
-  "faites": 1389,
-  "total": 3005,
+  "faites": 1388,
+  "total": 3002,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2214,8 +2214,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2227,15 +2227,15 @@
    ],
    "012-rsmp-gpu": [
     0,
-    232
+    230
    ]
   }
  },
  {
   "maj": "2026-10-26T01:43:13Z",
   "sha": "c80a63f",
-  "faites": 1389,
-  "total": 3006,
+  "faites": 1388,
+  "total": 3003,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2262,8 +2262,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2275,15 +2275,15 @@
    ],
    "012-rsmp-gpu": [
     0,
-    233
+    231
    ]
   }
  },
  {
   "maj": "2026-10-26T05:35:17Z",
   "sha": "d9b9c78",
-  "faites": 1463,
-  "total": 3006,
+  "faites": 1461,
+  "total": 3003,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2310,8 +2310,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2322,16 +2322,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    74,
-    233
+    73,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-26T11:13:00Z",
   "sha": "7059c36",
-  "faites": 1468,
-  "total": 3006,
+  "faites": 1466,
+  "total": 3003,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2358,8 +2358,56 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    49,
+    209
+   ],
+   "012-rsmp-gpu": [
+    78,
+    231
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-26T13:15:17Z",
+  "sha": "fb9eae2",
+  "faites": 1467,
+  "total": 3003,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    385
+   ],
+   "003-langage-rsmp": [
+    483,
+    525
+   ],
+   "004-bibliotheques-rsmp": [
+    190,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    94,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    0,
+    152
+   ],
+   "007-serveur-rsmp": [
+    0,
+    219
+   ],
+   "008-rsmp-contre-rust": [
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2371,15 +2419,15 @@
    ],
    "012-rsmp-gpu": [
     79,
-    233
+    231
    ]
   }
  },
  {
-  "maj": "2026-10-26T13:15:17Z",
-  "sha": "fb9eae2",
-  "faites": 1469,
-  "total": 3006,
+  "maj": "2026-10-26T13:48:21Z",
+  "sha": "c1a32a7",
+  "faites": 1468,
+  "total": 3003,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2406,8 +2454,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2419,15 +2467,15 @@
    ],
    "012-rsmp-gpu": [
     80,
-    233
+    231
    ]
   }
  },
  {
-  "maj": "2026-10-26T13:48:21Z",
-  "sha": "c1a32a7",
-  "faites": 1470,
-  "total": 3006,
+  "maj": "2026-10-26T13:59:26Z",
+  "sha": "f4b8598",
+  "faites": 1468,
+  "total": 3003,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2454,8 +2502,56 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    49,
+    209
+   ],
+   "012-rsmp-gpu": [
+    80,
+    231
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-26T15:32:08Z",
+  "sha": "ddcb59e",
+  "faites": 1469,
+  "total": 3003,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    385
+   ],
+   "003-langage-rsmp": [
+    483,
+    525
+   ],
+   "004-bibliotheques-rsmp": [
+    190,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    94,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    0,
+    152
+   ],
+   "007-serveur-rsmp": [
+    0,
+    219
+   ],
+   "008-rsmp-contre-rust": [
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2467,111 +2563,15 @@
    ],
    "012-rsmp-gpu": [
     81,
-    233
-   ]
-  }
- },
- {
-  "maj": "2026-10-26T13:59:26Z",
-  "sha": "f4b8598",
-  "faites": 1471,
-  "total": 3006,
-  "specs": {
-   "002-interpreteur-smpa": [
-    361,
-    385
-   ],
-   "003-langage-rsmp": [
-    483,
-    525
-   ],
-   "004-bibliotheques-rsmp": [
-    190,
-    419
-   ],
-   "005-symbiose-modules-rsmp": [
-    94,
-    271
-   ],
-   "006-stockage-chunks-tiers": [
-    0,
-    152
-   ],
-   "007-serveur-rsmp": [
-    0,
-    219
-   ],
-   "008-rsmp-contre-rust": [
-    55,
-    115
-   ],
-   "010-etat-reifie": [
-    157,
-    478
-   ],
-   "011-auto-hebergement": [
-    49,
-    209
-   ],
-   "012-rsmp-gpu": [
-    82,
-    233
-   ]
-  }
- },
- {
-  "maj": "2026-10-26T15:32:08Z",
-  "sha": "ddcb59e",
-  "faites": 1472,
-  "total": 3006,
-  "specs": {
-   "002-interpreteur-smpa": [
-    361,
-    385
-   ],
-   "003-langage-rsmp": [
-    483,
-    525
-   ],
-   "004-bibliotheques-rsmp": [
-    190,
-    419
-   ],
-   "005-symbiose-modules-rsmp": [
-    94,
-    271
-   ],
-   "006-stockage-chunks-tiers": [
-    0,
-    152
-   ],
-   "007-serveur-rsmp": [
-    0,
-    219
-   ],
-   "008-rsmp-contre-rust": [
-    55,
-    115
-   ],
-   "010-etat-reifie": [
-    157,
-    478
-   ],
-   "011-auto-hebergement": [
-    49,
-    209
-   ],
-   "012-rsmp-gpu": [
-    83,
-    233
+    231
    ]
   }
  },
  {
   "maj": "2026-10-26T18:09:16Z",
   "sha": "617f0fe",
-  "faites": 1488,
-  "total": 3006,
+  "faites": 1485,
+  "total": 3003,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2598,8 +2598,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2610,16 +2610,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    83,
-    233
+    81,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-27T22:58:09Z",
   "sha": "4da2b68",
-  "faites": 1488,
-  "total": 3010,
+  "faites": 1485,
+  "total": 3007,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2646,8 +2646,8 @@
     219
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2658,16 +2658,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    83,
-    233
+    81,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-27T23:09:25Z",
   "sha": "6a889fb",
-  "faites": 1488,
-  "total": 3057,
+  "faites": 1485,
+  "total": 3054,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2694,8 +2694,8 @@
     266
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2706,16 +2706,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    83,
-    233
+    81,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-27T23:32:14Z",
   "sha": "bc52dfd",
-  "faites": 1489,
-  "total": 3057,
+  "faites": 1486,
+  "total": 3054,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2742,8 +2742,8 @@
     266
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2754,16 +2754,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-27T23:55:12Z",
   "sha": "62c669c",
-  "faites": 1489,
-  "total": 3107,
+  "faites": 1486,
+  "total": 3104,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2790,8 +2790,8 @@
     316
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2802,16 +2802,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T00:06:24Z",
   "sha": "542ffcf",
-  "faites": 1489,
-  "total": 3107,
+  "faites": 1486,
+  "total": 3104,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2838,8 +2838,8 @@
     316
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2850,16 +2850,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T01:46:23Z",
   "sha": "8abf58a",
-  "faites": 1489,
-  "total": 3107,
+  "faites": 1486,
+  "total": 3118,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2883,11 +2883,11 @@
    ],
    "007-serveur-rsmp": [
     0,
-    316
+    330
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2898,16 +2898,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T01:57:26Z",
   "sha": "34c0a76",
-  "faites": 1489,
-  "total": 3107,
+  "faites": 1486,
+  "total": 3153,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2931,11 +2931,11 @@
    ],
    "007-serveur-rsmp": [
     0,
-    316
+    365
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2946,16 +2946,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T02:08:26Z",
   "sha": "26e41dc",
-  "faites": 1489,
-  "total": 3107,
+  "faites": 1486,
+  "total": 3181,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -2979,11 +2979,11 @@
    ],
    "007-serveur-rsmp": [
     0,
-    316
+    393
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -2994,16 +2994,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T03:34:23Z",
   "sha": "f44f1b6",
-  "faites": 1501,
-  "total": 3192,
+  "faites": 1498,
+  "total": 3189,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3030,8 +3030,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3042,16 +3042,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T04:19:06Z",
   "sha": "533a294",
-  "faites": 1503,
-  "total": 3192,
+  "faites": 1500,
+  "total": 3189,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3078,8 +3078,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3090,16 +3090,16 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ]
   }
  },
  {
   "maj": "2026-10-28T05:56:07Z",
   "sha": "a7d6c7a",
-  "faites": 1503,
-  "total": 3649,
+  "faites": 1500,
+  "total": 3646,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3126,8 +3126,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3138,8 +3138,8 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
     0,
@@ -3150,8 +3150,8 @@
  {
   "maj": "2026-10-28T06:07:01Z",
   "sha": "509be98",
-  "faites": 1503,
-  "total": 3693,
+  "faites": 1500,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3178,8 +3178,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3190,8 +3190,8 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
     0,
@@ -3202,8 +3202,8 @@
  {
   "maj": "2026-10-28T16:48:49Z",
   "sha": "957dddc",
-  "faites": 1510,
-  "total": 3693,
+  "faites": 1507,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3230,8 +3230,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3242,8 +3242,8 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
     0,
@@ -3254,8 +3254,8 @@
  {
   "maj": "2026-10-28T17:00:01Z",
   "sha": "2b23fcb",
-  "faites": 1512,
-  "total": 3693,
+  "faites": 1509,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3282,8 +3282,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3294,8 +3294,8 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
     0,
@@ -3306,8 +3306,8 @@
  {
   "maj": "2026-10-28T17:11:18Z",
   "sha": "8750600",
-  "faites": 1512,
-  "total": 3693,
+  "faites": 1510,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3334,8 +3334,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3346,11 +3346,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
-    0,
+    1,
     501
    ]
   }
@@ -3358,8 +3358,8 @@
  {
   "maj": "2026-10-28T17:22:26Z",
   "sha": "c6a6f37",
-  "faites": 1513,
-  "total": 3693,
+  "faites": 1543,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3386,8 +3386,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3398,11 +3398,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
-    0,
+    33,
     501
    ]
   }
@@ -3410,8 +3410,8 @@
  {
   "maj": "2026-10-28T17:33:32Z",
   "sha": "26a02a6",
-  "faites": 1513,
-  "total": 3693,
+  "faites": 1549,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3438,8 +3438,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3450,11 +3450,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
-    0,
+    39,
     501
    ]
   }
@@ -3462,8 +3462,8 @@
  {
   "maj": "2026-10-28T17:35:21Z",
   "sha": "0429cae",
-  "faites": 1513,
-  "total": 3693,
+  "faites": 1556,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3490,8 +3490,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3502,11 +3502,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
-    0,
+    46,
     501
    ]
   }
@@ -3514,8 +3514,8 @@
  {
   "maj": "2026-10-28T17:44:51Z",
   "sha": "093117e",
-  "faites": 1513,
-  "total": 3693,
+  "faites": 1566,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3542,8 +3542,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3554,11 +3554,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    84,
-    233
+    82,
+    231
    ],
    "013-kcauldron-rsmp": [
-    0,
+    56,
     501
    ]
   }
@@ -3566,8 +3566,8 @@
  {
   "maj": "2026-10-28T17:50:37Z",
   "sha": "c649a80",
-  "faites": 1516,
-  "total": 3693,
+  "faites": 1569,
+  "total": 3690,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3594,8 +3594,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3606,11 +3606,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    231
    ],
    "013-kcauldron-rsmp": [
-    0,
+    56,
     501
    ]
   }
@@ -3618,8 +3618,8 @@
  {
   "maj": "2026-10-28T17:56:11Z",
   "sha": "08d0f46",
-  "faites": 1516,
-  "total": 3693,
+  "faites": 1569,
+  "total": 3678,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3646,8 +3646,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3658,11 +3658,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    56,
     501
    ]
   }
@@ -3670,8 +3670,8 @@
  {
   "maj": "2026-10-28T18:07:36Z",
   "sha": "4a58a7b",
-  "faites": 1516,
-  "total": 3693,
+  "faites": 1577,
+  "total": 3678,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3698,8 +3698,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3710,11 +3710,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    64,
     501
    ]
   }
@@ -3722,8 +3722,8 @@
  {
   "maj": "2026-10-28T18:31:21Z",
   "sha": "61282fa",
-  "faites": 1516,
-  "total": 3693,
+  "faites": 1577,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3750,8 +3750,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3762,20 +3762,20 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
-    501
+    64,
+    542
    ]
   }
  },
  {
   "maj": "2026-10-28T18:42:50Z",
   "sha": "5454ce4",
-  "faites": 1516,
-  "total": 3693,
+  "faites": 1588,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3786,7 +3786,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    190,
+    201,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -3802,8 +3802,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3814,20 +3814,20 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
-    501
+    64,
+    542
    ]
   }
  },
  {
   "maj": "2026-10-28T18:54:15Z",
   "sha": "dc681b5",
-  "faites": 1516,
-  "total": 3693,
+  "faites": 1589,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3838,7 +3838,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    190,
+    202,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -3854,8 +3854,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3866,20 +3866,20 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
-    501
+    64,
+    542
    ]
   }
  },
  {
   "maj": "2026-10-28T19:17:24Z",
   "sha": "7928c5d",
-  "faites": 1528,
-  "total": 3693,
+  "faites": 1622,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3906,8 +3906,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3918,20 +3918,20 @@
     209
    ],
    "012-rsmp-gpu": [
-    87,
-    233
+    85,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
-    501
+    97,
+    542
    ]
   }
  },
  {
   "maj": "2026-10-28T21:44:18Z",
   "sha": "0a46dd2",
-  "faites": 1556,
-  "total": 3734,
+  "faites": 1693,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3942,7 +3942,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    202,
+    210,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -3958,8 +3958,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -3970,11 +3970,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    113,
-    233
+    111,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    132,
     542
    ]
   }
@@ -3982,8 +3982,8 @@
  {
   "maj": "2026-10-28T21:57:54Z",
   "sha": "357fc4a",
-  "faites": 1569,
-  "total": 3734,
+  "faites": 1708,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -3994,7 +3994,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    210,
+    212,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -4010,8 +4010,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -4022,11 +4022,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    118,
-    233
+    116,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    140,
     542
    ]
   }
@@ -4034,8 +4034,8 @@
  {
   "maj": "2026-10-28T22:09:21Z",
   "sha": "bc1e144",
-  "faites": 1569,
-  "total": 3734,
+  "faites": 1732,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -4046,7 +4046,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    210,
+    216,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -4062,8 +4062,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -4074,11 +4074,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    118,
-    233
+    116,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    160,
     542
    ]
   }
@@ -4086,8 +4086,8 @@
  {
   "maj": "2026-10-28T22:31:59Z",
   "sha": "7e83a68",
-  "faites": 1569,
-  "total": 3734,
+  "faites": 1733,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -4098,7 +4098,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    210,
+    216,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -4114,8 +4114,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -4126,11 +4126,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    118,
-    233
+    116,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    161,
     542
    ]
   }
@@ -4138,8 +4138,8 @@
  {
   "maj": "2026-10-28T22:43:19Z",
   "sha": "10c22a1",
-  "faites": 1569,
-  "total": 3734,
+  "faites": 1754,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -4150,7 +4150,7 @@
     527
    ],
    "004-bibliotheques-rsmp": [
-    210,
+    217,
     419
    ],
    "005-symbiose-modules-rsmp": [
@@ -4166,8 +4166,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -4178,11 +4178,11 @@
     209
    ],
    "012-rsmp-gpu": [
-    118,
-    233
+    116,
+    219
    ],
    "013-kcauldron-rsmp": [
-    0,
+    181,
     542
    ]
   }
@@ -4190,60 +4190,8 @@
  {
   "maj": "2026-10-28T22:54:48Z",
   "sha": "0ad528b",
-  "faites": 1573,
-  "total": 3734,
-  "specs": {
-   "002-interpreteur-smpa": [
-    361,
-    387
-   ],
-   "003-langage-rsmp": [
-    490,
-    527
-   ],
-   "004-bibliotheques-rsmp": [
-    210,
-    419
-   ],
-   "005-symbiose-modules-rsmp": [
-    96,
-    271
-   ],
-   "006-stockage-chunks-tiers": [
-    9,
-    152
-   ],
-   "007-serveur-rsmp": [
-    5,
-    401
-   ],
-   "008-rsmp-contre-rust": [
-    55,
-    115
-   ],
-   "010-etat-reifie": [
-    157,
-    478
-   ],
-   "011-auto-hebergement": [
-    72,
-    209
-   ],
-   "012-rsmp-gpu": [
-    118,
-    233
-   ],
-   "013-kcauldron-rsmp": [
-    0,
-    542
-   ]
-  }
- },
- {
-  "maj": "2026-10-28T23:01:04Z",
-  "sha": "cd26f9a",
-  "faites": 1763,
-  "total": 3734,
+  "faites": 1760,
+  "total": 3719,
   "specs": {
    "002-interpreteur-smpa": [
     361,
@@ -4270,8 +4218,8 @@
     401
    ],
    "008-rsmp-contre-rust": [
-    55,
-    115
+    54,
+    114
    ],
    "010-etat-reifie": [
     157,
@@ -4282,12 +4230,168 @@
     209
    ],
    "012-rsmp-gpu": [
-    118,
-    233
+    116,
+    219
    ],
    "013-kcauldron-rsmp": [
     181,
     542
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-28T23:01:04Z",
+  "sha": "cd26f9a",
+  "faites": 1760,
+  "total": 3762,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    387
+   ],
+   "003-langage-rsmp": [
+    490,
+    527
+   ],
+   "004-bibliotheques-rsmp": [
+    219,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    96,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    9,
+    152
+   ],
+   "007-serveur-rsmp": [
+    5,
+    401
+   ],
+   "008-rsmp-contre-rust": [
+    54,
+    114
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    72,
+    209
+   ],
+   "012-rsmp-gpu": [
+    116,
+    219
+   ],
+   "013-kcauldron-rsmp": [
+    181,
+    585
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-28T23:06:21Z",
+  "sha": "7204305",
+  "faites": 1760,
+  "total": 4003,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    387
+   ],
+   "003-langage-rsmp": [
+    490,
+    527
+   ],
+   "004-bibliotheques-rsmp": [
+    219,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    96,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    9,
+    152
+   ],
+   "007-serveur-rsmp": [
+    5,
+    401
+   ],
+   "008-rsmp-contre-rust": [
+    54,
+    114
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    72,
+    209
+   ],
+   "012-rsmp-gpu": [
+    116,
+    219
+   ],
+   "013-kcauldron-rsmp": [
+    181,
+    826
+   ]
+  }
+ },
+ {
+  "maj": "2026-10-28T23:07:12Z",
+  "sha": "a8baf82",
+  "faites": 1760,
+  "total": 4055,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    387
+   ],
+   "003-langage-rsmp": [
+    490,
+    527
+   ],
+   "004-bibliotheques-rsmp": [
+    219,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    96,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    9,
+    152
+   ],
+   "007-serveur-rsmp": [
+    5,
+    401
+   ],
+   "008-rsmp-contre-rust": [
+    54,
+    114
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    72,
+    209
+   ],
+   "012-rsmp-gpu": [
+    116,
+    219
+   ],
+   "013-kcauldron-rsmp": [
+    181,
+    878
    ]
   }
  }

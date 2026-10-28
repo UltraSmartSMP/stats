@@ -1,91 +1,5 @@
 [
  {
-  "maj": "2026-10-21T17:26:19Z",
-  "empreinte": "68e8113d4f1470d3",
-  "code": 3950973,
-  "commits": 456,
-  "par_depot": {
-   "moteur": 449009,
-   "langage": 209066,
-   "bibliotheques": 1512323,
-   "symbiose": 5869,
-   "serveur": 218,
-   "docs": 1774488
-  },
-  "par_langage": {
-   "JSON": 1490470,
-   "RSMP": 1373797,
-   "C++": 380811,
-   "Texte": 306564,
-   "Markdown": 241745,
-   "SMPA": 40868,
-   "CSV": 26176,
-   "C/C++ Header": 24627,
-   "PowerShell": 19427,
-   "YAML": 11286,
-   "RSMP IR": 7991,
-   "Python": 7497,
-   "CMake": 7025,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "TOML": 1737,
-   "C": 1680,
-   "JavaScript": 1623,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 101,
-   "INI": 83,
-   "Assembly": 44,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 1218,
-   "langage": {
-    "C++": 370,
-    "CSV": 218,
-    "Markdown": 432,
-    "PowerShell": 36,
-    "Texte": 162
-   },
-   "type": {
-    "docs": 432,
-    "donnees": 396,
-    "tests": 390
-   },
-   "depots": {
-    "docs": {
-     "code": 828,
-     "court": "1187f38",
-     "commits": 1,
-     "langage": {
-      "CSV": 218,
-      "Markdown": 432,
-      "PowerShell": 16,
-      "Texte": 162
-     },
-     "type": {
-      "docs": 432,
-      "donnees": 396
-     }
-    },
-    "langage": {
-     "code": 390,
-     "court": "acbc6f2",
-     "commits": 1,
-     "langage": {
-      "C++": 370,
-      "PowerShell": 20
-     },
-     "type": {
-      "tests": 390
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T17:36:41Z",
   "empreinte": "365ab6b9b10a2d60",
   "code": 3955852,
@@ -42130,6 +42044,135 @@
      },
      "type": {
       "scripts": 47
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-28T23:06:21Z",
+  "empreinte": "d4e15f6289c555a1",
+  "code": 5723481,
+  "commits": 1588,
+  "par_depot": {
+   "moteur": 458283,
+   "langage": 251463,
+   "bibliotheques": 1644286,
+   "symbiose": 31758,
+   "natives": 9713,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 54515,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 83297,
+   "orchestration": 77589,
+   "docs": 3008807
+  },
+  "par_langage": {
+   "JSON": 1717600,
+   "RSMP": 1614922,
+   "Texte": 1154816,
+   "C++": 538730,
+   "Markdown": 371209,
+   "CSV": 74047,
+   "SMPA": 50388,
+   "PowerShell": 38955,
+   "C/C++ Header": 38145,
+   "Assembly": 31427,
+   "Python": 27435,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 10732,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2509,
+   "C": 2210,
+   "JavaScript": 2133,
+   "Bourne Shell": 944,
+   "SMPI": 923,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 151,
+   "Windows Resource File": 97,
+   "DOS Batch": 42
+  },
+  "delta": {
+   "code": 2415,
+   "langage": {
+    "C++": 905,
+    "C/C++ Header": 43,
+    "Markdown": 843,
+    "PowerShell": 1,
+    "Python": -18,
+    "RSMP": 641
+   },
+   "type": {
+    "docs": 843,
+    "scripts": -17,
+    "source": 338,
+    "tests": 1251
+   },
+   "depots": {
+    "auto-hebergement": {
+     "code": 641,
+     "court": "98a63ba",
+     "commits": 1,
+     "langage": {
+      "RSMP": 641
+     },
+     "type": {
+      "source": 107,
+      "tests": 534
+     }
+    },
+    "docs": {
+     "code": 843,
+     "court": "7204305",
+     "commits": 1,
+     "langage": {
+      "Markdown": 843
+     },
+     "type": {
+      "docs": 843
+     }
+    },
+    "langage": {
+     "code": 622,
+     "court": "1f35d48",
+     "commits": 1,
+     "langage": {
+      "C++": 581,
+      "C/C++ Header": 41
+     },
+     "type": {
+      "source": 65,
+      "tests": 557
+     }
+    },
+    "moteur": {
+     "code": 326,
+     "court": "8fbdd0e",
+     "commits": 1,
+     "langage": {
+      "C++": 324,
+      "C/C++ Header": 2
+     },
+     "type": {
+      "source": 166,
+      "tests": 160
+     }
+    },
+    "orchestration": {
+     "code": -17,
+     "court": "c0fb8b8",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 1,
+      "Python": -18
+     },
+     "type": {
+      "scripts": -17
      }
     }
    }

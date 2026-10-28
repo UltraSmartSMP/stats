@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T23:01:04Z",
- "sha": "cd26f9a",
- "empreinte": "b56e0d211281d5c4",
+ "maj": "2026-10-28T23:07:12Z",
+ "sha": "a8baf82",
+ "empreinte": "eec0accc82ffb1eb",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -29,8 +29,8 @@
    "total": 401
   },
   "008-rsmp-contre-rust": {
-   "faites": 55,
-   "total": 115
+   "faites": 54,
+   "total": 114
   },
   "010-etat-reifie": {
    "faites": 157,
@@ -41,14 +41,14 @@
    "total": 209
   },
   "012-rsmp-gpu": {
-   "faites": 118,
-   "total": 233
+   "faites": 116,
+   "total": 219
   },
   "013-kcauldron-rsmp": {
    "faites": 181,
-   "total": 542
+   "total": 878
   }
  },
- "faites": 1763,
- "total": 3734
+ "faites": 1760,
+ "total": 4055
 }
