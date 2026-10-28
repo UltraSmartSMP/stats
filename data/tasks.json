@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T03:56:51Z",
- "sha": "b5df519",
- "empreinte": "e90cd830493b214a",
+ "maj": "2026-10-28T04:19:06Z",
+ "sha": "533a294",
+ "empreinte": "8b8ac202fa7efbfc",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -21,7 +21,7 @@
    "total": 271
   },
   "006-stockage-chunks-tiers": {
-   "faites": 7,
+   "faites": 9,
    "total": 152
   },
   "007-serveur-rsmp": {
@@ -45,6 +45,6 @@
    "total": 233
   }
  },
- "faites": 1501,
+ "faites": 1503,
  "total": 3192
 }
