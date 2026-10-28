@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-28T05:23:26Z",
- "empreinte": "6e2733ab97284c9b",
+ "maj": "2026-10-28T05:34:20Z",
+ "empreinte": "a46e172de8f4c911",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -692,7 +692,7 @@
     "code": 3
    }
   ],
-  "commits": 1388
+  "commits": 1389
  },
  "depots": [
   {
@@ -2284,12 +2284,12 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 567,
+   "commits": 568,
    "commit": {
-    "sha": "d07f7deb220dfef6a5dc119ce42b0b1dfaa31a84",
-    "court": "d07f7de",
-    "date": "2026-10-28T05:23:26Z",
-    "message": "sync 2026-10-28 06:23"
+    "sha": "b2eff9f89dedb29612d166fe27c433b3c3b2a990",
+    "court": "b2eff9f",
+    "date": "2026-10-28T05:34:20Z",
+    "message": "sync 2026-10-28 06:34"
    },
    "fichiers": 10413,
    "lignes": {
