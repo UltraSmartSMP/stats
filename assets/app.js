@@ -26,7 +26,7 @@
   var dfAxe = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', timeZone: 'Europe/Paris' });
   /* étendue courte (moins de 7 jours) : l'heure s'ajoute, sinon plusieurs repères donneraient le même jour */
   var dfAxeHeure = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' });
-  var DEPOTS_CONNUS = ['moteur', 'langage', 'bibliotheques', 'symbiose', 'serveur', 'kcauldron', 'docs'];
+  var DEPOTS_CONNUS = ['moteur', 'langage', 'bibliotheques', 'symbiose', 'natives', 'rsmp-gpu', 'auto-hebergement', 'serveur', 'bundles', 'kcauldron', 'orchestration', 'docs'];
 
   function $(id) { return document.getElementById(id); }
   function el(tag, props) {
