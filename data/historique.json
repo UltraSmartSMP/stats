@@ -1,69 +1,5 @@
 [
  {
-  "maj": "2026-10-21T17:47:24Z",
-  "empreinte": "9286c80845b45d3c",
-  "code": 3955866,
-  "commits": 460,
-  "par_depot": {
-   "moteur": 451520,
-   "langage": 210312,
-   "bibliotheques": 1512323,
-   "symbiose": 5869,
-   "serveur": 218,
-   "docs": 1775624
-  },
-  "par_langage": {
-   "JSON": 1492981,
-   "RSMP": 1373797,
-   "C++": 381838,
-   "Texte": 306567,
-   "Markdown": 242878,
-   "SMPA": 40868,
-   "CSV": 26176,
-   "C/C++ Header": 24627,
-   "PowerShell": 19646,
-   "YAML": 11286,
-   "RSMP IR": 7991,
-   "Python": 7497,
-   "CMake": 7025,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "TOML": 1737,
-   "C": 1680,
-   "JavaScript": 1623,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 101,
-   "INI": 83,
-   "Assembly": 44,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 14,
-   "langage": {
-    "C++": 14
-   },
-   "type": {
-    "bancs": 14
-   },
-   "depots": {
-    "langage": {
-     "code": 14,
-     "court": "5d181b4",
-     "commits": 1,
-     "langage": {
-      "C++": 14
-     },
-     "type": {
-      "bancs": 14
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T17:48:28Z",
   "empreinte": "f015726356571e98",
   "code": 3956051,
@@ -42215,6 +42151,175 @@
      },
      "type": {
       "scripts": -17
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-28T23:18:05Z",
+  "empreinte": "7fcd70e4115459d6",
+  "code": 5730306,
+  "commits": 1599,
+  "par_depot": {
+   "moteur": 458913,
+   "langage": 252173,
+   "bibliotheques": 1644319,
+   "symbiose": 31822,
+   "natives": 9713,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 56881,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 84641,
+   "orchestration": 77589,
+   "docs": 3010485
+  },
+  "par_langage": {
+   "JSON": 1717602,
+   "RSMP": 1618391,
+   "Texte": 1155012,
+   "C++": 540022,
+   "Markdown": 372887,
+   "CSV": 74047,
+   "SMPA": 50388,
+   "PowerShell": 39093,
+   "C/C++ Header": 38161,
+   "Assembly": 31427,
+   "Python": 27442,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 10733,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2535,
+   "C": 2210,
+   "JavaScript": 2133,
+   "Bourne Shell": 944,
+   "SMPI": 923,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 151,
+   "Windows Resource File": 97,
+   "DOS Batch": 42
+  },
+  "delta": {
+   "code": 5629,
+   "langage": {
+    "C++": 543,
+    "C/C++ Header": 16,
+    "CMake": 1,
+    "JSON": 2,
+    "Markdown": 1564,
+    "PowerShell": 138,
+    "Python": 7,
+    "RSMP": 3136,
+    "TOML": 26,
+    "Texte": 196
+   },
+   "type": {
+    "build": 27,
+    "docs": 1564,
+    "donnees": 13,
+    "source": 3087,
+    "tests": 938
+   },
+   "depots": {
+    "auto-hebergement": {
+     "code": 2366,
+     "court": "a29ee64",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 1,
+      "Python": 7,
+      "RSMP": 2358
+     },
+     "type": {
+      "source": 2358,
+      "tests": 8
+     }
+    },
+    "bibliotheques": {
+     "code": 33,
+     "court": "9115776",
+     "commits": 1,
+     "langage": {
+      "RSMP": 33
+     },
+     "type": {
+      "source": 25,
+      "tests": 8
+     }
+    },
+    "docs": {
+     "code": 1564,
+     "court": "04033c2",
+     "commits": 1,
+     "langage": {
+      "Markdown": 1564
+     },
+     "type": {
+      "docs": 1564
+     }
+    },
+    "kcauldron": {
+     "code": 1011,
+     "court": "30a919d",
+     "commits": 1,
+     "langage": {
+      "JSON": 2,
+      "PowerShell": 57,
+      "RSMP": 730,
+      "TOML": 26,
+      "Texte": 196
+     },
+     "type": {
+      "build": 26,
+      "donnees": 13,
+      "source": 568,
+      "tests": 404
+     }
+    },
+    "langage": {
+     "code": 444,
+     "court": "85bbb7d",
+     "commits": 1,
+     "langage": {
+      "C++": 398,
+      "C/C++ Header": 14,
+      "CMake": 1,
+      "PowerShell": 16,
+      "RSMP": 15
+     },
+     "type": {
+      "build": 1,
+      "source": 48,
+      "tests": 395
+     }
+    },
+    "moteur": {
+     "code": 147,
+     "court": "eb7923d",
+     "commits": 1,
+     "langage": {
+      "C++": 145,
+      "C/C++ Header": 2
+     },
+     "type": {
+      "source": 88,
+      "tests": 59
+     }
+    },
+    "symbiose": {
+     "code": 64,
+     "court": "226ed64",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 64
+     },
+     "type": {
+      "tests": 64
      }
     }
    }
