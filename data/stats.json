@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-28T03:56:51Z",
- "empreinte": "2fb96177b8386308",
+ "maj": "2026-10-28T04:07:49Z",
+ "empreinte": "c4573a5653a5cb29",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 20880,
   "lignes": {
-   "code": 5501631,
-   "commentaires": 88129,
+   "code": 5501640,
+   "commentaires": 88131,
    "vides": 143614,
-   "total": 5733374
+   "total": 5733385
   },
   "langages": [
    {
@@ -85,8 +85,8 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1298,
-    "code": 522767,
-    "commentaires": 41232,
+    "code": 522776,
+    "commentaires": 41234,
     "vides": 42039
    },
    {
@@ -285,8 +285,8 @@
    {
     "id": "tests",
     "fichiers": 3772,
-    "code": 384469,
-    "commentaires": 29007,
+    "code": 384478,
+    "commentaires": 29009,
     "vides": 25409
    },
    {
@@ -349,7 +349,7 @@
    {
     "langage": "C++",
     "type": "tests",
-    "code": 246916
+    "code": 246925
    },
    {
     "langage": "C++",
@@ -692,34 +692,34 @@
     "code": 3
    }
   ],
-  "commits": 1380
+  "commits": 1381
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 415,
+   "commits": 416,
    "commit": {
-    "sha": "448e528730536dd43f9af0381ba151e1fd52cbbe",
-    "court": "448e528",
-    "date": "2026-10-28T03:56:39Z",
-    "message": "sync 2026-10-28 04:56"
+    "sha": "3c010e234144d2e5d0f92293be506da8af8bdab1",
+    "court": "3c010e2",
+    "date": "2026-10-28T04:07:49Z",
+    "message": "sync 2026-10-28 05:07"
    },
    "fichiers": 3691,
    "lignes": {
-    "code": 654161,
-    "commentaires": 48597,
+    "code": 654170,
+    "commentaires": 48599,
     "vides": 35081,
-    "total": 737839
+    "total": 737850
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 617,
-     "code": 274055,
-     "commentaires": 23620,
+     "code": 274064,
+     "commentaires": 23622,
      "vides": 21751
     },
     {
@@ -910,8 +910,8 @@
     {
      "id": "tests",
      "fichiers": 1133,
-     "code": 142681,
-     "commentaires": 12844,
+     "code": 142690,
+     "commentaires": 12846,
      "vides": 10087
     },
     {
@@ -959,7 +959,7 @@
     {
      "langage": "C++",
      "type": "tests",
-     "code": 122035
+     "code": 122044
     },
     {
      "langage": "C++",
