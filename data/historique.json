@@ -1,68 +1,5 @@
 [
  {
-  "maj": "2026-10-21T14:19:23Z",
-  "empreinte": "fa59c0e352f16bf9",
-  "code": 3867682,
-  "commits": 389,
-  "par_depot": {
-   "moteur": 601406,
-   "langage": 15,
-   "bibliotheques": 1497633,
-   "symbiose": 2096,
-   "serveur": 15,
-   "docs": 1766517
-  },
-  "par_langage": {
-   "JSON": 1487980,
-   "RSMP": 1365496,
-   "C++": 327152,
-   "Texte": 303083,
-   "Markdown": 238258,
-   "SMPA": 40665,
-   "C/C++ Header": 23262,
-   "CSV": 23122,
-   "PowerShell": 13974,
-   "YAML": 10754,
-   "Python": 7497,
-   "RSMP IR": 7455,
-   "CMake": 6799,
-   "Rust": 3529,
-   "CUDA": 2312,
-   "C": 1668,
-   "JavaScript": 1623,
-   "TOML": 1569,
-   "SMPI": 877,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "Assembly": 44,
-   "INI": 17,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 120,
-   "langage": {
-    "PowerShell": 120
-   },
-   "type": {
-    "scripts": 120
-   },
-   "depots": {
-    "symbiose": {
-     "code": 120,
-     "court": "c8ba2b6",
-     "commits": 1,
-     "langage": {
-      "PowerShell": 120
-     },
-     "type": {
-      "scripts": 120
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T14:32:48Z",
   "empreinte": "f2725dcd6414ecb9",
   "code": 3880953,
@@ -41541,6 +41478,50 @@
      }
     }
    }
+  }
+ },
+ {
+  "maj": "2026-10-28T17:29:08Z",
+  "empreinte": "dd81a2c315288220",
+  "code": 5572956,
+  "commits": 1430,
+  "par_depot": {
+   "moteur": 658591,
+   "langage": 245391,
+   "bibliotheques": 1637481,
+   "symbiose": 5896,
+   "serveur": 230,
+   "kcauldron": 33955,
+   "docs": 2991412
+  },
+  "par_langage": {
+   "JSON": 1708876,
+   "RSMP": 1518549,
+   "Texte": 1144951,
+   "C++": 523482,
+   "Markdown": 365533,
+   "CSV": 71437,
+   "SMPA": 50111,
+   "C/C++ Header": 36836,
+   "PowerShell": 35792,
+   "Assembly": 31427,
+   "Python": 21831,
+   "CUDA": 18813,
+   "YAML": 11375,
+   "CMake": 9943,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2217,
+   "C": 2210,
+   "JavaScript": 2133,
+   "SMPI": 905,
+   "Bourne Shell": 896,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 349,
+   "INI": 123,
+   "Windows Resource File": 97,
+   "DOS Batch": 42
   }
  }
 ]

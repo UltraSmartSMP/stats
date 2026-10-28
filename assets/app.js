@@ -26,7 +26,7 @@
   var dfAxe = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', timeZone: 'Europe/Paris' });
   /* étendue courte (moins de 7 jours) : l'heure s'ajoute, sinon plusieurs repères donneraient le même jour */
   var dfAxeHeure = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' });
-  var DEPOTS_CONNUS = ['moteur', 'langage', 'bibliotheques', 'symbiose', 'serveur', 'docs'];
+  var DEPOTS_CONNUS = ['moteur', 'langage', 'bibliotheques', 'symbiose', 'serveur', 'kcauldron', 'docs'];
 
   function $(id) { return document.getElementById(id); }
   function el(tag, props) {
@@ -1068,174 +1068,174 @@
     }
   }
 
-  /* ---------- avancement des tasks et tokens (data/tasks.json, tasks-historique.json, tokens.json) ---------- */
-  /* Fichiers facultatifs : s'ils manquent ou sont illisibles, la section ou le badge reste caché. */
-  var T = { tasks: null, hist: [], tokens: null, spec: '' };
-  var nf2 = new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  function abregeFr(n) {
-    if (n >= 1e9) return nf2.format(n / 1e9) + ' Md';
-    if (n >= 1e6) return nf2.format(n / 1e6) + ' M';
-    if (n >= 1e3) return nf2.format(n / 1e3) + ' k';
-    return nf.format(n);
-  }
-  function jetonsValide(t) {
-    return t && typeof t === 'object' && typeof t.total === 'number' && t.total >= 0 && t.categories && typeof t.categories === 'object';
-  }
-  var CATS_JETONS = [['entree', 'Entrée'], ['sortie', 'Sortie'], ['cache_ecriture', 'Écriture du cache'], ['cache_lecture', 'Lecture du cache']];
-  function rendreJetons() {
-    var t = T.tokens, zone = $('jetons');
-    if (!jetonsValide(t)) { zone.hidden = true; document.body.classList.remove('avec-jetons'); return; }
-    zone.hidden = false;
-    document.body.classList.add('avec-jetons');
-    var releve = typeof t.commits_au_releve === 'number' ? 'relevé au commit ' + nf.format(t.commits_au_releve) : 'relevé';
-    var quand = t.mesure && !isNaN(Date.parse(t.mesure)) ? ', ' + dateCourte(t.mesure) : '';
-    $('jetons-val').textContent = abregeFr(t.total);
-    $('jetons-bouton').title = nf.format(t.total) + ' tokens : détail par catégorie';
-    $('jetons-sous').textContent = releve + quand;
-    var d = vider($('jetons-detail'));
-    d.appendChild(el('div', { class: 'jetons-ligne jetons-ligne-total' }, el('span', { text: 'Total' }), el('span', { text: nf.format(t.total) })));
-    CATS_JETONS.forEach(function (c) {
-      d.appendChild(el('div', { class: 'jetons-ligne' }, el('span', { text: c[1] }), el('span', { text: nf.format(num(t.categories[c[0]])) })));
-    });
-    d.appendChild(el('p', { class: 'jetons-note', text: 'Somme des quatre catégories pour le projet depuis le début, ' + releve + quand + '. Actualisé tous les 50 commits.'
-      + (typeof t.messages === 'number' ? ' ' + nf.format(t.messages) + ' réponses, ' + nf.format(num(t.sessions)) + ' sessions, ' + nf.format(num(t.sous_agents)) + ' sous-agents.' : '') }));
-  }
-  function installerJetons() {
-    var b = $('jetons-bouton'), d = $('jetons-detail');
-    function ouvrir(o) { d.hidden = !o; b.setAttribute('aria-expanded', String(o)); }
-    b.addEventListener('click', function () { ouvrir(d.hidden); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !d.hidden) { ouvrir(false); b.focus(); } });
-    document.addEventListener('pointerdown', function (e) { if (!d.hidden && !$('jetons').contains(e.target)) ouvrir(false); });
-  }
-
-  function tasksValide(t) { return t && typeof t === 'object' && t.specs && typeof t.specs === 'object' && typeof t.total === 'number' && t.total > 0; }
-  /* [faites, total] d'un relevé pour la spec choisie ('' = total) ; null si la spec n'y figure pas */
-  function paire(spec, e) {
-    if (!spec) return [num(e.faites), num(e.total)];
-    var p = propre(e.specs, spec);
-    return Array.isArray(p) ? [num(p[0]), num(p[1])] : null;
-  }
-  function barreAvance(f, t, cls) {
-    return el('div', { class: 'avance' + (cls ? ' ' + cls : ''), role: 'img', 'aria-label': nf.format(f) + ' tasks faites sur ' + nf.format(t) },
-      el('span', { css: { width: (t > 0 ? 100 * f / t : 0).toFixed(2) + '%' }, class: f >= t && t > 0 ? 'fini' : null }));
-  }
-  function rendreTasks() {
-    var sec = $('bloc-tasks'), t = T.tasks;
-    if (!tasksValide(t)) { sec.hidden = true; return; }
-    sec.hidden = false;
-    var noms = Object.keys(t.specs).sort();
-    if (T.spec && noms.indexOf(T.spec) < 0) T.spec = '';
-    $('note-tasks').textContent = 'Cases cochées sur le total des tasks de chaque spec, d’après la branche docs (commit ' + (t.sha || '–') + ', ' + dateCourte(t.maj) + ').';
-    var f = num(t.faites), tot = num(t.total);
-    vider($('tasks-total')).appendChild(el('div', null,
-      el('div', { class: 'chiffre-ligne' }, el('span', { class: 'chiffre-val', text: nf.format(f) + ' / ' + nf.format(tot) }),
-        el('span', { class: 'chiffre-sous', text: pct(f, tot) + ' des tasks faites' })),
-      barreAvance(f, tot, 'grande')));
-    var tb = vider($('table-tasks'));
-    tb.appendChild(el('thead', null, el('tr', null, el('th', { scope: 'col', text: 'Spec' }), el('th', { scope: 'col', text: 'Avancement' }),
-      el('th', { scope: 'col', class: 'num', text: 'Faites / total' }), el('th', { scope: 'col', class: 'num col-part', text: 'Part' }))));
-    var corps = el('tbody');
-    function ligne(nom, lib, fa, to) {
-      var b = el('button', { type: 'button', class: 'spec-choix', 'aria-pressed': String(T.spec === nom), text: lib,
-        title: nom ? 'Afficher l’évolution de cette spec' : 'Afficher l’évolution du total' });
-      b.addEventListener('click', function () { T.spec = T.spec === nom ? '' : nom; rendreTasks(); });
-      return el('tr', { class: T.spec === nom ? 'choisie' : null },
-        el('th', { scope: 'row', class: 'tasks-spec' }, b),
-        el('td', { class: 'piste' }, barreAvance(fa, to)),
-        el('td', { class: 'num', text: nf.format(fa) + ' / ' + nf.format(to) }),
-        el('td', { class: 'num col-part', text: pct(fa, to) }));
-    }
-    corps.appendChild(ligne('', 'Total', f, tot));
-    noms.forEach(function (n) { var s = t.specs[n]; corps.appendChild(ligne(n, n, num(s.faites), num(s.total))); });
-    tb.appendChild(corps);
-    rendreCourbeTasks();
-  }
-  function releves() {
-    return T.hist.filter(function (e) { return paire(T.spec, e); });
-  }
-  function rendreCourbeTasks() {
-    var h = releves(), lib = T.spec || 'toutes les specs';
-    $('note-tasks-courbe').textContent = 'Faites et total pour ' + lib + ' : un point par commit de la branche docs qui change un fichier de tasks, ' + h.length + ' relevés.';
-    var leg = vider($('legende-tasks'));
-    leg.appendChild(el('span', null, el('i', { css: { background: 'var(--accent)' } }), 'Faites'));
-    leg.appendChild(el('span', null, el('i', { class: 'tirets' }), 'Total'));
-    var t = vider($('table-tasks-hist'));
-    t.appendChild(el('thead', null, el('tr', null, el('th', { scope: 'col', text: 'Date' }), el('th', { scope: 'col', text: 'Commit' }),
-      el('th', { scope: 'col', class: 'num', text: 'Faites' }), el('th', { scope: 'col', class: 'num', text: 'Total' }), el('th', { scope: 'col', class: 'num', text: 'Part' }))));
-    var corps = el('tbody');
-    h.slice().reverse().forEach(function (e) {
-      var p = paire(T.spec, e);
-      corps.appendChild(el('tr', null, el('td', { text: dateCourte(e.maj) }), el('td', null, el('code', { text: e.sha || '–' })),
-        el('td', { class: 'num', text: nf.format(p[0]) }), el('td', { class: 'num', text: nf.format(p[1]) }), el('td', { class: 'num', text: pct(p[0], p[1]) })));
-    });
-    t.appendChild(corps);
-    dessinerCourbeTasks();
-  }
-  function dessinerCourbeTasks() {
-    var zone = $('courbe-tasks');
-    if ($('bloc-tasks').hidden) return;
-    vider(zone);
-    var h = releves();
-    if (h.length < 2) { zone.appendChild(el('p', { class: 'vide-note', text: 'Pas encore assez de relevés pour tracer une courbe.' })); return; }
-    var W = Math.max(280, zone.clientWidth), H = 260, mg = { g: 48, d: 14, h: 12, b: 28 };
-    var fa = h.map(function (e) { return paire(T.spec, e)[0]; }), to = h.map(function (e) { return paire(T.spec, e)[1]; });
-    var vmax = Math.max.apply(null, to.concat(fa)), ech = echelleNette(vmax), n = h.length;
-    function X(i) { return mg.g + (W - mg.g - mg.d) * i / (n - 1); }
-    function Y(v) { return mg.h + (H - mg.h - mg.b) * (1 - v / ech.max); }
-    var svg = sv('svg', { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, role: 'img',
-      'aria-label': 'Courbe des tasks faites et du total, ' + n + ' relevés du ' + dateCourte(h[0].maj) + ' au ' + dateCourte(h[n - 1].maj) + ' ; valeurs dans le tableau « Voir les valeurs de l’évolution »' });
-    for (var v = 0; v <= ech.max + 1e-9; v += ech.pas) {
-      svg.appendChild(sv('line', { x1: mg.g, x2: W - mg.d, y1: Y(v), y2: Y(v), class: v === 0 ? 'base' : 'grille' }));
-      svg.appendChild(sv('text', { x: mg.g - 8, y: Y(v) + 4, 'text-anchor': 'end', class: 'axe' })).textContent = abrege(v);
-    }
-    var nTicks = Math.max(2, Math.min(6, Math.floor((W - mg.g - mg.d) / 90)));
-    for (var k = 0; k < nTicks; k++) {
-      var i = Math.round((n - 1) * k / (nTicks - 1));
-      svg.appendChild(sv('text', { x: X(i), y: H - 8, 'text-anchor': k === 0 ? 'start' : k === nTicks - 1 ? 'end' : 'middle', class: 'axe' })).textContent = dfAxe.format(new Date(h[i].maj));
-    }
-    function chemin(val) { return val.map(function (y, j) { return (j ? 'L' : 'M') + X(j).toFixed(1) + ' ' + Y(y).toFixed(1); }).join(' '); }
-    var dF = chemin(fa);
-    svg.appendChild(sv('path', { d: chemin(to), 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-dasharray': '5 4' }, { fill: 'none', stroke: 'var(--texte-2)' }));
-    svg.appendChild(sv('path', { d: dF + ' L' + X(n - 1).toFixed(1) + ' ' + Y(0) + ' L' + X(0).toFixed(1) + ' ' + Y(0) + ' Z' }, { fill: 'color-mix(in srgb, var(--accent) 14%, transparent)' }));
-    svg.appendChild(sv('path', { d: dF, 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, { fill: 'none', stroke: 'var(--accent)' }));
-    if (n <= 80) h.forEach(function (e, j) { svg.appendChild(sv('circle', { cx: X(j), cy: Y(fa[j]), r: 2.5 }, { fill: 'var(--accent)' })); });
-    svg.appendChild(sv('circle', { cx: X(n - 1), cy: Y(fa[n - 1]), r: 4, 'stroke-width': 2 }, { fill: 'var(--accent)', stroke: 'var(--surface)' }));
-    var repere = sv('line', { y1: mg.h, y2: H - mg.b, class: 'repere', visibility: 'hidden' });
-    svg.appendChild(repere);
-    var pF = sv('circle', { r: 4.5, 'stroke-width': 2, visibility: 'hidden' }, { fill: 'var(--accent)', stroke: 'var(--surface)' });
-    var pT = sv('circle', { r: 4.5, 'stroke-width': 2, visibility: 'hidden' }, { fill: 'var(--texte-2)', stroke: 'var(--surface)' });
-    svg.appendChild(pT); svg.appendChild(pF);
-    var cible = sv('rect', { x: mg.g, y: 0, width: W - mg.g - mg.d, height: H, fill: 'transparent' });
-    svg.appendChild(cible);
-    function survol(e) {
-      var r = svg.getBoundingClientRect(), x = (e.clientX - r.left) * W / r.width;
-      var j = Math.max(0, Math.min(n - 1, Math.round((x - mg.g) / (W - mg.g - mg.d) * (n - 1))));
-      repere.setAttribute('x1', X(j)); repere.setAttribute('x2', X(j)); repere.setAttribute('visibility', 'visible');
-      pF.setAttribute('cx', X(j)); pF.setAttribute('cy', Y(fa[j])); pF.setAttribute('visibility', 'visible');
-      pT.setAttribute('cx', X(j)); pT.setAttribute('cy', Y(to[j])); pT.setAttribute('visibility', 'visible');
-      montrerBulle(lignesBulle(dateCourte(h[j].maj) + ' · ' + (h[j].sha || ''), [
-        { lib: 'Faites', val: nf.format(fa[j]) + ' (' + pct(fa[j], to[j]) + ')', couleur: 'var(--accent)' },
-        { lib: 'Total', val: nf.format(to[j]), couleur: 'var(--texte-2)' }]), e.clientX, e.clientY);
-    }
-    cible.addEventListener('pointermove', survol);
-    cible.addEventListener('pointerdown', survol);
-    cible.addEventListener('pointerleave', function () {
-      repere.setAttribute('visibility', 'hidden'); pF.setAttribute('visibility', 'hidden'); pT.setAttribute('visibility', 'hidden'); cacherBulle();
-    });
-    zone.appendChild(svg);
-  }
-  /* lecture facultative, rechargée avec les statistiques (nouvelle empreinte) */
-  function chargerSuppl() {
-    if (S.exemple) { T.tasks = null; T.hist = []; T.tokens = null; rendreTasks(); rendreJetons(); return Promise.resolve(); }
-    return Promise.all([charger('data/tasks.json', false), charger('data/tasks-historique.json', false), charger('data/tokens.json', false)]).then(function (r) {
-      T.tasks = tasksValide(r[0]) ? r[0] : null;
-      T.hist = (Array.isArray(r[1]) ? r[1] : []).filter(function (e) { return e && !isNaN(Date.parse(e.maj)) && typeof e.faites === 'number' && typeof e.total === 'number'; })
-        .sort(function (a, b) { return Date.parse(a.maj) - Date.parse(b.maj); });
-      T.tokens = jetonsValide(r[2]) ? r[2] : null;
-      rendreTasks(); rendreJetons();
-    }).catch(function () { /* sections facultatives : elles restent cachées */ });
-  }
-
+  /* ---------- avancement des tasks et tokens (data/tasks.json, tasks-historique.json, tokens.json) ---------- */
+  /* Fichiers facultatifs : s'ils manquent ou sont illisibles, la section ou le badge reste caché. */
+  var T = { tasks: null, hist: [], tokens: null, spec: '' };
+  var nf2 = new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  function abregeFr(n) {
+    if (n >= 1e9) return nf2.format(n / 1e9) + ' Md';
+    if (n >= 1e6) return nf2.format(n / 1e6) + ' M';
+    if (n >= 1e3) return nf2.format(n / 1e3) + ' k';
+    return nf.format(n);
+  }
+  function jetonsValide(t) {
+    return t && typeof t === 'object' && typeof t.total === 'number' && t.total >= 0 && t.categories && typeof t.categories === 'object';
+  }
+  var CATS_JETONS = [['entree', 'Entrée'], ['sortie', 'Sortie'], ['cache_ecriture', 'Écriture du cache'], ['cache_lecture', 'Lecture du cache']];
+  function rendreJetons() {
+    var t = T.tokens, zone = $('jetons');
+    if (!jetonsValide(t)) { zone.hidden = true; document.body.classList.remove('avec-jetons'); return; }
+    zone.hidden = false;
+    document.body.classList.add('avec-jetons');
+    var releve = typeof t.commits_au_releve === 'number' ? 'relevé au commit ' + nf.format(t.commits_au_releve) : 'relevé';
+    var quand = t.mesure && !isNaN(Date.parse(t.mesure)) ? ', ' + dateCourte(t.mesure) : '';
+    $('jetons-val').textContent = abregeFr(t.total);
+    $('jetons-bouton').title = nf.format(t.total) + ' tokens : détail par catégorie';
+    $('jetons-sous').textContent = releve + quand;
+    var d = vider($('jetons-detail'));
+    d.appendChild(el('div', { class: 'jetons-ligne jetons-ligne-total' }, el('span', { text: 'Total' }), el('span', { text: nf.format(t.total) })));
+    CATS_JETONS.forEach(function (c) {
+      d.appendChild(el('div', { class: 'jetons-ligne' }, el('span', { text: c[1] }), el('span', { text: nf.format(num(t.categories[c[0]])) })));
+    });
+    d.appendChild(el('p', { class: 'jetons-note', text: 'Somme des quatre catégories pour le projet depuis le début, ' + releve + quand + '. Actualisé tous les 50 commits.'
+      + (typeof t.messages === 'number' ? ' ' + nf.format(t.messages) + ' réponses, ' + nf.format(num(t.sessions)) + ' sessions, ' + nf.format(num(t.sous_agents)) + ' sous-agents.' : '') }));
+  }
+  function installerJetons() {
+    var b = $('jetons-bouton'), d = $('jetons-detail');
+    function ouvrir(o) { d.hidden = !o; b.setAttribute('aria-expanded', String(o)); }
+    b.addEventListener('click', function () { ouvrir(d.hidden); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !d.hidden) { ouvrir(false); b.focus(); } });
+    document.addEventListener('pointerdown', function (e) { if (!d.hidden && !$('jetons').contains(e.target)) ouvrir(false); });
+  }
+
+  function tasksValide(t) { return t && typeof t === 'object' && t.specs && typeof t.specs === 'object' && typeof t.total === 'number' && t.total > 0; }
+  /* [faites, total] d'un relevé pour la spec choisie ('' = total) ; null si la spec n'y figure pas */
+  function paire(spec, e) {
+    if (!spec) return [num(e.faites), num(e.total)];
+    var p = propre(e.specs, spec);
+    return Array.isArray(p) ? [num(p[0]), num(p[1])] : null;
+  }
+  function barreAvance(f, t, cls) {
+    return el('div', { class: 'avance' + (cls ? ' ' + cls : ''), role: 'img', 'aria-label': nf.format(f) + ' tasks faites sur ' + nf.format(t) },
+      el('span', { css: { width: (t > 0 ? 100 * f / t : 0).toFixed(2) + '%' }, class: f >= t && t > 0 ? 'fini' : null }));
+  }
+  function rendreTasks() {
+    var sec = $('bloc-tasks'), t = T.tasks;
+    if (!tasksValide(t)) { sec.hidden = true; return; }
+    sec.hidden = false;
+    var noms = Object.keys(t.specs).sort();
+    if (T.spec && noms.indexOf(T.spec) < 0) T.spec = '';
+    $('note-tasks').textContent = 'Cases cochées sur le total des tasks de chaque spec, d’après la branche docs (commit ' + (t.sha || '–') + ', ' + dateCourte(t.maj) + ').';
+    var f = num(t.faites), tot = num(t.total);
+    vider($('tasks-total')).appendChild(el('div', null,
+      el('div', { class: 'chiffre-ligne' }, el('span', { class: 'chiffre-val', text: nf.format(f) + ' / ' + nf.format(tot) }),
+        el('span', { class: 'chiffre-sous', text: pct(f, tot) + ' des tasks faites' })),
+      barreAvance(f, tot, 'grande')));
+    var tb = vider($('table-tasks'));
+    tb.appendChild(el('thead', null, el('tr', null, el('th', { scope: 'col', text: 'Spec' }), el('th', { scope: 'col', text: 'Avancement' }),
+      el('th', { scope: 'col', class: 'num', text: 'Faites / total' }), el('th', { scope: 'col', class: 'num col-part', text: 'Part' }))));
+    var corps = el('tbody');
+    function ligne(nom, lib, fa, to) {
+      var b = el('button', { type: 'button', class: 'spec-choix', 'aria-pressed': String(T.spec === nom), text: lib,
+        title: nom ? 'Afficher l’évolution de cette spec' : 'Afficher l’évolution du total' });
+      b.addEventListener('click', function () { T.spec = T.spec === nom ? '' : nom; rendreTasks(); });
+      return el('tr', { class: T.spec === nom ? 'choisie' : null },
+        el('th', { scope: 'row', class: 'tasks-spec' }, b),
+        el('td', { class: 'piste' }, barreAvance(fa, to)),
+        el('td', { class: 'num', text: nf.format(fa) + ' / ' + nf.format(to) }),
+        el('td', { class: 'num col-part', text: pct(fa, to) }));
+    }
+    corps.appendChild(ligne('', 'Total', f, tot));
+    noms.forEach(function (n) { var s = t.specs[n]; corps.appendChild(ligne(n, n, num(s.faites), num(s.total))); });
+    tb.appendChild(corps);
+    rendreCourbeTasks();
+  }
+  function releves() {
+    return T.hist.filter(function (e) { return paire(T.spec, e); });
+  }
+  function rendreCourbeTasks() {
+    var h = releves(), lib = T.spec || 'toutes les specs';
+    $('note-tasks-courbe').textContent = 'Faites et total pour ' + lib + ' : un point par commit de la branche docs qui change un fichier de tasks, ' + h.length + ' relevés.';
+    var leg = vider($('legende-tasks'));
+    leg.appendChild(el('span', null, el('i', { css: { background: 'var(--accent)' } }), 'Faites'));
+    leg.appendChild(el('span', null, el('i', { class: 'tirets' }), 'Total'));
+    var t = vider($('table-tasks-hist'));
+    t.appendChild(el('thead', null, el('tr', null, el('th', { scope: 'col', text: 'Date' }), el('th', { scope: 'col', text: 'Commit' }),
+      el('th', { scope: 'col', class: 'num', text: 'Faites' }), el('th', { scope: 'col', class: 'num', text: 'Total' }), el('th', { scope: 'col', class: 'num', text: 'Part' }))));
+    var corps = el('tbody');
+    h.slice().reverse().forEach(function (e) {
+      var p = paire(T.spec, e);
+      corps.appendChild(el('tr', null, el('td', { text: dateCourte(e.maj) }), el('td', null, el('code', { text: e.sha || '–' })),
+        el('td', { class: 'num', text: nf.format(p[0]) }), el('td', { class: 'num', text: nf.format(p[1]) }), el('td', { class: 'num', text: pct(p[0], p[1]) })));
+    });
+    t.appendChild(corps);
+    dessinerCourbeTasks();
+  }
+  function dessinerCourbeTasks() {
+    var zone = $('courbe-tasks');
+    if ($('bloc-tasks').hidden) return;
+    vider(zone);
+    var h = releves();
+    if (h.length < 2) { zone.appendChild(el('p', { class: 'vide-note', text: 'Pas encore assez de relevés pour tracer une courbe.' })); return; }
+    var W = Math.max(280, zone.clientWidth), H = 260, mg = { g: 48, d: 14, h: 12, b: 28 };
+    var fa = h.map(function (e) { return paire(T.spec, e)[0]; }), to = h.map(function (e) { return paire(T.spec, e)[1]; });
+    var vmax = Math.max.apply(null, to.concat(fa)), ech = echelleNette(vmax), n = h.length;
+    function X(i) { return mg.g + (W - mg.g - mg.d) * i / (n - 1); }
+    function Y(v) { return mg.h + (H - mg.h - mg.b) * (1 - v / ech.max); }
+    var svg = sv('svg', { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, role: 'img',
+      'aria-label': 'Courbe des tasks faites et du total, ' + n + ' relevés du ' + dateCourte(h[0].maj) + ' au ' + dateCourte(h[n - 1].maj) + ' ; valeurs dans le tableau « Voir les valeurs de l’évolution »' });
+    for (var v = 0; v <= ech.max + 1e-9; v += ech.pas) {
+      svg.appendChild(sv('line', { x1: mg.g, x2: W - mg.d, y1: Y(v), y2: Y(v), class: v === 0 ? 'base' : 'grille' }));
+      svg.appendChild(sv('text', { x: mg.g - 8, y: Y(v) + 4, 'text-anchor': 'end', class: 'axe' })).textContent = abrege(v);
+    }
+    var nTicks = Math.max(2, Math.min(6, Math.floor((W - mg.g - mg.d) / 90)));
+    for (var k = 0; k < nTicks; k++) {
+      var i = Math.round((n - 1) * k / (nTicks - 1));
+      svg.appendChild(sv('text', { x: X(i), y: H - 8, 'text-anchor': k === 0 ? 'start' : k === nTicks - 1 ? 'end' : 'middle', class: 'axe' })).textContent = dfAxe.format(new Date(h[i].maj));
+    }
+    function chemin(val) { return val.map(function (y, j) { return (j ? 'L' : 'M') + X(j).toFixed(1) + ' ' + Y(y).toFixed(1); }).join(' '); }
+    var dF = chemin(fa);
+    svg.appendChild(sv('path', { d: chemin(to), 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-dasharray': '5 4' }, { fill: 'none', stroke: 'var(--texte-2)' }));
+    svg.appendChild(sv('path', { d: dF + ' L' + X(n - 1).toFixed(1) + ' ' + Y(0) + ' L' + X(0).toFixed(1) + ' ' + Y(0) + ' Z' }, { fill: 'color-mix(in srgb, var(--accent) 14%, transparent)' }));
+    svg.appendChild(sv('path', { d: dF, 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, { fill: 'none', stroke: 'var(--accent)' }));
+    if (n <= 80) h.forEach(function (e, j) { svg.appendChild(sv('circle', { cx: X(j), cy: Y(fa[j]), r: 2.5 }, { fill: 'var(--accent)' })); });
+    svg.appendChild(sv('circle', { cx: X(n - 1), cy: Y(fa[n - 1]), r: 4, 'stroke-width': 2 }, { fill: 'var(--accent)', stroke: 'var(--surface)' }));
+    var repere = sv('line', { y1: mg.h, y2: H - mg.b, class: 'repere', visibility: 'hidden' });
+    svg.appendChild(repere);
+    var pF = sv('circle', { r: 4.5, 'stroke-width': 2, visibility: 'hidden' }, { fill: 'var(--accent)', stroke: 'var(--surface)' });
+    var pT = sv('circle', { r: 4.5, 'stroke-width': 2, visibility: 'hidden' }, { fill: 'var(--texte-2)', stroke: 'var(--surface)' });
+    svg.appendChild(pT); svg.appendChild(pF);
+    var cible = sv('rect', { x: mg.g, y: 0, width: W - mg.g - mg.d, height: H, fill: 'transparent' });
+    svg.appendChild(cible);
+    function survol(e) {
+      var r = svg.getBoundingClientRect(), x = (e.clientX - r.left) * W / r.width;
+      var j = Math.max(0, Math.min(n - 1, Math.round((x - mg.g) / (W - mg.g - mg.d) * (n - 1))));
+      repere.setAttribute('x1', X(j)); repere.setAttribute('x2', X(j)); repere.setAttribute('visibility', 'visible');
+      pF.setAttribute('cx', X(j)); pF.setAttribute('cy', Y(fa[j])); pF.setAttribute('visibility', 'visible');
+      pT.setAttribute('cx', X(j)); pT.setAttribute('cy', Y(to[j])); pT.setAttribute('visibility', 'visible');
+      montrerBulle(lignesBulle(dateCourte(h[j].maj) + ' · ' + (h[j].sha || ''), [
+        { lib: 'Faites', val: nf.format(fa[j]) + ' (' + pct(fa[j], to[j]) + ')', couleur: 'var(--accent)' },
+        { lib: 'Total', val: nf.format(to[j]), couleur: 'var(--texte-2)' }]), e.clientX, e.clientY);
+    }
+    cible.addEventListener('pointermove', survol);
+    cible.addEventListener('pointerdown', survol);
+    cible.addEventListener('pointerleave', function () {
+      repere.setAttribute('visibility', 'hidden'); pF.setAttribute('visibility', 'hidden'); pT.setAttribute('visibility', 'hidden'); cacherBulle();
+    });
+    zone.appendChild(svg);
+  }
+  /* lecture facultative, rechargée avec les statistiques (nouvelle empreinte) */
+  function chargerSuppl() {
+    if (S.exemple) { T.tasks = null; T.hist = []; T.tokens = null; rendreTasks(); rendreJetons(); return Promise.resolve(); }
+    return Promise.all([charger('data/tasks.json', false), charger('data/tasks-historique.json', false), charger('data/tokens.json', false)]).then(function (r) {
+      T.tasks = tasksValide(r[0]) ? r[0] : null;
+      T.hist = (Array.isArray(r[1]) ? r[1] : []).filter(function (e) { return e && !isNaN(Date.parse(e.maj)) && typeof e.faites === 'number' && typeof e.total === 'number'; })
+        .sort(function (a, b) { return Date.parse(a.maj) - Date.parse(b.maj); });
+      T.tokens = jetonsValide(r[2]) ? r[2] : null;
+      rendreTasks(); rendreJetons();
+    }).catch(function () { /* sections facultatives : elles restent cachées */ });
+  }
+
   /* ---------- erreurs ---------- */
   function erreur(titre, detail) {
     var z = $('erreur');
