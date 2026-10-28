@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T19:05:45Z",
- "sha": "0b20ece",
- "empreinte": "69ee35126aad256e",
+ "maj": "2026-10-28T19:17:24Z",
+ "sha": "7928c5d",
+ "empreinte": "ea9460a9650988dd",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -13,7 +13,7 @@
    "total": 527
   },
   "004-bibliotheques-rsmp": {
-   "faites": 190,
+   "faites": 202,
    "total": 419
   },
   "005-symbiose-modules-rsmp": {
@@ -49,6 +49,6 @@
    "total": 501
   }
  },
- "faites": 1516,
+ "faites": 1528,
  "total": 3693
 }
