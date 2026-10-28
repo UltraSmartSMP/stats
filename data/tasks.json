@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T23:29:47Z",
- "sha": "74e91f3",
- "empreinte": "f4bda1db2aa56d61",
+ "maj": "2026-10-28T23:41:24Z",
+ "sha": "daeeca2",
+ "empreinte": "8edf97cf594a8fb8",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -13,7 +13,7 @@
    "total": 527
   },
   "004-bibliotheques-rsmp": {
-   "faites": 224,
+   "faites": 252,
    "total": 419
   },
   "005-symbiose-modules-rsmp": {
@@ -21,11 +21,11 @@
    "total": 271
   },
   "006-stockage-chunks-tiers": {
-   "faites": 9,
+   "faites": 28,
    "total": 152
   },
   "007-serveur-rsmp": {
-   "faites": 5,
+   "faites": 83,
    "total": 401
   },
   "008-rsmp-contre-rust": {
@@ -45,10 +45,10 @@
    "total": 219
   },
   "013-kcauldron-rsmp": {
-   "faites": 243,
+   "faites": 260,
    "total": 878
   }
  },
- "faites": 1828,
+ "faites": 1970,
  "total": 4055
 }
