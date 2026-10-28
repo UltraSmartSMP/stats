@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T03:23:23Z",
- "sha": "28e52d1",
- "empreinte": "1568a9379b45a59d",
+ "maj": "2026-10-28T03:34:23Z",
+ "sha": "f44f1b6",
+ "empreinte": "ca963248a2b59c55",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -21,12 +21,12 @@
    "total": 271
   },
   "006-stockage-chunks-tiers": {
-   "faites": 0,
+   "faites": 7,
    "total": 152
   },
   "007-serveur-rsmp": {
-   "faites": 0,
-   "total": 316
+   "faites": 5,
+   "total": 401
   },
   "008-rsmp-contre-rust": {
    "faites": 55,
@@ -45,6 +45,6 @@
    "total": 233
   }
  },
- "faites": 1489,
- "total": 3107
+ "faites": 1501,
+ "total": 3192
 }

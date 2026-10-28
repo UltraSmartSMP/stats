@@ -2998,5 +2998,53 @@
     233
    ]
   }
+ },
+ {
+  "maj": "2026-10-28T03:34:23Z",
+  "sha": "f44f1b6",
+  "faites": 1501,
+  "total": 3192,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    387
+   ],
+   "003-langage-rsmp": [
+    483,
+    527
+   ],
+   "004-bibliotheques-rsmp": [
+    190,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    94,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    7,
+    152
+   ],
+   "007-serveur-rsmp": [
+    5,
+    401
+   ],
+   "008-rsmp-contre-rust": [
+    55,
+    115
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    65,
+    209
+   ],
+   "012-rsmp-gpu": [
+    84,
+    233
+   ]
+  }
  }
 ]
