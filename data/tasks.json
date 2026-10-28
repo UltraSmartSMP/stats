@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T17:11:18Z",
- "sha": "8750600",
- "empreinte": "915729cb43a2d0ee",
+ "maj": "2026-10-28T17:22:26Z",
+ "sha": "c6a6f37",
+ "empreinte": "0968d4370c4a602b",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -37,7 +37,7 @@
    "total": 478
   },
   "011-auto-hebergement": {
-   "faites": 65,
+   "faites": 66,
    "total": 209
   },
   "012-rsmp-gpu": {
@@ -49,6 +49,6 @@
    "total": 501
   }
  },
- "faites": 1512,
+ "faites": 1513,
  "total": 3693
 }
