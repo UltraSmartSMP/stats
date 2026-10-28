@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-28T05:45:13Z",
- "sha": "f34ea53",
- "empreinte": "921b72b80ba26fb7",
+ "maj": "2026-10-28T05:56:07Z",
+ "sha": "a7d6c7a",
+ "empreinte": "a07cfae3a81d3cfd",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -43,8 +43,12 @@
   "012-rsmp-gpu": {
    "faites": 84,
    "total": 233
+  },
+  "013-kcauldron-rsmp": {
+   "faites": 0,
+   "total": 457
   }
  },
  "faites": 1503,
- "total": 3192
+ "total": 3649
 }
