@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-28T16:15:33Z",
- "empreinte": "8fd7ed9ebf4ff117",
+ "maj": "2026-10-28T16:26:27Z",
+ "empreinte": "ffb189b6cdb06116",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 20962,
+  "fichiers": 20963,
   "lignes": {
-   "code": 5514189,
-   "commentaires": 88578,
-   "vides": 144846,
-   "total": 5747613
+   "code": 5514783,
+   "commentaires": 88636,
+   "vides": 144874,
+   "total": 5748293
   },
   "langages": [
    {
@@ -68,10 +68,10 @@
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 3084,
-    "code": 1487105,
-    "commentaires": 14648,
-    "vides": 10587
+    "fichiers": 3085,
+    "code": 1487699,
+    "commentaires": 14706,
+    "vides": 10615
    },
    {
     "nom": "Texte",
@@ -277,10 +277,10 @@
   "types": [
    {
     "id": "source",
-    "fichiers": 1326,
-    "code": 267192,
-    "commentaires": 36265,
-    "vides": 28975
+    "fichiers": 1327,
+    "code": 267786,
+    "commentaires": 36323,
+    "vides": 29003
    },
    {
     "id": "tests",
@@ -374,7 +374,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 35610
+    "code": 36204
    },
    {
     "langage": "C/C++ Header",
@@ -692,26 +692,26 @@
     "code": 3
    }
   ],
-  "commits": 1407
+  "commits": 1409
  },
  "depots": [
   {
    "nom": "moteur",
    "description": "Moteur SMPA en développement : ISA virtuelle « ASM pur », interpréteur C++ x64, JIT T1/T2, pont natif et CUDA, ordonnanceur multi-cœur, outils (assembleur, lieur, vérificateur, banc). BUT-001 du projet Ultra Smart SMP. Pas prêt pour la production.",
    "url": "https://github.com/UltraSmartSMP/moteur",
-   "commits": 425,
+   "commits": 426,
    "commit": {
-    "sha": "c08950ed1ccb241d305dac0accb522b4a2f57c1d",
-    "court": "c08950e",
-    "date": "2026-10-28T16:15:21Z",
-    "message": "sync 2026-10-28 17:15"
+    "sha": "7356590e9e9b48ac49f24fb29935f7b965b3485a",
+    "court": "7356590",
+    "date": "2026-10-28T16:26:24Z",
+    "message": "sync 2026-10-28 17:26"
    },
-   "fichiers": 3694,
+   "fichiers": 3695,
    "lignes": {
-    "code": 656481,
-    "commentaires": 48773,
-    "vides": 35185,
-    "total": 740439
+    "code": 657075,
+    "commentaires": 48831,
+    "vides": 35213,
+    "total": 741119
    },
    "langages": [
     {
@@ -757,10 +757,10 @@
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 180,
-     "code": 20677,
-     "commentaires": 3462,
-     "vides": 1557
+     "fichiers": 181,
+     "code": 21271,
+     "commentaires": 3520,
+     "vides": 1585
     },
     {
      "nom": "PowerShell",
@@ -902,10 +902,10 @@
    "types": [
     {
      "id": "source",
-     "fichiers": 631,
-     "code": 134368,
-     "commentaires": 21328,
-     "vides": 14723
+     "fichiers": 632,
+     "code": 134962,
+     "commentaires": 21386,
+     "vides": 14751
     },
     {
      "id": "tests",
@@ -994,7 +994,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 14017
+     "code": 14611
     },
     {
      "langage": "Texte",
@@ -1227,12 +1227,12 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 267,
+   "commits": 268,
    "commit": {
-    "sha": "11d57c77b90160c386f7b63318c1ff433c770622",
-    "court": "11d57c7",
-    "date": "2026-10-28T02:50:00Z",
-    "message": "sync 2026-10-28 03:50"
+    "sha": "cb9236b9da567c41a2e312d1a40ff29b365709b9",
+    "court": "cb9236b",
+    "date": "2026-10-28T16:26:27Z",
+    "message": "sync 2026-10-28 17:26"
    },
    "fichiers": 3022,
    "lignes": {
