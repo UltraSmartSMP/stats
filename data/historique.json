@@ -1,80 +1,5 @@
 [
  {
-  "maj": "2026-10-21T02:00:54Z",
-  "empreinte": "0e96ed359da1822f",
-  "code": 3612353,
-  "commits": 334,
-  "par_depot": {
-   "moteur": 374287,
-   "langage": 15,
-   "bibliotheques": 1497457,
-   "symbiose": 801,
-   "serveur": 15,
-   "docs": 1739778
-  },
-  "par_langage": {
-   "JSON": 1484254,
-   "RSMP": 1363756,
-   "C++": 309996,
-   "Markdown": 224862,
-   "Texte": 139275,
-   "CSV": 22803,
-   "C/C++ Header": 20418,
-   "PowerShell": 10121,
-   "SMPA": 9727,
-   "RSMP IR": 7455,
-   "CMake": 5998,
-   "Python": 5982,
-   "CUDA": 2312,
-   "JavaScript": 1568,
-   "TOML": 1391,
-   "C": 907,
-   "SMPI": 877,
-   "Tables .def": 278,
-   "SMPA ISA": 236,
-   "YAML": 56,
-   "Assembly": 44,
-   "INI": 17,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": -645,
-   "langage": {
-    "JSON": 464,
-    "Markdown": -1109
-   },
-   "type": {
-    "docs": -1109,
-    "donnees": 464
-   },
-   "depots": {
-    "docs": {
-     "code": -1109,
-     "court": "a4f84c3",
-     "commits": 1,
-     "langage": {
-      "Markdown": -1109
-     },
-     "type": {
-      "docs": -1109
-     }
-    },
-    "moteur": {
-     "code": 464,
-     "court": "2f420e8",
-     "commits": 1,
-     "langage": {
-      "JSON": 464
-     },
-     "type": {
-      "donnees": 464
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T02:14:21Z",
   "empreinte": "f660813d2a046cc6",
   "code": 3613101,
@@ -41414,6 +41339,128 @@
      "type": {
       "source": 1538,
       "tests": 395
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-28T00:40:31Z",
+  "empreinte": "61aefd6d9d932b36",
+  "code": 5495140,
+  "commits": 1351,
+  "par_depot": {
+   "moteur": 648665,
+   "langage": 245059,
+   "bibliotheques": 1635938,
+   "symbiose": 5896,
+   "serveur": 230,
+   "docs": 2959352
+  },
+  "par_langage": {
+   "JSON": 1700035,
+   "RSMP": 1483926,
+   "Texte": 1133307,
+   "C++": 517638,
+   "Markdown": 359529,
+   "CSV": 65232,
+   "SMPA": 50081,
+   "C/C++ Header": 36525,
+   "PowerShell": 35322,
+   "Assembly": 31427,
+   "CUDA": 18813,
+   "Python": 18311,
+   "YAML": 11286,
+   "CMake": 9803,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "C": 2210,
+   "TOML": 2138,
+   "JavaScript": 2133,
+   "SMPI": 905,
+   "Bourne Shell": 896,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 349,
+   "INI": 107,
+   "Windows Resource File": 97,
+   "DOS Batch": 42
+  },
+  "delta": {
+   "code": 2285,
+   "langage": {
+    "C++": 13,
+    "CMake": 24,
+    "Markdown": 337,
+    "PowerShell": 38,
+    "Python": 593,
+    "RSMP": 849,
+    "TOML": 11,
+    "Texte": 420
+   },
+   "type": {
+    "bancs": 9,
+    "build": 35,
+    "docs": 337,
+    "donnees": 420,
+    "source": 372,
+    "tests": 1112
+   },
+   "depots": {
+    "bibliotheques": {
+     "code": 4,
+     "court": "5f634ea",
+     "commits": 1,
+     "langage": {
+      "C++": 2,
+      "CMake": 2
+     },
+     "type": {
+      "bancs": 2,
+      "build": 2
+     }
+    },
+    "docs": {
+     "code": 757,
+     "court": "ff46da0",
+     "commits": 1,
+     "langage": {
+      "Markdown": 337,
+      "Texte": 420
+     },
+     "type": {
+      "docs": 337,
+      "donnees": 420
+     }
+    },
+    "langage": {
+     "code": 11,
+     "court": "7799a83",
+     "commits": 1,
+     "langage": {
+      "C++": 11
+     },
+     "type": {
+      "source": -1,
+      "tests": 12
+     }
+    },
+    "moteur": {
+     "code": 1513,
+     "court": "e3c9a06",
+     "commits": 1,
+     "langage": {
+      "CMake": 22,
+      "PowerShell": 38,
+      "Python": 593,
+      "RSMP": 849,
+      "TOML": 11
+     },
+     "type": {
+      "bancs": 7,
+      "build": 33,
+      "source": 373,
+      "tests": 1100
      }
     }
    }
