@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-28T01:24:21Z",
- "empreinte": "0f4ef7404e1cd14c",
+ "maj": "2026-10-28T01:35:24Z",
+ "empreinte": "750e857beeb3aba0",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 20840,
   "lignes": {
-   "code": 5495706,
-   "commentaires": 87718,
-   "vides": 142958,
-   "total": 5726382
+   "code": 5495713,
+   "commentaires": 87727,
+   "vides": 142960,
+   "total": 5726400
   },
   "langages": [
    {
@@ -85,9 +85,9 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1286,
-    "code": 518010,
-    "commentaires": 40956,
-    "vides": 41681
+    "code": 518015,
+    "commentaires": 40961,
+    "vides": 41683
    },
    {
     "nom": "Markdown",
@@ -117,8 +117,8 @@
     "nom": "C/C++ Header",
     "maison": false,
     "fichiers": 541,
-    "code": 36525,
-    "commentaires": 15702,
+    "code": 36527,
+    "commentaires": 15706,
     "vides": 7600
    },
    {
@@ -278,9 +278,9 @@
    {
     "id": "source",
     "fichiers": 1315,
-    "code": 262323,
-    "commentaires": 35939,
-    "vides": 28625
+    "code": 262330,
+    "commentaires": 35948,
+    "vides": 28627
    },
    {
     "id": "tests",
@@ -354,7 +354,7 @@
    {
     "langage": "C++",
     "type": "source",
-    "code": 193949
+    "code": 193954
    },
    {
     "langage": "RSMP",
@@ -379,7 +379,7 @@
    {
     "langage": "C/C++ Header",
     "type": "source",
-    "code": 31534
+    "code": 31536
    },
    {
     "langage": "Assembly",
@@ -692,7 +692,7 @@
     "code": 3
    }
   ],
-  "commits": 1358
+  "commits": 1360
  },
  "depots": [
   {
@@ -1227,28 +1227,28 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 262,
+   "commits": 263,
    "commit": {
-    "sha": "3954c370cbfd213426fac70f8ce0d89ae1ff0f33",
-    "court": "3954c37",
-    "date": "2026-10-28T01:24:21Z",
-    "message": "sync 2026-10-28 02:24"
+    "sha": "1c4feb23e59028a768617ba26df75a52473f86c4",
+    "court": "1c4feb2",
+    "date": "2026-10-28T01:35:15Z",
+    "message": "sync 2026-10-28 02:35"
    },
    "fichiers": 3019,
    "lignes": {
-    "code": 245057,
-    "commentaires": 23990,
-    "vides": 20843,
-    "total": 289890
+    "code": 245064,
+    "commentaires": 23999,
+    "vides": 20845,
+    "total": 289908
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 531,
-     "code": 183306,
-     "commentaires": 12951,
-     "vides": 15233
+     "code": 183311,
+     "commentaires": 12956,
+     "vides": 15235
     },
     {
      "nom": "RSMP",
@@ -1262,8 +1262,8 @@
      "nom": "C/C++ Header",
      "maison": false,
      "fichiers": 199,
-     "code": 10340,
-     "commentaires": 4652,
+     "code": 10342,
+     "commentaires": 4656,
      "vides": 2240
     },
     {
@@ -1383,9 +1383,9 @@
     {
      "id": "source",
      "fichiers": 504,
-     "code": 90815,
-     "commentaires": 10844,
-     "vides": 9739
+     "code": 90822,
+     "commentaires": 10853,
+     "vides": 9741
     },
     {
      "id": "tests",
@@ -1439,7 +1439,7 @@
     {
      "langage": "C++",
      "type": "source",
-     "code": 79840
+     "code": 79845
     },
     {
      "langage": "RSMP",
@@ -1449,7 +1449,7 @@
     {
      "langage": "C/C++ Header",
      "type": "source",
-     "code": 9990
+     "code": 9992
     },
     {
      "langage": "RSMP IR",
@@ -2284,12 +2284,12 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 554,
+   "commits": 555,
    "commit": {
-    "sha": "2f7742b857660fc45dabb4ef02852f31511cbfc3",
-    "court": "2f7742b",
-    "date": "2026-10-28T00:51:38Z",
-    "message": "sync 2026-10-28 01:51"
+    "sha": "602e0515cfdde3b65440a95c27683e3e95b05c29",
+    "court": "602e051",
+    "date": "2026-10-28T01:35:24Z",
+    "message": "sync 2026-10-28 02:35"
    },
    "fichiers": 10398,
    "lignes": {
