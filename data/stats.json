@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T23:43:24Z",
- "empreinte": "d0afca14501addfe",
+ "maj": "2026-10-29T23:54:30Z",
+ "empreinte": "bd8c52cec93afad0",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,21 +49,21 @@
   }
  ],
  "global": {
-  "fichiers": 23790,
+  "fichiers": 23792,
   "lignes": {
-   "code": 6242532,
-   "commentaires": 141043,
-   "vides": 195102,
-   "total": 6578677
+   "code": 6242702,
+   "commentaires": 141056,
+   "vides": 195116,
+   "total": 6578874
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 4140,
-    "code": 1890702,
-    "commentaires": 55582,
-    "vides": 41542
+    "fichiers": 4141,
+    "code": 1890773,
+    "commentaires": 55589,
+    "vides": 41546
    },
    {
     "nom": "JSON",
@@ -116,10 +116,10 @@
    {
     "nom": "Python",
     "maison": false,
-    "fichiers": 349,
-    "code": 48393,
-    "commentaires": 8103,
-    "vides": 6586
+    "fichiers": 350,
+    "code": 48492,
+    "commentaires": 8109,
+    "vides": 6596
    },
    {
     "nom": "PowerShell",
@@ -292,10 +292,10 @@
    },
    {
     "id": "tests",
-    "fichiers": 4692,
-    "code": 603862,
-    "commentaires": 48695,
-    "vides": 42780
+    "fichiers": 4694,
+    "code": 604032,
+    "commentaires": 48708,
+    "vides": 42794
    },
    {
     "id": "bancs",
@@ -357,7 +357,7 @@
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 278153
+    "code": 278224
    },
    {
     "langage": "C++",
@@ -407,7 +407,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 19302
+    "code": 19401
    },
    {
     "langage": "Python",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1967
+  "commits": 1968
  },
  "depots": [
   {
@@ -3380,28 +3380,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 143,
+   "commits": 144,
    "commit": {
-    "sha": "9bd0f2d0293bc6aa29ceeacd96e75d6a05ff4326",
-    "court": "9bd0f2d",
-    "date": "2026-10-29T23:43:11Z",
-    "message": "sync 2026-10-30 00:43"
+    "sha": "d555a1feddff9f0a695928fea82392fca5a5c54b",
+    "court": "d555a1f",
+    "date": "2026-10-29T23:54:30Z",
+    "message": "sync 2026-10-30 00:54"
    },
-   "fichiers": 1498,
+   "fichiers": 1500,
    "lignes": {
-    "code": 491880,
-    "commentaires": 39973,
-    "vides": 32699,
-    "total": 564552
+    "code": 492050,
+    "commentaires": 39986,
+    "vides": 32713,
+    "total": 564749
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 762,
-     "code": 322621,
-     "commentaires": 34399,
-     "vides": 24631
+     "fichiers": 763,
+     "code": 322692,
+     "commentaires": 34406,
+     "vides": 24635
     },
     {
      "nom": "Texte",
@@ -3414,10 +3414,10 @@
     {
      "nom": "Python",
      "maison": false,
-     "fichiers": 169,
-     "code": 27092,
-     "commentaires": 4811,
-     "vides": 4269
+     "fichiers": 170,
+     "code": 27191,
+     "commentaires": 4817,
+     "vides": 4279
     },
     {
      "nom": "JSON",
@@ -3502,10 +3502,10 @@
     },
     {
      "id": "tests",
-     "fichiers": 551,
-     "code": 173988,
-     "commentaires": 15772,
-     "vides": 14105
+     "fichiers": 553,
+     "code": 174158,
+     "commentaires": 15785,
+     "vides": 14119
     },
     {
      "id": "bancs",
@@ -3552,7 +3552,7 @@
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 154859
+     "code": 154930
     },
     {
      "langage": "Texte",
@@ -3572,7 +3572,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 14688
+     "code": 14787
     },
     {
      "langage": "Python",
