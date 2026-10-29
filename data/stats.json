@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T17:23:29Z",
- "empreinte": "80268b55d59172f8",
+ "maj": "2026-10-29T17:34:37Z",
+ "empreinte": "7f7aa75dc7645e78",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,19 +51,19 @@
  "global": {
   "fichiers": 23590,
   "lignes": {
-   "code": 6195923,
-   "commentaires": 139950,
-   "vides": 190626,
-   "total": 6526499
+   "code": 6196079,
+   "commentaires": 139972,
+   "vides": 190632,
+   "total": 6526683
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
     "fichiers": 4133,
-    "code": 1884011,
-    "commentaires": 54807,
-    "vides": 41146
+    "code": 1884074,
+    "commentaires": 54820,
+    "vides": 41148
    },
    {
     "nom": "JSON",
@@ -117,9 +117,9 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 340,
-    "code": 46385,
-    "commentaires": 7829,
-    "vides": 6351
+    "code": 46478,
+    "commentaires": 7838,
+    "vides": 6355
    },
    {
     "nom": "PowerShell",
@@ -286,16 +286,16 @@
    {
     "id": "source",
     "fichiers": 2074,
-    "code": 523024,
-    "commentaires": 65060,
-    "vides": 51028
+    "code": 523087,
+    "commentaires": 65073,
+    "vides": 51030
    },
    {
     "id": "tests",
     "fichiers": 4681,
-    "code": 600336,
-    "commentaires": 48325,
-    "vides": 42485
+    "code": 600429,
+    "commentaires": 48334,
+    "vides": 42489
    },
    {
     "id": "bancs",
@@ -367,7 +367,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 257385
+    "code": 257448
    },
    {
     "langage": "C++",
@@ -412,7 +412,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 18009
+    "code": 18102
    },
    {
     "langage": "Texte",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1902
+  "commits": 1903
  },
  "depots": [
   {
@@ -3380,28 +3380,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 111,
+   "commits": 112,
    "commit": {
-    "sha": "d7fc8178ca19262d0bce40a5e6d61705a3a9a293",
-    "court": "d7fc817",
-    "date": "2026-10-29T17:23:29Z",
-    "message": "sync 2026-10-29 18:23"
+    "sha": "c190ef4bbd65926fe6a1d73b53205598c1467a14",
+    "court": "c190ef4",
+    "date": "2026-10-29T17:34:37Z",
+    "message": "sync 2026-10-29 18:34"
    },
    "fichiers": 1414,
    "lignes": {
-    "code": 482334,
-    "commentaires": 38910,
-    "vides": 31889,
-    "total": 553133
+    "code": 482490,
+    "commentaires": 38932,
+    "vides": 31895,
+    "total": 553317
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 755,
-     "code": 315930,
-     "commentaires": 33624,
-     "vides": 24235
+     "code": 315993,
+     "commentaires": 33637,
+     "vides": 24237
     },
     {
      "nom": "Texte",
@@ -3423,9 +3423,9 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 160,
-     "code": 25084,
-     "commentaires": 4537,
-     "vides": 4034
+     "code": 25177,
+     "commentaires": 4546,
+     "vides": 4038
     },
     {
      "nom": "PowerShell",
@@ -3496,16 +3496,16 @@
     {
      "id": "source",
      "fichiers": 492,
-     "code": 178679,
-     "commentaires": 21243,
-     "vides": 15635
+     "code": 178742,
+     "commentaires": 21256,
+     "vides": 15637
     },
     {
      "id": "tests",
      "fichiers": 540,
-     "code": 170462,
-     "commentaires": 15402,
-     "vides": 13810
+     "code": 170555,
+     "commentaires": 15411,
+     "vides": 13814
     },
     {
      "id": "bancs",
@@ -3547,7 +3547,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 162667
+     "code": 162730
     },
     {
      "langage": "RSMP",
@@ -3572,7 +3572,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 13395
+     "code": 13488
     },
     {
      "langage": "Python",
