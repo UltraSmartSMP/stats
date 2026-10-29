@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T23:20:58Z",
- "empreinte": "74a3b302ed2119d6",
+ "maj": "2026-10-29T23:32:12Z",
+ "empreinte": "df72edcc9d7a9ab8",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,27 +49,27 @@
   }
  ],
  "global": {
-  "fichiers": 23778,
+  "fichiers": 23786,
   "lignes": {
-   "code": 6241829,
-   "commentaires": 140984,
-   "vides": 195043,
-   "total": 6577856
+   "code": 6242099,
+   "commentaires": 140996,
+   "vides": 195061,
+   "total": 6578156
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 4137,
-    "code": 1890343,
-    "commentaires": 55536,
-    "vides": 41506
+    "fichiers": 4138,
+    "code": 1890358,
+    "commentaires": 55540,
+    "vides": 41508
    },
    {
     "nom": "JSON",
     "maison": false,
-    "fichiers": 846,
-    "code": 1743575,
+    "fichiers": 851,
+    "code": 1743750,
     "commentaires": 0,
     "vides": 288
    },
@@ -92,10 +92,10 @@
    {
     "nom": "Markdown",
     "maison": false,
-    "fichiers": 6215,
-    "code": 381991,
-    "commentaires": 181,
-    "vides": 75521
+    "fichiers": 6216,
+    "code": 382010,
+    "commentaires": 182,
+    "vides": 75530
    },
    {
     "nom": "CSV",
@@ -116,10 +116,10 @@
    {
     "nom": "Python",
     "maison": false,
-    "fichiers": 348,
-    "code": 48305,
-    "commentaires": 8091,
-    "vides": 6577
+    "fichiers": 349,
+    "code": 48366,
+    "commentaires": 8098,
+    "vides": 6584
    },
    {
     "nom": "PowerShell",
@@ -286,16 +286,16 @@
    {
     "id": "source",
     "fichiers": 2076,
-    "code": 527609,
-    "commentaires": 65662,
-    "vides": 51278
+    "code": 527555,
+    "commentaires": 65653,
+    "vides": 51275
    },
    {
     "id": "tests",
-    "fichiers": 4688,
-    "code": 603360,
-    "commentaires": 48628,
-    "vides": 42732
+    "fichiers": 4690,
+    "code": 603490,
+    "commentaires": 48648,
+    "vides": 42744
    },
    {
     "id": "bancs",
@@ -320,15 +320,15 @@
    },
    {
     "id": "docs",
-    "fichiers": 6232,
-    "code": 382643,
-    "commentaires": 181,
-    "vides": 75581
+    "fichiers": 6233,
+    "code": 382662,
+    "commentaires": 182,
+    "vides": 75590
    },
    {
     "id": "donnees",
-    "fichiers": 9088,
-    "code": 4517837,
+    "fichiers": 9093,
+    "code": 4518012,
     "commentaires": 5917,
     "vides": 10606
    }
@@ -337,7 +337,7 @@
    {
     "langage": "JSON",
     "type": "donnees",
-    "code": 1716867
+    "code": 1717042
    },
    {
     "langage": "RSMP",
@@ -352,12 +352,12 @@
    {
     "langage": "Markdown",
     "type": "docs",
-    "code": 381991
+    "code": 382010
    },
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 277740
+    "code": 277809
    },
    {
     "langage": "C++",
@@ -367,7 +367,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 261970
+    "code": 261916
    },
    {
     "langage": "C++",
@@ -407,7 +407,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 19214
+    "code": 19275
    },
    {
     "langage": "Python",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1963
+  "commits": 1965
  },
  "depots": [
   {
@@ -3380,28 +3380,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 141,
+   "commits": 142,
    "commit": {
-    "sha": "708ef1bb23bf24dd579bd3910c0dc3ce2d02a947",
-    "court": "708ef1b",
-    "date": "2026-10-29T23:20:44Z",
-    "message": "sync 2026-10-30 00:20"
+    "sha": "82738cb32eab7c7ba743906af31e6191aa0a6d5e",
+    "court": "82738cb",
+    "date": "2026-10-29T23:32:00Z",
+    "message": "sync 2026-10-30 00:31"
    },
-   "fichiers": 1494,
+   "fichiers": 1496,
    "lignes": {
-    "code": 491432,
-    "commentaires": 39915,
-    "vides": 32654,
-    "total": 564001
+    "code": 491508,
+    "commentaires": 39926,
+    "vides": 32663,
+    "total": 564097
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 759,
-     "code": 322262,
-     "commentaires": 34353,
-     "vides": 24595
+     "fichiers": 760,
+     "code": 322277,
+     "commentaires": 34357,
+     "vides": 24597
     },
     {
      "nom": "Texte",
@@ -3414,10 +3414,10 @@
     {
      "nom": "Python",
      "maison": false,
-     "fichiers": 168,
-     "code": 27004,
-     "commentaires": 4799,
-     "vides": 4260
+     "fichiers": 169,
+     "code": 27065,
+     "commentaires": 4806,
+     "vides": 4267
     },
     {
      "nom": "JSON",
@@ -3496,16 +3496,16 @@
     {
      "id": "source",
      "fichiers": 494,
-     "code": 183264,
-     "commentaires": 21845,
-     "vides": 15885
+     "code": 183210,
+     "commentaires": 21836,
+     "vides": 15882
     },
     {
      "id": "tests",
-     "fichiers": 547,
-     "code": 173486,
-     "commentaires": 15705,
-     "vides": 14057
+     "fichiers": 549,
+     "code": 173616,
+     "commentaires": 15725,
+     "vides": 14069
     },
     {
      "id": "bancs",
@@ -3547,12 +3547,12 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 167252
+     "code": 167198
     },
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 154446
+     "code": 154515
     },
     {
      "langage": "Texte",
@@ -3572,7 +3572,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 14600
+     "code": 14661
     },
     {
      "langage": "Python",
@@ -3883,26 +3883,26 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 703,
+   "commits": 704,
    "commit": {
-    "sha": "81fe901086b43806789f7573ef079a78db4b2836",
-    "court": "81fe901",
-    "date": "2026-10-29T23:20:58Z",
-    "message": "sync 2026-10-30 00:20"
+    "sha": "24351beeb818ac83d68303925a55140f831462f4",
+    "court": "24351be",
+    "date": "2026-10-29T23:32:12Z",
+    "message": "sync 2026-10-30 00:32"
    },
-   "fichiers": 10929,
+   "fichiers": 10935,
    "lignes": {
-    "code": 3068768,
-    "commentaires": 3427,
-    "vides": 83547,
-    "total": 3155742
+    "code": 3068962,
+    "commentaires": 3428,
+    "vides": 83556,
+    "total": 3155946
    },
    "langages": [
     {
      "nom": "JSON",
      "maison": false,
-     "fichiers": 635,
-     "code": 1666208,
+     "fichiers": 640,
+     "code": 1666383,
      "commentaires": 0,
      "vides": 288
     },
@@ -3917,10 +3917,10 @@
     {
      "nom": "Markdown",
      "maison": false,
-     "fichiers": 6171,
-     "code": 380875,
-     "commentaires": 157,
-     "vides": 74984
+     "fichiers": 6172,
+     "code": 380894,
+     "commentaires": 158,
+     "vides": 74993
     },
     {
      "nom": "CSV",
@@ -4097,15 +4097,15 @@
     },
     {
      "id": "docs",
-     "fichiers": 6172,
-     "code": 380884,
-     "commentaires": 157,
-     "vides": 74988
+     "fichiers": 6173,
+     "code": 380903,
+     "commentaires": 158,
+     "vides": 74997
     },
     {
      "id": "donnees",
-     "fichiers": 4733,
-     "code": 2685522,
+     "fichiers": 4738,
+     "code": 2685697,
      "commentaires": 2860,
      "vides": 8311
     }
@@ -4114,7 +4114,7 @@
     {
      "langage": "JSON",
      "type": "donnees",
-     "code": 1666130
+     "code": 1666305
     },
     {
      "langage": "Texte",
@@ -4124,7 +4124,7 @@
     {
      "langage": "Markdown",
      "type": "docs",
-     "code": 380875
+     "code": 380894
     },
     {
      "langage": "CSV",
