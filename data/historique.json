@@ -1,74 +1,5 @@
 [
  {
-  "maj": "2026-10-21T22:17:58Z",
-  "empreinte": "3100d71a236dac2a",
-  "code": 4257006,
-  "commits": 520,
-  "par_depot": {
-   "moteur": 690194,
-   "langage": 213774,
-   "bibliotheques": 1512333,
-   "symbiose": 5882,
-   "serveur": 230,
-   "docs": 1834593
-  },
-  "par_langage": {
-   "JSON": 1498498,
-   "RSMP": 1373771,
-   "C++": 387293,
-   "Texte": 310462,
-   "Markdown": 296685,
-   "SWIG": 230020,
-   "SMPA": 40868,
-   "CSV": 26266,
-   "C/C++ Header": 25105,
-   "PowerShell": 20590,
-   "YAML": 11286,
-   "RSMP IR": 7991,
-   "Python": 7920,
-   "CMake": 7138,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "C": 1993,
-   "TOML": 1737,
-   "JavaScript": 1678,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 82,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 497,
-   "langage": {
-    "C++": 492,
-    "C/C++ Header": 5
-   },
-   "type": {
-    "bancs": 267,
-    "source": 230
-   },
-   "depots": {
-    "moteur": {
-     "code": 497,
-     "court": "5061c8f",
-     "commits": 1,
-     "langage": {
-      "C++": 492,
-      "C/C++ Header": 5
-     },
-     "type": {
-      "bancs": 267,
-      "source": 230
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T22:18:18Z",
   "empreinte": "33801bf0f6d63e94",
   "code": 4259227,
@@ -44143,6 +44074,161 @@
      },
      "type": {
       "donnees": 46
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T08:13:07Z",
+  "empreinte": "3b727e15024b5f72",
+  "code": 6143740,
+  "commits": 1775,
+  "par_depot": {
+   "moteur": 469296,
+   "langage": 256165,
+   "bibliotheques": 1663506,
+   "symbiose": 34559,
+   "natives": 9862,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 63638,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 434286,
+   "orchestration": 77901,
+   "docs": 3030757
+  },
+  "par_langage": {
+   "RSMP": 1844753,
+   "JSON": 1743686,
+   "Texte": 1272615,
+   "C++": 553524,
+   "Markdown": 380174,
+   "CSV": 74047,
+   "SMPA": 51908,
+   "PowerShell": 42720,
+   "Python": 42445,
+   "C/C++ Header": 38814,
+   "Assembly": 31427,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 11013,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2942,
+   "C": 2210,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 956,
+   "SMPA ISA": 810,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 186,
+   "DOS Batch": 130,
+   "Windows Resource File": 97,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 10432,
+   "langage": {
+    "C++": 1305,
+    "C/C++ Header": 52,
+    "CMake": 52,
+    "JSON": 18,
+    "Markdown": 63,
+    "PowerShell": 55,
+    "Python": 1039,
+    "RSMP": 5729,
+    "SMPA": -11,
+    "Texte": 2130
+   },
+   "type": {
+    "bancs": 3,
+    "build": 56,
+    "docs": 63,
+    "donnees": 1439,
+    "scripts": 366,
+    "source": 3284,
+    "tests": 5221
+   },
+   "depots": {
+    "docs": {
+     "code": 63,
+     "court": "ebf0329",
+     "commits": 1,
+     "langage": {
+      "Markdown": 63
+     },
+     "type": {
+      "docs": 63
+     }
+    },
+    "kcauldron": {
+     "code": 8949,
+     "court": "f372a2c",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 55,
+      "Python": 1039,
+      "RSMP": 5729,
+      "Texte": 2126
+     },
+     "type": {
+      "donnees": 1421,
+      "scripts": 366,
+      "source": 2722,
+      "tests": 4440
+     }
+    },
+    "langage": {
+     "code": 26,
+     "court": "b49b158",
+     "commits": 1,
+     "langage": {
+      "C++": 25,
+      "C/C++ Header": 1
+     },
+     "type": {
+      "source": 26
+     }
+    },
+    "moteur": {
+     "code": 1372,
+     "court": "da5caa6",
+     "commits": 1,
+     "langage": {
+      "C++": 1280,
+      "C/C++ Header": 51,
+      "CMake": 52,
+      "SMPA": -11
+     },
+     "type": {
+      "bancs": 3,
+      "build": 52,
+      "source": 536,
+      "tests": 781
+     }
+    },
+    "natives": {
+     "code": 4,
+     "court": "e0be1cc",
+     "commits": 1,
+     "langage": {
+      "Texte": 4
+     },
+     "type": {
+      "build": 4
+     }
+    },
+    "orchestration": {
+     "code": 18,
+     "court": "cf1152e",
+     "commits": 1,
+     "langage": {
+      "JSON": 18
+     },
+     "type": {
+      "donnees": 18
      }
     }
    }
