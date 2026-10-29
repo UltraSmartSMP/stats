@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T01:39:29Z",
- "empreinte": "c443f3c30149abb1",
+ "maj": "2026-10-29T01:50:35Z",
+ "empreinte": "7fa5fca4b88c6efa",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 22608,
+  "fichiers": 22611,
   "lignes": {
-   "code": 5809425,
-   "commentaires": 112579,
-   "vides": 167133,
-   "total": 6089137
+   "code": 5809734,
+   "commentaires": 112636,
+   "vides": 167180,
+   "total": 6089550
   },
   "langages": [
    {
@@ -68,10 +68,10 @@
    {
     "nom": "RSMP",
     "maison": true,
-    "fichiers": 3622,
-    "code": 1665911,
-    "commentaires": 32620,
-    "vides": 24622
+    "fichiers": 3624,
+    "code": 1665957,
+    "commentaires": 32645,
+    "vides": 24629
    },
    {
     "nom": "Texte",
@@ -85,9 +85,9 @@
     "nom": "C++",
     "maison": false,
     "fichiers": 1366,
-    "code": 544830,
-    "commentaires": 43192,
-    "vides": 43734
+    "code": 544890,
+    "commentaires": 43203,
+    "vides": 43736
    },
    {
     "nom": "Markdown",
@@ -132,10 +132,10 @@
    {
     "nom": "Python",
     "maison": false,
-    "fichiers": 252,
-    "code": 31644,
-    "commentaires": 4927,
-    "vides": 4033
+    "fichiers": 253,
+    "code": 31845,
+    "commentaires": 4946,
+    "vides": 4070
    },
    {
     "nom": "Assembly",
@@ -189,9 +189,9 @@
     "nom": "TOML",
     "maison": false,
     "fichiers": 436,
-    "code": 2746,
-    "commentaires": 219,
-    "vides": 528
+    "code": 2748,
+    "commentaires": 221,
+    "vides": 529
    },
    {
     "nom": "C",
@@ -286,16 +286,16 @@
    {
     "id": "source",
     "fichiers": 1708,
-    "code": 382535,
-    "commentaires": 50115,
-    "vides": 38385
+    "code": 382600,
+    "commentaires": 50132,
+    "vides": 38389
    },
    {
     "id": "tests",
-    "fichiers": 4381,
-    "code": 489913,
-    "commentaires": 37754,
-    "vides": 34092
+    "fichiers": 4384,
+    "code": 490155,
+    "commentaires": 37792,
+    "vides": 34134
    },
    {
     "id": "bancs",
@@ -314,9 +314,9 @@
    {
     "id": "build",
     "fichiers": 374,
-    "code": 13195,
-    "commentaires": 2601,
-    "vides": 1260
+    "code": 13197,
+    "commentaires": 2603,
+    "vides": 1261
    },
    {
     "id": "docs",
@@ -362,17 +362,17 @@
    {
     "langage": "C++",
     "type": "source",
-    "code": 206415
+    "code": 206475
    },
    {
     "langage": "RSMP",
     "type": "tests",
-    "code": 179046
+    "code": 179087
    },
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 136539
+    "code": 136544
    },
    {
     "langage": "CSV",
@@ -417,7 +417,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 12930
+    "code": 13131
    },
    {
     "langage": "PowerShell",
@@ -562,7 +562,7 @@
    {
     "langage": "TOML",
     "type": "build",
-    "code": 675
+    "code": 677
    },
    {
     "langage": "SMPA ISA",
@@ -725,7 +725,7 @@
     "code": 1
    }
   ],
-  "commits": 1669
+  "commits": 1671
  },
  "depots": [
   {
@@ -1183,36 +1183,36 @@
    "nom": "langage",
    "description": "Langage RSMP (syntaxe de type Rust) et son compilateur rsmpc, qui produit du code pour le moteur SMPA (.smpb). Projet en développement, pas encore utilisable en production. Les cibles de performance sont des objectifs, pas des acquis.",
    "url": "https://github.com/UltraSmartSMP/langage",
-   "commits": 307,
+   "commits": 308,
    "commit": {
-    "sha": "46514eed98181bdc9cf59665ee668a3a0ece36f9",
-    "court": "46514ee",
-    "date": "2026-10-29T01:39:07Z",
-    "message": "sync 2026-10-29 02:39"
+    "sha": "b4402ac7551491f076c99b65cc1660d3e3c14d6a",
+    "court": "b4402ac",
+    "date": "2026-10-29T01:50:27Z",
+    "message": "sync 2026-10-29 02:50"
    },
-   "fichiers": 3117,
+   "fichiers": 3119,
    "lignes": {
-    "code": 254323,
-    "commentaires": 24689,
-    "vides": 21464,
-    "total": 300476
+    "code": 254424,
+    "commentaires": 24719,
+    "vides": 21471,
+    "total": 300614
    },
    "langages": [
     {
      "nom": "C++",
      "maison": false,
      "fichiers": 563,
-     "code": 190625,
-     "commentaires": 13311,
-     "vides": 15676
+     "code": 190685,
+     "commentaires": 13322,
+     "vides": 15678
     },
     {
      "nom": "RSMP",
      "maison": true,
-     "fichiers": 1544,
-     "code": 26746,
-     "commentaires": 4411,
-     "vides": 2744
+     "fichiers": 1546,
+     "code": 26787,
+     "commentaires": 4430,
+     "vides": 2749
     },
     {
      "nom": "C/C++ Header",
@@ -1347,16 +1347,16 @@
     {
      "id": "source",
      "fichiers": 527,
-     "code": 92626,
-     "commentaires": 10774,
-     "vides": 9789
+     "code": 92686,
+     "commentaires": 10785,
+     "vides": 9791
     },
     {
      "id": "tests",
-     "fichiers": 1937,
-     "code": 140953,
-     "commentaires": 12086,
-     "vides": 10814
+     "fichiers": 1939,
+     "code": 140994,
+     "commentaires": 12105,
+     "vides": 10819
     },
     {
      "id": "bancs",
@@ -1403,12 +1403,12 @@
     {
      "langage": "C++",
      "type": "source",
-     "code": 81426
+     "code": 81486
     },
     {
      "langage": "RSMP",
      "type": "tests",
-     "code": 25917
+     "code": 25958
     },
     {
      "langage": "C/C++ Header",
@@ -3349,36 +3349,36 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 36,
+   "commits": 37,
    "commit": {
-    "sha": "dfbe5274139872f8f555dea10b8b97eb7cf76aed",
-    "court": "dfbe527",
-    "date": "2026-10-29T01:39:16Z",
-    "message": "sync 2026-10-29 02:39"
+    "sha": "e49fa25dc19b48e3ae2588744edfa0c9cf5f9737",
+    "court": "e49fa25",
+    "date": "2026-10-29T01:50:35Z",
+    "message": "sync 2026-10-29 02:50"
    },
-   "fichiers": 661,
+   "fichiers": 662,
    "lignes": {
-    "code": 136571,
-    "commentaires": 14670,
-    "vides": 12010,
-    "total": 163251
+    "code": 136779,
+    "commentaires": 14697,
+    "vides": 12050,
+    "total": 163526
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 315,
-     "code": 117512,
-     "commentaires": 12663,
-     "vides": 9592
+     "code": 117517,
+     "commentaires": 12669,
+     "vides": 9594
     },
     {
      "nom": "Python",
      "maison": false,
-     "fichiers": 75,
-     "code": 10605,
-     "commentaires": 1675,
-     "vides": 1748
+     "fichiers": 76,
+     "code": 10806,
+     "commentaires": 1694,
+     "vides": 1785
     },
     {
      "nom": "Texte",
@@ -3400,9 +3400,9 @@
      "nom": "TOML",
      "maison": false,
      "fichiers": 18,
-     "code": 248,
-     "commentaires": 82,
-     "vides": 76
+     "code": 250,
+     "commentaires": 84,
+     "vides": 77
     },
     {
      "nom": "JSON",
@@ -3449,16 +3449,16 @@
     {
      "id": "source",
      "fichiers": 197,
-     "code": 61800,
-     "commentaires": 8191,
-     "vides": 5221
+     "code": 61805,
+     "commentaires": 8197,
+     "vides": 5223
     },
     {
      "id": "tests",
-     "fichiers": 295,
-     "code": 68304,
-     "commentaires": 5892,
-     "vides": 6074
+     "fichiers": 296,
+     "code": 68505,
+     "commentaires": 5911,
+     "vides": 6111
     },
     {
      "id": "bancs",
@@ -3477,9 +3477,9 @@
     {
      "id": "build",
      "fichiers": 24,
-     "code": 361,
-     "commentaires": 71,
-     "vides": 67
+     "code": 363,
+     "commentaires": 73,
+     "vides": 68
     },
     {
      "id": "docs",
@@ -3500,7 +3500,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 60168
+     "code": 60173
     },
     {
      "langage": "RSMP",
@@ -3510,7 +3510,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 8316
+     "code": 8517
     },
     {
      "langage": "Texte",
@@ -3555,7 +3555,7 @@
     {
      "langage": "TOML",
      "type": "build",
-     "code": 203
+     "code": 205
     },
     {
      "langage": "YAML",
