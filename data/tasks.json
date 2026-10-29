@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-29T00:04:41Z",
- "sha": "5dc9a9f",
- "empreinte": "89addb970f49b4d4",
+ "maj": "2026-10-29T00:16:30Z",
+ "sha": "30b30b5",
+ "empreinte": "69ece3150f4f6ae9",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -13,7 +13,7 @@
    "total": 527
   },
   "004-bibliotheques-rsmp": {
-   "faites": 270,
+   "faites": 280,
    "total": 419
   },
   "005-symbiose-modules-rsmp": {
@@ -42,13 +42,13 @@
   },
   "012-rsmp-gpu": {
    "faites": 117,
-   "total": 219
+   "total": 218
   },
   "013-kcauldron-rsmp": {
-   "faites": 260,
+   "faites": 262,
    "total": 878
   }
  },
- "faites": 1988,
- "total": 4055
+ "faites": 2000,
+ "total": 4054
 }
