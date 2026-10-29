@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T13:51:30Z",
- "empreinte": "26d6b699b0869598",
+ "maj": "2026-10-29T14:02:52Z",
+ "empreinte": "78421346ddf3df64",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,21 +49,21 @@
   }
  ],
  "global": {
-  "fichiers": 23552,
+  "fichiers": 23553,
   "lignes": {
-   "code": 6184545,
-   "commentaires": 138440,
-   "vides": 189578,
-   "total": 6512563
+   "code": 6184754,
+   "commentaires": 138469,
+   "vides": 189588,
+   "total": 6512811
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
     "fichiers": 4125,
-    "code": 1874473,
-    "commentaires": 53604,
-    "vides": 40414
+    "code": 1874640,
+    "commentaires": 53624,
+    "vides": 40422
    },
    {
     "nom": "JSON",
@@ -117,16 +117,16 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 337,
-    "code": 45107,
-    "commentaires": 7652,
-    "vides": 6124
+    "code": 45112,
+    "commentaires": 7654,
+    "vides": 6126
    },
    {
     "nom": "PowerShell",
     "maison": false,
-    "fichiers": 396,
-    "code": 44323,
-    "commentaires": 5364,
+    "fichiers": 397,
+    "code": 44360,
+    "commentaires": 5371,
     "vides": 2351
    },
    {
@@ -286,16 +286,16 @@
    {
     "id": "source",
     "fichiers": 2072,
-    "code": 516892,
-    "commentaires": 64131,
-    "vides": 50637
+    "code": 517059,
+    "commentaires": 64151,
+    "vides": 50645
    },
    {
     "id": "tests",
     "fichiers": 4669,
-    "code": 595898,
-    "commentaires": 47896,
-    "vides": 41970
+    "code": 595903,
+    "commentaires": 47898,
+    "vides": 41972
    },
    {
     "id": "bancs",
@@ -306,9 +306,9 @@
    },
    {
     "id": "scripts",
-    "fichiers": 247,
-    "code": 36622,
-    "commentaires": 4492,
+    "fichiers": 248,
+    "code": 36659,
+    "commentaires": 4499,
     "vides": 3624
    },
    {
@@ -367,7 +367,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 251253
+    "code": 251420
    },
    {
     "langage": "C++",
@@ -417,7 +417,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 17073
+    "code": 17078
    },
    {
     "langage": "SMPA",
@@ -432,7 +432,7 @@
    {
     "langage": "PowerShell",
     "type": "scripts",
-    "code": 16332
+    "code": 16369
    },
    {
     "langage": "PowerShell",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1864
+  "commits": 1866
  },
  "depots": [
   {
@@ -3380,28 +3380,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 92,
+   "commits": 93,
    "commit": {
-    "sha": "7d72b045929e83f70e31c6b9038f82f034701fc1",
-    "court": "7d72b04",
-    "date": "2026-10-29T13:51:30Z",
-    "message": "sync 2026-10-29 14:51"
+    "sha": "4e7707c2cfac0e3f180ef9fe1ebcc68ca9b2242f",
+    "court": "4e7707c",
+    "date": "2026-10-29T14:02:41Z",
+    "message": "sync 2026-10-29 15:02"
    },
-   "fichiers": 1376,
+   "fichiers": 1377,
    "lignes": {
-    "code": 471131,
-    "commentaires": 37408,
-    "vides": 30867,
-    "total": 539406
+    "code": 471340,
+    "commentaires": 37437,
+    "vides": 30877,
+    "total": 539654
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 747,
-     "code": 306392,
-     "commentaires": 32421,
-     "vides": 23503
+     "code": 306559,
+     "commentaires": 32441,
+     "vides": 23511
     },
     {
      "nom": "Texte",
@@ -3423,16 +3423,16 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 157,
-     "code": 23806,
-     "commentaires": 4360,
-     "vides": 3807
+     "code": 23811,
+     "commentaires": 4362,
+     "vides": 3809
     },
     {
      "nom": "PowerShell",
      "maison": false,
-     "fichiers": 38,
-     "code": 4205,
-     "commentaires": 454,
+     "fichiers": 39,
+     "code": 4242,
+     "commentaires": 461,
      "vides": 175
     },
     {
@@ -3488,16 +3488,16 @@
     {
      "id": "source",
      "fichiers": 490,
-     "code": 172547,
-     "commentaires": 20314,
-     "vides": 15244
+     "code": 172714,
+     "commentaires": 20334,
+     "vides": 15252
     },
     {
      "id": "tests",
      "fichiers": 528,
-     "code": 166024,
-     "commentaires": 14973,
-     "vides": 13295
+     "code": 166029,
+     "commentaires": 14975,
+     "vides": 13297
     },
     {
      "id": "bancs",
@@ -3508,9 +3508,9 @@
     },
     {
      "id": "scripts",
-     "fichiers": 84,
-     "code": 13721,
-     "commentaires": 1861,
+     "fichiers": 85,
+     "code": 13758,
+     "commentaires": 1868,
      "vides": 1827
     },
     {
@@ -3539,7 +3539,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 156535
+     "code": 156702
     },
     {
      "langage": "RSMP",
@@ -3564,7 +3564,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 12459
+     "code": 12464
     },
     {
      "langage": "Python",
@@ -3574,7 +3574,7 @@
     {
      "langage": "PowerShell",
      "type": "scripts",
-     "code": 2370
+     "code": 2407
     },
     {
      "langage": "Texte",
@@ -3860,12 +3860,12 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 670,
+   "commits": 671,
    "commit": {
-    "sha": "8ef63139e8590acb81bccc8a142ddd32c12a943b",
-    "court": "8ef6313",
-    "date": "2026-10-29T13:29:25Z",
-    "message": "sync 2026-10-29 14:29"
+    "sha": "2a9a5190d2e028cd5ee3a6f6a9b8602606f43251",
+    "court": "2a9a519",
+    "date": "2026-10-29T14:02:52Z",
+    "message": "sync 2026-10-29 15:02"
    },
    "fichiers": 10821,
    "lignes": {
