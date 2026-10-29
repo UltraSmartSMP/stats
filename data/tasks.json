@@ -1,16 +1,16 @@
 {
  "version": 1,
- "maj": "2026-10-29T01:03:48Z",
- "sha": "0c5d1f5",
- "empreinte": "c2d9386f7a2be514",
+ "maj": "2026-10-29T01:16:27Z",
+ "sha": "fbed1df",
+ "empreinte": "dcdbbfad2a8b76de",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
    "total": 387
   },
   "003-langage-rsmp": {
-   "faites": 490,
-   "total": 527
+   "faites": 495,
+   "total": 532
   },
   "004-bibliotheques-rsmp": {
    "faites": 298,
@@ -49,6 +49,6 @@
    "total": 878
   }
  },
- "faites": 2118,
- "total": 4054
+ "faites": 2123,
+ "total": 4059
 }
