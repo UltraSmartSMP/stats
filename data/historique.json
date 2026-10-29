@@ -1,71 +1,5 @@
 [
  {
-  "maj": "2026-10-21T18:20:46Z",
-  "empreinte": "215bc37fa1f4f18f",
-  "code": 3960538,
-  "commits": 468,
-  "par_depot": {
-   "moteur": 453033,
-   "langage": 211041,
-   "bibliotheques": 1512323,
-   "symbiose": 5869,
-   "serveur": 218,
-   "docs": 1778054
-  },
-  "par_langage": {
-   "JSON": 1494494,
-   "RSMP": 1373797,
-   "C++": 383023,
-   "Texte": 307161,
-   "Markdown": 243488,
-   "SMPA": 40868,
-   "CSV": 26212,
-   "C/C++ Header": 24627,
-   "PowerShell": 20362,
-   "YAML": 11286,
-   "RSMP IR": 7991,
-   "Python": 7497,
-   "CMake": 7025,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "TOML": 1737,
-   "C": 1680,
-   "JavaScript": 1623,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 44,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 8,
-   "langage": {
-    "PowerShell": 8
-   },
-   "type": {
-    "bancs": -1,
-    "tests": 9
-   },
-   "depots": {
-    "langage": {
-     "code": 8,
-     "court": "2e83240",
-     "commits": 1,
-     "langage": {
-      "PowerShell": 8
-     },
-     "type": {
-      "bancs": -1,
-      "tests": 9
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T18:21:50Z",
   "empreinte": "3b49aa21082e45d1",
   "code": 3960600,
@@ -42746,6 +42680,158 @@
      "type": {
       "donnees": 14,
       "tests": 1932
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T00:28:10Z",
+  "empreinte": "2b885f03cf3b4c02",
+  "code": 5785896,
+  "commits": 1637,
+  "par_depot": {
+   "moteur": 460494,
+   "langage": 252955,
+   "bibliotheques": 1648350,
+   "symbiose": 34450,
+   "natives": 9713,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 58192,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 117651,
+   "orchestration": 77602,
+   "docs": 3022719
+  },
+  "par_langage": {
+   "JSON": 1717626,
+   "RSMP": 1649378,
+   "Texte": 1167050,
+   "C++": 543245,
+   "Markdown": 375060,
+   "CSV": 74047,
+   "SMPA": 51777,
+   "PowerShell": 40670,
+   "C/C++ Header": 38297,
+   "Assembly": 31427,
+   "Python": 30498,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 10799,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2709,
+   "C": 2210,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 944,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 152,
+   "Windows Resource File": 97,
+   "DOS Batch": 42,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 1978,
+   "langage": {
+    "C++": 1171,
+    "CMake": 7,
+    "Markdown": 45,
+    "PowerShell": 498,
+    "RSMP": 83,
+    "TOML": 3,
+    "Texte": 171
+   },
+   "type": {
+    "bancs": 1152,
+    "build": 10,
+    "docs": 45,
+    "donnees": 171,
+    "scripts": 411,
+    "source": 14,
+    "tests": 175
+   },
+   "depots": {
+    "auto-hebergement": {
+     "code": 15,
+     "court": "3b82223",
+     "commits": 1,
+     "langage": {
+      "RSMP": 15
+     },
+     "type": {
+      "source": 15
+     }
+    },
+    "bibliotheques": {
+     "code": 1844,
+     "court": "66dd6fe",
+     "commits": 1,
+     "langage": {
+      "C++": 1152,
+      "PowerShell": 540,
+      "Texte": 152
+     },
+     "type": {
+      "bancs": 1152,
+      "donnees": 152,
+      "scripts": 411,
+      "tests": 129
+     }
+    },
+    "docs": {
+     "code": 45,
+     "court": "76703e4",
+     "commits": 1,
+     "langage": {
+      "Markdown": 45
+     },
+     "type": {
+      "docs": 45
+     }
+    },
+    "kcauldron": {
+     "code": 48,
+     "court": "acbf5a3",
+     "commits": 1,
+     "langage": {
+      "PowerShell": -42,
+      "RSMP": 68,
+      "TOML": 3,
+      "Texte": 19
+     },
+     "type": {
+      "build": 3,
+      "donnees": 19,
+      "tests": 26
+     }
+    },
+    "langage": {
+     "code": 25,
+     "court": "f7e8fc9",
+     "commits": 1,
+     "langage": {
+      "C++": 18,
+      "CMake": 7
+     },
+     "type": {
+      "build": 7,
+      "source": -1,
+      "tests": 19
+     }
+    },
+    "moteur": {
+     "code": 1,
+     "court": "f94ab50",
+     "commits": 1,
+     "langage": {
+      "C++": 1
+     },
+     "type": {
+      "tests": 1
      }
     }
    }
