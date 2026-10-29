@@ -1,130 +1,5 @@
 [
  {
-  "maj": "2026-10-22T00:21:56Z",
-  "empreinte": "9c85ad5b9b4b4d7d",
-  "code": 4296490,
-  "commits": 550,
-  "par_depot": {
-   "moteur": 696417,
-   "langage": 214931,
-   "bibliotheques": 1530644,
-   "symbiose": 5881,
-   "serveur": 230,
-   "docs": 1848387
-  },
-  "par_langage": {
-   "JSON": 1502192,
-   "RSMP": 1392122,
-   "C++": 389718,
-   "Texte": 311755,
-   "Markdown": 309096,
-   "SWIG": 230020,
-   "SMPA": 40991,
-   "CSV": 26266,
-   "C/C++ Header": 25206,
-   "PowerShell": 20662,
-   "YAML": 11286,
-   "Python": 8916,
-   "RSMP IR": 7991,
-   "CMake": 7143,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "C": 2006,
-   "TOML": 1737,
-   "JavaScript": 1678,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 82,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 20062,
-   "langage": {
-    "C++": 1115,
-    "C/C++ Header": 4,
-    "Markdown": 612,
-    "Python": 1,
-    "RSMP": 18190,
-    "SMPA": 123,
-    "Texte": 17
-   },
-   "type": {
-    "docs": 612,
-    "donnees": 17,
-    "source": 983,
-    "tests": 18450
-   },
-   "depots": {
-    "bibliotheques": {
-     "code": 18314,
-     "court": "2d7ff6d",
-     "commits": 1,
-     "langage": {
-      "RSMP": 18191,
-      "SMPA": 123
-     },
-     "type": {
-      "tests": 18314
-     }
-    },
-    "docs": {
-     "code": 629,
-     "court": "3c4a515",
-     "commits": 1,
-     "langage": {
-      "Markdown": 612,
-      "Texte": 17
-     },
-     "type": {
-      "docs": 612,
-      "donnees": 17
-     }
-    },
-    "langage": {
-     "code": 322,
-     "court": "85b9adc",
-     "commits": 1,
-     "langage": {
-      "C++": 318,
-      "C/C++ Header": 4
-     },
-     "type": {
-      "source": 186,
-      "tests": 136
-     }
-    },
-    "moteur": {
-     "code": 798,
-     "court": "c6edf1b",
-     "commits": 1,
-     "langage": {
-      "C++": 797,
-      "Python": 1
-     },
-     "type": {
-      "source": 797,
-      "tests": 1
-     }
-    },
-    "symbiose": {
-     "code": -1,
-     "court": "a868200",
-     "commits": 1,
-     "langage": {
-      "RSMP": -1
-     },
-     "type": {
-      "tests": -1
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-22T00:33:57Z",
   "empreinte": "0b27760082b0e41e",
   "code": 4296791,
@@ -44539,6 +44414,101 @@
      },
      "type": {
       "donnees": -23
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T10:40:46Z",
+  "empreinte": "d8cacc82ccef649f",
+  "code": 6167853,
+  "commits": 1818,
+  "par_depot": {
+   "moteur": 470749,
+   "langage": 256408,
+   "bibliotheques": 1663506,
+   "symbiose": 34559,
+   "natives": 9858,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 63638,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 456196,
+   "orchestration": 77814,
+   "docs": 3031355
+  },
+  "par_langage": {
+   "RSMP": 1863000,
+   "JSON": 1743599,
+   "Texte": 1275001,
+   "C++": 554791,
+   "Markdown": 380772,
+   "CSV": 74047,
+   "SMPA": 52136,
+   "PowerShell": 43242,
+   "Python": 43225,
+   "C/C++ Header": 38828,
+   "Assembly": 31427,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 11166,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2944,
+   "C": 2211,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 958,
+   "SMPA ISA": 810,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 186,
+   "DOS Batch": 130,
+   "Windows Resource File": 97,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 1116,
+   "langage": {
+    "C++": 6,
+    "RSMP": 1072,
+    "SMPA": 38
+   },
+   "type": {
+    "source": 1074,
+    "tests": 42
+   },
+   "depots": {
+    "docs": {
+     "code": 0,
+     "court": "a73fdab",
+     "commits": 1,
+     "langage": {},
+     "type": {}
+    },
+    "kcauldron": {
+     "code": 1072,
+     "court": "06fdfed",
+     "commits": 1,
+     "langage": {
+      "RSMP": 1072
+     },
+     "type": {
+      "source": 1072
+     }
+    },
+    "moteur": {
+     "code": 44,
+     "court": "c4c9f3d",
+     "commits": 1,
+     "langage": {
+      "C++": 6,
+      "SMPA": 38
+     },
+     "type": {
+      "source": 2,
+      "tests": 42
      }
     }
    }
