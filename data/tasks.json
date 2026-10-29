@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-29T03:29:19Z",
- "sha": "ecdb992",
- "empreinte": "9f69105ff9359d24",
+ "maj": "2026-10-29T03:41:04Z",
+ "sha": "51d05f1",
+ "empreinte": "79b257f2e4e39f37",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
