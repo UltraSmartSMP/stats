@@ -1,113 +1,5 @@
 [
  {
-  "maj": "2026-10-22T00:06:25Z",
-  "empreinte": "3d8fe7faaee7c052",
-  "code": 4276428,
-  "commits": 545,
-  "par_depot": {
-   "moteur": 695619,
-   "langage": 214609,
-   "bibliotheques": 1512330,
-   "symbiose": 5882,
-   "serveur": 230,
-   "docs": 1847758
-  },
-  "par_langage": {
-   "JSON": 1502192,
-   "RSMP": 1373932,
-   "C++": 388603,
-   "Texte": 311738,
-   "Markdown": 308484,
-   "SWIG": 230020,
-   "SMPA": 40868,
-   "CSV": 26266,
-   "C/C++ Header": 25202,
-   "PowerShell": 20662,
-   "YAML": 11286,
-   "Python": 8915,
-   "RSMP IR": 7991,
-   "CMake": 7143,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "C": 2006,
-   "TOML": 1737,
-   "JavaScript": 1678,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 82,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 2422,
-   "langage": {
-    "C++": 383,
-    "JSON": 1062,
-    "Markdown": 816,
-    "RSMP": 161
-   },
-   "type": {
-    "docs": 816,
-    "donnees": 1062,
-    "source": 1,
-    "tests": 543
-   },
-   "depots": {
-    "bibliotheques": {
-     "code": -3,
-     "court": "e3ced7d",
-     "commits": 1,
-     "langage": {
-      "RSMP": -3
-     },
-     "type": {
-      "source": -3
-     }
-    },
-    "docs": {
-     "code": 816,
-     "court": "a4288ae",
-     "commits": 1,
-     "langage": {
-      "Markdown": 816
-     },
-     "type": {
-      "docs": 816
-     }
-    },
-    "langage": {
-     "code": 480,
-     "court": "a3244c7",
-     "commits": 1,
-     "langage": {
-      "C++": 316,
-      "RSMP": 164
-     },
-     "type": {
-      "tests": 480
-     }
-    },
-    "moteur": {
-     "code": 1129,
-     "court": "2a33900",
-     "commits": 1,
-     "langage": {
-      "C++": 67,
-      "JSON": 1062
-     },
-     "type": {
-      "donnees": 1062,
-      "source": 4,
-      "tests": 63
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-22T00:21:56Z",
   "empreinte": "9c85ad5b9b4b4d7d",
   "code": 4296490,
@@ -44542,6 +44434,112 @@
      "commits": 1,
      "langage": {},
      "type": {}
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T10:29:32Z",
+  "empreinte": "0992d0606f36ab42",
+  "code": 6166737,
+  "commits": 1815,
+  "par_depot": {
+   "moteur": 470705,
+   "langage": 256408,
+   "bibliotheques": 1663506,
+   "symbiose": 34559,
+   "natives": 9858,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 63638,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 455124,
+   "orchestration": 77814,
+   "docs": 3031355
+  },
+  "par_langage": {
+   "RSMP": 1861928,
+   "JSON": 1743599,
+   "Texte": 1275001,
+   "C++": 554785,
+   "Markdown": 380772,
+   "CSV": 74047,
+   "SMPA": 52098,
+   "PowerShell": 43242,
+   "Python": 43225,
+   "C/C++ Header": 38828,
+   "Assembly": 31427,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 11166,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2944,
+   "C": 2211,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 958,
+   "SMPA ISA": 810,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 186,
+   "DOS Batch": 130,
+   "Windows Resource File": 97,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 852,
+   "langage": {
+    "JSON": -23,
+    "Markdown": 17,
+    "PowerShell": 1,
+    "Python": 69,
+    "RSMP": 788
+   },
+   "type": {
+    "docs": 17,
+    "donnees": -23,
+    "scripts": 1,
+    "source": 434,
+    "tests": 423
+   },
+   "depots": {
+    "docs": {
+     "code": 17,
+     "court": "0035327",
+     "commits": 1,
+     "langage": {
+      "Markdown": 17
+     },
+     "type": {
+      "docs": 17
+     }
+    },
+    "kcauldron": {
+     "code": 858,
+     "court": "d1a392a",
+     "commits": 1,
+     "langage": {
+      "PowerShell": 1,
+      "Python": 69,
+      "RSMP": 788
+     },
+     "type": {
+      "scripts": 1,
+      "source": 434,
+      "tests": 423
+     }
+    },
+    "orchestration": {
+     "code": -23,
+     "court": "433ef0a",
+     "commits": 1,
+     "langage": {
+      "JSON": -23
+     },
+     "type": {
+      "donnees": -23
+     }
     }
    }
   }
