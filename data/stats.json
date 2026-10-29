@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T17:34:37Z",
- "empreinte": "7f7aa75dc7645e78",
+ "maj": "2026-10-29T17:45:42Z",
+ "empreinte": "e14b8fa36fb7728d",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,21 +49,21 @@
   }
  ],
  "global": {
-  "fichiers": 23590,
+  "fichiers": 23591,
   "lignes": {
-   "code": 6196079,
-   "commentaires": 139972,
-   "vides": 190632,
-   "total": 6526683
+   "code": 6196316,
+   "commentaires": 139995,
+   "vides": 190658,
+   "total": 6526969
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
     "fichiers": 4133,
-    "code": 1884074,
-    "commentaires": 54820,
-    "vides": 41148
+    "code": 1884110,
+    "commentaires": 54822,
+    "vides": 41149
    },
    {
     "nom": "JSON",
@@ -116,10 +116,10 @@
    {
     "nom": "Python",
     "maison": false,
-    "fichiers": 340,
-    "code": 46478,
-    "commentaires": 7838,
-    "vides": 6355
+    "fichiers": 341,
+    "code": 46679,
+    "commentaires": 7859,
+    "vides": 6380
    },
    {
     "nom": "PowerShell",
@@ -286,9 +286,9 @@
    {
     "id": "source",
     "fichiers": 2074,
-    "code": 523087,
-    "commentaires": 65073,
-    "vides": 51030
+    "code": 523123,
+    "commentaires": 65075,
+    "vides": 51031
    },
    {
     "id": "tests",
@@ -306,10 +306,10 @@
    },
    {
     "id": "scripts",
-    "fichiers": 249,
-    "code": 37078,
-    "commentaires": 4558,
-    "vides": 3681
+    "fichiers": 250,
+    "code": 37279,
+    "commentaires": 4579,
+    "vides": 3706
    },
    {
     "id": "build",
@@ -367,7 +367,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 257448
+    "code": 257484
    },
    {
     "langage": "C++",
@@ -407,7 +407,7 @@
    {
     "langage": "Python",
     "type": "scripts",
-    "code": 18322
+    "code": 18523
    },
    {
     "langage": "Python",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1903
+  "commits": 1904
  },
  "depots": [
   {
@@ -3380,28 +3380,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 112,
+   "commits": 113,
    "commit": {
-    "sha": "c190ef4bbd65926fe6a1d73b53205598c1467a14",
-    "court": "c190ef4",
-    "date": "2026-10-29T17:34:37Z",
-    "message": "sync 2026-10-29 18:34"
+    "sha": "37f66b7168f66c37444447757acfe884fb42270d",
+    "court": "37f66b7",
+    "date": "2026-10-29T17:45:42Z",
+    "message": "sync 2026-10-29 18:45"
    },
-   "fichiers": 1414,
+   "fichiers": 1415,
    "lignes": {
-    "code": 482490,
-    "commentaires": 38932,
-    "vides": 31895,
-    "total": 553317
+    "code": 482727,
+    "commentaires": 38955,
+    "vides": 31921,
+    "total": 553603
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 755,
-     "code": 315993,
-     "commentaires": 33637,
-     "vides": 24237
+     "code": 316029,
+     "commentaires": 33639,
+     "vides": 24238
     },
     {
      "nom": "Texte",
@@ -3412,20 +3412,20 @@
      "vides": 3245
     },
     {
+     "nom": "Python",
+     "maison": false,
+     "fichiers": 161,
+     "code": 25378,
+     "commentaires": 4567,
+     "vides": 4063
+    },
+    {
      "nom": "JSON",
      "maison": false,
      "fichiers": 70,
      "code": 25319,
      "commentaires": 0,
      "vides": 0
-    },
-    {
-     "nom": "Python",
-     "maison": false,
-     "fichiers": 160,
-     "code": 25177,
-     "commentaires": 4546,
-     "vides": 4038
     },
     {
      "nom": "PowerShell",
@@ -3496,9 +3496,9 @@
     {
      "id": "source",
      "fichiers": 492,
-     "code": 178742,
-     "commentaires": 21256,
-     "vides": 15637
+     "code": 178778,
+     "commentaires": 21258,
+     "vides": 15638
     },
     {
      "id": "tests",
@@ -3516,10 +3516,10 @@
     },
     {
      "id": "scripts",
-     "fichiers": 86,
-     "code": 14177,
-     "commentaires": 1927,
-     "vides": 1884
+     "fichiers": 87,
+     "code": 14378,
+     "commentaires": 1948,
+     "vides": 1909
     },
     {
      "id": "build",
@@ -3547,7 +3547,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 162730
+     "code": 162766
     },
     {
      "langage": "RSMP",
@@ -3577,7 +3577,7 @@
     {
      "langage": "Python",
      "type": "scripts",
-     "code": 11689
+     "code": 11890
     },
     {
      "langage": "PowerShell",
