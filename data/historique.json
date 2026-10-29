@@ -1,69 +1,5 @@
 [
  {
-  "maj": "2026-10-21T18:21:50Z",
-  "empreinte": "3b49aa21082e45d1",
-  "code": 3960600,
-  "commits": 469,
-  "par_depot": {
-   "moteur": 453033,
-   "langage": 211041,
-   "bibliotheques": 1512323,
-   "symbiose": 5869,
-   "serveur": 218,
-   "docs": 1778116
-  },
-  "par_langage": {
-   "JSON": 1494494,
-   "RSMP": 1373797,
-   "C++": 383023,
-   "Texte": 307161,
-   "Markdown": 243550,
-   "SMPA": 40868,
-   "CSV": 26212,
-   "C/C++ Header": 24627,
-   "PowerShell": 20362,
-   "YAML": 11286,
-   "RSMP IR": 7991,
-   "Python": 7497,
-   "CMake": 7025,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "TOML": 1737,
-   "C": 1680,
-   "JavaScript": 1623,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 44,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 62,
-   "langage": {
-    "Markdown": 62
-   },
-   "type": {
-    "docs": 62
-   },
-   "depots": {
-    "docs": {
-     "code": 62,
-     "court": "4b29988",
-     "commits": 1,
-     "langage": {
-      "Markdown": 62
-     },
-     "type": {
-      "docs": 62
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T18:31:59Z",
   "empreinte": "6b9b33b5ad47f43d",
   "code": 3960873,
@@ -42832,6 +42768,163 @@
      },
      "type": {
       "tests": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T00:39:40Z",
+  "empreinte": "fd591c2c9048c78b",
+  "code": 5787347,
+  "commits": 1644,
+  "par_depot": {
+   "moteur": 460524,
+   "langage": 252956,
+   "bibliotheques": 1649438,
+   "symbiose": 34447,
+   "natives": 9713,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 58193,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 117972,
+   "orchestration": 77602,
+   "docs": 3022732
+  },
+  "par_langage": {
+   "JSON": 1717626,
+   "RSMP": 1649604,
+   "Texte": 1167159,
+   "C++": 543278,
+   "Markdown": 375060,
+   "CSV": 74047,
+   "SMPA": 51777,
+   "PowerShell": 41736,
+   "C/C++ Header": 38297,
+   "Assembly": 31427,
+   "Python": 30498,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 10797,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2728,
+   "C": 2210,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 944,
+   "SMPA ISA": 585,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 152,
+   "Windows Resource File": 97,
+   "DOS Batch": 42,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 1451,
+   "langage": {
+    "C++": 33,
+    "CMake": -2,
+    "PowerShell": 1066,
+    "RSMP": 226,
+    "TOML": 19,
+    "Texte": 109
+   },
+   "type": {
+    "bancs": 396,
+    "build": 17,
+    "donnees": 13,
+    "scripts": 646,
+    "source": 128,
+    "tests": 251
+   },
+   "depots": {
+    "auto-hebergement": {
+     "code": 1,
+     "court": "eba0148",
+     "commits": 1,
+     "langage": {
+      "RSMP": 1
+     },
+     "type": {
+      "source": 1
+     }
+    },
+    "bibliotheques": {
+     "code": 1088,
+     "court": "3e15cae",
+     "commits": 1,
+     "langage": {
+      "C++": 3,
+      "PowerShell": 1066,
+      "TOML": 19
+     },
+     "type": {
+      "bancs": 191,
+      "build": 19,
+      "scripts": 646,
+      "tests": 232
+     }
+    },
+    "docs": {
+     "code": 13,
+     "court": "a517761",
+     "commits": 1,
+     "langage": {
+      "Texte": 13
+     },
+     "type": {
+      "donnees": 13
+     }
+    },
+    "kcauldron": {
+     "code": 321,
+     "court": "6a98d3f",
+     "commits": 1,
+     "langage": {
+      "RSMP": 225,
+      "Texte": 96
+     },
+     "type": {
+      "bancs": 205,
+      "source": 102,
+      "tests": 14
+     }
+    },
+    "langage": {
+     "code": 1,
+     "court": "e46bcc6",
+     "commits": 1,
+     "langage": {
+      "CMake": 1
+     },
+     "type": {
+      "build": 1
+     }
+    },
+    "moteur": {
+     "code": 30,
+     "court": "b7cb0e6",
+     "commits": 1,
+     "langage": {
+      "C++": 30
+     },
+     "type": {
+      "source": 25,
+      "tests": 5
+     }
+    },
+    "symbiose": {
+     "code": -3,
+     "court": "dc3b89e",
+     "commits": 1,
+     "langage": {
+      "CMake": -3
+     },
+     "type": {
+      "build": -3
      }
     }
    }
