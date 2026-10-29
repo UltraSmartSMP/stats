@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T17:45:42Z",
- "empreinte": "e14b8fa36fb7728d",
+ "maj": "2026-10-29T17:56:56Z",
+ "empreinte": "93e24a43ab6b959c",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 23591,
   "lignes": {
-   "code": 6196316,
-   "commentaires": 139995,
+   "code": 6196331,
+   "commentaires": 139998,
    "vides": 190658,
-   "total": 6526969
+   "total": 6526987
   },
   "langages": [
    {
@@ -117,8 +117,8 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 341,
-    "code": 46679,
-    "commentaires": 7859,
+    "code": 46694,
+    "commentaires": 7862,
     "vides": 6380
    },
    {
@@ -307,8 +307,8 @@
    {
     "id": "scripts",
     "fichiers": 250,
-    "code": 37279,
-    "commentaires": 4579,
+    "code": 37294,
+    "commentaires": 4582,
     "vides": 3706
    },
    {
@@ -407,7 +407,7 @@
    {
     "langage": "Python",
     "type": "scripts",
-    "code": 18523
+    "code": 18538
    },
    {
     "langage": "Python",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1904
+  "commits": 1905
  },
  "depots": [
   {
@@ -3380,19 +3380,19 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 113,
+   "commits": 114,
    "commit": {
-    "sha": "37f66b7168f66c37444447757acfe884fb42270d",
-    "court": "37f66b7",
-    "date": "2026-10-29T17:45:42Z",
-    "message": "sync 2026-10-29 18:45"
+    "sha": "8dc7ca07ae1b6d47b743d38f46591ac5fd86a982",
+    "court": "8dc7ca0",
+    "date": "2026-10-29T17:56:56Z",
+    "message": "sync 2026-10-29 18:56"
    },
    "fichiers": 1415,
    "lignes": {
-    "code": 482727,
-    "commentaires": 38955,
+    "code": 482742,
+    "commentaires": 38958,
     "vides": 31921,
-    "total": 553603
+    "total": 553621
    },
    "langages": [
     {
@@ -3415,8 +3415,8 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 161,
-     "code": 25378,
-     "commentaires": 4567,
+     "code": 25393,
+     "commentaires": 4570,
      "vides": 4063
     },
     {
@@ -3517,8 +3517,8 @@
     {
      "id": "scripts",
      "fichiers": 87,
-     "code": 14378,
-     "commentaires": 1948,
+     "code": 14393,
+     "commentaires": 1951,
      "vides": 1909
     },
     {
@@ -3577,7 +3577,7 @@
     {
      "langage": "Python",
      "type": "scripts",
-     "code": 11890
+     "code": 11905
     },
     {
      "langage": "PowerShell",
