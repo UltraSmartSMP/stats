@@ -1,85 +1,5 @@
 [
  {
-  "maj": "2026-10-21T22:07:17Z",
-  "empreinte": "b51b58a71aaca607",
-  "code": 4256509,
-  "commits": 519,
-  "par_depot": {
-   "moteur": 689697,
-   "langage": 213774,
-   "bibliotheques": 1512333,
-   "symbiose": 5882,
-   "serveur": 230,
-   "docs": 1834593
-  },
-  "par_langage": {
-   "JSON": 1498498,
-   "RSMP": 1373771,
-   "C++": 386801,
-   "Texte": 310462,
-   "Markdown": 296685,
-   "SWIG": 230020,
-   "SMPA": 40868,
-   "CSV": 26266,
-   "C/C++ Header": 25100,
-   "PowerShell": 20590,
-   "YAML": 11286,
-   "RSMP IR": 7991,
-   "Python": 7920,
-   "CMake": 7138,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "C": 1993,
-   "TOML": 1737,
-   "JavaScript": 1678,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 82,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 2531,
-   "langage": {
-    "C++": 46,
-    "C/C++ Header": 3,
-    "Markdown": 2482
-   },
-   "type": {
-    "docs": 2482,
-    "source": 49
-   },
-   "depots": {
-    "docs": {
-     "code": 2482,
-     "court": "4de6f9a",
-     "commits": 1,
-     "langage": {
-      "Markdown": 2482
-     },
-     "type": {
-      "docs": 2482
-     }
-    },
-    "langage": {
-     "code": 49,
-     "court": "10b6d26",
-     "commits": 1,
-     "langage": {
-      "C++": 46,
-      "C/C++ Header": 3
-     },
-     "type": {
-      "source": 49
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-21T22:17:58Z",
   "empreinte": "3100d71a236dac2a",
   "code": 4257006,
@@ -44090,6 +44010,139 @@
      },
      "type": {
       "source": 782
+     }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T08:01:37Z",
+  "empreinte": "0064603117a56ad0",
+  "code": 6133308,
+  "commits": 1769,
+  "par_depot": {
+   "moteur": 467924,
+   "langage": 256139,
+   "bibliotheques": 1663506,
+   "symbiose": 34559,
+   "natives": 9858,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 63638,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 425337,
+   "orchestration": 77883,
+   "docs": 3030694
+  },
+  "par_langage": {
+   "RSMP": 1839024,
+   "JSON": 1743668,
+   "Texte": 1270485,
+   "C++": 552219,
+   "Markdown": 380111,
+   "CSV": 74047,
+   "SMPA": 51919,
+   "PowerShell": 42665,
+   "Python": 41406,
+   "C/C++ Header": 38762,
+   "Assembly": 31427,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 10961,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2942,
+   "C": 2210,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 956,
+   "SMPA ISA": 810,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 186,
+   "DOS Batch": 130,
+   "Windows Resource File": 97,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 76489,
+   "langage": {
+    "Bourne Shell": 1,
+    "C++": 374,
+    "CMake": 14,
+    "INI": 8,
+    "JSON": 46,
+    "Markdown": 78,
+    "Python": 710,
+    "RSMP": 720,
+    "SMPA": 142,
+    "TOML": 12,
+    "Texte": 74384
+   },
+   "type": {
+    "build": 22,
+    "docs": 78,
+    "donnees": 74436,
+    "scripts": 710,
+    "source": 455,
+    "tests": 788
+   },
+   "depots": {
+    "docs": {
+     "code": 78,
+     "court": "1444d56",
+     "commits": 1,
+     "langage": {
+      "Markdown": 78
+     },
+     "type": {
+      "docs": 78
+     }
+    },
+    "kcauldron": {
+     "code": 75835,
+     "court": "4ba91fe",
+     "commits": 1,
+     "langage": {
+      "Bourne Shell": 1,
+      "INI": 8,
+      "Python": 710,
+      "RSMP": 720,
+      "TOML": 12,
+      "Texte": 74384
+     },
+     "type": {
+      "build": 8,
+      "donnees": 74390,
+      "scripts": 710,
+      "source": 432,
+      "tests": 295
+     }
+    },
+    "moteur": {
+     "code": 530,
+     "court": "2547e95",
+     "commits": 1,
+     "langage": {
+      "C++": 374,
+      "CMake": 14,
+      "SMPA": 142
+     },
+     "type": {
+      "build": 14,
+      "source": 23,
+      "tests": 493
+     }
+    },
+    "orchestration": {
+     "code": 46,
+     "court": "fcd760b",
+     "commits": 1,
+     "langage": {
+      "JSON": 46
+     },
+     "type": {
+      "donnees": 46
      }
     }
    }
