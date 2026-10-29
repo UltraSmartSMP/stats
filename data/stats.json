@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T18:08:13Z",
- "empreinte": "cc90c12d59181bd3",
+ "maj": "2026-10-29T18:19:09Z",
+ "empreinte": "d7ce4ec6900c905f",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 23591,
   "lignes": {
-   "code": 6196331,
-   "commentaires": 140002,
-   "vides": 190662,
-   "total": 6526995
+   "code": 6196334,
+   "commentaires": 140004,
+   "vides": 190666,
+   "total": 6527004
   },
   "langages": [
    {
@@ -117,9 +117,9 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 341,
-    "code": 46694,
-    "commentaires": 7862,
-    "vides": 6380
+    "code": 46697,
+    "commentaires": 7864,
+    "vides": 6384
    },
    {
     "nom": "PowerShell",
@@ -293,9 +293,9 @@
    {
     "id": "tests",
     "fichiers": 4681,
-    "code": 600429,
-    "commentaires": 48334,
-    "vides": 42489
+    "code": 600432,
+    "commentaires": 48336,
+    "vides": 42493
    },
    {
     "id": "bancs",
@@ -412,7 +412,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 18102
+    "code": 18105
    },
    {
     "langage": "Texte",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1907
+  "commits": 1908
  },
  "depots": [
   {
@@ -3380,19 +3380,19 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 115,
+   "commits": 116,
    "commit": {
-    "sha": "867739cebc0d65126d65de823a7ba1058584f8d6",
-    "court": "867739c",
-    "date": "2026-10-29T18:08:01Z",
-    "message": "sync 2026-10-29 19:08"
+    "sha": "fe713798a654d6fd960e502b085fd1d9e8100cc2",
+    "court": "fe71379",
+    "date": "2026-10-29T18:19:09Z",
+    "message": "sync 2026-10-29 19:19"
    },
    "fichiers": 1415,
    "lignes": {
-    "code": 482742,
-    "commentaires": 38958,
-    "vides": 31921,
-    "total": 553621
+    "code": 482745,
+    "commentaires": 38960,
+    "vides": 31925,
+    "total": 553630
    },
    "langages": [
     {
@@ -3415,9 +3415,9 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 161,
-     "code": 25393,
-     "commentaires": 4570,
-     "vides": 4063
+     "code": 25396,
+     "commentaires": 4572,
+     "vides": 4067
     },
     {
      "nom": "JSON",
@@ -3503,9 +3503,9 @@
     {
      "id": "tests",
      "fichiers": 540,
-     "code": 170555,
-     "commentaires": 15411,
-     "vides": 13814
+     "code": 170558,
+     "commentaires": 15413,
+     "vides": 13818
     },
     {
      "id": "bancs",
@@ -3572,7 +3572,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 13488
+     "code": 13491
     },
     {
      "langage": "Python",
