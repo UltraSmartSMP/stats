@@ -1,121 +1,5 @@
 [
  {
-  "maj": "2026-10-22T01:21:40Z",
-  "empreinte": "379fe6b15c603e14",
-  "code": 4375775,
-  "commits": 570,
-  "par_depot": {
-   "moteur": 731292,
-   "langage": 217823,
-   "bibliotheques": 1567851,
-   "symbiose": 5881,
-   "serveur": 230,
-   "docs": 1852698
-  },
-  "par_langage": {
-   "JSON": 1502272,
-   "RSMP": 1403203,
-   "C++": 418295,
-   "Texte": 338043,
-   "Markdown": 313298,
-   "SWIG": 230020,
-   "SMPA": 43029,
-   "C/C++ Header": 30853,
-   "CSV": 26266,
-   "PowerShell": 21014,
-   "YAML": 11286,
-   "Python": 9470,
-   "RSMP IR": 7991,
-   "CMake": 7477,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "C": 2006,
-   "TOML": 1814,
-   "JavaScript": 1733,
-   "SMPI": 905,
-   "Tables .def": 290,
-   "SMPA ISA": 236,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 82,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 6300,
-   "langage": {
-    "C++": 4754,
-    "C/C++ Header": 721,
-    "CMake": 14,
-    "Markdown": 349,
-    "PowerShell": 81,
-    "SMPA": 366,
-    "Texte": 15
-   },
-   "type": {
-    "build": 14,
-    "docs": 349,
-    "donnees": 752,
-    "source": 3684,
-    "tests": 1501
-   },
-   "depots": {
-    "bibliotheques": {
-     "code": 3,
-     "court": "4ba722c",
-     "commits": 1,
-     "langage": {
-      "C++": 3
-     },
-     "type": {
-      "tests": 3
-     }
-    },
-    "docs": {
-     "code": 349,
-     "court": "ec872d1",
-     "commits": 1,
-     "langage": {
-      "Markdown": 349
-     },
-     "type": {
-      "docs": 349
-     }
-    },
-    "langage": {
-     "code": 181,
-     "court": "478b624",
-     "commits": 1,
-     "langage": {
-      "C++": 100,
-      "PowerShell": 81
-     },
-     "type": {
-      "tests": 181
-     }
-    },
-    "moteur": {
-     "code": 5767,
-     "court": "e8447a5",
-     "commits": 1,
-     "langage": {
-      "C++": 4651,
-      "C/C++ Header": 721,
-      "CMake": 14,
-      "SMPA": 366,
-      "Texte": 15
-     },
-     "type": {
-      "build": 14,
-      "donnees": 752,
-      "source": 3684,
-      "tests": 1317
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-22T01:32:58Z",
   "empreinte": "6f9f7824d4160223",
   "code": 4381456,
@@ -44630,6 +44514,108 @@
       "source": 742,
       "tests": 402
      }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T12:11:11Z",
+  "empreinte": "2b0dc1cbffd7f198",
+  "code": 6175548,
+  "commits": 1844,
+  "par_depot": {
+   "moteur": 471252,
+   "langage": 256488,
+   "bibliotheques": 1663506,
+   "symbiose": 34559,
+   "natives": 9858,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 63638,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 463103,
+   "orchestration": 77836,
+   "docs": 3031538
+  },
+  "par_langage": {
+   "RSMP": 1868694,
+   "JSON": 1743619,
+   "Texte": 1275169,
+   "C++": 555248,
+   "Markdown": 380955,
+   "CSV": 74047,
+   "SMPA": 52136,
+   "Python": 43918,
+   "PowerShell": 43601,
+   "C/C++ Header": 38854,
+   "Assembly": 31427,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 11204,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2944,
+   "C": 2257,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 966,
+   "SMPA ISA": 810,
+   "diff": 477,
+   "Tables .def": 351,
+   "INI": 189,
+   "DOS Batch": 130,
+   "Windows Resource File": 97,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 165,
+   "langage": {
+    "Bourne Shell": 8,
+    "Markdown": 23,
+    "Python": 15,
+    "RSMP": 106,
+    "Texte": 13
+   },
+   "type": {
+    "docs": 23,
+    "donnees": 13,
+    "source": 39,
+    "tests": 90
+   },
+   "depots": {
+    "docs": {
+     "code": 23,
+     "court": "362f45e",
+     "commits": 1,
+     "langage": {
+      "Markdown": 23
+     },
+     "type": {
+      "docs": 23
+     }
+    },
+    "kcauldron": {
+     "code": 142,
+     "court": "aaba4e7",
+     "commits": 1,
+     "langage": {
+      "Bourne Shell": 8,
+      "Python": 15,
+      "RSMP": 106,
+      "Texte": 13
+     },
+     "type": {
+      "donnees": 13,
+      "source": 39,
+      "tests": 90
+     }
+    },
+    "orchestration": {
+     "code": 0,
+     "court": "65f6052",
+     "commits": 1,
+     "langage": {},
+     "type": {}
     }
    }
   }
