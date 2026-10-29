@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-29T00:39:40Z",
- "sha": "a517761",
- "empreinte": "bb5b06d5538ac962",
+ "maj": "2026-10-29T00:51:26Z",
+ "sha": "508b378",
+ "empreinte": "d89a21bcbb3ea517",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -13,7 +13,7 @@
    "total": 527
   },
   "004-bibliotheques-rsmp": {
-   "faites": 282,
+   "faites": 296,
    "total": 419
   },
   "005-symbiose-modules-rsmp": {
@@ -45,10 +45,10 @@
    "total": 218
   },
   "013-kcauldron-rsmp": {
-   "faites": 295,
+   "faites": 303,
    "total": 878
   }
  },
- "faites": 2035,
+ "faites": 2057,
  "total": 4054
 }
