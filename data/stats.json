@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T13:29:25Z",
- "empreinte": "d68bbba2ffce7ee6",
+ "maj": "2026-10-29T13:40:23Z",
+ "empreinte": "dbb449df92e5918d",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,19 +51,19 @@
  "global": {
   "fichiers": 23545,
   "lignes": {
-   "code": 6183214,
-   "commentaires": 138226,
-   "vides": 189464,
-   "total": 6510904
+   "code": 6183314,
+   "commentaires": 138250,
+   "vides": 189470,
+   "total": 6511034
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
     "fichiers": 4124,
-    "code": 1873789,
-    "commentaires": 53535,
-    "vides": 40385
+    "code": 1873889,
+    "commentaires": 53559,
+    "vides": 40391
    },
    {
     "nom": "JSON",
@@ -286,9 +286,9 @@
    {
     "id": "source",
     "fichiers": 2071,
-    "code": 516208,
-    "commentaires": 64062,
-    "vides": 50608
+    "code": 516308,
+    "commentaires": 64086,
+    "vides": 50614
    },
    {
     "id": "tests",
@@ -367,7 +367,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 250569
+    "code": 250669
    },
    {
     "langage": "C++",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1862
+  "commits": 1863
  },
  "depots": [
   {
@@ -3380,28 +3380,28 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 90,
+   "commits": 91,
    "commit": {
-    "sha": "c2d32d9bc948d85c9e788ec6f44d07f2c43a05b5",
-    "court": "c2d32d9",
-    "date": "2026-10-29T13:29:14Z",
-    "message": "sync 2026-10-29 14:29"
+    "sha": "2d7dcaea66a62d1d9fef85031acf339eed66ff1c",
+    "court": "2d7dcae",
+    "date": "2026-10-29T13:40:23Z",
+    "message": "sync 2026-10-29 14:40"
    },
    "fichiers": 1369,
    "lignes": {
-    "code": 469800,
-    "commentaires": 37194,
-    "vides": 30753,
-    "total": 537747
+    "code": 469900,
+    "commentaires": 37218,
+    "vides": 30759,
+    "total": 537877
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 746,
-     "code": 305708,
-     "commentaires": 32352,
-     "vides": 23474
+     "code": 305808,
+     "commentaires": 32376,
+     "vides": 23480
     },
     {
      "nom": "Texte",
@@ -3488,9 +3488,9 @@
     {
      "id": "source",
      "fichiers": 489,
-     "code": 171863,
-     "commentaires": 20245,
-     "vides": 15215
+     "code": 171963,
+     "commentaires": 20269,
+     "vides": 15221
     },
     {
      "id": "tests",
@@ -3539,7 +3539,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 155851
+     "code": 155951
     },
     {
      "langage": "RSMP",
