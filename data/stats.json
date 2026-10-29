@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T15:43:15Z",
- "empreinte": "828cc0a0701b41ce",
+ "maj": "2026-10-29T15:54:24Z",
+ "empreinte": "39fd86644b2d9e20",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,10 +51,10 @@
  "global": {
   "fichiers": 23589,
   "lignes": {
-   "code": 6192916,
-   "commentaires": 139498,
-   "vides": 190360,
-   "total": 6522774
+   "code": 6192924,
+   "commentaires": 139503,
+   "vides": 190366,
+   "total": 6522793
   },
   "langages": [
    {
@@ -62,7 +62,7 @@
     "maison": true,
     "fichiers": 4133,
     "code": 1881790,
-    "commentaires": 54452,
+    "commentaires": 54455,
     "vides": 41010
    },
    {
@@ -117,9 +117,9 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 339,
-    "code": 45650,
-    "commentaires": 7744,
-    "vides": 6235
+    "code": 45658,
+    "commentaires": 7746,
+    "vides": 6241
    },
    {
     "nom": "PowerShell",
@@ -287,15 +287,15 @@
     "id": "source",
     "fichiers": 2074,
     "code": 521144,
-    "commentaires": 64750,
+    "commentaires": 64753,
     "vides": 50911
    },
    {
     "id": "tests",
     "fichiers": 4681,
-    "code": 599516,
-    "commentaires": 48220,
-    "vides": 42392
+    "code": 599524,
+    "commentaires": 48222,
+    "vides": 42398
    },
    {
     "id": "bancs",
@@ -417,7 +417,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 17530
+    "code": 17538
    },
    {
     "langage": "SMPA",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1886
+  "commits": 1887
  },
  "depots": [
   {
@@ -3380,19 +3380,19 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 102,
+   "commits": 103,
    "commit": {
-    "sha": "6c01e2b98b345fd4523b12b08e5888ffa911d3c7",
-    "court": "6c01e2b",
-    "date": "2026-10-29T15:43:15Z",
-    "message": "sync 2026-10-29 16:43"
+    "sha": "234a50ab06d83310b6bed52c9b5b1b9eb411d8bf",
+    "court": "234a50a",
+    "date": "2026-10-29T15:54:24Z",
+    "message": "sync 2026-10-29 16:54"
    },
    "fichiers": 1413,
    "lignes": {
-    "code": 479361,
-    "commentaires": 38465,
-    "vides": 31637,
-    "total": 549463
+    "code": 479369,
+    "commentaires": 38470,
+    "vides": 31643,
+    "total": 549482
    },
    "langages": [
     {
@@ -3400,7 +3400,7 @@
      "maison": true,
      "fichiers": 755,
      "code": 313709,
-     "commentaires": 33269,
+     "commentaires": 33272,
      "vides": 24099
     },
     {
@@ -3423,9 +3423,9 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 159,
-     "code": 24349,
-     "commentaires": 4452,
-     "vides": 3918
+     "code": 24357,
+     "commentaires": 4454,
+     "vides": 3924
     },
     {
      "nom": "PowerShell",
@@ -3497,15 +3497,15 @@
      "id": "source",
      "fichiers": 492,
      "code": 176799,
-     "commentaires": 20933,
+     "commentaires": 20936,
      "vides": 15518
     },
     {
      "id": "tests",
      "fichiers": 540,
-     "code": 169642,
-     "commentaires": 15297,
-     "vides": 13717
+     "code": 169650,
+     "commentaires": 15299,
+     "vides": 13723
     },
     {
      "id": "bancs",
@@ -3572,7 +3572,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 12916
+     "code": 12924
     },
     {
      "langage": "Python",
