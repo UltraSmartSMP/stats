@@ -1,16 +1,16 @@
 {
  "version": 1,
- "maj": "2026-10-29T09:44:34Z",
- "sha": "24a8830",
- "empreinte": "1761b48c38f70b20",
+ "maj": "2026-10-29T09:55:51Z",
+ "sha": "533017d",
+ "empreinte": "5172cc2944e29a46",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
    "total": 387
   },
   "003-langage-rsmp": {
-   "faites": 496,
-   "total": 532
+   "faites": 497,
+   "total": 533
   },
   "004-bibliotheques-rsmp": {
    "faites": 299,
@@ -45,10 +45,10 @@
    "total": 218
   },
   "013-kcauldron-rsmp": {
-   "faites": 803,
-   "total": 890
+   "faites": 806,
+   "total": 891
   }
  },
- "faites": 2569,
- "total": 4074
+ "faites": 2573,
+ "total": 4076
 }
