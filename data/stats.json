@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T15:32:17Z",
- "empreinte": "4502e43006df540c",
+ "maj": "2026-10-29T15:43:15Z",
+ "empreinte": "828cc0a0701b41ce",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -51,18 +51,18 @@
  "global": {
   "fichiers": 23589,
   "lignes": {
-   "code": 6192907,
-   "commentaires": 139497,
+   "code": 6192916,
+   "commentaires": 139498,
    "vides": 190360,
-   "total": 6522764
+   "total": 6522774
   },
   "langages": [
    {
     "nom": "RSMP",
     "maison": true,
     "fichiers": 4133,
-    "code": 1881782,
-    "commentaires": 54451,
+    "code": 1881790,
+    "commentaires": 54452,
     "vides": 41010
    },
    {
@@ -117,7 +117,7 @@
     "nom": "Python",
     "maison": false,
     "fichiers": 339,
-    "code": 45649,
+    "code": 45650,
     "commentaires": 7744,
     "vides": 6235
    },
@@ -286,14 +286,14 @@
    {
     "id": "source",
     "fichiers": 2074,
-    "code": 521136,
-    "commentaires": 64749,
+    "code": 521144,
+    "commentaires": 64750,
     "vides": 50911
    },
    {
     "id": "tests",
     "fichiers": 4681,
-    "code": 599515,
+    "code": 599516,
     "commentaires": 48220,
     "vides": 42392
    },
@@ -367,7 +367,7 @@
    {
     "langage": "RSMP",
     "type": "source",
-    "code": 255497
+    "code": 255505
    },
    {
     "langage": "C++",
@@ -417,7 +417,7 @@
    {
     "langage": "Python",
     "type": "tests",
-    "code": 17529
+    "code": 17530
    },
    {
     "langage": "SMPA",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1885
+  "commits": 1886
  },
  "depots": [
   {
@@ -3380,27 +3380,27 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 101,
+   "commits": 102,
    "commit": {
-    "sha": "cbda778592a5931adbf38ff25c807f5e218601f1",
-    "court": "cbda778",
-    "date": "2026-10-29T15:32:06Z",
-    "message": "sync 2026-10-29 16:32"
+    "sha": "6c01e2b98b345fd4523b12b08e5888ffa911d3c7",
+    "court": "6c01e2b",
+    "date": "2026-10-29T15:43:15Z",
+    "message": "sync 2026-10-29 16:43"
    },
    "fichiers": 1413,
    "lignes": {
-    "code": 479352,
-    "commentaires": 38464,
+    "code": 479361,
+    "commentaires": 38465,
     "vides": 31637,
-    "total": 549453
+    "total": 549463
    },
    "langages": [
     {
      "nom": "RSMP",
      "maison": true,
      "fichiers": 755,
-     "code": 313701,
-     "commentaires": 33268,
+     "code": 313709,
+     "commentaires": 33269,
      "vides": 24099
     },
     {
@@ -3423,7 +3423,7 @@
      "nom": "Python",
      "maison": false,
      "fichiers": 159,
-     "code": 24348,
+     "code": 24349,
      "commentaires": 4452,
      "vides": 3918
     },
@@ -3496,14 +3496,14 @@
     {
      "id": "source",
      "fichiers": 492,
-     "code": 176791,
-     "commentaires": 20932,
+     "code": 176799,
+     "commentaires": 20933,
      "vides": 15518
     },
     {
      "id": "tests",
      "fichiers": 540,
-     "code": 169641,
+     "code": 169642,
      "commentaires": 15297,
      "vides": 13717
     },
@@ -3547,7 +3547,7 @@
     {
      "langage": "RSMP",
      "type": "source",
-     "code": 160779
+     "code": 160787
     },
     {
      "langage": "RSMP",
@@ -3572,7 +3572,7 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 12915
+     "code": 12916
     },
     {
      "langage": "Python",
