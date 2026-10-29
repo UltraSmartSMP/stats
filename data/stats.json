@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T17:56:56Z",
- "empreinte": "93e24a43ab6b959c",
+ "maj": "2026-10-29T18:08:13Z",
+ "empreinte": "cc90c12d59181bd3",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -52,9 +52,9 @@
   "fichiers": 23591,
   "lignes": {
    "code": 6196331,
-   "commentaires": 139998,
-   "vides": 190658,
-   "total": 6526987
+   "commentaires": 140002,
+   "vides": 190662,
+   "total": 6526995
   },
   "langages": [
    {
@@ -94,8 +94,8 @@
     "maison": false,
     "fichiers": 6203,
     "code": 381400,
-    "commentaires": 164,
-    "vides": 75402
+    "commentaires": 168,
+    "vides": 75406
    },
    {
     "nom": "CSV",
@@ -322,8 +322,8 @@
     "id": "docs",
     "fichiers": 6221,
     "code": 382377,
-    "commentaires": 164,
-    "vides": 75462
+    "commentaires": 168,
+    "vides": 75466
    },
    {
     "id": "donnees",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1905
+  "commits": 1907
  },
  "depots": [
   {
@@ -3380,12 +3380,12 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 114,
+   "commits": 115,
    "commit": {
-    "sha": "8dc7ca07ae1b6d47b743d38f46591ac5fd86a982",
-    "court": "8dc7ca0",
-    "date": "2026-10-29T17:56:56Z",
-    "message": "sync 2026-10-29 18:56"
+    "sha": "867739cebc0d65126d65de823a7ba1058584f8d6",
+    "court": "867739c",
+    "date": "2026-10-29T18:08:01Z",
+    "message": "sync 2026-10-29 19:08"
    },
    "fichiers": 1415,
    "lignes": {
@@ -3873,19 +3873,19 @@
    "nom": "docs",
    "description": "Documentation du projet Ultra Smart SMP : buts, specs spec-kit, rapports et preuves d'un moteur d'exécution maison (SMPA), de son langage RSMP et de ses bibliothèques. Projet en développement, pas encore utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/docs",
-   "commits": 683,
+   "commits": 684,
    "commit": {
-    "sha": "1978cca1b8b634095f7844d751cd8564c3ed2fca",
-    "court": "1978cca",
-    "date": "2026-10-29T17:01:21Z",
-    "message": "sync 2026-10-29 18:01"
+    "sha": "a5ba13ca402d7dfbff12baf5d283eb13f5806b2a",
+    "court": "a5ba13c",
+    "date": "2026-10-29T18:08:13Z",
+    "message": "sync 2026-10-29 19:08"
    },
    "fichiers": 10821,
    "lignes": {
     "code": 3031983,
-    "commentaires": 3398,
-    "vides": 79895,
-    "total": 3115276
+    "commentaires": 3402,
+    "vides": 79899,
+    "total": 3115284
    },
    "langages": [
     {
@@ -3909,8 +3909,8 @@
      "maison": false,
      "fichiers": 6159,
      "code": 380284,
-     "commentaires": 140,
-     "vides": 74865
+     "commentaires": 144,
+     "vides": 74869
     },
     {
      "nom": "CSV",
@@ -4089,8 +4089,8 @@
      "id": "docs",
      "fichiers": 6160,
      "code": 380293,
-     "commentaires": 140,
-     "vides": 74869
+     "commentaires": 144,
+     "vides": 74873
     },
     {
      "id": "donnees",
