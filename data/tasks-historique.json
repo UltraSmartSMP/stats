@@ -7098,5 +7098,57 @@
     891
    ]
   }
+ },
+ {
+  "maj": "2026-10-29T13:29:25Z",
+  "sha": "8ef6313",
+  "faites": 2582,
+  "total": 4076,
+  "specs": {
+   "002-interpreteur-smpa": [
+    361,
+    387
+   ],
+   "003-langage-rsmp": [
+    497,
+    533
+   ],
+   "004-bibliotheques-rsmp": [
+    299,
+    419
+   ],
+   "005-symbiose-modules-rsmp": [
+    96,
+    271
+   ],
+   "006-stockage-chunks-tiers": [
+    28,
+    152
+   ],
+   "007-serveur-rsmp": [
+    83,
+    401
+   ],
+   "008-rsmp-contre-rust": [
+    54,
+    114
+   ],
+   "010-etat-reifie": [
+    157,
+    478
+   ],
+   "011-auto-hebergement": [
+    75,
+    212
+   ],
+   "012-rsmp-gpu": [
+    117,
+    218
+   ],
+   "013-kcauldron-rsmp": [
+    815,
+    891
+   ]
+  }
  }
 ]
