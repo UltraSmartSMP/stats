@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T19:26:37Z",
- "empreinte": "59564b79ee547622",
+ "maj": "2026-10-29T19:37:36Z",
+ "empreinte": "6b3e73d624727775",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -49,12 +49,12 @@
   }
  ],
  "global": {
-  "fichiers": 23591,
+  "fichiers": 23609,
   "lignes": {
-   "code": 6198788,
-   "commentaires": 140330,
-   "vides": 190847,
-   "total": 6529965
+   "code": 6199222,
+   "commentaires": 140342,
+   "vides": 190916,
+   "total": 6530480
   },
   "langages": [
    {
@@ -62,7 +62,7 @@
     "maison": true,
     "fichiers": 4133,
     "code": 1886296,
-    "commentaires": 55079,
+    "commentaires": 55080,
     "vides": 41272
    },
    {
@@ -76,10 +76,10 @@
    {
     "nom": "Texte",
     "maison": false,
-    "fichiers": 6729,
-    "code": 1275374,
+    "fichiers": 6745,
+    "code": 1275646,
     "commentaires": 0,
-    "vides": 6637
+    "vides": 6683
    },
    {
     "nom": "C++",
@@ -116,17 +116,17 @@
    {
     "nom": "Python",
     "maison": false,
-    "fichiers": 341,
-    "code": 47114,
-    "commentaires": 7925,
-    "vides": 6421
+    "fichiers": 342,
+    "code": 47234,
+    "commentaires": 7934,
+    "vides": 6444
    },
    {
     "nom": "PowerShell",
     "maison": false,
-    "fichiers": 398,
-    "code": 44491,
-    "commentaires": 5394,
+    "fichiers": 399,
+    "code": 44533,
+    "commentaires": 5396,
     "vides": 2351
    },
    {
@@ -287,14 +287,14 @@
     "id": "source",
     "fichiers": 2074,
     "code": 524576,
-    "commentaires": 65267,
+    "commentaires": 65268,
     "vides": 51111
    },
    {
     "id": "tests",
     "fichiers": 4681,
-    "code": 601460,
-    "commentaires": 48443,
+    "code": 601473,
+    "commentaires": 48442,
     "vides": 42560
    },
    {
@@ -307,9 +307,9 @@
    {
     "id": "scripts",
     "fichiers": 250,
-    "code": 37417,
-    "commentaires": 4601,
-    "vides": 3719
+    "code": 37444,
+    "commentaires": 4602,
+    "vides": 3721
    },
    {
     "id": "build",
@@ -327,10 +327,10 @@
    },
    {
     "id": "donnees",
-    "fichiers": 8926,
-    "code": 4480532,
-    "commentaires": 5892,
-    "vides": 6878
+    "fichiers": 8944,
+    "code": 4480926,
+    "commentaires": 5903,
+    "vides": 6945
    }
   ],
   "croise": [
@@ -347,7 +347,7 @@
    {
     "langage": "Texte",
     "type": "donnees",
-    "code": 1240613
+    "code": 1240885
    },
    {
     "langage": "Markdown",
@@ -407,12 +407,12 @@
    {
     "langage": "Python",
     "type": "scripts",
-    "code": 18661
+    "code": 18688
    },
    {
     "langage": "Python",
     "type": "tests",
-    "code": 18399
+    "code": 18412
    },
    {
     "langage": "Texte",
@@ -477,7 +477,7 @@
    {
     "langage": "Python",
     "type": "donnees",
-    "code": 7169
+    "code": 7249
    },
    {
     "langage": "Texte",
@@ -497,7 +497,7 @@
    {
     "langage": "PowerShell",
     "type": "donnees",
-    "code": 4377
+    "code": 4419
    },
    {
     "langage": "C/C++ Header",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1919
+  "commits": 1920
  },
  "depots": [
   {
@@ -3380,19 +3380,19 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 121,
+   "commits": 122,
    "commit": {
-    "sha": "ad39539766b1ef53f0acc4af903a2ca6d4f988c1",
-    "court": "ad39539",
-    "date": "2026-10-29T19:15:11Z",
-    "message": "sync 2026-10-29 20:15"
+    "sha": "64d0f519a471a05f1df01a0d93b3448a9dde422a",
+    "court": "64d0f51",
+    "date": "2026-10-29T19:37:36Z",
+    "message": "sync 2026-10-29 20:37"
    },
-   "fichiers": 1415,
+   "fichiers": 1433,
    "lignes": {
-    "code": 485083,
-    "commentaires": 39278,
-    "vides": 32085,
-    "total": 556446
+    "code": 485517,
+    "commentaires": 39290,
+    "vides": 32154,
+    "total": 556961
    },
    "langages": [
     {
@@ -3400,24 +3400,24 @@
      "maison": true,
      "fichiers": 755,
      "code": 318215,
-     "commentaires": 33896,
+     "commentaires": 33897,
      "vides": 24361
     },
     {
      "nom": "Texte",
      "maison": false,
-     "fichiers": 331,
-     "code": 110565,
+     "fichiers": 347,
+     "code": 110837,
      "commentaires": 0,
-     "vides": 3245
+     "vides": 3291
     },
     {
      "nom": "Python",
      "maison": false,
-     "fichiers": 161,
-     "code": 25813,
-     "commentaires": 4633,
-     "vides": 4104
+     "fichiers": 162,
+     "code": 25933,
+     "commentaires": 4642,
+     "vides": 4127
     },
     {
      "nom": "JSON",
@@ -3430,9 +3430,9 @@
     {
      "nom": "PowerShell",
      "maison": false,
-     "fichiers": 40,
-     "code": 4373,
-     "commentaires": 484,
+     "fichiers": 41,
+     "code": 4415,
+     "commentaires": 486,
      "vides": 175
     },
     {
@@ -3497,14 +3497,14 @@
      "id": "source",
      "fichiers": 492,
      "code": 180231,
-     "commentaires": 21450,
+     "commentaires": 21451,
      "vides": 15718
     },
     {
      "id": "tests",
      "fichiers": 540,
-     "code": 171586,
-     "commentaires": 15520,
+     "code": 171599,
+     "commentaires": 15519,
      "vides": 13885
     },
     {
@@ -3517,9 +3517,9 @@
     {
      "id": "scripts",
      "fichiers": 87,
-     "code": 14516,
-     "commentaires": 1970,
-     "vides": 1922
+     "code": 14543,
+     "commentaires": 1971,
+     "vides": 1924
     },
     {
      "id": "build",
@@ -3537,10 +3537,10 @@
     },
     {
      "id": "donnees",
-     "fichiers": 215,
-     "code": 92478,
-     "commentaires": 102,
-     "vides": 339
+     "fichiers": 233,
+     "code": 92872,
+     "commentaires": 113,
+     "vides": 406
     }
    ],
    "croise": [
@@ -3557,7 +3557,7 @@
     {
      "langage": "Texte",
      "type": "donnees",
-     "code": 92415
+     "code": 92687
     },
     {
      "langage": "JSON",
@@ -3572,12 +3572,12 @@
     {
      "langage": "Python",
      "type": "tests",
-     "code": 13785
+     "code": 13798
     },
     {
      "langage": "Python",
      "type": "scripts",
-     "code": 12028
+     "code": 12055
     },
     {
      "langage": "PowerShell",
@@ -3620,6 +3620,11 @@
      "code": 85
     },
     {
+     "langage": "Python",
+     "type": "donnees",
+     "code": 80
+    },
+    {
      "langage": "TOML",
      "type": "tests",
      "code": 61
@@ -3633,6 +3638,11 @@
      "langage": "Bourne Shell",
      "type": "tests",
      "code": 49
+    },
+    {
+     "langage": "PowerShell",
+     "type": "donnees",
+     "code": 42
     },
     {
      "langage": "diff",
