@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T20:33:44Z",
- "empreinte": "60353e1e0ba2056d",
+ "maj": "2026-10-29T20:44:44Z",
+ "empreinte": "f9e2ca6a85d36f3e",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -52,9 +52,9 @@
   "fichiers": 23623,
   "lignes": {
    "code": 6199789,
-   "commentaires": 140376,
+   "commentaires": 140377,
    "vides": 191005,
-   "total": 6531170
+   "total": 6531171
   },
   "langages": [
    {
@@ -62,7 +62,7 @@
     "maison": true,
     "fichiers": 4133,
     "code": 1886354,
-    "commentaires": 55093,
+    "commentaires": 55094,
     "vides": 41276
    },
    {
@@ -287,7 +287,7 @@
     "id": "source",
     "fichiers": 2074,
     "code": 524601,
-    "commentaires": 65276,
+    "commentaires": 65277,
     "vides": 51112
    },
    {
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1933
+  "commits": 1934
  },
  "depots": [
   {
@@ -3380,19 +3380,19 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 127,
+   "commits": 128,
    "commit": {
-    "sha": "4fb5e01ae9d1ad5ea2ceac703e8363a874d0e22a",
-    "court": "4fb5e01",
-    "date": "2026-10-29T20:33:32Z",
-    "message": "sync 2026-10-29 21:33"
+    "sha": "82b97be2830dfda50fce19536920ff2b252cb68c",
+    "court": "82b97be",
+    "date": "2026-10-29T20:44:44Z",
+    "message": "sync 2026-10-29 21:44"
    },
    "fichiers": 1447,
    "lignes": {
     "code": 486007,
-    "commentaires": 39323,
+    "commentaires": 39324,
     "vides": 32229,
-    "total": 557559
+    "total": 557560
    },
    "langages": [
     {
@@ -3400,7 +3400,7 @@
      "maison": true,
      "fichiers": 755,
      "code": 318273,
-     "commentaires": 33910,
+     "commentaires": 33911,
      "vides": 24365
     },
     {
@@ -3497,7 +3497,7 @@
      "id": "source",
      "fichiers": 492,
      "code": 180256,
-     "commentaires": 21459,
+     "commentaires": 21460,
      "vides": 15719
     },
     {

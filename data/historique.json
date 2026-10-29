@@ -1,69 +1,5 @@
 [
  {
-  "maj": "2026-10-22T10:11:34Z",
-  "empreinte": "ef0aac7b89694c5c",
-  "code": 4201233,
-  "commits": 663,
-  "par_depot": {
-   "moteur": 529606,
-   "langage": 225011,
-   "bibliotheques": 1574501,
-   "symbiose": 5896,
-   "serveur": 230,
-   "docs": 1865989
-  },
-  "par_langage": {
-   "JSON": 1504176,
-   "RSMP": 1409252,
-   "C++": 450258,
-   "Texte": 344766,
-   "Markdown": 318073,
-   "SMPA": 43029,
-   "C/C++ Header": 32157,
-   "CSV": 26701,
-   "PowerShell": 21944,
-   "YAML": 11286,
-   "Python": 10121,
-   "RSMP IR": 7991,
-   "CMake": 7638,
-   "Rust": 3658,
-   "CUDA": 2312,
-   "C": 2209,
-   "JavaScript": 1877,
-   "TOML": 1827,
-   "SMPI": 905,
-   "SMPA ISA": 459,
-   "Tables .def": 290,
-   "diff": 119,
-   "INI": 83,
-   "Assembly": 82,
-   "DOS Batch": 11,
-   "Bourne Shell": 9
-  },
-  "delta": {
-   "code": 12,
-   "langage": {
-    "Texte": 12
-   },
-   "type": {
-    "donnees": 12
-   },
-   "depots": {
-    "docs": {
-     "code": 12,
-     "court": "ba6f03d",
-     "commits": 1,
-     "langage": {
-      "Texte": 12
-     },
-     "type": {
-      "donnees": 12
-     }
-    }
-   }
-  }
- },
- {
   "maj": "2026-10-22T10:22:16Z",
   "empreinte": "85ede70f7969abfe",
   "code": 4201922,
@@ -45012,6 +44948,70 @@
      "type": {
       "tests": 53
      }
+    }
+   }
+  }
+ },
+ {
+  "maj": "2026-10-29T20:44:44Z",
+  "empreinte": "f9e2ca6a85d36f3e",
+  "code": 6199789,
+  "commits": 1934,
+  "par_depot": {
+   "moteur": 472018,
+   "langage": 256488,
+   "bibliotheques": 1663506,
+   "symbiose": 34559,
+   "natives": 9858,
+   "rsmp-gpu": 73031,
+   "auto-hebergement": 63638,
+   "serveur": 8668,
+   "bundles": 22071,
+   "kcauldron": 486007,
+   "orchestration": 77766,
+   "docs": 3032179
+  },
+  "par_langage": {
+   "RSMP": 1886354,
+   "JSON": 1743549,
+   "Texte": 1275858,
+   "C++": 555640,
+   "Markdown": 381596,
+   "CSV": 74047,
+   "SMPA": 52501,
+   "Python": 47454,
+   "PowerShell": 44533,
+   "C/C++ Header": 38856,
+   "Assembly": 31427,
+   "CUDA": 18867,
+   "YAML": 11820,
+   "CMake": 11211,
+   "RSMP IR": 8129,
+   "Rust": 5837,
+   "TOML": 2969,
+   "C": 2257,
+   "JavaScript": 2133,
+   "SMPI": 1643,
+   "Bourne Shell": 997,
+   "SMPA ISA": 810,
+   "diff": 508,
+   "Tables .def": 351,
+   "INI": 189,
+   "DOS Batch": 130,
+   "Windows Resource File": 97,
+   "GLSL": 26
+  },
+  "delta": {
+   "code": 0,
+   "langage": {},
+   "type": {},
+   "depots": {
+    "kcauldron": {
+     "code": 0,
+     "court": "82b97be",
+     "commits": 1,
+     "langage": {},
+     "type": {}
     }
    }
   }
