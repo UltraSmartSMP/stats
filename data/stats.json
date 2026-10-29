@@ -2,8 +2,8 @@
  "version": 2,
  "organisation": "UltraSmartSMP",
  "nom_affiche": "Ultra Smart SMP",
- "maj": "2026-10-29T22:13:24Z",
- "empreinte": "e63fd380a2022a16",
+ "maj": "2026-10-29T22:24:22Z",
+ "empreinte": "f99a0c670535a3f5",
  "langages_maison": [
   "RSMP",
   "SMPA",
@@ -730,7 +730,7 @@
     "code": 1
    }
   ],
-  "commits": 1948
+  "commits": 1949
  },
  "depots": [
   {
@@ -3380,12 +3380,12 @@
    "nom": "kcauldron",
    "description": "KCauldron en RSMP (BUT-007) : serveur Minecraft 26.3 hybride, mods façon Fabric et plugins façon Folia écrits en bundles RSMP pour le moteur SMPA, transmutés au démarrage pour des clients vanilla sans loader. En développement, pas utilisable en production.",
    "url": "https://github.com/UltraSmartSMP/kcauldron",
-   "commits": 135,
+   "commits": 136,
    "commit": {
-    "sha": "c927b0f4b0a1954a26695ef4b5d043eba2ceff23",
-    "court": "c927b0f",
-    "date": "2026-10-29T22:13:13Z",
-    "message": "sync 2026-10-29 23:13"
+    "sha": "97958ac5cee8f1fd6c46b33956a0992ab8a78ae1",
+    "court": "97958ac",
+    "date": "2026-10-29T22:24:22Z",
+    "message": "sync 2026-10-29 23:24"
    },
    "fichiers": 1472,
    "lignes": {
