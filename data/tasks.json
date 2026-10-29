@@ -1,8 +1,8 @@
 {
  "version": 1,
- "maj": "2026-10-29T04:30:31Z",
- "sha": "81ede8c",
- "empreinte": "57d29cac3bc5b4b0",
+ "maj": "2026-10-29T04:42:05Z",
+ "sha": "61638f4",
+ "empreinte": "7aae50e1b8365c85",
  "specs": {
   "002-interpreteur-smpa": {
    "faites": 361,
@@ -45,10 +45,10 @@
    "total": 218
   },
   "013-kcauldron-rsmp": {
-   "faites": 488,
-   "total": 879
+   "faites": 492,
+   "total": 880
   }
  },
- "faites": 2254,
- "total": 4063
+ "faites": 2258,
+ "total": 4064
 }
